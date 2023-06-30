@@ -1,0 +1,51 @@
+%% ----------------------------------------------------------------------
+%% START OF FILE
+%% ----------------------------------------------------------------------
+%% 
+%% Filename: abstract.tex
+%% Author: Fred Qi
+%% Created: 2008-06-25 11:34:44(+0800)
+%% 
+%% ----------------------------------------------------------------------
+%%% CHANGE LOG
+%% ----------------------------------------------------------------------
+%% Last-Updated: 2016-02-09 15:17:07(-0700) [by Fred Qi]
+%%     Update #: 62
+%% ----------------------------------------------------------------------
+
+\begin{cabstract}
+    随着新一代数字化媒体的出现，三维点云凭借其高精度、高自由度、高交互性等特征逐渐成为三维视觉媒体的重要代表。三维点云是一组三维的离散点集合，其中每个点都可以包含有空间几何坐标，颜色，反射率等信息，常被用来构建表征三维人物和场景的三维模型，并广泛应用于虚拟现实，增强现实，远程呈现和交互等应用中。但是随着点云点数和数据精度的不断提升，巨大的点云数据量给传输和存储都带来了前所未有的挑战。为了解决这一问题，国际运动图像专家组（Moving Picture Experts Group, MPEG）制订了用于点云压缩 G-PCC （Geometry Point Cloud compres）的标准。
+
+    截止目前，MPEG G-PCC对点云的压缩是从几何信息和属性信息两方面分别进行。G-PCC提供了两种几何信息编码的方法，分别是八叉树几何编码和Trisoup几何编码。其中Trisoup编码为了使最后的熵编码更加的高效，编码得到的码流 更小，使用了动态 OBUF（Dynamic Optimal Binarization with Update On the fly）技术。动态OBUf中引入了上下文这一概念即编码当前待编码比特所能用到的一些条件信息的组合来辅助选取最佳的熵编码概率模型，这正是本文的主要研究内容。本文通过对现有动态OBUF所用到的上下文进行信息熵、条件熵的测量，依据熵值越小，上下文模型与当前待编码信息相关性越强的原理，优化了现有上下文的使用顺序。最后通过对比修改前后熵编码的性能，从而给出是否替换现有上下文模型的结论。
+
+    将上下文按照条件熵递增的顺序使用后，在几何有损，属性有损（C2）条件下，相比现有的上下文模型，各类测试序列均呈现一定负增益，BD-GeomRate的平均取值为0.9\%，但是在某些序列呈现出较大的增益，如stanford\_area\_4\_vox20的D1取值为-3.8\%，D2取值为-3.6\%、landscape\_00014\_vox20的D1取值为-2.5\%，D2取值为-2.5\%。基于这些实验结果可以得出，单纯的对比各类上下文的熵值是无法选出最佳的上下文使用顺序的，有待进一步研究。同时针对某些序列拥有较大增益这一现象，本文认为引入自适应的上下文排序算法将带来一定性能增益。
+
+
+
+\end{cabstract}
+
+\begin{ckeywords}
+    点云\quad 几何信息压缩\quad 动态OBUF\quad 熵编码\quad 上下文
+\end{ckeywords}
+
+\cthesistype{应用基础技术}
+
+
+\begin{eabstract}
+    With the emergence of a new generation of digital media, 3D point cloud has gradually become an important representative of 3D visual media due to its high precision, high degree of freedom, and high interactivity. 3D point cloud is a set of 3D discrete points, each of which can contain information such as spatial geometric coordinates, color, reflectivity, etc. It is often used to construct 3D models representing 3D characters and scenes, and is widely used in virtual Reality, augmented reality, telepresence and interactive applications. However, with the continuous improvement of point cloud points and data accuracy, the huge amount of point cloud data has brought unprecedented challenges to both transmission and storage. In order to solve this problem, the International Moving Picture Experts Group (MPEG) has developed a standard for point cloud compression G-PCC (Geometry Point Cloud compres).
+
+    So far, MPEG G-PCC compresses point clouds from two aspects: geometric information and attribute information. G-PCC provides two geometric information encoding methods, namely Octree geometric encoding and Trisoup geometric encoding. Among them, Trisoup encoding uses dynamic OBUF (Dynamic Optimal Binarization with Update On the fly) technology in order to make the final entropy encoding more efficient and the encoded code stream smaller. Dynamic OBUf introduces the concept of context, that is, the combination of some conditional information that can be used to encode the current bit to be encoded to assist in selecting the best entropy encoding probability model, which is the main research content of this paper. This paper measures the information entropy and conditional entropy of the context used by the existing dynamic OBUF, and optimizes the use order of the existing context based on the principle that the smaller the entropy value, the stronger the correlation between the context model and the current information to be encoded. Finally, by comparing the performance of entropy coding before and after modification, the conclusion of whether to replace the existing context model is given.
+
+    After the context is used in the order of increasing conditional entropy, under the condition of geometric loss and attribute loss (C2), compared with the existing context model, all kinds of test sequences show a certain negative gain, and the average value of BD-GeomRate It is 0.9\%, but it shows a large gain in some sequences. For example, the D1 value of stanford\_area\_4\_vox20 is -3.8\%, the value of D2 is -3.6\%, and the value of landscape\_00014\_vox20 The value of D1 is -2.5\%, and the value of D2 is -2.5\%. Based on these experimental results, it can be concluded that simply comparing the entropy values of various contexts cannot select the best context usage order, and further research is needed. At the same time, in view of the fact that some sequences have a large gain, this paper believes that the introduction of an adaptive context sorting algorithm will bring a certain performance gain.
+
+\end{eabstract}
+
+\begin{ekeywords}
+    Point Cloud\quad Geometry Information Compression\quad dynamic OBUF\quad context
+\end{ekeywords}
+
+\ethesistype{Applied Basic Technology}
+
+%% ----------------------------------------------------------------------
+%%% END OF FILE 
+%% ----------------------------------------------------------------------

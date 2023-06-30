@@ -1,0 +1,4842 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 27231
+Number of nodes = 50
+Estimation of sampling = 1.37121
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.12069
+patternClose is 16 2 rate is 0.428571
+patternClose is 16 3 rate is 0.571429
+entropy is 0.118907
+the patternClose is 0 and the count rate is 0.258621
+patternClose is 0 2 rate is 0.466667
+patternClose is 0 3 rate is 0.333333
+patternClose is 0 1 rate is 0.2
+entropy is 0.389437
+the patternClose is 18 and the count rate is 0.0172414
+patternClose is 18 0 rate is 1
+entropy is 0
+the patternClose is 2 and the count rate is 0.0172414
+patternClose is 2 0 rate is 1
+entropy is 0
+the patternClose is 14 and the count rate is 0.0172414
+patternClose is 14 3 rate is 1
+entropy is 0
+the patternClose is 5 and the count rate is 0.0517241
+patternClose is 5 1 rate is 1
+entropy is 0
+the patternClose is 3 and the count rate is 0.0172414
+patternClose is 3 2 rate is 1
+entropy is 0
+the patternClose is 1 and the count rate is 0.0344828
+patternClose is 1 2 rate is 0.5
+patternClose is 1 3 rate is 0.5
+entropy is 0.0344828
+the patternClose is 30 and the count rate is 0.0344828
+patternClose is 30 3 rate is 0.5
+patternClose is 30 1 rate is 0.5
+entropy is 0.0344828
+the patternClose is 23 and the count rate is 0.0172414
+patternClose is 23 1 rate is 1
+entropy is 0
+the patternClose is 15 and the count rate is 0.0517241
+patternClose is 15 0 rate is 1
+entropy is 0
+the patternClose is 31 and the count rate is 0.0517241
+patternClose is 31 2 rate is 0.666667
+patternClose is 31 0 rate is 0.333333
+entropy is 0.0474981
+the patternClose is 4 and the count rate is 0.0517241
+patternClose is 4 2 rate is 0.666667
+patternClose is 4 1 rate is 0.333333
+entropy is 0.0474981
+the patternClose is 26 and the count rate is 0.0344828
+patternClose is 26 3 rate is 1
+entropy is 0
+the patternClose is 17 and the count rate is 0.0172414
+patternClose is 17 3 rate is 1
+entropy is 0
+the patternClose is 7 and the count rate is 0.0344828
+patternClose is 7 0 rate is 1
+entropy is 0
+the patternClose is 24 and the count rate is 0.0344828
+patternClose is 24 1 rate is 0.5
+patternClose is 24 2 rate is 0.5
+entropy is 0.0344828
+the patternClose is 21 and the count rate is 0.0172414
+patternClose is 21 3 rate is 1
+entropy is 0
+the patternClose is 12 and the count rate is 0.0172414
+patternClose is 12 1 rate is 1
+entropy is 0
+the patternClose is 25 and the count rate is 0.0172414
+patternClose is 25 1 rate is 1
+entropy is 0
+the patternClose is 29 and the count rate is 0.0344828
+patternClose is 29 3 rate is 0.5
+patternClose is 29 2 rate is 0.5
+entropy is 0.0344828
+the patternClose is 13 and the count rate is 0.0344828
+patternClose is 13 2 rate is 0.5
+patternClose is 13 1 rate is 0.5
+entropy is 0.0344828
+the patternClose is 6 and the count rate is 0.0172414
+patternClose is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 30029 points 
+positions bitstream size 76 B (0.0223275 bpp)
+positions processing time (user): 0.046 s
+colors bitstream size 608 B (0.17862 bpp)
+colors processing time (user): 0.031 s
+Number of points = 622549
+Number of nodes = 956
+Estimation of sampling = 1.25398
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClose
+the patternClose is 8 and the count rate is 0.0807249
+patternClose is 8 2 rate is 0.295918
+patternClose is 8 1 rate is 0.27551
+patternClose is 8 0 rate is 0.112245
+patternClose is 8 3 rate is 0.316327
+entropy is 0.15432
+the patternClose is 0 and the count rate is 0.38056
+patternClose is 0 3 rate is 0.376623
+patternClose is 0 2 rate is 0.316017
+patternClose is 0 1 rate is 0.222944
+patternClose is 0 0 rate is 0.0844156
+entropy is 0.700067
+the patternClose is 20 and the count rate is 0.00988468
+patternClose is 20 1 rate is 0.0833333
+patternClose is 20 3 rate is 0.833333
+patternClose is 20 2 rate is 0.0833333
+entropy is 0.00807271
+the patternClose is 4 and the count rate is 0.0395387
+patternClose is 4 2 rate is 0.145833
+patternClose is 4 1 rate is 0.354167
+patternClose is 4 0 rate is 0.416667
+patternClose is 4 3 rate is 0.0833333
+entropy is 0.0696057
+the patternClose is 12 and the count rate is 0.0255354
+patternClose is 12 3 rate is 0.225806
+patternClose is 12 1 rate is 0.322581
+patternClose is 12 0 rate is 0.354839
+patternClose is 12 2 rate is 0.0967742
+entropy is 0.0476941
+the patternClose is 6 and the count rate is 0.0329489
+patternClose is 6 0 rate is 0.475
+patternClose is 6 1 rate is 0.325
+patternClose is 6 2 rate is 0.125
+patternClose is 6 3 rate is 0.075
+entropy is 0.055763
+the patternClose is 19 and the count rate is 0.00658979
+patternClose is 19 0 rate is 0.5
+patternClose is 19 1 rate is 0.125
+patternClose is 19 2 rate is 0.25
+patternClose is 19 3 rate is 0.125
+entropy is 0.0115321
+the patternClose is 2 and the count rate is 0.092257
+patternClose is 2 2 rate is 0.276786
+patternClose is 2 3 rate is 0.0714286
+patternClose is 2 0 rate is 0.3125
+patternClose is 2 1 rate is 0.339286
+entropy is 0.169603
+the patternClose is 7 and the count rate is 0.0370675
+patternClose is 7 0 rate is 0.844444
+patternClose is 7 1 rate is 0.0888889
+patternClose is 7 2 rate is 0.0666667
+entropy is 0.0287951
+the patternClose is 24 and the count rate is 0.0543657
+patternClose is 24 1 rate is 0.121212
+patternClose is 24 3 rate is 0.727273
+patternClose is 24 0 rate is 0.106061
+patternClose is 24 2 rate is 0.0454545
+entropy is 0.0679122
+the patternClose is 9 and the count rate is 0.00494234
+patternClose is 9 3 rate is 0.5
+patternClose is 9 0 rate is 0.333333
+patternClose is 9 2 rate is 0.166667
+entropy is 0.0072116
+the patternClose is 22 and the count rate is 0.00576606
+patternClose is 22 2 rate is 0.428571
+patternClose is 22 1 rate is 0.285714
+patternClose is 22 0 rate is 0.142857
+patternClose is 22 3 rate is 0.142857
+entropy is 0.0106232
+the patternClose is 16 and the count rate is 0.0527183
+patternClose is 16 3 rate is 0.78125
+patternClose is 16 2 rate is 0.1875
+patternClose is 16 1 rate is 0.03125
+entropy is 0.0467773
+the patternClose is 15 and the count rate is 0.0280066
+patternClose is 15 0 rate is 0.852941
+patternClose is 15 1 rate is 0.117647
+patternClose is 15 2 rate is 0.0294118
+entropy is 0.0198454
+the patternClose is 31 and the count rate is 0.0337727
+patternClose is 31 0 rate is 0.658537
+patternClose is 31 2 rate is 0.097561
+patternClose is 31 1 rate is 0.243902
+entropy is 0.0412343
+the patternClose is 5 and the count rate is 0.00741351
+patternClose is 5 0 rate is 0.888889
+patternClose is 5 3 rate is 0.111111
+entropy is 0.00373091
+the patternClose is 30 and the count rate is 0.00906096
+patternClose is 30 1 rate is 0.0909091
+patternClose is 30 0 rate is 0.818182
+patternClose is 30 3 rate is 0.0909091
+entropy is 0.00784549
+the patternClose is 21 and the count rate is 0.000823723
+patternClose is 21 3 rate is 1
+entropy is 0
+the patternClose is 3 and the count rate is 0.00658979
+patternClose is 3 0 rate is 0.875
+patternClose is 3 1 rate is 0.125
+entropy is 0.00358197
+the patternClose is 11 and the count rate is 0.00823723
+patternClose is 11 0 rate is 0.6
+patternClose is 11 1 rate is 0.3
+patternClose is 11 2 rate is 0.1
+entropy is 0.010671
+the patternClose is 27 and the count rate is 0.00658979
+patternClose is 27 0 rate is 0.875
+patternClose is 27 1 rate is 0.125
+entropy is 0.00358197
+the patternClose is 28 and the count rate is 0.00906096
+patternClose is 28 0 rate is 0.272727
+patternClose is 28 3 rate is 0.363636
+patternClose is 28 2 rate is 0.272727
+patternClose is 28 1 rate is 0.0909091
+entropy is 0.0169225
+the patternClose is 23 and the count rate is 0.0115321
+patternClose is 23 1 rate is 0.357143
+patternClose is 23 0 rate is 0.571429
+patternClose is 23 2 rate is 0.0714286
+entropy is 0.0145744
+the patternClose is 26 and the count rate is 0.00411862
+patternClose is 26 3 rate is 1
+entropy is 0
+the patternClose is 18 and the count rate is 0.0247117
+patternClose is 18 3 rate is 0.333333
+patternClose is 18 2 rate is 0.266667
+patternClose is 18 1 rate is 0.3
+patternClose is 18 0 rate is 0.1
+entropy is 0.0467078
+the patternClose is 13 and the count rate is 0.00658979
+patternClose is 13 0 rate is 0.75
+patternClose is 13 1 rate is 0.25
+entropy is 0.00534615
+the patternClose is 29 and the count rate is 0.00411862
+patternClose is 29 0 rate is 0.6
+patternClose is 29 2 rate is 0.4
+entropy is 0.00399897
+the patternClose is 1 and the count rate is 0.00164745
+patternClose is 1 0 rate is 1
+entropy is 0
+the patternClose is 10 and the count rate is 0.00329489
+patternClose is 10 0 rate is 0.25
+patternClose is 10 2 rate is 0.75
+entropy is 0.00267307
+the patternClose is 14 and the count rate is 0.00741351
+patternClose is 14 0 rate is 0.777778
+patternClose is 14 1 rate is 0.111111
+patternClose is 14 2 rate is 0.111111
+entropy is 0.00731288
+the patternClose is 25 and the count rate is 0.00329489
+patternClose is 25 0 rate is 1
+entropy is 0
+the patternClose is 17 and the count rate is 0.000823723
+patternClose is 17 3 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 746095 points 
+positions bitstream size 719 B (0.00923943 bpp)
+positions processing time (user): 0.312 s
+colors bitstream size 7497 B (0.0963394 bpp)
+colors processing time (user): 0.515 s
+Number of points = 772680
+Number of nodes = 1146
+Estimation of sampling = 1.23237
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0437544
+patternClose is 24 3 rate is 0.758065
+patternClose is 24 1 rate is 0.0806452
+patternClose is 24 0 rate is 0.0645161
+patternClose is 24 2 rate is 0.0967742
+entropy is 0.0514997
+the patternClose is 16 and the count rate is 0.0508116
+patternClose is 16 3 rate is 0.569444
+patternClose is 16 2 rate is 0.208333
+patternClose is 16 1 rate is 0.166667
+patternClose is 16 0 rate is 0.0555556
+entropy is 0.0811235
+the patternClose is 0 and the count rate is 0.402964
+patternClose is 0 3 rate is 0.32049
+patternClose is 0 2 rate is 0.295972
+patternClose is 0 0 rate is 0.141856
+patternClose is 0 1 rate is 0.241681
+entropy is 0.782088
+the patternClose is 11 and the count rate is 0.00776288
+patternClose is 11 0 rate is 0.454545
+patternClose is 11 1 rate is 0.454545
+patternClose is 11 2 rate is 0.0909091
+entropy is 0.0104689
+the patternClose is 3 and the count rate is 0.01482
+patternClose is 3 0 rate is 0.714286
+patternClose is 3 1 rate is 0.142857
+patternClose is 3 2 rate is 0.0952381
+patternClose is 3 3 rate is 0.047619
+entropy is 0.01897
+the patternClose is 30 and the count rate is 0.0112915
+patternClose is 30 0 rate is 0.625
+patternClose is 30 1 rate is 0.1875
+patternClose is 30 3 rate is 0.0625
+patternClose is 30 2 rate is 0.125
+entropy is 0.0169554
+the patternClose is 31 and the count rate is 0.0366972
+patternClose is 31 0 rate is 0.692308
+patternClose is 31 2 rate is 0.0576923
+patternClose is 31 1 rate is 0.25
+entropy is 0.0405398
+the patternClose is 1 and the count rate is 0.00564573
+patternClose is 1 3 rate is 0.5
+patternClose is 1 2 rate is 0.25
+patternClose is 1 1 rate is 0.25
+entropy is 0.0084686
+the patternClose is 6 and the count rate is 0.0254058
+patternClose is 6 2 rate is 0.166667
+patternClose is 6 0 rate is 0.527778
+patternClose is 6 3 rate is 0.0833333
+patternClose is 6 1 rate is 0.222222
+entropy is 0.0431489
+the patternClose is 5 and the count rate is 0.00564573
+patternClose is 5 2 rate is 0.125
+patternClose is 5 0 rate is 0.75
+patternClose is 5 3 rate is 0.125
+entropy is 0.00599169
+the patternClose is 2 and the count rate is 0.052223
+patternClose is 2 1 rate is 0.337838
+patternClose is 2 0 rate is 0.283784
+patternClose is 2 3 rate is 0.0810811
+patternClose is 2 2 rate is 0.297297
+entropy is 0.0970693
+the patternClose is 8 and the count rate is 0.0748059
+patternClose is 8 1 rate is 0.198113
+patternClose is 8 0 rate is 0.160377
+patternClose is 8 2 rate is 0.301887
+patternClose is 8 3 rate is 0.339623
+entropy is 0.144895
+the patternClose is 20 and the count rate is 0.0211715
+patternClose is 20 1 rate is 0.133333
+patternClose is 20 3 rate is 0.433333
+patternClose is 20 2 rate is 0.333333
+patternClose is 20 0 rate is 0.1
+entropy is 0.0374925
+the patternClose is 12 and the count rate is 0.0218772
+patternClose is 12 1 rate is 0.225806
+patternClose is 12 2 rate is 0.16129
+patternClose is 12 0 rate is 0.419355
+patternClose is 12 3 rate is 0.193548
+entropy is 0.041428
+the patternClose is 4 and the count rate is 0.0628088
+patternClose is 4 1 rate is 0.314607
+patternClose is 4 3 rate is 0.0786517
+patternClose is 4 2 rate is 0.202247
+patternClose is 4 0 rate is 0.404494
+entropy is 0.113555
+the patternClose is 22 and the count rate is 0.0119972
+patternClose is 22 3 rate is 0.235294
+patternClose is 22 1 rate is 0.235294
+patternClose is 22 2 rate is 0.294118
+patternClose is 22 0 rate is 0.235294
+entropy is 0.0239077
+the patternClose is 7 and the count rate is 0.0345801
+patternClose is 7 1 rate is 0.142857
+patternClose is 7 0 rate is 0.734694
+patternClose is 7 2 rate is 0.102041
+patternClose is 7 3 rate is 0.0204082
+entropy is 0.0407497
+the patternClose is 14 and the count rate is 0.00917431
+patternClose is 14 0 rate is 0.846154
+patternClose is 14 1 rate is 0.0769231
+patternClose is 14 2 rate is 0.0769231
+entropy is 0.00709384
+the patternClose is 27 and the count rate is 0.00988003
+patternClose is 27 0 rate is 0.5
+patternClose is 27 2 rate is 0.285714
+patternClose is 27 1 rate is 0.142857
+patternClose is 27 3 rate is 0.0714286
+entropy is 0.0166912
+the patternClose is 21 and the count rate is 0.00141143
+patternClose is 21 1 rate is 1
+entropy is 0
+the patternClose is 17 and the count rate is 0.00282287
+patternClose is 17 3 rate is 1
+entropy is 0
+the patternClose is 9 and the count rate is 0.00635145
+patternClose is 9 1 rate is 0.333333
+patternClose is 9 0 rate is 0.444444
+patternClose is 9 2 rate is 0.222222
+entropy is 0.00972085
+the patternClose is 28 and the count rate is 0.0141143
+patternClose is 28 3 rate is 0.4
+patternClose is 28 1 rate is 0.15
+patternClose is 28 0 rate is 0.25
+patternClose is 28 2 rate is 0.2
+entropy is 0.0268695
+the patternClose is 23 and the count rate is 0.00635145
+patternClose is 23 0 rate is 0.777778
+patternClose is 23 1 rate is 0.222222
+entropy is 0.0048538
+the patternClose is 13 and the count rate is 0.0042343
+patternClose is 13 3 rate is 0.166667
+patternClose is 13 0 rate is 0.5
+patternClose is 13 1 rate is 0.333333
+entropy is 0.00617847
+the patternClose is 15 and the count rate is 0.0211715
+patternClose is 15 0 rate is 0.6
+patternClose is 15 2 rate is 0.2
+patternClose is 15 1 rate is 0.2
+entropy is 0.0290251
+the patternClose is 18 and the count rate is 0.0176429
+patternClose is 18 1 rate is 0.24
+patternClose is 18 3 rate is 0.4
+patternClose is 18 2 rate is 0.24
+patternClose is 18 0 rate is 0.12
+entropy is 0.0332411
+the patternClose is 10 and the count rate is 0.00352858
+patternClose is 10 2 rate is 0.2
+patternClose is 10 0 rate is 0.6
+patternClose is 10 1 rate is 0.2
+entropy is 0.00483751
+the patternClose is 29 and the count rate is 0.0105857
+patternClose is 29 0 rate is 0.466667
+patternClose is 29 3 rate is 0.333333
+patternClose is 29 1 rate is 0.2
+entropy is 0.0159403
+the patternClose is 19 and the count rate is 0.00282287
+patternClose is 19 1 rate is 0.5
+patternClose is 19 0 rate is 0.25
+patternClose is 19 3 rate is 0.25
+entropy is 0.0042343
+the patternClose is 26 and the count rate is 0.00282287
+patternClose is 26 3 rate is 0.75
+patternClose is 26 0 rate is 0.25
+entropy is 0.00229013
+the patternClose is 25 and the count rate is 0.00282287
+patternClose is 25 1 rate is 0.5
+patternClose is 25 2 rate is 0.5
+entropy is 0.00282287
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 960842 points 
+positions bitstream size 861 B (0.00891443 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 2964 B (0.030688 bpp)
+colors processing time (user): 0.687 s
+Number of points = 844652
+Number of nodes = 1269
+Estimation of sampling = 1.24034
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClose
+the patternClose is 8 and the count rate is 0.102861
+patternClose is 8 3 rate is 0.201183
+patternClose is 8 2 rate is 0.260355
+patternClose is 8 0 rate is 0.254438
+patternClose is 8 1 rate is 0.284024
+entropy is 0.204597
+the patternClose is 0 and the count rate is 0.377967
+patternClose is 0 3 rate is 0.304348
+patternClose is 0 1 rate is 0.273752
+patternClose is 0 2 rate is 0.294686
+patternClose is 0 0 rate is 0.127214
+entropy is 0.73018
+the patternClose is 12 and the count rate is 0.0182593
+patternClose is 12 2 rate is 0.233333
+patternClose is 12 0 rate is 0.366667
+patternClose is 12 1 rate is 0.333333
+patternClose is 12 3 rate is 0.0666667
+entropy is 0.0330385
+the patternClose is 4 and the count rate is 0.0602556
+patternClose is 4 3 rate is 0.151515
+patternClose is 4 1 rate is 0.292929
+patternClose is 4 0 rate is 0.343434
+patternClose is 4 2 rate is 0.212121
+entropy is 0.116621
+the patternClose is 1 and the count rate is 0.0042605
+patternClose is 1 0 rate is 0.571429
+patternClose is 1 2 rate is 0.285714
+patternClose is 1 3 rate is 0.142857
+entropy is 0.00587431
+the patternClose is 26 and the count rate is 0.00608643
+patternClose is 26 0 rate is 0.5
+patternClose is 26 2 rate is 0.3
+patternClose is 26 3 rate is 0.1
+patternClose is 26 1 rate is 0.1
+entropy is 0.0102585
+the patternClose is 10 and the count rate is 0.00365186
+patternClose is 10 0 rate is 0.666667
+patternClose is 10 2 rate is 0.333333
+entropy is 0.00335348
+the patternClose is 22 and the count rate is 0.00791236
+patternClose is 22 3 rate is 0.538462
+patternClose is 22 2 rate is 0.153846
+patternClose is 22 0 rate is 0.307692
+entropy is 0.011232
+the patternClose is 24 and the count rate is 0.0651248
+patternClose is 24 2 rate is 0.168224
+patternClose is 24 3 rate is 0.663551
+patternClose is 24 1 rate is 0.0747664
+patternClose is 24 0 rate is 0.0934579
+entropy is 0.0927736
+the patternClose is 23 and the count rate is 0.00973828
+patternClose is 23 1 rate is 0.375
+patternClose is 23 0 rate is 0.5625
+patternClose is 23 3 rate is 0.0625
+entropy is 0.0121491
+the patternClose is 15 and the count rate is 0.0237371
+patternClose is 15 1 rate is 0.205128
+patternClose is 15 0 rate is 0.74359
+patternClose is 15 2 rate is 0.0512821
+entropy is 0.0238888
+the patternClose is 14 and the count rate is 0.00486914
+patternClose is 14 0 rate is 0.875
+patternClose is 14 1 rate is 0.125
+entropy is 0.00264669
+the patternClose is 27 and the count rate is 0.00791236
+patternClose is 27 0 rate is 0.538462
+patternClose is 27 1 rate is 0.230769
+patternClose is 27 2 rate is 0.230769
+entropy is 0.0115304
+the patternClose is 7 and the count rate is 0.0328667
+patternClose is 7 0 rate is 0.851852
+patternClose is 7 2 rate is 0.0555556
+patternClose is 7 1 rate is 0.0555556
+patternClose is 7 3 rate is 0.037037
+entropy is 0.0274926
+the patternClose is 31 and the count rate is 0.0334753
+patternClose is 31 0 rate is 0.763636
+patternClose is 31 1 rate is 0.181818
+patternClose is 31 2 rate is 0.0545455
+entropy is 0.0325766
+the patternClose is 28 and the count rate is 0.0146074
+patternClose is 28 3 rate is 0.375
+patternClose is 28 0 rate is 0.416667
+patternClose is 28 2 rate is 0.166667
+patternClose is 28 1 rate is 0.0416667
+entropy is 0.0245225
+the patternClose is 2 and the count rate is 0.0505173
+patternClose is 2 1 rate is 0.26506
+patternClose is 2 0 rate is 0.481928
+patternClose is 2 2 rate is 0.13253
+patternClose is 2 3 rate is 0.120482
+entropy is 0.0893917
+the patternClose is 9 and the count rate is 0.00608643
+patternClose is 9 1 rate is 0.3
+patternClose is 9 0 rate is 0.7
+entropy is 0.00536391
+the patternClose is 20 and the count rate is 0.0115642
+patternClose is 20 3 rate is 0.473684
+patternClose is 20 1 rate is 0.105263
+patternClose is 20 2 rate is 0.368421
+patternClose is 20 0 rate is 0.0526316
+entropy is 0.0185817
+the patternClose is 6 and the count rate is 0.0279976
+patternClose is 6 0 rate is 0.695652
+patternClose is 6 1 rate is 0.0652174
+patternClose is 6 3 rate is 0.0869565
+patternClose is 6 2 rate is 0.152174
+entropy is 0.0375395
+the patternClose is 16 and the count rate is 0.0632988
+patternClose is 16 2 rate is 0.288462
+patternClose is 16 1 rate is 0.144231
+patternClose is 16 3 rate is 0.509615
+patternClose is 16 0 rate is 0.0576923
+entropy is 0.104654
+the patternClose is 11 and the count rate is 0.00486914
+patternClose is 11 0 rate is 0.75
+patternClose is 11 1 rate is 0.25
+entropy is 0.00395023
+the patternClose is 30 and the count rate is 0.00791236
+patternClose is 30 0 rate is 0.615385
+patternClose is 30 2 rate is 0.0769231
+patternClose is 30 1 rate is 0.153846
+patternClose is 30 3 rate is 0.153846
+entropy is 0.0122372
+the patternClose is 18 and the count rate is 0.0139988
+patternClose is 18 0 rate is 0.130435
+patternClose is 18 2 rate is 0.304348
+patternClose is 18 3 rate is 0.521739
+patternClose is 18 1 rate is 0.0434783
+entropy is 0.0222861
+the patternClose is 21 and the count rate is 0.00243457
+patternClose is 21 3 rate is 0.75
+patternClose is 21 0 rate is 0.25
+entropy is 0.00197511
+the patternClose is 5 and the count rate is 0.0042605
+patternClose is 5 1 rate is 0.428571
+patternClose is 5 0 rate is 0.428571
+patternClose is 5 2 rate is 0.142857
+entropy is 0.00617268
+the patternClose is 13 and the count rate is 0.0115642
+patternClose is 13 1 rate is 0.157895
+patternClose is 13 0 rate is 0.684211
+patternClose is 13 2 rate is 0.105263
+patternClose is 13 3 rate is 0.0526316
+entropy is 0.0157334
+the patternClose is 17 and the count rate is 0.00182593
+patternClose is 17 0 rate is 0.333333
+patternClose is 17 3 rate is 0.666667
+entropy is 0.00167674
+the patternClose is 25 and the count rate is 0.0042605
+patternClose is 25 2 rate is 0.142857
+patternClose is 25 0 rate is 0.714286
+patternClose is 25 1 rate is 0.142857
+entropy is 0.00489461
+the patternClose is 3 and the count rate is 0.00669507
+patternClose is 3 0 rate is 0.818182
+patternClose is 3 1 rate is 0.0909091
+patternClose is 3 2 rate is 0.0909091
+entropy is 0.00579697
+the patternClose is 29 and the count rate is 0.00669507
+patternClose is 29 1 rate is 0.272727
+patternClose is 29 2 rate is 0.272727
+patternClose is 29 0 rate is 0.363636
+patternClose is 29 3 rate is 0.0909091
+entropy is 0.0125039
+the patternClose is 19 and the count rate is 0.00243457
+patternClose is 19 1 rate is 0.5
+patternClose is 19 2 rate is 0.5
+entropy is 0.00243457
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1007384 points 
+positions bitstream size 1007 B (0.00953766 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 5837 B (0.0552843 bpp)
+colors processing time (user): 0.796 s
+Number of points = 396610
+Number of nodes = 556
+Estimation of sampling = 1.19813
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0474968
+patternClose is 24 1 rate is 0.0810811
+patternClose is 24 3 rate is 0.756757
+patternClose is 24 0 rate is 0.108108
+patternClose is 24 2 rate is 0.0540541
+entropy is 0.0556983
+the patternClose is 8 and the count rate is 0.0898588
+patternClose is 8 0 rate is 0.157143
+patternClose is 8 3 rate is 0.357143
+patternClose is 8 2 rate is 0.271429
+patternClose is 8 1 rate is 0.214286
+entropy is 0.174051
+the patternClose is 16 and the count rate is 0.0564827
+patternClose is 16 0 rate is 0.159091
+patternClose is 16 3 rate is 0.568182
+patternClose is 16 2 rate is 0.136364
+patternClose is 16 1 rate is 0.136364
+entropy is 0.0942844
+the patternClose is 0 and the count rate is 0.424904
+patternClose is 0 1 rate is 0.265861
+patternClose is 0 2 rate is 0.293051
+patternClose is 0 3 rate is 0.338369
+patternClose is 0 0 rate is 0.102719
+entropy is 0.804465
+the patternClose is 1 and the count rate is 0.00513479
+patternClose is 1 1 rate is 0.25
+patternClose is 1 0 rate is 0.75
+entropy is 0.00416574
+the patternClose is 2 and the count rate is 0.0449294
+patternClose is 2 1 rate is 0.285714
+patternClose is 2 0 rate is 0.371429
+patternClose is 2 3 rate is 0.171429
+patternClose is 2 2 rate is 0.171429
+entropy is 0.0862392
+the patternClose is 26 and the count rate is 0.00513479
+patternClose is 26 0 rate is 1
+entropy is 0
+the patternClose is 4 and the count rate is 0.0397946
+patternClose is 4 3 rate is 0.129032
+patternClose is 4 1 rate is 0.354839
+patternClose is 4 0 rate is 0.451613
+patternClose is 4 2 rate is 0.0645161
+entropy is 0.067039
+the patternClose is 18 and the count rate is 0.0218228
+patternClose is 18 0 rate is 0.235294
+patternClose is 18 2 rate is 0.235294
+patternClose is 18 1 rate is 0.176471
+patternClose is 18 3 rate is 0.352941
+entropy is 0.0426472
+the patternClose is 12 and the count rate is 0.0218228
+patternClose is 12 2 rate is 0.294118
+patternClose is 12 1 rate is 0.294118
+patternClose is 12 0 rate is 0.235294
+patternClose is 12 3 rate is 0.176471
+entropy is 0.0430202
+the patternClose is 7 and the count rate is 0.0346598
+patternClose is 7 0 rate is 0.740741
+patternClose is 7 1 rate is 0.185185
+patternClose is 7 2 rate is 0.0740741
+entropy is 0.036372
+the patternClose is 31 and the count rate is 0.0231065
+patternClose is 31 0 rate is 0.666667
+patternClose is 31 2 rate is 0.111111
+patternClose is 31 3 rate is 0.0555556
+patternClose is 31 1 rate is 0.166667
+entropy is 0.0324573
+the patternClose is 6 and the count rate is 0.0308087
+patternClose is 6 0 rate is 0.458333
+patternClose is 6 1 rate is 0.416667
+patternClose is 6 2 rate is 0.125
+entropy is 0.0436601
+the patternClose is 13 and the count rate is 0.012837
+patternClose is 13 0 rate is 1
+entropy is 0
+the patternClose is 15 and the count rate is 0.0154044
+patternClose is 15 0 rate is 0.5
+patternClose is 15 1 rate is 0.5
+entropy is 0.0154044
+the patternClose is 25 and the count rate is 0.00513479
+patternClose is 25 0 rate is 0.5
+patternClose is 25 2 rate is 0.25
+patternClose is 25 1 rate is 0.25
+entropy is 0.00770218
+the patternClose is 14 and the count rate is 0.0115533
+patternClose is 14 0 rate is 0.777778
+patternClose is 14 2 rate is 0.111111
+patternClose is 14 1 rate is 0.111111
+entropy is 0.0113965
+the patternClose is 27 and the count rate is 0.00770218
+patternClose is 27 0 rate is 0.666667
+patternClose is 27 1 rate is 0.333333
+entropy is 0.00707288
+the patternClose is 20 and the count rate is 0.0115533
+patternClose is 20 3 rate is 0.555556
+patternClose is 20 1 rate is 0.222222
+patternClose is 20 2 rate is 0.222222
+entropy is 0.016585
+the patternClose is 3 and the count rate is 0.0102696
+patternClose is 3 0 rate is 0.875
+patternClose is 3 3 rate is 0.125
+entropy is 0.00558218
+the patternClose is 11 and the count rate is 0.00513479
+patternClose is 11 0 rate is 0.75
+patternClose is 11 1 rate is 0.25
+entropy is 0.00416574
+the patternClose is 30 and the count rate is 0.0115533
+patternClose is 30 1 rate is 0.111111
+patternClose is 30 2 rate is 0.222222
+patternClose is 30 0 rate is 0.666667
+entropy is 0.0141458
+the patternClose is 29 and the count rate is 0.00513479
+patternClose is 29 2 rate is 0.25
+patternClose is 29 0 rate is 0.5
+patternClose is 29 1 rate is 0.25
+entropy is 0.00770218
+the patternClose is 23 and the count rate is 0.00513479
+patternClose is 23 2 rate is 0.25
+patternClose is 23 0 rate is 0.5
+patternClose is 23 3 rate is 0.25
+entropy is 0.00770218
+the patternClose is 28 and the count rate is 0.0166881
+patternClose is 28 3 rate is 0.307692
+patternClose is 28 0 rate is 0.230769
+patternClose is 28 2 rate is 0.384615
+patternClose is 28 1 rate is 0.0769231
+entropy is 0.0304765
+the patternClose is 17 and the count rate is 0.00385109
+patternClose is 17 3 rate is 0.333333
+patternClose is 17 2 rate is 0.333333
+patternClose is 17 1 rate is 0.333333
+entropy is 0.00610384
+the patternClose is 10 and the count rate is 0.00641849
+patternClose is 10 0 rate is 0.6
+patternClose is 10 2 rate is 0.2
+patternClose is 10 1 rate is 0.2
+entropy is 0.00879943
+the patternClose is 21 and the count rate is 0.00256739
+patternClose is 21 3 rate is 0.5
+patternClose is 21 0 rate is 0.5
+entropy is 0.00256739
+the patternClose is 5 and the count rate is 0.0102696
+patternClose is 5 1 rate is 0.25
+patternClose is 5 0 rate is 0.75
+entropy is 0.00833148
+the patternClose is 9 and the count rate is 0.00385109
+patternClose is 9 1 rate is 0.333333
+patternClose is 9 3 rate is 0.666667
+entropy is 0.00353644
+the patternClose is 22 and the count rate is 0.00513479
+patternClose is 22 3 rate is 0.25
+patternClose is 22 0 rate is 0.5
+patternClose is 22 2 rate is 0.25
+entropy is 0.00770218
+the patternClose is 19 and the count rate is 0.00385109
+patternClose is 19 0 rate is 0.666667
+patternClose is 19 3 rate is 0.333333
+entropy is 0.00353644
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 486549 points 
+positions bitstream size 534 B (0.0107713 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 4013 B (0.080946 bpp)
+colors processing time (user): 0.375 s
+Total frame size 24212 B
+Total bitstream size 24212 B
+Processing time (wall): 25.827 s
+Processing time (user): 16.093 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 76 B
+positions processing time (user): 0.015 s
+
+colors bitstream size 608 B
+colors processing time (user): 0.015 s
+
+positions bitstream size 719 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 7497 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 861 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 2964 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 1007 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 5837 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 534 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 4013 B
+colors processing time (user): 0.343 s
+
+Total bitstream size 24212 B
+Processing time (wall): 4.821 s
+Processing time (user): 3.562 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply
+infile2:        F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\loot_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1424 2776 660
+WARNING: 4365 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3017285, 3226534, 1.06935
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 19.0014
+   mse1,PSNR (p2point): 64.2284
+   mse1      (p2plane): 9.78581
+   mse1,PSNR (p2plane): 67.1103
+   c[0],    1         : 0.000191775
+   c[1],    1         : 1.14977e-05
+   c[2],    1         : 1.21794e-05
+   c[0],PSNR1         : 37.1721
+   c[1],PSNR1         : 49.3939
+   c[2],PSNR1         : 49.1437
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 20.1641
+   mse2,PSNR (p2point): 63.9705
+   mse2      (p2plane): 18.2806
+   mse2,PSNR (p2plane): 64.3964
+   c[0],    2         : 0.000155596
+   c[1],    2         : 1.11686e-05
+   c[2],    2         : 1.08009e-05
+   c[0],PSNR2         : 38.08
+   c[1],PSNR2         : 49.52
+   c[2],PSNR2         : 49.6654
+3. Final (symmetric).
+   mseF      (p2point): 20.1641
+   mseF,PSNR (p2point): 63.9705
+   mseF      (p2plane): 18.2806
+   mseF,PSNR (p2plane): 64.3964
+   c[0],    F         : 0.000191775
+   c[1],    F         : 1.14977e-05
+   c[2],    F         : 1.21794e-05
+   c[0],PSNRF         : 37.1721
+   c[1],PSNRF         : 49.3939
+   c[2],PSNRF         : 49.1437
+Job done! 19.625 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 35127
+Number of nodes = 210
+Estimation of sampling = 1.23711
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.11583
+patternClose is 16 3 rate is 0.3
+patternClose is 16 2 rate is 0.4
+patternClose is 16 1 rate is 0.2
+patternClose is 16 0 rate is 0.1
+entropy is 0.213873
+the patternClose is 8 and the count rate is 0.019305
+patternClose is 8 3 rate is 0.6
+patternClose is 8 0 rate is 0.4
+entropy is 0.0187442
+the patternClose is 0 and the count rate is 0.416988
+patternClose is 0 3 rate is 0.277778
+patternClose is 0 1 rate is 0.287037
+patternClose is 0 2 rate is 0.324074
+patternClose is 0 0 rate is 0.111111
+entropy is 0.796126
+the patternClose is 5 and the count rate is 0.027027
+patternClose is 5 1 rate is 0.428571
+patternClose is 5 0 rate is 0.285714
+patternClose is 5 2 rate is 0.142857
+patternClose is 5 3 rate is 0.142857
+entropy is 0.0497938
+the patternClose is 6 and the count rate is 0.015444
+patternClose is 6 1 rate is 0.25
+patternClose is 6 0 rate is 0.5
+patternClose is 6 2 rate is 0.25
+entropy is 0.023166
+the patternClose is 14 and the count rate is 0.011583
+patternClose is 14 1 rate is 0.333333
+patternClose is 14 0 rate is 0.666667
+entropy is 0.0106366
+the patternClose is 27 and the count rate is 0.015444
+patternClose is 27 1 rate is 0.25
+patternClose is 27 0 rate is 0.5
+patternClose is 27 3 rate is 0.25
+entropy is 0.023166
+the patternClose is 4 and the count rate is 0.0617761
+patternClose is 4 2 rate is 0.3125
+patternClose is 4 3 rate is 0.0625
+patternClose is 4 1 rate is 0.5625
+patternClose is 4 0 rate is 0.0625
+entropy is 0.0921275
+the patternClose is 2 and the count rate is 0.034749
+patternClose is 2 2 rate is 0.333333
+patternClose is 2 3 rate is 0.222222
+patternClose is 2 1 rate is 0.333333
+patternClose is 2 0 rate is 0.111111
+entropy is 0.0657125
+the patternClose is 1 and the count rate is 0.015444
+patternClose is 1 2 rate is 1
+entropy is 0
+the patternClose is 10 and the count rate is 0.015444
+patternClose is 10 2 rate is 0.75
+patternClose is 10 1 rate is 0.25
+entropy is 0.0125294
+the patternClose is 24 and the count rate is 0.03861
+patternClose is 24 3 rate is 0.4
+patternClose is 24 0 rate is 0.2
+patternClose is 24 1 rate is 0.3
+patternClose is 24 2 rate is 0.1
+entropy is 0.0712911
+the patternClose is 7 and the count rate is 0.019305
+patternClose is 7 0 rate is 1
+entropy is 0
+the patternClose is 15 and the count rate is 0.019305
+patternClose is 15 1 rate is 0.4
+patternClose is 15 0 rate is 0.6
+entropy is 0.0187442
+the patternClose is 31 and the count rate is 0.019305
+patternClose is 31 0 rate is 0.4
+patternClose is 31 1 rate is 0.4
+patternClose is 31 2 rate is 0.2
+entropy is 0.0293809
+the patternClose is 22 and the count rate is 0.019305
+patternClose is 22 1 rate is 0.4
+patternClose is 22 2 rate is 0.6
+entropy is 0.0187442
+the patternClose is 13 and the count rate is 0.00772201
+patternClose is 13 0 rate is 1
+entropy is 0
+the patternClose is 17 and the count rate is 0.019305
+patternClose is 17 3 rate is 0.8
+patternClose is 17 2 rate is 0.2
+entropy is 0.0139368
+the patternClose is 18 and the count rate is 0.011583
+patternClose is 18 2 rate is 0.666667
+patternClose is 18 3 rate is 0.333333
+entropy is 0.0106366
+the patternClose is 19 and the count rate is 0.00772201
+patternClose is 19 0 rate is 1
+entropy is 0
+the patternClose is 11 and the count rate is 0.00772201
+patternClose is 11 1 rate is 0.5
+patternClose is 11 0 rate is 0.5
+entropy is 0.00772201
+the patternClose is 30 and the count rate is 0.015444
+patternClose is 30 0 rate is 0.5
+patternClose is 30 2 rate is 0.25
+patternClose is 30 3 rate is 0.25
+entropy is 0.023166
+the patternClose is 9 and the count rate is 0.00772201
+patternClose is 9 0 rate is 0.5
+patternClose is 9 1 rate is 0.5
+entropy is 0.00772201
+the patternClose is 28 and the count rate is 0.011583
+patternClose is 28 0 rate is 0.333333
+patternClose is 28 1 rate is 0.333333
+patternClose is 28 3 rate is 0.333333
+entropy is 0.0183586
+the patternClose is 21 and the count rate is 0.011583
+patternClose is 21 0 rate is 0.333333
+patternClose is 21 2 rate is 0.333333
+patternClose is 21 1 rate is 0.333333
+entropy is 0.0183586
+the patternClose is 20 and the count rate is 0.003861
+patternClose is 20 2 rate is 1
+entropy is 0
+the patternClose is 23 and the count rate is 0.00772201
+patternClose is 23 0 rate is 0.5
+patternClose is 23 1 rate is 0.5
+entropy is 0.00772201
+the patternClose is 26 and the count rate is 0.003861
+patternClose is 26 3 rate is 1
+entropy is 0
+the patternClose is 12 and the count rate is 0.00772201
+patternClose is 12 1 rate is 0.5
+patternClose is 12 0 rate is 0.5
+entropy is 0.00772201
+the patternClose is 25 and the count rate is 0.00772201
+patternClose is 25 3 rate is 0.5
+patternClose is 25 0 rate is 0.5
+entropy is 0.00772201
+the patternClose is 29 and the count rate is 0.003861
+patternClose is 29 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 40782 points 
+positions bitstream size 239 B (0.0544311 bpp)
+positions processing time (user): 0.031 s
+colors bitstream size 1378 B (0.313833 bpp)
+colors processing time (user): 0.046 s
+Number of points = 677769
+Number of nodes = 4100
+Estimation of sampling = 1.24443
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 0 and the count rate is 0.394313
+patternClose is 0 3 rate is 0.29299
+patternClose is 0 2 rate is 0.341402
+patternClose is 0 1 rate is 0.265759
+patternClose is 0 0 rate is 0.0998487
+entropy is 0.744552
+the patternClose is 1 and the count rate is 0.000994233
+patternClose is 1 0 rate is 1
+entropy is 0
+the patternClose is 9 and the count rate is 0.0029827
+patternClose is 9 2 rate is 0.266667
+patternClose is 9 0 rate is 0.466667
+patternClose is 9 1 rate is 0.266667
+entropy is 0.0045639
+the patternClose is 18 and the count rate is 0.0226685
+patternClose is 18 0 rate is 0.166667
+patternClose is 18 1 rate is 0.236842
+patternClose is 18 2 rate is 0.245614
+patternClose is 18 3 rate is 0.350877
+entropy is 0.0442183
+the patternClose is 2 and the count rate is 0.0872937
+patternClose is 2 0 rate is 0.321185
+patternClose is 2 1 rate is 0.330296
+patternClose is 2 2 rate is 0.248292
+patternClose is 2 3 rate is 0.100228
+entropy is 0.164618
+the patternClose is 5 and the count rate is 0.00377809
+patternClose is 5 2 rate is 0.105263
+patternClose is 5 0 rate is 0.894737
+entropy is 0.00183411
+the patternClose is 6 and the count rate is 0.037582
+patternClose is 6 0 rate is 0.587302
+patternClose is 6 2 rate is 0.142857
+patternClose is 6 1 rate is 0.243386
+patternClose is 6 3 rate is 0.026455
+entropy is 0.0558776
+the patternClose is 19 and the count rate is 0.00457347
+patternClose is 19 0 rate is 0.391304
+patternClose is 19 2 rate is 0.347826
+patternClose is 19 1 rate is 0.173913
+patternClose is 19 3 rate is 0.0869565
+entropy is 0.00825464
+the patternClose is 10 and the count rate is 0.00735733
+patternClose is 10 0 rate is 0.27027
+patternClose is 10 1 rate is 0.405405
+patternClose is 10 2 rate is 0.189189
+patternClose is 10 3 rate is 0.135135
+entropy is 0.0138529
+the patternClose is 26 and the count rate is 0.00278385
+patternClose is 26 0 rate is 0.285714
+patternClose is 26 1 rate is 0.142857
+patternClose is 26 3 rate is 0.571429
+entropy is 0.00383833
+the patternClose is 8 and the count rate is 0.0902764
+patternClose is 8 1 rate is 0.253304
+patternClose is 8 0 rate is 0.140969
+patternClose is 8 3 rate is 0.286344
+patternClose is 8 2 rate is 0.319383
+entropy is 0.175388
+the patternClose is 4 and the count rate is 0.0483197
+patternClose is 4 1 rate is 0.345679
+patternClose is 4 3 rate is 0.148148
+patternClose is 4 2 rate is 0.185185
+patternClose is 4 0 rate is 0.320988
+entropy is 0.0925159
+the patternClose is 12 and the count rate is 0.0256512
+patternClose is 12 2 rate is 0.20155
+patternClose is 12 0 rate is 0.449612
+patternClose is 12 1 rate is 0.27907
+patternClose is 12 3 rate is 0.0697674
+entropy is 0.0453027
+the patternClose is 16 and the count rate is 0.0489163
+patternClose is 16 3 rate is 0.723577
+patternClose is 16 2 rate is 0.150407
+patternClose is 16 0 rate is 0.0284553
+patternClose is 16 1 rate is 0.097561
+entropy is 0.0598007
+the patternClose is 24 and the count rate is 0.0548817
+patternClose is 24 2 rate is 0.119565
+patternClose is 24 3 rate is 0.731884
+patternClose is 24 0 rate is 0.0724638
+patternClose is 24 1 rate is 0.076087
+entropy is 0.0687715
+the patternClose is 23 and the count rate is 0.0089481
+patternClose is 23 0 rate is 0.644444
+patternClose is 23 1 rate is 0.266667
+patternClose is 23 2 rate is 0.0666667
+patternClose is 23 3 rate is 0.0222222
+entropy is 0.0116281
+the patternClose is 15 and the count rate is 0.0254524
+patternClose is 15 0 rate is 0.914062
+patternClose is 15 2 rate is 0.03125
+patternClose is 15 1 rate is 0.0546875
+entropy is 0.0128288
+the patternClose is 31 and the count rate is 0.0262478
+patternClose is 31 1 rate is 0.166667
+patternClose is 31 0 rate is 0.727273
+patternClose is 31 2 rate is 0.106061
+entropy is 0.0290899
+the patternClose is 20 and the count rate is 0.01034
+patternClose is 20 0 rate is 0.0192308
+patternClose is 20 2 rate is 0.25
+patternClose is 20 3 rate is 0.634615
+patternClose is 20 1 rate is 0.0961538
+entropy is 0.0139675
+the patternClose is 28 and the count rate is 0.00874925
+patternClose is 28 3 rate is 0.545455
+patternClose is 28 0 rate is 0.295455
+patternClose is 28 2 rate is 0.113636
+patternClose is 28 1 rate is 0.0454545
+entropy is 0.0136132
+the patternClose is 7 and the count rate is 0.0292305
+patternClose is 7 0 rate is 0.891156
+patternClose is 7 1 rate is 0.0884354
+patternClose is 7 2 rate is 0.0204082
+entropy is 0.0167256
+the patternClose is 3 and the count rate is 0.0059654
+patternClose is 3 0 rate is 0.666667
+patternClose is 3 2 rate is 0.1
+patternClose is 3 1 rate is 0.233333
+entropy is 0.00723042
+the patternClose is 11 and the count rate is 0.00576655
+patternClose is 11 0 rate is 0.62069
+patternClose is 11 1 rate is 0.310345
+patternClose is 11 2 rate is 0.0689655
+entropy is 0.00701799
+the patternClose is 30 and the count rate is 0.00536886
+patternClose is 30 0 rate is 0.851852
+patternClose is 30 2 rate is 0.0740741
+patternClose is 30 1 rate is 0.0740741
+entropy is 0.00404455
+the patternClose is 13 and the count rate is 0.01034
+patternClose is 13 0 rate is 0.673077
+patternClose is 13 1 rate is 0.230769
+patternClose is 13 2 rate is 0.0961538
+entropy is 0.0123819
+the patternClose is 29 and the count rate is 0.00954464
+patternClose is 29 0 rate is 0.583333
+patternClose is 29 1 rate is 0.229167
+patternClose is 29 2 rate is 0.1875
+entropy is 0.0133007
+the patternClose is 22 and the count rate is 0.00775502
+patternClose is 22 3 rate is 0.461538
+patternClose is 22 0 rate is 0.333333
+patternClose is 22 2 rate is 0.153846
+patternClose is 22 1 rate is 0.0512821
+entropy is 0.0130158
+the patternClose is 14 and the count rate is 0.00536886
+patternClose is 14 0 rate is 0.851852
+patternClose is 14 1 rate is 0.111111
+patternClose is 14 2 rate is 0.037037
+entropy is 0.00389444
+the patternClose is 27 and the count rate is 0.00517001
+patternClose is 27 1 rate is 0.153846
+patternClose is 27 0 rate is 0.576923
+patternClose is 27 2 rate is 0.230769
+patternClose is 27 3 rate is 0.0384615
+entropy is 0.00797341
+the patternClose is 25 and the count rate is 0.00278385
+patternClose is 25 1 rate is 0.428571
+patternClose is 25 0 rate is 0.357143
+patternClose is 25 3 rate is 0.142857
+patternClose is 25 2 rate is 0.0714286
+entropy is 0.00480882
+the patternClose is 21 and the count rate is 0.00059654
+patternClose is 21 0 rate is 0.666667
+patternClose is 21 1 rate is 0.333333
+entropy is 0.0005478
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 762259 points 
+positions bitstream size 2246 B (0.0265105 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 15861 B (0.187214 bpp)
+colors processing time (user): 0.562 s
+Number of points = 754561
+Number of nodes = 4477
+Estimation of sampling = 1.23244
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0449871
+patternClose is 24 3 rate is 0.755102
+patternClose is 24 1 rate is 0.0571429
+patternClose is 24 0 rate is 0.0693878
+patternClose is 24 2 rate is 0.118367
+entropy is 0.0527909
+the patternClose is 16 and the count rate is 0.0514139
+patternClose is 16 0 rate is 0.05
+patternClose is 16 3 rate is 0.592857
+patternClose is 16 2 rate is 0.232143
+patternClose is 16 1 rate is 0.125
+entropy is 0.0785275
+the patternClose is 0 and the count rate is 0.426919
+patternClose is 0 3 rate is 0.322151
+patternClose is 0 2 rate is 0.293763
+patternClose is 0 1 rate is 0.271398
+patternClose is 0 0 rate is 0.112688
+entropy is 0.815918
+the patternClose is 7 and the count rate is 0.0308483
+patternClose is 7 0 rate is 0.857143
+patternClose is 7 1 rate is 0.113095
+patternClose is 7 3 rate is 0.00595238
+patternClose is 7 2 rate is 0.0238095
+entropy is 0.0221685
+the patternClose is 15 and the count rate is 0.0257069
+patternClose is 15 0 rate is 0.7
+patternClose is 15 1 rate is 0.242857
+patternClose is 15 2 rate is 0.0571429
+entropy is 0.0280728
+the patternClose is 31 and the count rate is 0.033419
+patternClose is 31 0 rate is 0.708791
+patternClose is 31 2 rate is 0.115385
+patternClose is 31 1 rate is 0.175824
+entropy is 0.0385111
+the patternClose is 20 and the count rate is 0.0119354
+patternClose is 20 3 rate is 0.569231
+patternClose is 20 2 rate is 0.230769
+patternClose is 20 1 rate is 0.169231
+patternClose is 20 0 rate is 0.0307692
+entropy is 0.0183707
+the patternClose is 28 and the count rate is 0.0115681
+patternClose is 28 3 rate is 0.507937
+patternClose is 28 2 rate is 0.269841
+patternClose is 28 0 rate is 0.174603
+patternClose is 28 1 rate is 0.047619
+entropy is 0.0191467
+the patternClose is 23 and the count rate is 0.0117517
+patternClose is 23 0 rate is 0.640625
+patternClose is 23 1 rate is 0.203125
+patternClose is 23 2 rate is 0.15625
+entropy is 0.0152434
+the patternClose is 4 and the count rate is 0.0642674
+patternClose is 4 1 rate is 0.391429
+patternClose is 4 0 rate is 0.282857
+patternClose is 4 2 rate is 0.231429
+patternClose is 4 3 rate is 0.0942857
+entropy is 0.119206
+the patternClose is 8 and the count rate is 0.0795079
+patternClose is 8 1 rate is 0.281755
+patternClose is 8 2 rate is 0.288684
+patternClose is 8 3 rate is 0.281755
+patternClose is 8 0 rate is 0.147806
+entropy is 0.155433
+the patternClose is 6 and the count rate is 0.0337863
+patternClose is 6 1 rate is 0.228261
+patternClose is 6 0 rate is 0.597826
+patternClose is 6 3 rate is 0.0380435
+patternClose is 6 2 rate is 0.13587
+entropy is 0.0507089
+the patternClose is 12 and the count rate is 0.0187293
+patternClose is 12 1 rate is 0.27451
+patternClose is 12 0 rate is 0.470588
+patternClose is 12 3 rate is 0.0980392
+patternClose is 12 2 rate is 0.156863
+entropy is 0.0331774
+the patternClose is 10 and the count rate is 0.00459053
+patternClose is 10 1 rate is 0.48
+patternClose is 10 0 rate is 0.28
+patternClose is 10 2 rate is 0.2
+patternClose is 10 3 rate is 0.04
+entropy is 0.00767825
+the patternClose is 3 and the count rate is 0.0078957
+patternClose is 3 0 rate is 0.744186
+patternClose is 3 3 rate is 0.139535
+patternClose is 3 1 rate is 0.0697674
+patternClose is 3 2 rate is 0.0465116
+entropy is 0.00937656
+the patternClose is 27 and the count rate is 0.00661036
+patternClose is 27 1 rate is 0.305556
+patternClose is 27 2 rate is 0.361111
+patternClose is 27 0 rate is 0.277778
+patternClose is 27 3 rate is 0.0555556
+entropy is 0.0118874
+the patternClose is 30 and the count rate is 0.00624311
+patternClose is 30 0 rate is 0.735294
+patternClose is 30 1 rate is 0.0588235
+patternClose is 30 2 rate is 0.147059
+patternClose is 30 3 rate is 0.0588235
+entropy is 0.00757762
+the patternClose is 2 and the count rate is 0.0550863
+patternClose is 2 1 rate is 0.343333
+patternClose is 2 3 rate is 0.146667
+patternClose is 2 0 rate is 0.32
+patternClose is 2 2 rate is 0.19
+entropy is 0.105599
+the patternClose is 22 and the count rate is 0.00991553
+patternClose is 22 2 rate is 0.185185
+patternClose is 22 3 rate is 0.5
+patternClose is 22 0 rate is 0.259259
+patternClose is 22 1 rate is 0.0555556
+entropy is 0.0167288
+the patternClose is 14 and the count rate is 0.00569225
+patternClose is 14 0 rate is 1
+entropy is 0
+the patternClose is 11 and the count rate is 0.00550863
+patternClose is 11 0 rate is 0.566667
+patternClose is 11 1 rate is 0.266667
+patternClose is 11 2 rate is 0.166667
+entropy is 0.00773232
+the patternClose is 21 and the count rate is 0.00146897
+patternClose is 21 1 rate is 0.375
+patternClose is 21 0 rate is 0.5
+patternClose is 21 2 rate is 0.125
+entropy is 0.00206484
+the patternClose is 18 and the count rate is 0.0207492
+patternClose is 18 3 rate is 0.371681
+patternClose is 18 2 rate is 0.318584
+patternClose is 18 1 rate is 0.141593
+patternClose is 18 0 rate is 0.168142
+entropy is 0.0391801
+the patternClose is 13 and the count rate is 0.0069776
+patternClose is 13 1 rate is 0.263158
+patternClose is 13 0 rate is 0.5
+patternClose is 13 2 rate is 0.157895
+patternClose is 13 3 rate is 0.0789474
+entropy is 0.011977
+the patternClose is 29 and the count rate is 0.00844657
+patternClose is 29 2 rate is 0.173913
+patternClose is 29 0 rate is 0.543478
+patternClose is 29 1 rate is 0.26087
+patternClose is 29 3 rate is 0.0217391
+entropy is 0.0130312
+the patternClose is 19 and the count rate is 0.00569225
+patternClose is 19 1 rate is 0.451613
+patternClose is 19 2 rate is 0.387097
+patternClose is 19 0 rate is 0.129032
+patternClose is 19 3 rate is 0.0322581
+entropy is 0.00904472
+the patternClose is 9 and the count rate is 0.00257069
+patternClose is 9 0 rate is 0.428571
+patternClose is 9 1 rate is 0.5
+patternClose is 9 3 rate is 0.0714286
+entropy is 0.0033312
+the patternClose is 26 and the count rate is 0.00238707
+patternClose is 26 3 rate is 0.307692
+patternClose is 26 2 rate is 0.307692
+patternClose is 26 0 rate is 0.230769
+patternClose is 26 1 rate is 0.153846
+entropy is 0.00465494
+the patternClose is 17 and the count rate is 0.000550863
+patternClose is 17 3 rate is 0.333333
+patternClose is 17 1 rate is 0.333333
+patternClose is 17 2 rate is 0.333333
+entropy is 0.000873097
+the patternClose is 25 and the count rate is 0.00257069
+patternClose is 25 0 rate is 0.357143
+patternClose is 25 1 rate is 0.285714
+patternClose is 25 3 rate is 0.357143
+entropy is 0.00405503
+the patternClose is 5 and the count rate is 0.00165259
+patternClose is 5 0 rate is 0.666667
+patternClose is 5 1 rate is 0.222222
+patternClose is 5 3 rate is 0.111111
+entropy is 0.00202342
+the patternClose is 1 and the count rate is 0.000550863
+patternClose is 1 0 rate is 0.333333
+patternClose is 1 2 rate is 0.333333
+patternClose is 1 3 rate is 0.333333
+entropy is 0.000873097
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 872234 points 
+positions bitstream size 2634 B (0.0279262 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 5818 B (0.0616835 bpp)
+colors processing time (user): 0.718 s
+Number of points = 814901
+Number of nodes = 4974
+Estimation of sampling = 1.25003
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 8 and the count rate is 0.104843
+patternClose is 8 1 rate is 0.297045
+patternClose is 8 2 rate is 0.284603
+patternClose is 8 0 rate is 0.178849
+patternClose is 8 3 rate is 0.239502
+entropy is 0.206972
+the patternClose is 0 and the count rate is 0.397359
+patternClose is 0 2 rate is 0.344276
+patternClose is 0 3 rate is 0.303652
+patternClose is 0 1 rate is 0.255232
+patternClose is 0 0 rate is 0.0968404
+entropy is 0.747341
+the patternClose is 12 and the count rate is 0.0194032
+patternClose is 12 3 rate is 0.0840336
+patternClose is 12 1 rate is 0.277311
+patternClose is 12 0 rate is 0.453782
+patternClose is 12 2 rate is 0.184874
+entropy is 0.0345553
+the patternClose is 20 and the count rate is 0.00913093
+patternClose is 20 3 rate is 0.571429
+patternClose is 20 2 rate is 0.25
+patternClose is 20 1 rate is 0.142857
+patternClose is 20 0 rate is 0.0357143
+entropy is 0.0140076
+the patternClose is 4 and the count rate is 0.0523398
+patternClose is 4 2 rate is 0.249221
+patternClose is 4 3 rate is 0.0841121
+patternClose is 4 1 rate is 0.352025
+patternClose is 4 0 rate is 0.314642
+entropy is 0.0970957
+the patternClose is 2 and the count rate is 0.0565792
+patternClose is 2 1 rate is 0.371758
+patternClose is 2 2 rate is 0.175793
+patternClose is 2 0 rate is 0.322767
+patternClose is 2 3 rate is 0.129683
+entropy is 0.106388
+the patternClose is 3 and the count rate is 0.00505462
+patternClose is 3 0 rate is 0.774194
+patternClose is 3 2 rate is 0.0322581
+patternClose is 3 1 rate is 0.193548
+entropy is 0.00457055
+the patternClose is 22 and the count rate is 0.00652209
+patternClose is 22 0 rate is 0.275
+patternClose is 22 3 rate is 0.475
+patternClose is 22 1 rate is 0.05
+patternClose is 22 2 rate is 0.2
+entropy is 0.0111059
+the patternClose is 24 and the count rate is 0.0732105
+patternClose is 24 2 rate is 0.146993
+patternClose is 24 3 rate is 0.679287
+patternClose is 24 0 rate is 0.0690423
+patternClose is 24 1 rate is 0.104677
+entropy is 0.101958
+the patternClose is 6 and the count rate is 0.031143
+patternClose is 6 0 rate is 0.507853
+patternClose is 6 1 rate is 0.251309
+patternClose is 6 2 rate is 0.167539
+patternClose is 6 3 rate is 0.0732984
+entropy is 0.0531088
+the patternClose is 15 and the count rate is 0.0244579
+patternClose is 15 0 rate is 0.833333
+patternClose is 15 1 rate is 0.146667
+patternClose is 15 2 rate is 0.0133333
+patternClose is 15 3 rate is 0.00666667
+entropy is 0.0185052
+the patternClose is 31 and the count rate is 0.0270667
+patternClose is 31 2 rate is 0.0903614
+patternClose is 31 0 rate is 0.807229
+patternClose is 31 1 rate is 0.0903614
+patternClose is 31 3 rate is 0.0120482
+entropy is 0.0257939
+the patternClose is 28 and the count rate is 0.00945704
+patternClose is 28 3 rate is 0.5
+patternClose is 28 2 rate is 0.189655
+patternClose is 28 0 rate is 0.258621
+patternClose is 28 1 rate is 0.0517241
+entropy is 0.0158926
+the patternClose is 7 and the count rate is 0.0324474
+patternClose is 7 0 rate is 0.854271
+patternClose is 7 1 rate is 0.120603
+patternClose is 7 2 rate is 0.0150754
+patternClose is 7 3 rate is 0.0100503
+entropy is 0.0233651
+the patternClose is 16 and the count rate is 0.0606555
+patternClose is 16 3 rate is 0.626344
+patternClose is 16 2 rate is 0.206989
+patternClose is 16 0 rate is 0.0564516
+patternClose is 16 1 rate is 0.110215
+entropy is 0.0896414
+the patternClose is 11 and the count rate is 0.00505462
+patternClose is 11 0 rate is 0.774194
+patternClose is 11 1 rate is 0.16129
+patternClose is 11 2 rate is 0.0645161
+entropy is 0.00488038
+the patternClose is 30 and the count rate is 0.00635904
+patternClose is 30 0 rate is 0.666667
+patternClose is 30 3 rate is 0.153846
+patternClose is 30 1 rate is 0.102564
+patternClose is 30 2 rate is 0.0769231
+entropy is 0.00907461
+the patternClose is 13 and the count rate is 0.00847872
+patternClose is 13 0 rate is 0.634615
+patternClose is 13 1 rate is 0.173077
+patternClose is 13 2 rate is 0.192308
+entropy is 0.0111217
+the patternClose is 14 and the count rate is 0.00456547
+patternClose is 14 0 rate is 0.785714
+patternClose is 14 1 rate is 0.214286
+entropy is 0.00342225
+the patternClose is 23 and the count rate is 0.0133703
+patternClose is 23 0 rate is 0.634146
+patternClose is 23 1 rate is 0.219512
+patternClose is 23 2 rate is 0.121951
+patternClose is 23 3 rate is 0.0243902
+entropy is 0.0186888
+the patternClose is 25 and the count rate is 0.00391326
+patternClose is 25 2 rate is 0.333333
+patternClose is 25 1 rate is 0.25
+patternClose is 25 0 rate is 0.333333
+patternClose is 25 3 rate is 0.0833333
+entropy is 0.00726061
+the patternClose is 29 and the count rate is 0.00831567
+patternClose is 29 0 rate is 0.568627
+patternClose is 29 2 rate is 0.176471
+patternClose is 29 1 rate is 0.235294
+patternClose is 29 3 rate is 0.0196078
+entropy is 0.0125328
+the patternClose is 26 and the count rate is 0.0034241
+patternClose is 26 2 rate is 0.047619
+patternClose is 26 3 rate is 0.285714
+patternClose is 26 1 rate is 0.190476
+patternClose is 26 0 rate is 0.47619
+entropy is 0.00578992
+the patternClose is 5 and the count rate is 0.0034241
+patternClose is 5 0 rate is 0.666667
+patternClose is 5 3 rate is 0.190476
+patternClose is 5 1 rate is 0.0952381
+patternClose is 5 2 rate is 0.047619
+entropy is 0.00471803
+the patternClose is 27 and the count rate is 0.00489157
+patternClose is 27 0 rate is 0.633333
+patternClose is 27 1 rate is 0.3
+patternClose is 27 2 rate is 0.0666667
+entropy is 0.00586447
+the patternClose is 10 and the count rate is 0.00423936
+patternClose is 10 0 rate is 0.538462
+patternClose is 10 1 rate is 0.230769
+patternClose is 10 2 rate is 0.153846
+patternClose is 10 3 rate is 0.0769231
+entropy is 0.00707626
+the patternClose is 9 and the count rate is 0.00260884
+patternClose is 9 1 rate is 0.25
+patternClose is 9 0 rate is 0.5625
+patternClose is 9 3 rate is 0.125
+patternClose is 9 2 rate is 0.0625
+entropy is 0.00415305
+the patternClose is 21 and the count rate is 0.000652209
+patternClose is 21 0 rate is 0.75
+patternClose is 21 2 rate is 0.25
+entropy is 0.000529123
+the patternClose is 18 and the count rate is 0.0161422
+patternClose is 18 2 rate is 0.323232
+patternClose is 18 3 rate is 0.444444
+patternClose is 18 1 rate is 0.0909091
+patternClose is 18 0 rate is 0.141414
+entropy is 0.0284133
+the patternClose is 19 and the count rate is 0.00179358
+patternClose is 19 0 rate is 0.363636
+patternClose is 19 2 rate is 0.181818
+patternClose is 19 1 rate is 0.363636
+patternClose is 19 3 rate is 0.0909091
+entropy is 0.00326981
+the patternClose is 1 and the count rate is 0.00211968
+patternClose is 1 1 rate is 0.153846
+patternClose is 1 0 rate is 0.769231
+patternClose is 1 2 rate is 0.0769231
+entropy is 0.00210116
+the patternClose is 17 and the count rate is 0.000978314
+patternClose is 17 0 rate is 0.166667
+patternClose is 17 2 rate is 0.5
+patternClose is 17 3 rate is 0.333333
+entropy is 0.0014275
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 914065 points 
+positions bitstream size 2892 B (0.0283912 bpp)
+positions processing time (user): 0.578 s
+colors bitstream size 10435 B (0.102442 bpp)
+colors processing time (user): 0.812 s
+Number of points = 381364
+Number of nodes = 2224
+Estimation of sampling = 1.22185
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0532319
+patternClose is 24 1 rate is 0.11039
+patternClose is 24 0 rate is 0.142857
+patternClose is 24 2 rate is 0.11039
+patternClose is 24 3 rate is 0.636364
+entropy is 0.0808027
+the patternClose is 16 and the count rate is 0.0618735
+patternClose is 16 3 rate is 0.458101
+patternClose is 16 2 rate is 0.324022
+patternClose is 16 1 rate is 0.145251
+patternClose is 16 0 rate is 0.0726257
+entropy is 0.106534
+the patternClose is 0 and the count rate is 0.403733
+patternClose is 0 3 rate is 0.292808
+patternClose is 0 2 rate is 0.324486
+patternClose is 0 1 rate is 0.257705
+patternClose is 0 0 rate is 0.125
+entropy is 0.777131
+the patternClose is 2 and the count rate is 0.0535776
+patternClose is 2 0 rate is 0.36129
+patternClose is 2 1 rate is 0.277419
+patternClose is 2 3 rate is 0.116129
+patternClose is 2 2 rate is 0.245161
+entropy is 0.101894
+the patternClose is 9 and the count rate is 0.00380228
+patternClose is 9 0 rate is 0.454545
+patternClose is 9 2 rate is 0.272727
+patternClose is 9 3 rate is 0.0909091
+patternClose is 9 1 rate is 0.181818
+entropy is 0.00680581
+the patternClose is 28 and the count rate is 0.0107155
+patternClose is 28 0 rate is 0.193548
+patternClose is 28 2 rate is 0.354839
+patternClose is 28 1 rate is 0.16129
+patternClose is 28 3 rate is 0.290323
+entropy is 0.0206974
+the patternClose is 22 and the count rate is 0.00760456
+patternClose is 22 2 rate is 0.363636
+patternClose is 22 0 rate is 0.318182
+patternClose is 22 3 rate is 0.272727
+patternClose is 22 1 rate is 0.0454545
+entropy is 0.0134622
+the patternClose is 3 and the count rate is 0.00898721
+patternClose is 3 0 rate is 0.653846
+patternClose is 3 2 rate is 0.0769231
+patternClose is 3 3 rate is 0.0384615
+patternClose is 3 1 rate is 0.230769
+entropy is 0.0121724
+the patternClose is 27 and the count rate is 0.00691324
+patternClose is 27 0 rate is 0.65
+patternClose is 27 2 rate is 0.1
+patternClose is 27 1 rate is 0.25
+entropy is 0.00854587
+the patternClose is 30 and the count rate is 0.00795022
+patternClose is 30 0 rate is 0.695652
+patternClose is 30 1 rate is 0.173913
+patternClose is 30 3 rate is 0.0869565
+patternClose is 30 2 rate is 0.0434783
+entropy is 0.0103844
+the patternClose is 8 and the count rate is 0.0788109
+patternClose is 8 0 rate is 0.214912
+patternClose is 8 2 rate is 0.22807
+patternClose is 8 1 rate is 0.245614
+patternClose is 8 3 rate is 0.311404
+entropy is 0.156416
+the patternClose is 6 and the count rate is 0.0352575
+patternClose is 6 0 rate is 0.588235
+patternClose is 6 2 rate is 0.147059
+patternClose is 6 1 rate is 0.245098
+patternClose is 6 3 rate is 0.0196078
+entropy is 0.0516675
+the patternClose is 19 and the count rate is 0.00414794
+patternClose is 19 0 rate is 0.333333
+patternClose is 19 2 rate is 0.416667
+patternClose is 19 1 rate is 0.25
+entropy is 0.00644833
+the patternClose is 4 and the count rate is 0.0566886
+patternClose is 4 1 rate is 0.347561
+patternClose is 4 3 rate is 0.115854
+patternClose is 4 2 rate is 0.231707
+patternClose is 4 0 rate is 0.304878
+entropy is 0.107791
+the patternClose is 20 and the count rate is 0.0107155
+patternClose is 20 3 rate is 0.548387
+patternClose is 20 1 rate is 0.16129
+patternClose is 20 2 rate is 0.290323
+entropy is 0.0151933
+the patternClose is 12 and the count rate is 0.0210854
+patternClose is 12 1 rate is 0.295082
+patternClose is 12 0 rate is 0.42623
+patternClose is 12 3 rate is 0.114754
+patternClose is 12 2 rate is 0.163934
+entropy is 0.0385877
+the patternClose is 15 and the count rate is 0.0200484
+patternClose is 15 0 rate is 0.87931
+patternClose is 15 1 rate is 0.0689655
+patternClose is 15 2 rate is 0.0517241
+entropy is 0.0130364
+the patternClose is 23 and the count rate is 0.0107155
+patternClose is 23 2 rate is 0.129032
+patternClose is 23 0 rate is 0.548387
+patternClose is 23 1 rate is 0.322581
+entropy is 0.0148199
+the patternClose is 14 and the count rate is 0.00795022
+patternClose is 14 0 rate is 0.782609
+patternClose is 14 1 rate is 0.130435
+patternClose is 14 3 rate is 0.0434783
+patternClose is 14 2 rate is 0.0434783
+entropy is 0.00837483
+the patternClose is 18 and the count rate is 0.0328379
+patternClose is 18 0 rate is 0.252632
+patternClose is 18 1 rate is 0.168421
+patternClose is 18 2 rate is 0.210526
+patternClose is 18 3 rate is 0.368421
+entropy is 0.063648
+the patternClose is 31 and the count rate is 0.023505
+patternClose is 31 0 rate is 0.705882
+patternClose is 31 1 rate is 0.191176
+patternClose is 31 2 rate is 0.102941
+entropy is 0.0270004
+the patternClose is 7 and the count rate is 0.0252333
+patternClose is 7 0 rate is 0.821918
+patternClose is 7 1 rate is 0.123288
+patternClose is 7 2 rate is 0.0410959
+patternClose is 7 3 rate is 0.0136986
+entropy is 0.0221775
+the patternClose is 13 and the count rate is 0.0124438
+patternClose is 13 0 rate is 0.722222
+patternClose is 13 2 rate is 0.138889
+patternClose is 13 1 rate is 0.0833333
+patternClose is 13 3 rate is 0.0555556
+entropy is 0.0157419
+the patternClose is 29 and the count rate is 0.00829589
+patternClose is 29 0 rate is 0.458333
+patternClose is 29 3 rate is 0.0833333
+patternClose is 29 1 rate is 0.291667
+patternClose is 29 2 rate is 0.166667
+entropy is 0.0146332
+the patternClose is 5 and the count rate is 0.00553059
+patternClose is 5 0 rate is 0.625
+patternClose is 5 1 rate is 0.125
+patternClose is 5 2 rate is 0.25
+entropy is 0.0071831
+the patternClose is 1 and the count rate is 0.00656758
+patternClose is 1 0 rate is 0.473684
+patternClose is 1 2 rate is 0.263158
+patternClose is 1 1 rate is 0.263158
+entropy is 0.0100111
+the patternClose is 10 and the count rate is 0.00553059
+patternClose is 10 0 rate is 0.375
+patternClose is 10 1 rate is 0.4375
+patternClose is 10 2 rate is 0.1875
+entropy is 0.00832487
+the patternClose is 26 and the count rate is 0.00483927
+patternClose is 26 1 rate is 0.0714286
+patternClose is 26 0 rate is 0.642857
+patternClose is 26 3 rate is 0.214286
+patternClose is 26 2 rate is 0.0714286
+entropy is 0.00691972
+the patternClose is 25 and the count rate is 0.00207397
+patternClose is 25 2 rate is 0.5
+patternClose is 25 1 rate is 0.166667
+patternClose is 25 0 rate is 0.333333
+entropy is 0.00302623
+the patternClose is 21 and the count rate is 0.00103699
+patternClose is 21 0 rate is 0.333333
+patternClose is 21 3 rate is 0.333333
+patternClose is 21 1 rate is 0.333333
+entropy is 0.00164358
+the patternClose is 11 and the count rate is 0.00622191
+patternClose is 11 0 rate is 0.5
+patternClose is 11 1 rate is 0.388889
+patternClose is 11 2 rate is 0.111111
+entropy is 0.00859932
+the patternClose is 17 and the count rate is 0.00207397
+patternClose is 17 3 rate is 0.333333
+patternClose is 17 2 rate is 0.5
+patternClose is 17 0 rate is 0.166667
+entropy is 0.00302623
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 441604 points 
+positions bitstream size 1614 B (0.0338574 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 7500 B (0.15733 bpp)
+colors processing time (user): 0.359 s
+Total frame size 50713 B
+Total bitstream size 50713 B
+Processing time (wall): 26.374 s
+Processing time (user): 15.906 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 239 B
+positions processing time (user): 0.046 s
+
+colors bitstream size 1378 B
+colors processing time (user): 0.015 s
+
+positions bitstream size 2246 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 15861 B
+colors processing time (user): 0.578 s
+
+positions bitstream size 2634 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 5818 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 2892 B
+positions processing time (user): 0.453 s
+
+colors bitstream size 10435 B
+colors processing time (user): 0.703 s
+
+positions bitstream size 1614 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 7500 B
+colors processing time (user): 0.281 s
+
+Total bitstream size 50713 B
+Processing time (wall): 5.079 s
+Processing time (user): 3.843 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply
+infile2:        F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\loot_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1416 2800 626
+WARNING: 4211 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3017285, 3026733, 1.00313
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 4.518
+   mse1,PSNR (p2point): 70.4668
+   mse1      (p2plane): 2.17995
+   mse1,PSNR (p2plane): 73.6318
+   c[0],    1         : 8.68174e-05
+   c[1],    1         : 7.44156e-06
+   c[2],    1         : 7.05046e-06
+   c[0],PSNR1         : 40.6139
+   c[1],PSNR1         : 51.2834
+   c[2],PSNR1         : 51.5178
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 5.04243
+   mse2,PSNR (p2point): 69.9899
+   mse2      (p2plane): 3.87369
+   mse2,PSNR (p2plane): 71.135
+   c[0],    2         : 8.213e-05
+   c[1],    2         : 7.48697e-06
+   c[2],    2         : 7.00514e-06
+   c[0],PSNR2         : 40.855
+   c[1],PSNR2         : 51.2569
+   c[2],PSNR2         : 51.5458
+3. Final (symmetric).
+   mseF      (p2point): 5.04243
+   mseF,PSNR (p2point): 69.9899
+   mseF      (p2plane): 3.87369
+   mseF,PSNR (p2plane): 71.135
+   c[0],    F         : 8.68174e-05
+   c[1],    F         : 7.48697e-06
+   c[2],    F         : 7.05046e-06
+   c[0],PSNRF         : 40.6139
+   c[1],PSNRF         : 51.2569
+   c[2],PSNRF         : 51.5178
+Job done! 17.063 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 39341
+Number of nodes = 940
+Estimation of sampling = 1.23661
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 8 and the count rate is 0.0251437
+patternClose is 8 3 rate is 0.342857
+patternClose is 8 1 rate is 0.314286
+patternClose is 8 0 rate is 0.171429
+patternClose is 8 2 rate is 0.171429
+entropy is 0.0484426
+the patternClose is 16 and the count rate is 0.145833
+patternClose is 16 1 rate is 0.172414
+patternClose is 16 3 rate is 0.551724
+patternClose is 16 2 rate is 0.246305
+patternClose is 16 0 rate is 0.0295567
+entropy is 0.227307
+the patternClose is 0 and the count rate is 0.328305
+patternClose is 0 3 rate is 0.310722
+patternClose is 0 2 rate is 0.354486
+patternClose is 0 0 rate is 0.0765864
+patternClose is 0 1 rate is 0.258206
+entropy is 0.604941
+the patternClose is 10 and the count rate is 0.00933908
+patternClose is 10 2 rate is 0.538462
+patternClose is 10 0 rate is 0.153846
+patternClose is 10 1 rate is 0.307692
+entropy is 0.0132574
+the patternClose is 4 and the count rate is 0.0610632
+patternClose is 4 1 rate is 0.388235
+patternClose is 4 3 rate is 0.235294
+patternClose is 4 0 rate is 0.211765
+patternClose is 4 2 rate is 0.164706
+entropy is 0.117481
+the patternClose is 5 and the count rate is 0.016523
+patternClose is 5 1 rate is 0.26087
+patternClose is 5 0 rate is 0.521739
+patternClose is 5 3 rate is 0.130435
+patternClose is 5 2 rate is 0.0869565
+entropy is 0.0278432
+the patternClose is 27 and the count rate is 0.016523
+patternClose is 27 1 rate is 0.391304
+patternClose is 27 2 rate is 0.26087
+patternClose is 27 0 rate is 0.347826
+entropy is 0.0258641
+the patternClose is 14 and the count rate is 0.0222701
+patternClose is 14 0 rate is 0.806452
+patternClose is 14 1 rate is 0.0967742
+patternClose is 14 2 rate is 0.0645161
+patternClose is 14 3 rate is 0.0322581
+entropy is 0.0220753
+the patternClose is 3 and the count rate is 0.00646552
+patternClose is 3 0 rate is 0.777778
+patternClose is 3 1 rate is 0.222222
+entropy is 0.00494098
+the patternClose is 11 and the count rate is 0.00431034
+patternClose is 11 0 rate is 0.833333
+patternClose is 11 2 rate is 0.166667
+entropy is 0.00280182
+the patternClose is 30 and the count rate is 0.00933908
+patternClose is 30 0 rate is 0.461538
+patternClose is 30 2 rate is 0.384615
+patternClose is 30 3 rate is 0.0769231
+patternClose is 30 1 rate is 0.0769231
+entropy is 0.0150764
+the patternClose is 13 and the count rate is 0.0122126
+patternClose is 13 2 rate is 0.352941
+patternClose is 13 0 rate is 0.470588
+patternClose is 13 1 rate is 0.176471
+entropy is 0.0181194
+the patternClose is 22 and the count rate is 0.00502874
+patternClose is 22 0 rate is 1
+entropy is 0
+the patternClose is 19 and the count rate is 0.00574713
+patternClose is 19 1 rate is 0.25
+patternClose is 19 2 rate is 0.25
+patternClose is 19 0 rate is 0.5
+entropy is 0.00862069
+the patternClose is 17 and the count rate is 0.00718391
+patternClose is 17 3 rate is 0.6
+patternClose is 17 2 rate is 0.2
+patternClose is 17 1 rate is 0.2
+entropy is 0.00984878
+the patternClose is 24 and the count rate is 0.0395115
+patternClose is 24 3 rate is 0.454545
+patternClose is 24 2 rate is 0.363636
+patternClose is 24 0 rate is 0.0363636
+patternClose is 24 1 rate is 0.145455
+entropy is 0.0642527
+the patternClose is 15 and the count rate is 0.0474138
+patternClose is 15 0 rate is 0.666667
+patternClose is 15 1 rate is 0.212121
+patternClose is 15 2 rate is 0.121212
+entropy is 0.0584857
+the patternClose is 31 and the count rate is 0.0488506
+patternClose is 31 0 rate is 0.426471
+patternClose is 31 2 rate is 0.382353
+patternClose is 31 1 rate is 0.176471
+patternClose is 31 3 rate is 0.0147059
+entropy is 0.0774677
+the patternClose is 7 and the count rate is 0.0452586
+patternClose is 7 1 rate is 0.31746
+patternClose is 7 2 rate is 0.0793651
+patternClose is 7 0 rate is 0.603175
+entropy is 0.0568241
+the patternClose is 2 and the count rate is 0.0237069
+patternClose is 2 0 rate is 0.242424
+patternClose is 2 2 rate is 0.30303
+patternClose is 2 1 rate is 0.363636
+patternClose is 2 3 rate is 0.0909091
+entropy is 0.0441604
+the patternClose is 26 and the count rate is 0.0186782
+patternClose is 26 2 rate is 0.269231
+patternClose is 26 3 rate is 0.653846
+patternClose is 26 0 rate is 0.0384615
+patternClose is 26 1 rate is 0.0384615
+entropy is 0.0237594
+the patternClose is 25 and the count rate is 0.00862069
+patternClose is 25 0 rate is 0.166667
+patternClose is 25 2 rate is 0.666667
+patternClose is 25 1 rate is 0.166667
+entropy is 0.0107899
+the patternClose is 28 and the count rate is 0.00574713
+patternClose is 28 1 rate is 0.125
+patternClose is 28 3 rate is 0.25
+patternClose is 28 2 rate is 0.625
+entropy is 0.00746434
+the patternClose is 12 and the count rate is 0.0172414
+patternClose is 12 0 rate is 0.5
+patternClose is 12 2 rate is 0.208333
+patternClose is 12 1 rate is 0.291667
+entropy is 0.0256885
+the patternClose is 18 and the count rate is 0.00718391
+patternClose is 18 3 rate is 0.2
+patternClose is 18 2 rate is 0.2
+patternClose is 18 1 rate is 0.4
+patternClose is 18 0 rate is 0.2
+entropy is 0.013807
+the patternClose is 23 and the count rate is 0.0208333
+patternClose is 23 0 rate is 0.551724
+patternClose is 23 1 rate is 0.275862
+patternClose is 23 2 rate is 0.172414
+entropy is 0.0296493
+the patternClose is 6 and the count rate is 0.0172414
+patternClose is 6 0 rate is 0.541667
+patternClose is 6 1 rate is 0.291667
+patternClose is 6 3 rate is 0.0416667
+patternClose is 6 2 rate is 0.125
+entropy is 0.0269591
+the patternClose is 29 and the count rate is 0.0079023
+patternClose is 29 2 rate is 0.272727
+patternClose is 29 1 rate is 0.363636
+patternClose is 29 0 rate is 0.363636
+entropy is 0.0124273
+the patternClose is 21 and the count rate is 0.00359195
+patternClose is 21 1 rate is 0.8
+patternClose is 21 0 rate is 0.2
+entropy is 0.00259313
+the patternClose is 20 and the count rate is 0.0079023
+patternClose is 20 1 rate is 0.181818
+patternClose is 20 2 rate is 0.545455
+patternClose is 20 0 rate is 0.0909091
+patternClose is 20 3 rate is 0.181818
+entropy is 0.0133218
+the patternClose is 1 and the count rate is 0.00359195
+patternClose is 1 2 rate is 0.4
+patternClose is 1 1 rate is 0.2
+patternClose is 1 0 rate is 0.4
+entropy is 0.0054667
+the patternClose is 9 and the count rate is 0.00143678
+patternClose is 9 2 rate is 0.5
+patternClose is 9 3 rate is 0.5
+entropy is 0.00143678
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 48883 points 
+positions bitstream size 836 B (0.170001 bpp)
+positions processing time (user): 0.046 s
+colors bitstream size 2565 B (0.521593 bpp)
+colors processing time (user): 0.031 s
+Number of points = 708147
+Number of nodes = 16947
+Estimation of sampling = 1.23758
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 0 and the count rate is 0.326668
+patternClose is 0 3 rate is 0.313728
+patternClose is 0 2 rate is 0.340428
+patternClose is 0 1 rate is 0.273678
+patternClose is 0 0 rate is 0.0721662
+entropy is 0.600816
+the patternClose is 9 and the count rate is 0.00246853
+patternClose is 9 2 rate is 0.233333
+patternClose is 9 0 rate is 0.516667
+patternClose is 9 1 rate is 0.216667
+patternClose is 9 3 rate is 0.0333333
+entropy is 0.00400826
+the patternClose is 18 and the count rate is 0.0268247
+patternClose is 18 0 rate is 0.0797546
+patternClose is 18 2 rate is 0.375767
+patternClose is 18 1 rate is 0.102761
+patternClose is 18 3 rate is 0.441718
+entropy is 0.0450549
+the patternClose is 2 and the count rate is 0.0593269
+patternClose is 2 0 rate is 0.210125
+patternClose is 2 1 rate is 0.38835
+patternClose is 2 2 rate is 0.276006
+patternClose is 2 3 rate is 0.12552
+entropy is 0.112203
+the patternClose is 13 and the count rate is 0.0186374
+patternClose is 13 1 rate is 0.253863
+patternClose is 13 2 rate is 0.172185
+patternClose is 13 0 rate is 0.573951
+entropy is 0.0260708
+the patternClose is 14 and the count rate is 0.00691187
+patternClose is 14 1 rate is 0.0654762
+patternClose is 14 0 rate is 0.904762
+patternClose is 14 2 rate is 0.0297619
+entropy is 0.00372587
+the patternClose is 4 and the count rate is 0.0335308
+patternClose is 4 0 rate is 0.240491
+patternClose is 4 2 rate is 0.28589
+patternClose is 4 3 rate is 0.0981595
+patternClose is 4 1 rate is 0.37546
+entropy is 0.0627101
+the patternClose is 20 and the count rate is 0.00983296
+patternClose is 20 2 rate is 0.32636
+patternClose is 20 3 rate is 0.610879
+patternClose is 20 0 rate is 0.0083682
+patternClose is 20 1 rate is 0.0543933
+entropy is 0.0122696
+the patternClose is 28 and the count rate is 0.00979182
+patternClose is 28 2 rate is 0.336134
+patternClose is 28 3 rate is 0.436975
+patternClose is 28 0 rate is 0.172269
+patternClose is 28 1 rate is 0.0546218
+entropy is 0.0168107
+the patternClose is 25 and the count rate is 0.00415535
+patternClose is 25 2 rate is 0.554455
+patternClose is 25 0 rate is 0.207921
+patternClose is 25 1 rate is 0.217822
+patternClose is 25 3 rate is 0.019802
+entropy is 0.00637379
+the patternClose is 15 and the count rate is 0.0438163
+patternClose is 15 1 rate is 0.255399
+patternClose is 15 0 rate is 0.667606
+patternClose is 15 2 rate is 0.0769953
+entropy is 0.0515677
+the patternClose is 7 and the count rate is 0.0560767
+patternClose is 7 0 rate is 0.775495
+patternClose is 7 2 rate is 0.0440205
+patternClose is 7 1 rate is 0.180484
+entropy is 0.0520733
+the patternClose is 31 and the count rate is 0.0453797
+patternClose is 31 0 rate is 0.572076
+patternClose is 31 2 rate is 0.223935
+patternClose is 31 1 rate is 0.203989
+entropy is 0.0640858
+the patternClose is 16 and the count rate is 0.0578458
+patternClose is 16 2 rate is 0.14367
+patternClose is 16 3 rate is 0.78734
+patternClose is 16 1 rate is 0.056899
+patternClose is 16 0 rate is 0.012091
+entropy is 0.0570397
+the patternClose is 19 and the count rate is 0.00666502
+patternClose is 19 2 rate is 0.62963
+patternClose is 19 1 rate is 0.179012
+patternClose is 19 0 rate is 0.166667
+patternClose is 19 3 rate is 0.0246914
+entropy is 0.00951226
+the patternClose is 3 and the count rate is 0.00962725
+patternClose is 3 0 rate is 0.739316
+patternClose is 3 1 rate is 0.132479
+patternClose is 3 2 rate is 0.123932
+patternClose is 3 3 rate is 0.0042735
+entropy is 0.0107386
+the patternClose is 22 and the count rate is 0.00868098
+patternClose is 22 0 rate is 0.293839
+patternClose is 22 2 rate is 0.369668
+patternClose is 22 1 rate is 0.0995261
+patternClose is 22 3 rate is 0.236967
+entropy is 0.0162634
+the patternClose is 27 and the count rate is 0.00699416
+patternClose is 27 2 rate is 0.388235
+patternClose is 27 0 rate is 0.364706
+patternClose is 27 1 rate is 0.247059
+entropy is 0.0109038
+the patternClose is 11 and the count rate is 0.00789928
+patternClose is 11 0 rate is 0.5
+patternClose is 11 1 rate is 0.401042
+patternClose is 11 2 rate is 0.0989583
+entropy is 0.0107341
+the patternClose is 30 and the count rate is 0.00711758
+patternClose is 30 0 rate is 0.780347
+patternClose is 30 2 rate is 0.156069
+patternClose is 30 1 rate is 0.0520231
+patternClose is 30 3 rate is 0.0115607
+entropy is 0.00707271
+the patternClose is 8 and the count rate is 0.0673085
+patternClose is 8 2 rate is 0.333741
+patternClose is 8 1 rate is 0.26956
+patternClose is 8 0 rate is 0.0586797
+patternClose is 8 3 rate is 0.33802
+entropy is 0.12164
+the patternClose is 10 and the count rate is 0.00460792
+patternClose is 10 1 rate is 0.294643
+patternClose is 10 0 rate is 0.1875
+patternClose is 10 2 rate is 0.375
+patternClose is 10 3 rate is 0.142857
+entropy is 0.00877326
+the patternClose is 12 and the count rate is 0.015634
+patternClose is 12 0 rate is 0.347368
+patternClose is 12 1 rate is 0.328947
+patternClose is 12 2 rate is 0.25
+patternClose is 12 3 rate is 0.0736842
+entropy is 0.0286851
+the patternClose is 24 and the count rate is 0.0750021
+patternClose is 24 3 rate is 0.812397
+patternClose is 24 0 rate is 0.0268788
+patternClose is 24 2 rate is 0.136588
+patternClose is 24 1 rate is 0.024136
+entropy is 0.0679306
+the patternClose is 6 and the count rate is 0.0371102
+patternClose is 6 0 rate is 0.741685
+patternClose is 6 1 rate is 0.177384
+patternClose is 6 2 rate is 0.0665188
+patternClose is 6 3 rate is 0.0144124
+entropy is 0.0412141
+the patternClose is 23 and the count rate is 0.022875
+patternClose is 23 2 rate is 0.453237
+patternClose is 23 1 rate is 0.230216
+patternClose is 23 0 rate is 0.316547
+entropy is 0.0350118
+the patternClose is 1 and the count rate is 0.00119312
+patternClose is 1 0 rate is 0.62069
+patternClose is 1 2 rate is 0.275862
+patternClose is 1 3 rate is 0.0344828
+patternClose is 1 1 rate is 0.0689655
+entropy is 0.00163839
+the patternClose is 26 and the count rate is 0.00394964
+patternClose is 26 0 rate is 0.197917
+patternClose is 26 2 rate is 0.333333
+patternClose is 26 3 rate is 0.4375
+patternClose is 26 1 rate is 0.03125
+entropy is 0.00659152
+the patternClose is 21 and the count rate is 0.000863984
+patternClose is 21 0 rate is 0.190476
+patternClose is 21 1 rate is 0.619048
+patternClose is 21 2 rate is 0.190476
+entropy is 0.00115745
+the patternClose is 5 and the count rate is 0.00501934
+patternClose is 5 0 rate is 0.877049
+patternClose is 5 1 rate is 0.0983607
+patternClose is 5 2 rate is 0.0163934
+patternClose is 5 3 rate is 0.00819672
+entropy is 0.00325818
+the patternClose is 29 and the count rate is 0.0180202
+patternClose is 29 2 rate is 0.47032
+patternClose is 29 0 rate is 0.267123
+patternClose is 29 1 rate is 0.262557
+entropy is 0.0275189
+the patternClose is 17 and the count rate is 0.000164568
+patternClose is 17 0 rate is 0.25
+patternClose is 17 2 rate is 0.25
+patternClose is 17 1 rate is 0.5
+entropy is 0.000246853
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 817996 points 
+positions bitstream size 7640 B (0.0863098 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 32845 B (0.371053 bpp)
+colors processing time (user): 0.687 s
+Number of points = 745819
+Number of nodes = 17324
+Estimation of sampling = 1.21926
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0569569
+patternClose is 24 2 rate is 0.135557
+patternClose is 24 3 rate is 0.787793
+patternClose is 24 0 rate is 0.0397445
+patternClose is 24 1 rate is 0.0369056
+entropy is 0.058239
+the patternClose is 16 and the count rate is 0.0558655
+patternClose is 16 0 rate is 0.0325615
+patternClose is 16 3 rate is 0.699711
+patternClose is 16 2 rate is 0.193198
+patternClose is 16 1 rate is 0.0745297
+entropy is 0.070322
+the patternClose is 0 and the count rate is 0.36644
+patternClose is 0 3 rate is 0.348373
+patternClose is 0 2 rate is 0.32631
+patternClose is 0 1 rate is 0.251737
+patternClose is 0 0 rate is 0.0735797
+entropy is 0.672472
+the patternClose is 11 and the count rate is 0.0108335
+patternClose is 11 0 rate is 0.462687
+patternClose is 11 2 rate is 0.175373
+patternClose is 11 1 rate is 0.36194
+entropy is 0.016094
+the patternClose is 3 and the count rate is 0.0138249
+patternClose is 3 1 rate is 0.216374
+patternClose is 3 0 rate is 0.640351
+patternClose is 3 2 rate is 0.134503
+patternClose is 3 3 rate is 0.00877193
+entropy is 0.0185095
+the patternClose is 30 and the count rate is 0.00929744
+patternClose is 30 0 rate is 0.743478
+patternClose is 30 1 rate is 0.0782609
+patternClose is 30 2 rate is 0.16087
+patternClose is 30 3 rate is 0.0173913
+entropy is 0.0105183
+the patternClose is 15 and the count rate is 0.0403428
+patternClose is 15 0 rate is 0.626253
+patternClose is 15 1 rate is 0.301603
+patternClose is 15 2 rate is 0.0721443
+entropy is 0.0491388
+the patternClose is 31 and the count rate is 0.0546528
+patternClose is 31 1 rate is 0.213018
+patternClose is 31 0 rate is 0.525148
+patternClose is 31 2 rate is 0.261095
+patternClose is 31 3 rate is 0.000739645
+entropy is 0.0807073
+the patternClose is 6 and the count rate is 0.0306411
+patternClose is 6 0 rate is 0.67942
+patternClose is 6 2 rate is 0.117414
+patternClose is 6 3 rate is 0.0118734
+patternClose is 6 1 rate is 0.191293
+entropy is 0.03904
+the patternClose is 29 and the count rate is 0.0134611
+patternClose is 29 2 rate is 0.39039
+patternClose is 29 1 rate is 0.198198
+patternClose is 29 0 rate is 0.405405
+patternClose is 29 3 rate is 0.00600601
+entropy is 0.0210658
+the patternClose is 28 and the count rate is 0.0176651
+patternClose is 28 3 rate is 0.494279
+patternClose is 28 2 rate is 0.304348
+patternClose is 28 0 rate is 0.1373
+patternClose is 28 1 rate is 0.0640732
+entropy is 0.0295381
+the patternClose is 7 and the count rate is 0.0498828
+patternClose is 7 1 rate is 0.183144
+patternClose is 7 0 rate is 0.745543
+patternClose is 7 2 rate is 0.0705024
+patternClose is 7 3 rate is 0.000810373
+entropy is 0.0519991
+the patternClose is 4 and the count rate is 0.0451128
+patternClose is 4 3 rate is 0.0761649
+patternClose is 4 2 rate is 0.294803
+patternClose is 4 0 rate is 0.199821
+patternClose is 4 1 rate is 0.429211
+entropy is 0.0807697
+the patternClose is 23 and the count rate is 0.0234457
+patternClose is 23 1 rate is 0.25
+patternClose is 23 2 rate is 0.412069
+patternClose is 23 0 rate is 0.337931
+entropy is 0.0364811
+the patternClose is 8 and the count rate is 0.0563101
+patternClose is 8 2 rate is 0.339555
+patternClose is 8 1 rate is 0.309404
+patternClose is 8 3 rate is 0.254846
+patternClose is 8 0 rate is 0.0961953
+entropy is 0.105882
+the patternClose is 18 and the count rate is 0.0172205
+patternClose is 18 0 rate is 0.124413
+patternClose is 18 2 rate is 0.420188
+patternClose is 18 3 rate is 0.328638
+patternClose is 18 1 rate is 0.126761
+entropy is 0.0310834
+the patternClose is 12 and the count rate is 0.0120058
+patternClose is 12 0 rate is 0.377104
+patternClose is 12 3 rate is 0.117845
+patternClose is 12 1 rate is 0.30303
+patternClose is 12 2 rate is 0.20202
+entropy is 0.0225978
+the patternClose is 21 and the count rate is 0.00141483
+patternClose is 21 1 rate is 0.428571
+patternClose is 21 2 rate is 0.257143
+patternClose is 21 0 rate is 0.285714
+patternClose is 21 3 rate is 0.0285714
+entropy is 0.00239199
+the patternClose is 14 and the count rate is 0.00796346
+patternClose is 14 0 rate is 0.86802
+patternClose is 14 1 rate is 0.0913706
+patternClose is 14 2 rate is 0.035533
+patternClose is 14 3 rate is 0.00507614
+entropy is 0.00559388
+the patternClose is 20 and the count rate is 0.0141483
+patternClose is 20 3 rate is 0.548571
+patternClose is 20 1 rate is 0.0628571
+patternClose is 20 2 rate is 0.357143
+patternClose is 20 0 rate is 0.0314286
+entropy is 0.0199987
+the patternClose is 19 and the count rate is 0.00962083
+patternClose is 19 2 rate is 0.697479
+patternClose is 19 1 rate is 0.180672
+patternClose is 19 0 rate is 0.113445
+patternClose is 19 3 rate is 0.00840336
+entropy is 0.0117632
+the patternClose is 27 and the count rate is 0.00852939
+patternClose is 27 1 rate is 0.227488
+patternClose is 27 2 rate is 0.540284
+patternClose is 27 0 rate is 0.232227
+entropy is 0.0124102
+the patternClose is 22 and the count rate is 0.0121675
+patternClose is 22 2 rate is 0.372093
+patternClose is 22 0 rate is 0.33887
+patternClose is 22 1 rate is 0.0664452
+patternClose is 22 3 rate is 0.222591
+entropy is 0.0219275
+the patternClose is 1 and the count rate is 0.00121271
+patternClose is 1 2 rate is 0.1
+patternClose is 1 0 rate is 0.666667
+patternClose is 1 3 rate is 0.0666667
+patternClose is 1 1 rate is 0.166667
+entropy is 0.00171411
+the patternClose is 2 and the count rate is 0.0445469
+patternClose is 2 0 rate is 0.210526
+patternClose is 2 2 rate is 0.27314
+patternClose is 2 1 rate is 0.369328
+patternClose is 2 3 rate is 0.147005
+entropy is 0.0856192
+the patternClose is 25 and the count rate is 0.00210203
+patternClose is 25 2 rate is 0.615385
+patternClose is 25 0 rate is 0.25
+patternClose is 25 3 rate is 0.0576923
+patternClose is 25 1 rate is 0.0769231
+entropy is 0.0030545
+the patternClose is 5 and the count rate is 0.0029105
+patternClose is 5 1 rate is 0.319444
+patternClose is 5 0 rate is 0.597222
+patternClose is 5 3 rate is 0.0277778
+patternClose is 5 2 rate is 0.0555556
+entropy is 0.00391557
+the patternClose is 10 and the count rate is 0.00282965
+patternClose is 10 1 rate is 0.4
+patternClose is 10 0 rate is 0.342857
+patternClose is 10 2 rate is 0.228571
+patternClose is 10 3 rate is 0.0285714
+entropy is 0.00478635
+the patternClose is 26 and the count rate is 0.0037594
+patternClose is 26 2 rate is 0.397849
+patternClose is 26 3 rate is 0.387097
+patternClose is 26 1 rate is 0.0752688
+patternClose is 26 0 rate is 0.139785
+entropy is 0.00652912
+the patternClose is 13 and the count rate is 0.0116824
+patternClose is 13 1 rate is 0.301038
+patternClose is 13 0 rate is 0.508651
+patternClose is 13 2 rate is 0.190311
+entropy is 0.017208
+the patternClose is 9 and the count rate is 0.0029105
+patternClose is 9 0 rate is 0.5
+patternClose is 9 2 rate is 0.277778
+patternClose is 9 1 rate is 0.194444
+patternClose is 9 3 rate is 0.0277778
+entropy is 0.00470433
+the patternClose is 17 and the count rate is 0.000242542
+patternClose is 17 3 rate is 0.166667
+patternClose is 17 1 rate is 0.166667
+patternClose is 17 2 rate is 0.5
+patternClose is 17 0 rate is 0.166667
+entropy is 0.000434752
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 871877 points 
+positions bitstream size 8444 B (0.0905743 bpp)
+positions processing time (user): 0.875 s
+colors bitstream size 11969 B (0.128385 bpp)
+colors processing time (user): 0.734 s
+Number of points = 839701
+Number of nodes = 20216
+Estimation of sampling = 1.2413
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.0633501
+patternClose is 16 0 rate is 0.0151433
+patternClose is 16 2 rate is 0.208221
+patternClose is 16 3 rate is 0.684694
+patternClose is 16 1 rate is 0.0919416
+entropy is 0.0794188
+the patternClose is 0 and the count rate is 0.331997
+patternClose is 0 3 rate is 0.324149
+patternClose is 0 1 rate is 0.266151
+patternClose is 0 2 rate is 0.337255
+patternClose is 0 0 rate is 0.0724458
+entropy is 0.610306
+the patternClose is 1 and the count rate is 0.00263816
+patternClose is 1 2 rate is 0.272727
+patternClose is 1 0 rate is 0.415584
+patternClose is 1 1 rate is 0.181818
+patternClose is 1 3 rate is 0.12987
+entropy is 0.00492622
+the patternClose is 9 and the count rate is 0.00370028
+patternClose is 9 2 rate is 0.277778
+patternClose is 9 0 rate is 0.490741
+patternClose is 9 1 rate is 0.222222
+patternClose is 9 3 rate is 0.00925926
+entropy is 0.00578005
+the patternClose is 18 and the count rate is 0.0149382
+patternClose is 18 0 rate is 0.137615
+patternClose is 18 1 rate is 0.0504587
+patternClose is 18 3 rate is 0.380734
+patternClose is 18 2 rate is 0.431193
+entropy is 0.0248703
+the patternClose is 2 and the count rate is 0.0392983
+patternClose is 2 2 rate is 0.265039
+patternClose is 2 0 rate is 0.257193
+patternClose is 2 1 rate is 0.319093
+patternClose is 2 3 rate is 0.158675
+entropy is 0.0769803
+the patternClose is 5 and the count rate is 0.00346044
+patternClose is 5 2 rate is 0.0693069
+patternClose is 5 0 rate is 0.693069
+patternClose is 5 1 rate is 0.207921
+patternClose is 5 3 rate is 0.029703
+entropy is 0.00434387
+the patternClose is 6 and the count rate is 0.0287457
+patternClose is 6 2 rate is 0.129917
+patternClose is 6 0 rate is 0.68534
+patternClose is 6 1 rate is 0.148987
+patternClose is 6 3 rate is 0.0357569
+entropy is 0.0384378
+the patternClose is 10 and the count rate is 0.00417994
+patternClose is 10 0 rate is 0.385246
+patternClose is 10 2 rate is 0.204918
+patternClose is 10 1 rate is 0.327869
+patternClose is 10 3 rate is 0.0819672
+entropy is 0.00761611
+the patternClose is 26 and the count rate is 0.00373454
+patternClose is 26 0 rate is 0.33945
+patternClose is 26 2 rate is 0.284404
+patternClose is 26 1 rate is 0.110092
+patternClose is 26 3 rate is 0.266055
+entropy is 0.00710937
+the patternClose is 19 and the count rate is 0.00541337
+patternClose is 19 2 rate is 0.518987
+patternClose is 19 1 rate is 0.227848
+patternClose is 19 0 rate is 0.234177
+patternClose is 19 3 rate is 0.0189873
+entropy is 0.00853312
+the patternClose is 3 and the count rate is 0.0103813
+patternClose is 3 2 rate is 0.0594059
+patternClose is 3 1 rate is 0.141914
+patternClose is 3 0 rate is 0.792079
+patternClose is 3 3 rate is 0.00660066
+entropy is 0.00992359
+the patternClose is 11 and the count rate is 0.00911365
+patternClose is 11 2 rate is 0.139098
+patternClose is 11 0 rate is 0.481203
+patternClose is 11 1 rate is 0.379699
+entropy is 0.0130701
+the patternClose is 14 and the count rate is 0.00764039
+patternClose is 14 0 rate is 0.883408
+patternClose is 14 1 rate is 0.0672646
+patternClose is 14 2 rate is 0.0493274
+entropy is 0.0048446
+the patternClose is 30 and the count rate is 0.0096961
+patternClose is 30 0 rate is 0.689046
+patternClose is 30 2 rate is 0.190813
+patternClose is 30 1 rate is 0.0812721
+patternClose is 30 3 rate is 0.0388693
+entropy is 0.0126306
+the patternClose is 22 and the count rate is 0.00894234
+patternClose is 22 0 rate is 0.333333
+patternClose is 22 2 rate is 0.43295
+patternClose is 22 1 rate is 0.0727969
+patternClose is 22 3 rate is 0.16092
+entropy is 0.0156535
+the patternClose is 8 and the count rate is 0.0744167
+patternClose is 8 3 rate is 0.270718
+patternClose is 8 2 rate is 0.314917
+patternClose is 8 1 rate is 0.315838
+patternClose is 8 0 rate is 0.0985267
+entropy is 0.140637
+the patternClose is 4 and the count rate is 0.0407716
+patternClose is 4 2 rate is 0.309244
+patternClose is 4 1 rate is 0.42521
+patternClose is 4 3 rate is 0.0722689
+patternClose is 4 0 rate is 0.193277
+entropy is 0.0725919
+the patternClose is 20 and the count rate is 0.0118889
+patternClose is 20 3 rate is 0.631124
+patternClose is 20 2 rate is 0.270893
+patternClose is 20 1 rate is 0.074928
+patternClose is 20 0 rate is 0.0230548
+entropy is 0.0158714
+the patternClose is 24 and the count rate is 0.0843184
+patternClose is 24 3 rate is 0.72694
+patternClose is 24 2 rate is 0.179195
+patternClose is 24 0 rate is 0.0406339
+patternClose is 24 1 rate is 0.0532304
+entropy is 0.100504
+the patternClose is 7 and the count rate is 0.0558125
+patternClose is 7 0 rate is 0.786372
+patternClose is 7 1 rate is 0.156538
+patternClose is 7 2 rate is 0.0546347
+patternClose is 7 3 rate is 0.00245549
+entropy is 0.0525687
+the patternClose is 31 and the count rate is 0.0484462
+patternClose is 31 2 rate is 0.197313
+patternClose is 31 0 rate is 0.567185
+patternClose is 31 1 rate is 0.234088
+patternClose is 31 3 rate is 0.00141443
+entropy is 0.0692679
+the patternClose is 15 and the count rate is 0.042656
+patternClose is 15 0 rate is 0.668273
+patternClose is 15 2 rate is 0.0634538
+patternClose is 15 1 rate is 0.266667
+patternClose is 15 3 rate is 0.00160643
+entropy is 0.0496702
+the patternClose is 12 and the count rate is 0.0136362
+patternClose is 12 2 rate is 0.213568
+patternClose is 12 0 rate is 0.442211
+patternClose is 12 1 rate is 0.261307
+patternClose is 12 3 rate is 0.0829146
+entropy is 0.0245454
+the patternClose is 27 and the count rate is 0.00801727
+patternClose is 27 2 rate is 0.388889
+patternClose is 27 1 rate is 0.346154
+patternClose is 27 0 rate is 0.264957
+entropy is 0.0125661
+the patternClose is 28 and the count rate is 0.0139788
+patternClose is 28 3 rate is 0.436275
+patternClose is 28 2 rate is 0.311275
+patternClose is 28 0 rate is 0.198529
+patternClose is 28 1 rate is 0.0539216
+entropy is 0.0242735
+the patternClose is 13 and the count rate is 0.0140473
+patternClose is 13 0 rate is 0.470732
+patternClose is 13 1 rate is 0.385366
+patternClose is 13 2 rate is 0.141463
+patternClose is 13 3 rate is 0.00243902
+entropy is 0.0205394
+the patternClose is 23 and the count rate is 0.0228184
+patternClose is 23 2 rate is 0.381381
+patternClose is 23 0 rate is 0.376877
+patternClose is 23 1 rate is 0.238739
+patternClose is 23 3 rate is 0.003003
+entropy is 0.0360412
+the patternClose is 25 and the count rate is 0.0052078
+patternClose is 25 2 rate is 0.578947
+patternClose is 25 1 rate is 0.256579
+patternClose is 25 0 rate is 0.151316
+patternClose is 25 3 rate is 0.0131579
+entropy is 0.00757469
+the patternClose is 29 and the count rate is 0.0146298
+patternClose is 29 2 rate is 0.435597
+patternClose is 29 1 rate is 0.222482
+patternClose is 29 0 rate is 0.337237
+patternClose is 29 3 rate is 0.00468384
+entropy is 0.0229649
+the patternClose is 21 and the count rate is 0.00140473
+patternClose is 21 0 rate is 0.414634
+patternClose is 21 2 rate is 0.146341
+patternClose is 21 3 rate is 0.0243902
+patternClose is 21 1 rate is 0.414634
+entropy is 0.00223305
+the patternClose is 17 and the count rate is 0.000719498
+patternClose is 17 0 rate is 0.190476
+patternClose is 17 2 rate is 0.142857
+patternClose is 17 1 rate is 0.238095
+patternClose is 17 3 rate is 0.428571
+entropy is 0.00134803
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 979586 points 
+positions bitstream size 9838 B (0.0937286 bpp)
+positions processing time (user): 1.031 s
+colors bitstream size 21975 B (0.20936 bpp)
+colors processing time (user): 0.828 s
+Number of points = 330714
+Number of nodes = 7766
+Estimation of sampling = 1.22592
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.0634531
+patternClose is 16 2 rate is 0.265193
+patternClose is 16 3 rate is 0.60221
+patternClose is 16 1 rate is 0.103591
+patternClose is 16 0 rate is 0.0290055
+entropy is 0.0910821
+the patternClose is 24 and the count rate is 0.063716
+patternClose is 24 0 rate is 0.0330124
+patternClose is 24 2 rate is 0.166437
+patternClose is 24 3 rate is 0.74553
+patternClose is 24 1 rate is 0.0550206
+entropy is 0.0725768
+the patternClose is 8 and the count rate is 0.0567046
+patternClose is 8 0 rate is 0.0880989
+patternClose is 8 2 rate is 0.307573
+patternClose is 8 3 rate is 0.324575
+patternClose is 8 1 rate is 0.279753
+entropy is 0.106206
+the patternClose is 0 and the count rate is 0.353812
+patternClose is 0 3 rate is 0.30592
+patternClose is 0 2 rate is 0.31781
+patternClose is 0 1 rate is 0.303195
+patternClose is 0 0 rate is 0.0730741
+entropy is 0.653192
+the patternClose is 1 and the count rate is 0.00622261
+patternClose is 1 0 rate is 0.323944
+patternClose is 1 1 rate is 0.197183
+patternClose is 1 3 rate is 0.253521
+patternClose is 1 2 rate is 0.225352
+entropy is 0.01229
+the patternClose is 26 and the count rate is 0.00543383
+patternClose is 26 0 rate is 0.403226
+patternClose is 26 1 rate is 0.193548
+patternClose is 26 2 rate is 0.290323
+patternClose is 26 3 rate is 0.112903
+entropy is 0.0101082
+the patternClose is 10 and the count rate is 0.00315513
+patternClose is 10 1 rate is 0.333333
+patternClose is 10 0 rate is 0.361111
+patternClose is 10 3 rate is 0.0555556
+patternClose is 10 2 rate is 0.25
+entropy is 0.00564967
+the patternClose is 31 and the count rate is 0.0461876
+patternClose is 31 2 rate is 0.193548
+patternClose is 31 0 rate is 0.571157
+patternClose is 31 1 rate is 0.233397
+patternClose is 31 3 rate is 0.00189753
+entropy is 0.0659175
+the patternClose is 23 and the count rate is 0.024014
+patternClose is 23 1 rate is 0.266423
+patternClose is 23 0 rate is 0.361314
+patternClose is 23 2 rate is 0.354015
+patternClose is 23 3 rate is 0.0182482
+entropy is 0.0402188
+the patternClose is 3 and the count rate is 0.0137599
+patternClose is 3 0 rate is 0.656051
+patternClose is 3 1 rate is 0.261146
+patternClose is 3 2 rate is 0.0700637
+patternClose is 3 3 rate is 0.0127389
+entropy is 0.0172509
+the patternClose is 27 and the count rate is 0.00946538
+patternClose is 27 1 rate is 0.416667
+patternClose is 27 0 rate is 0.277778
+patternClose is 27 2 rate is 0.296296
+patternClose is 27 3 rate is 0.00925926
+entropy is 0.0153539
+the patternClose is 30 and the count rate is 0.0105171
+patternClose is 30 0 rate is 0.8
+patternClose is 30 2 rate is 0.0916667
+patternClose is 30 3 rate is 0.0583333
+patternClose is 30 1 rate is 0.05
+entropy is 0.0108199
+the patternClose is 15 and the count rate is 0.0343558
+patternClose is 15 0 rate is 0.706633
+patternClose is 15 2 rate is 0.0484694
+patternClose is 15 1 rate is 0.244898
+entropy is 0.0365112
+the patternClose is 28 and the count rate is 0.0150745
+patternClose is 28 3 rate is 0.575581
+patternClose is 28 2 rate is 0.273256
+patternClose is 28 1 rate is 0.0581395
+patternClose is 28 0 rate is 0.0930233
+entropy is 0.023026
+the patternClose is 7 and the count rate is 0.0501315
+patternClose is 7 0 rate is 0.711538
+patternClose is 7 1 rate is 0.232517
+patternClose is 7 2 rate is 0.0541958
+patternClose is 7 3 rate is 0.00174825
+entropy is 0.054275
+the patternClose is 6 and the count rate is 0.0311131
+patternClose is 6 2 rate is 0.101408
+patternClose is 6 1 rate is 0.216901
+patternClose is 6 0 rate is 0.656338
+patternClose is 6 3 rate is 0.0253521
+entropy is 0.0418843
+the patternClose is 18 and the count rate is 0.026468
+patternClose is 18 2 rate is 0.357616
+patternClose is 18 0 rate is 0.10596
+patternClose is 18 1 rate is 0.0960265
+patternClose is 18 3 rate is 0.440397
+entropy is 0.0455071
+the patternClose is 2 and the count rate is 0.0405784
+patternClose is 2 1 rate is 0.280778
+patternClose is 2 2 rate is 0.274298
+patternClose is 2 0 rate is 0.263499
+patternClose is 2 3 rate is 0.181425
+entropy is 0.0803531
+the patternClose is 11 and the count rate is 0.00780018
+patternClose is 11 1 rate is 0.292135
+patternClose is 11 0 rate is 0.550562
+patternClose is 11 2 rate is 0.146067
+patternClose is 11 3 rate is 0.011236
+entropy is 0.0114726
+the patternClose is 4 and the count rate is 0.0366345
+patternClose is 4 2 rate is 0.27512
+patternClose is 4 3 rate is 0.0741627
+patternClose is 4 0 rate is 0.244019
+patternClose is 4 1 rate is 0.406699
+entropy is 0.0664926
+the patternClose is 20 and the count rate is 0.014461
+patternClose is 20 3 rate is 0.527273
+patternClose is 20 1 rate is 0.0666667
+patternClose is 20 0 rate is 0.0424242
+patternClose is 20 2 rate is 0.363636
+entropy is 0.0212786
+the patternClose is 12 and the count rate is 0.016915
+patternClose is 12 2 rate is 0.217617
+patternClose is 12 1 rate is 0.274611
+patternClose is 12 0 rate is 0.393782
+patternClose is 12 3 rate is 0.11399
+entropy is 0.0317561
+the patternClose is 5 and the count rate is 0.00394391
+patternClose is 5 1 rate is 0.222222
+patternClose is 5 0 rate is 0.533333
+patternClose is 5 2 rate is 0.2
+patternClose is 5 3 rate is 0.0444444
+entropy is 0.00642819
+the patternClose is 14 and the count rate is 0.00788782
+patternClose is 14 1 rate is 0.122222
+patternClose is 14 0 rate is 0.811111
+patternClose is 14 2 rate is 0.0666667
+entropy is 0.00691026
+the patternClose is 22 and the count rate is 0.0101665
+patternClose is 22 2 rate is 0.396552
+patternClose is 22 0 rate is 0.422414
+patternClose is 22 1 rate is 0.0948276
+patternClose is 22 3 rate is 0.0862069
+entropy is 0.0170945
+the patternClose is 19 and the count rate is 0.00736196
+patternClose is 19 1 rate is 0.261905
+patternClose is 19 0 rate is 0.166667
+patternClose is 19 2 rate is 0.535714
+patternClose is 19 3 rate is 0.0357143
+entropy is 0.0117139
+the patternClose is 25 and the count rate is 0.00534619
+patternClose is 25 2 rate is 0.442623
+patternClose is 25 1 rate is 0.213115
+patternClose is 25 0 rate is 0.327869
+patternClose is 25 3 rate is 0.0163934
+entropy is 0.00866334
+the patternClose is 17 and the count rate is 0.000788782
+patternClose is 17 0 rate is 0.333333
+patternClose is 17 2 rate is 0.333333
+patternClose is 17 3 rate is 0.222222
+patternClose is 17 1 rate is 0.111111
+entropy is 0.00149163
+the patternClose is 21 and the count rate is 0.00157756
+patternClose is 21 2 rate is 0.666667
+patternClose is 21 1 rate is 0.222222
+patternClose is 21 0 rate is 0.111111
+entropy is 0.00193156
+the patternClose is 29 and the count rate is 0.0141981
+patternClose is 29 2 rate is 0.401235
+patternClose is 29 0 rate is 0.345679
+patternClose is 29 1 rate is 0.246914
+patternClose is 29 3 rate is 0.00617284
+entropy is 0.0227443
+the patternClose is 13 and the count rate is 0.0161262
+patternClose is 13 0 rate is 0.619565
+patternClose is 13 1 rate is 0.25
+patternClose is 13 3 rate is 0.0108696
+patternClose is 13 2 rate is 0.119565
+entropy is 0.0220153
+the patternClose is 9 and the count rate is 0.00262927
+patternClose is 9 0 rate is 0.433333
+patternClose is 9 2 rate is 0.3
+patternClose is 9 1 rate is 0.233333
+patternClose is 9 3 rate is 0.0333333
+entropy is 0.00446277
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 392389 points 
+positions bitstream size 4600 B (0.111274 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 13067 B (0.316092 bpp)
+colors processing time (user): 0.312 s
+Total frame size 113875 B
+Total bitstream size 113875 B
+Processing time (wall): 28.529 s
+Processing time (user): 17.765 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 836 B
+positions processing time (user): 0.062 s
+
+colors bitstream size 2565 B
+colors processing time (user): 0.015 s
+
+positions bitstream size 7640 B
+positions processing time (user): 0.656 s
+
+colors bitstream size 32845 B
+colors processing time (user): 0.609 s
+
+positions bitstream size 8444 B
+positions processing time (user): 0.656 s
+
+colors bitstream size 11969 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 9838 B
+positions processing time (user): 0.828 s
+
+colors bitstream size 21975 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 4600 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 13067 B
+colors processing time (user): 0.296 s
+
+Total bitstream size 113875 B
+Processing time (wall): 6.235 s
+Processing time (user): 4.875 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply
+infile2:        F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\loot_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1414 2800 642
+WARNING: 3882 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3017285, 3106849, 1.02968
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 2.12742
+   mse1,PSNR (p2point): 73.7378
+   mse1      (p2plane): 0.845048
+   mse1,PSNR (p2plane): 77.7475
+   c[0],    1         : 4.3745e-05
+   c[1],    1         : 5.12597e-06
+   c[2],    1         : 4.69058e-06
+   c[0],PSNR1         : 43.5907
+   c[1],PSNR1         : 52.9022
+   c[2],PSNR1         : 53.2877
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2.46605
+   mse2,PSNR (p2point): 73.0963
+   mse2      (p2plane): 1.47716
+   mse2,PSNR (p2plane): 75.322
+   c[0],    2         : 4.46213e-05
+   c[1],    2         : 5.25547e-06
+   c[2],    2         : 4.84336e-06
+   c[0],PSNR2         : 43.5046
+   c[1],PSNR2         : 52.7939
+   c[2],PSNR2         : 53.1485
+3. Final (symmetric).
+   mseF      (p2point): 2.46605
+   mseF,PSNR (p2point): 73.0963
+   mseF      (p2plane): 1.47716
+   mseF,PSNR (p2plane): 75.322
+   c[0],    F         : 4.46213e-05
+   c[1],    F         : 5.25547e-06
+   c[2],    F         : 4.84336e-06
+   c[0],PSNRF         : 43.5046
+   c[1],PSNRF         : 52.7939
+   c[2],PSNRF         : 53.1485
+Job done! 16.563 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 39341
+Number of nodes = 3639
+Estimation of sampling = 1.21655
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.13455
+patternClose is 16 2 rate is 0.240466
+patternClose is 16 3 rate is 0.717161
+patternClose is 16 1 rate is 0.0413136
+patternClose is 16 0 rate is 0.00105932
+entropy is 0.139769
+the patternClose is 0 and the count rate is 0.235034
+patternClose is 0 2 rate is 0.377805
+patternClose is 0 3 rate is 0.374166
+patternClose is 0 1 rate is 0.240752
+patternClose is 0 0 rate is 0.00727714
+entropy is 0.377815
+the patternClose is 26 and the count rate is 0.0183865
+patternClose is 26 1 rate is 0.0620155
+patternClose is 26 2 rate is 0.527132
+patternClose is 26 3 rate is 0.387597
+patternClose is 26 0 rate is 0.0232558
+entropy is 0.025592
+the patternClose is 9 and the count rate is 0.00199544
+patternClose is 9 1 rate is 0.357143
+patternClose is 9 2 rate is 0.571429
+patternClose is 9 0 rate is 0.0714286
+entropy is 0.00252185
+the patternClose is 28 and the count rate is 0.00698404
+patternClose is 28 1 rate is 0.0816327
+patternClose is 28 2 rate is 0.612245
+patternClose is 28 3 rate is 0.244898
+patternClose is 28 0 rate is 0.0612245
+entropy is 0.0102822
+the patternClose is 6 and the count rate is 0.0305017
+patternClose is 6 1 rate is 0.275701
+patternClose is 6 0 rate is 0.654206
+patternClose is 6 2 rate is 0.0700935
+entropy is 0.0360455
+the patternClose is 30 and the count rate is 0.0126853
+patternClose is 30 1 rate is 0.235955
+patternClose is 30 0 rate is 0.280899
+patternClose is 30 2 rate is 0.449438
+patternClose is 30 3 rate is 0.0337079
+entropy is 0.0214329
+the patternClose is 29 and the count rate is 0.0153934
+patternClose is 29 2 rate is 0.703704
+patternClose is 29 1 rate is 0.203704
+patternClose is 29 0 rate is 0.0740741
+patternClose is 29 3 rate is 0.0185185
+entropy is 0.0186114
+the patternClose is 24 and the count rate is 0.0372007
+patternClose is 24 2 rate is 0.402299
+patternClose is 24 3 rate is 0.559387
+patternClose is 24 1 rate is 0.0383142
+entropy is 0.0438076
+the patternClose is 31 and the count rate is 0.0806727
+patternClose is 31 2 rate is 0.519435
+patternClose is 31 0 rate is 0.212014
+patternClose is 31 1 rate is 0.268551
+entropy is 0.118965
+the patternClose is 7 and the count rate is 0.0735462
+patternClose is 7 1 rate is 0.296512
+patternClose is 7 0 rate is 0.488372
+patternClose is 7 2 rate is 0.215116
+entropy is 0.110456
+the patternClose is 3 and the count rate is 0.0125428
+patternClose is 3 0 rate is 0.488636
+patternClose is 3 1 rate is 0.443182
+patternClose is 3 2 rate is 0.0681818
+entropy is 0.0161716
+the patternClose is 23 and the count rate is 0.0366306
+patternClose is 23 1 rate is 0.48249
+patternClose is 23 2 rate is 0.311284
+patternClose is 23 0 rate is 0.202335
+patternClose is 23 3 rate is 0.00389105
+entropy is 0.0560074
+the patternClose is 15 and the count rate is 0.0652794
+patternClose is 15 1 rate is 0.242358
+patternClose is 15 0 rate is 0.532751
+patternClose is 15 2 rate is 0.224891
+entropy is 0.0955481
+the patternClose is 8 and the count rate is 0.0208096
+patternClose is 8 3 rate is 0.417808
+patternClose is 8 2 rate is 0.328767
+patternClose is 8 0 rate is 0.0205479
+patternClose is 8 1 rate is 0.232877
+entropy is 0.0345115
+the patternClose is 13 and the count rate is 0.0172463
+patternClose is 13 2 rate is 0.495868
+patternClose is 13 1 rate is 0.272727
+patternClose is 13 0 rate is 0.231405
+entropy is 0.0258977
+the patternClose is 19 and the count rate is 0.0185291
+patternClose is 19 2 rate is 0.484615
+patternClose is 19 1 rate is 0.315385
+patternClose is 19 0 rate is 0.2
+entropy is 0.0277178
+the patternClose is 5 and the count rate is 0.0166762
+patternClose is 5 1 rate is 0.452991
+patternClose is 5 0 rate is 0.393162
+patternClose is 5 2 rate is 0.153846
+entropy is 0.0243886
+the patternClose is 14 and the count rate is 0.0205245
+patternClose is 14 0 rate is 0.722222
+patternClose is 14 1 rate is 0.166667
+patternClose is 14 2 rate is 0.111111
+entropy is 0.0230308
+the patternClose is 27 and the count rate is 0.0209521
+patternClose is 27 1 rate is 0.306122
+patternClose is 27 2 rate is 0.544218
+patternClose is 27 0 rate is 0.14966
+entropy is 0.0295548
+the patternClose is 17 and the count rate is 0.00427594
+patternClose is 17 2 rate is 0.666667
+patternClose is 17 0 rate is 0.166667
+patternClose is 17 1 rate is 0.166667
+entropy is 0.00535189
+the patternClose is 2 and the count rate is 0.0135405
+patternClose is 2 1 rate is 0.578947
+patternClose is 2 0 rate is 0.231579
+patternClose is 2 2 rate is 0.168421
+patternClose is 2 3 rate is 0.0210526
+entropy is 0.0202471
+the patternClose is 18 and the count rate is 0.0119726
+patternClose is 18 2 rate is 0.380952
+patternClose is 18 0 rate is 0.0833333
+patternClose is 18 1 rate is 0.452381
+patternClose is 18 3 rate is 0.0833333
+entropy is 0.0197022
+the patternClose is 22 and the count rate is 0.00570125
+patternClose is 22 0 rate is 0.5
+patternClose is 22 1 rate is 0.275
+patternClose is 22 2 rate is 0.225
+entropy is 0.00853128
+the patternClose is 1 and the count rate is 0.0049886
+patternClose is 1 0 rate is 0.171429
+patternClose is 1 1 rate is 0.4
+patternClose is 1 3 rate is 0.142857
+patternClose is 1 2 rate is 0.285714
+entropy is 0.00939043
+the patternClose is 10 and the count rate is 0.00413341
+patternClose is 10 1 rate is 0.448276
+patternClose is 10 2 rate is 0.344828
+patternClose is 10 0 rate is 0.206897
+entropy is 0.00627803
+the patternClose is 11 and the count rate is 0.00669897
+patternClose is 11 1 rate is 0.234043
+patternClose is 11 2 rate is 0.148936
+patternClose is 11 0 rate is 0.617021
+entropy is 0.00890522
+the patternClose is 21 and the count rate is 0.00356328
+patternClose is 21 3 rate is 0.04
+patternClose is 21 2 rate is 0.32
+patternClose is 21 0 rate is 0.12
+patternClose is 21 1 rate is 0.52
+entropy is 0.00559233
+the patternClose is 4 and the count rate is 0.0390536
+patternClose is 4 1 rate is 0.240876
+patternClose is 4 2 rate is 0.368613
+patternClose is 4 0 rate is 0.153285
+patternClose is 4 3 rate is 0.237226
+entropy is 0.0754732
+the patternClose is 20 and the count rate is 0.00684151
+patternClose is 20 1 rate is 0.25
+patternClose is 20 2 rate is 0.375
+patternClose is 20 3 rate is 0.354167
+patternClose is 20 0 rate is 0.0208333
+entropy is 0.0114756
+the patternClose is 25 and the count rate is 0.0095496
+patternClose is 25 2 rate is 0.80597
+patternClose is 25 0 rate is 0.0746269
+patternClose is 25 1 rate is 0.119403
+entropy is 0.00855964
+the patternClose is 12 and the count rate is 0.0135405
+patternClose is 12 2 rate is 0.168421
+patternClose is 12 0 rate is 0.294737
+patternClose is 12 1 rate is 0.515789
+patternClose is 12 3 rate is 0.0210526
+entropy is 0.021153
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 49248 points 
+positions bitstream size 2397 B (0.48743 bpp)
+positions processing time (user): 0.125 s
+colors bitstream size 4704 B (0.956559 bpp)
+colors processing time (user): 0.046 s
+Number of points = 708147
+Number of nodes = 64504
+Estimation of sampling = 1.20723
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.069847
+patternClose is 16 1 rate is 0.0187091
+patternClose is 16 3 rate is 0.808232
+patternClose is 16 2 rate is 0.172474
+patternClose is 16 0 rate is 0.000584659
+entropy is 0.0558248
+the patternClose is 0 and the count rate is 0.224936
+patternClose is 0 3 rate is 0.354998
+patternClose is 0 2 rate is 0.393522
+patternClose is 0 1 rate is 0.248393
+patternClose is 0 0 rate is 0.00308631
+entropy is 0.356462
+the patternClose is 9 and the count rate is 0.00438586
+patternClose is 9 2 rate is 0.527002
+patternClose is 9 0 rate is 0.227188
+patternClose is 9 1 rate is 0.240223
+patternClose is 9 3 rate is 0.00558659
+entropy is 0.00661752
+the patternClose is 18 and the count rate is 0.0217741
+patternClose is 18 0 rate is 0.0292573
+patternClose is 18 1 rate is 0.108027
+patternClose is 18 2 rate is 0.562641
+patternClose is 18 3 rate is 0.300075
+entropy is 0.0323092
+the patternClose is 2 and the count rate is 0.0314769
+patternClose is 2 1 rate is 0.382979
+patternClose is 2 2 rate is 0.388687
+patternClose is 2 0 rate is 0.0809549
+patternClose is 2 3 rate is 0.147379
+entropy is 0.0554284
+the patternClose is 13 and the count rate is 0.0349072
+patternClose is 13 2 rate is 0.349789
+patternClose is 13 1 rate is 0.318671
+patternClose is 13 0 rate is 0.33037
+patternClose is 13 3 rate is 0.00116986
+entropy is 0.0556812
+the patternClose is 14 and the count rate is 0.00790598
+patternClose is 14 2 rate is 0.0971074
+patternClose is 14 1 rate is 0.171488
+patternClose is 14 0 rate is 0.731405
+entropy is 0.00864109
+the patternClose is 6 and the count rate is 0.0496982
+patternClose is 6 2 rate is 0.0619556
+patternClose is 6 0 rate is 0.607067
+patternClose is 6 1 rate is 0.330649
+patternClose is 6 3 rate is 0.000328677
+entropy is 0.0605058
+the patternClose is 20 and the count rate is 0.0107074
+patternClose is 20 2 rate is 0.581998
+patternClose is 20 3 rate is 0.370709
+patternClose is 20 0 rate is 0.00915332
+patternClose is 20 1 rate is 0.0381388
+entropy is 0.0131372
+the patternClose is 12 and the count rate is 0.0116875
+patternClose is 12 3 rate is 0.0384347
+patternClose is 12 2 rate is 0.308176
+patternClose is 12 1 rate is 0.500349
+patternClose is 12 0 rate is 0.15304
+entropy is 0.018914
+the patternClose is 5 and the count rate is 0.00833068
+patternClose is 5 0 rate is 0.763725
+patternClose is 5 1 rate is 0.180392
+patternClose is 5 2 rate is 0.0558824
+entropy is 0.00812455
+the patternClose is 27 and the count rate is 0.0103562
+patternClose is 27 0 rate is 0.129338
+patternClose is 27 2 rate is 0.680599
+patternClose is 27 1 rate is 0.190063
+entropy is 0.0125802
+the patternClose is 19 and the count rate is 0.0121857
+patternClose is 19 2 rate is 0.761394
+patternClose is 19 1 rate is 0.13941
+patternClose is 19 0 rate is 0.094504
+patternClose is 19 3 rate is 0.00469169
+entropy is 0.0128396
+the patternClose is 3 and the count rate is 0.0176741
+patternClose is 3 0 rate is 0.448244
+patternClose is 3 1 rate is 0.280961
+patternClose is 3 2 rate is 0.268022
+patternClose is 3 3 rate is 0.00277264
+entropy is 0.0276809
+the patternClose is 22 and the count rate is 0.0098008
+patternClose is 22 0 rate is 0.341667
+patternClose is 22 2 rate is 0.47
+patternClose is 22 1 rate is 0.153333
+patternClose is 22 3 rate is 0.035
+entropy is 0.0159302
+the patternClose is 31 and the count rate is 0.0707536
+patternClose is 31 1 rate is 0.297126
+patternClose is 31 0 rate is 0.277848
+patternClose is 31 2 rate is 0.425026
+entropy is 0.11025
+the patternClose is 11 and the count rate is 0.00843685
+patternClose is 11 1 rate is 0.468538
+patternClose is 11 0 rate is 0.326234
+patternClose is 11 2 rate is 0.205227
+entropy is 0.0127275
+the patternClose is 30 and the count rate is 0.00688506
+patternClose is 30 2 rate is 0.281139
+patternClose is 30 1 rate is 0.118624
+patternClose is 30 0 rate is 0.600237
+entropy is 0.00909867
+the patternClose is 1 and the count rate is 0.00219701
+patternClose is 1 1 rate is 0.234201
+patternClose is 1 2 rate is 0.386617
+patternClose is 1 0 rate is 0.364312
+patternClose is 1 3 rate is 0.0148699
+entropy is 0.00360643
+the patternClose is 21 and the count rate is 0.00147829
+patternClose is 21 0 rate is 0.0994475
+patternClose is 21 2 rate is 0.541436
+patternClose is 21 1 rate is 0.353591
+patternClose is 21 3 rate is 0.00552486
+entropy is 0.00204324
+the patternClose is 7 and the count rate is 0.0876028
+patternClose is 7 1 rate is 0.267015
+patternClose is 7 2 rate is 0.144975
+patternClose is 7 0 rate is 0.587917
+patternClose is 7 3 rate is 9.32314e-05
+entropy is 0.119522
+the patternClose is 4 and the count rate is 0.0174699
+patternClose is 4 1 rate is 0.436185
+patternClose is 4 2 rate is 0.351099
+patternClose is 4 3 rate is 0.0701262
+patternClose is 4 0 rate is 0.14259
+entropy is 0.0300802
+the patternClose is 28 and the count rate is 0.00908207
+patternClose is 28 2 rate is 0.606115
+patternClose is 28 3 rate is 0.225719
+patternClose is 28 0 rate is 0.0431655
+patternClose is 28 1 rate is 0.125
+entropy is 0.0135617
+the patternClose is 15 and the count rate is 0.0572938
+patternClose is 15 0 rate is 0.397862
+patternClose is 15 2 rate is 0.150107
+patternClose is 15 1 rate is 0.452031
+entropy is 0.0835063
+the patternClose is 29 and the count rate is 0.0287653
+patternClose is 29 2 rate is 0.737081
+patternClose is 29 1 rate is 0.16042
+patternClose is 29 0 rate is 0.102215
+patternClose is 29 3 rate is 0.00028393
+entropy is 0.0312846
+the patternClose is 25 and the count rate is 0.00500657
+patternClose is 25 2 rate is 0.78956
+patternClose is 25 0 rate is 0.0897227
+patternClose is 25 1 rate is 0.119086
+patternClose is 25 3 rate is 0.00163132
+entropy is 0.00481596
+the patternClose is 23 and the count rate is 0.0408448
+patternClose is 23 2 rate is 0.65247
+patternClose is 23 0 rate is 0.139972
+patternClose is 23 1 rate is 0.206759
+patternClose is 23 3 rate is 0.00079984
+entropy is 0.0521751
+the patternClose is 17 and the count rate is 0.000710558
+patternClose is 17 2 rate is 0.770115
+patternClose is 17 1 rate is 0.103448
+patternClose is 17 0 rate is 0.091954
+patternClose is 17 3 rate is 0.0344828
+entropy is 0.000790793
+the patternClose is 8 and the count rate is 0.0359608
+patternClose is 8 3 rate is 0.375653
+patternClose is 8 2 rate is 0.432205
+patternClose is 8 1 rate is 0.150125
+patternClose is 8 0 rate is 0.0420168
+entropy is 0.0595699
+the patternClose is 24 and the count rate is 0.0932628
+patternClose is 24 2 rate is 0.180226
+patternClose is 24 3 rate is 0.79394
+patternClose is 24 1 rate is 0.0225063
+patternClose is 24 0 rate is 0.00332779
+entropy is 0.0802454
+the patternClose is 26 and the count rate is 0.00460638
+patternClose is 26 2 rate is 0.574468
+patternClose is 26 0 rate is 0.0868794
+patternClose is 26 1 rate is 0.0744681
+patternClose is 26 3 rate is 0.264184
+entropy is 0.0071492
+the patternClose is 10 and the count rate is 0.00396932
+patternClose is 10 2 rate is 0.477366
+patternClose is 10 0 rate is 0.115226
+patternClose is 10 1 rate is 0.378601
+patternClose is 10 3 rate is 0.0288066
+entropy is 0.00613822
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 859064 points 
+positions bitstream size 23359 B (0.263889 bpp)
+positions processing time (user): 1.828 s
+colors bitstream size 65530 B (0.740298 bpp)
+colors processing time (user): 0.687 s
+Number of points = 745819
+Number of nodes = 66429
+Estimation of sampling = 1.19377
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 16 and the count rate is 0.062227
+patternClose is 16 3 rate is 0.755341
+patternClose is 16 2 rate is 0.22088
+patternClose is 16 1 rate is 0.022762
+patternClose is 16 0 rate is 0.00101729
+entropy is 0.0573307
+the patternClose is 0 and the count rate is 0.261624
+patternClose is 0 3 rate is 0.413998
+patternClose is 0 2 rate is 0.35886
+patternClose is 0 1 rate is 0.223906
+patternClose is 0 0 rate is 0.00323625
+entropy is 0.410095
+the patternClose is 11 and the count rate is 0.0108486
+patternClose is 11 1 rate is 0.402626
+patternClose is 11 0 rate is 0.247994
+patternClose is 11 2 rate is 0.34938
+entropy is 0.0168952
+the patternClose is 3 and the count rate is 0.0291432
+patternClose is 3 2 rate is 0.306001
+patternClose is 3 0 rate is 0.422753
+patternClose is 3 1 rate is 0.269889
+patternClose is 3 3 rate is 0.00135759
+entropy is 0.0457775
+the patternClose is 19 and the count rate is 0.0213173
+patternClose is 19 2 rate is 0.828137
+patternClose is 19 1 rate is 0.101336
+patternClose is 19 0 rate is 0.0690423
+patternClose is 19 3 rate is 0.00148478
+entropy is 0.0179108
+the patternClose is 22 and the count rate is 0.0114025
+patternClose is 22 0 rate is 0.417765
+patternClose is 22 1 rate is 0.162387
+patternClose is 22 2 rate is 0.384455
+patternClose is 22 3 rate is 0.0353921
+entropy is 0.0188453
+the patternClose is 30 and the count rate is 0.00837976
+patternClose is 30 0 rate is 0.606232
+patternClose is 30 2 rate is 0.281398
+patternClose is 30 1 rate is 0.107649
+patternClose is 30 3 rate is 0.00472144
+entropy is 0.0111881
+the patternClose is 6 and the count rate is 0.0447949
+patternClose is 6 0 rate is 0.600954
+patternClose is 6 2 rate is 0.0567038
+patternClose is 6 1 rate is 0.341636
+patternClose is 6 3 rate is 0.000706589
+entropy is 0.0543376
+the patternClose is 1 and the count rate is 0.00267456
+patternClose is 1 3 rate is 0.0118343
+patternClose is 1 2 rate is 0.414201
+patternClose is 1 1 rate is 0.245562
+patternClose is 1 0 rate is 0.328402
+entropy is 0.0043528
+the patternClose is 18 and the count rate is 0.0137605
+patternClose is 18 2 rate is 0.561242
+patternClose is 18 1 rate is 0.180564
+patternClose is 18 0 rate is 0.040253
+patternClose is 18 3 rate is 0.217941
+entropy is 0.0217302
+the patternClose is 2 and the count rate is 0.0274498
+patternClose is 2 2 rate is 0.384837
+patternClose is 2 0 rate is 0.0971462
+patternClose is 2 1 rate is 0.366388
+patternClose is 2 3 rate is 0.151629
+entropy is 0.0494187
+the patternClose is 9 and the count rate is 0.00406723
+patternClose is 9 2 rate is 0.501946
+patternClose is 9 0 rate is 0.212062
+patternClose is 9 1 rate is 0.276265
+patternClose is 9 3 rate is 0.00972763
+entropy is 0.00630965
+the patternClose is 29 and the count rate is 0.021436
+patternClose is 29 2 rate is 0.637505
+patternClose is 29 1 rate is 0.18014
+patternClose is 29 0 rate is 0.181248
+patternClose is 29 3 rate is 0.00110742
+entropy is 0.0282306
+the patternClose is 31 and the count rate is 0.0805374
+patternClose is 31 2 rate is 0.508843
+patternClose is 31 1 rate is 0.235999
+patternClose is 31 0 rate is 0.25506
+patternClose is 31 3 rate is 9.82511e-05
+entropy is 0.120134
+the patternClose is 7 and the count rate is 0.0784405
+patternClose is 7 0 rate is 0.596691
+patternClose is 7 2 rate is 0.155553
+patternClose is 7 1 rate is 0.247655
+patternClose is 7 3 rate is 0.000100878
+entropy is 0.106844
+the patternClose is 23 and the count rate is 0.0467415
+patternClose is 23 1 rate is 0.203995
+patternClose is 23 2 rate is 0.668021
+patternClose is 23 0 rate is 0.127645
+patternClose is 23 3 rate is 0.000338581
+entropy is 0.0579424
+the patternClose is 15 and the count rate is 0.0532933
+patternClose is 15 1 rate is 0.447661
+patternClose is 15 0 rate is 0.404157
+patternClose is 15 2 rate is 0.148181
+entropy is 0.0775677
+the patternClose is 12 and the count rate is 0.00982782
+patternClose is 12 2 rate is 0.227858
+patternClose is 12 0 rate is 0.161031
+patternClose is 12 1 rate is 0.535427
+patternClose is 12 3 rate is 0.0756844
+entropy is 0.01646
+the patternClose is 4 and the count rate is 0.0195449
+patternClose is 4 1 rate is 0.480972
+patternClose is 4 2 rate is 0.369231
+patternClose is 4 3 rate is 0.0740891
+patternClose is 4 0 rate is 0.0757085
+entropy is 0.0312463
+the patternClose is 13 and the count rate is 0.0226863
+patternClose is 13 2 rate is 0.378444
+patternClose is 13 0 rate is 0.342867
+patternClose is 13 1 rate is 0.277991
+patternClose is 13 3 rate is 0.000697593
+entropy is 0.035861
+the patternClose is 5 and the count rate is 0.00453409
+patternClose is 5 2 rate is 0.0907504
+patternClose is 5 1 rate is 0.383944
+patternClose is 5 0 rate is 0.52007
+patternClose is 5 3 rate is 0.0052356
+entropy is 0.00623268
+the patternClose is 26 and the count rate is 0.00358454
+patternClose is 26 2 rate is 0.596026
+patternClose is 26 3 rate is 0.200883
+patternClose is 26 0 rate is 0.116998
+patternClose is 26 1 rate is 0.0860927
+entropy is 0.00565238
+the patternClose is 10 and the count rate is 0.0028249
+patternClose is 10 1 rate is 0.647059
+patternClose is 10 2 rate is 0.210084
+patternClose is 10 0 rate is 0.131653
+patternClose is 10 3 rate is 0.0112045
+entropy is 0.00377683
+the patternClose is 24 and the count rate is 0.0723239
+patternClose is 24 2 rate is 0.17954
+patternClose is 24 3 rate is 0.784354
+patternClose is 24 1 rate is 0.0330416
+patternClose is 24 0 rate is 0.00306346
+entropy is 0.0656571
+the patternClose is 21 and the count rate is 0.00217605
+patternClose is 21 2 rate is 0.661818
+patternClose is 21 1 rate is 0.243636
+patternClose is 21 0 rate is 0.0836364
+patternClose is 21 3 rate is 0.0109091
+entropy is 0.00274388
+the patternClose is 28 and the count rate is 0.0151215
+patternClose is 28 2 rate is 0.534275
+patternClose is 28 3 rate is 0.322868
+patternClose is 28 0 rate is 0.0324437
+patternClose is 28 1 rate is 0.110413
+entropy is 0.0230034
+the patternClose is 20 and the count rate is 0.0156675
+patternClose is 20 2 rate is 0.576263
+patternClose is 20 3 rate is 0.35101
+patternClose is 20 1 rate is 0.0454545
+patternClose is 20 0 rate is 0.0272727
+entropy is 0.0208823
+the patternClose is 14 and the count rate is 0.0106112
+patternClose is 14 0 rate is 0.829232
+patternClose is 14 1 rate is 0.132737
+patternClose is 14 2 rate is 0.0380313
+entropy is 0.00838401
+the patternClose is 27 and the count rate is 0.0131275
+patternClose is 27 2 rate is 0.772755
+patternClose is 27 1 rate is 0.129596
+patternClose is 27 0 rate is 0.0970464
+patternClose is 27 3 rate is 0.000602773
+entropy is 0.0131598
+the patternClose is 17 and the count rate is 0.00109989
+patternClose is 17 2 rate is 0.784173
+patternClose is 17 0 rate is 0.0647482
+patternClose is 17 1 rate is 0.129496
+patternClose is 17 3 rate is 0.0215827
+entropy is 0.00113517
+the patternClose is 8 and the count rate is 0.0258277
+patternClose is 8 2 rate is 0.444547
+patternClose is 8 3 rate is 0.300551
+patternClose is 8 1 rate is 0.206801
+patternClose is 8 0 rate is 0.0481005
+entropy is 0.0444744
+the patternClose is 25 and the count rate is 0.00290403
+patternClose is 25 2 rate is 0.773842
+patternClose is 25 0 rate is 0.0953678
+patternClose is 25 1 rate is 0.117166
+patternClose is 25 3 rate is 0.013624
+entropy is 0.00306794
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 897784 points 
+positions bitstream size 24930 B (0.267411 bpp)
+positions processing time (user): 1.906 s
+colors bitstream size 25410 B (0.272559 bpp)
+colors processing time (user): 0.687 s
+Number of points = 839701
+Number of nodes = 77308
+Estimation of sampling = 1.2137
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 0 and the count rate is 0.24169
+patternClose is 0 3 rate is 0.405615
+patternClose is 0 2 rate is 0.363093
+patternClose is 0 1 rate is 0.227421
+patternClose is 0 0 rate is 0.00387075
+entropy is 0.380818
+the patternClose is 9 and the count rate is 0.00466406
+patternClose is 9 2 rate is 0.546512
+patternClose is 9 0 rate is 0.165698
+patternClose is 9 1 rate is 0.273256
+patternClose is 9 3 rate is 0.0145349
+entropy is 0.00702533
+the patternClose is 1 and the count rate is 0.00301672
+patternClose is 1 2 rate is 0.406742
+patternClose is 1 1 rate is 0.238202
+patternClose is 1 0 rate is 0.298876
+patternClose is 1 3 rate is 0.0561798
+entropy is 0.00535471
+the patternClose is 10 and the count rate is 0.00342347
+patternClose is 10 1 rate is 0.550495
+patternClose is 10 0 rate is 0.174257
+patternClose is 10 2 rate is 0.265347
+patternClose is 10 3 rate is 0.00990099
+entropy is 0.00509121
+the patternClose is 2 and the count rate is 0.0272048
+patternClose is 2 2 rate is 0.34164
+patternClose is 2 0 rate is 0.11388
+patternClose is 2 1 rate is 0.401445
+patternClose is 2 3 rate is 0.143035
+entropy is 0.0494089
+the patternClose is 5 and the count rate is 0.00517927
+patternClose is 5 2 rate is 0.0798429
+patternClose is 5 0 rate is 0.586387
+patternClose is 5 1 rate is 0.328534
+patternClose is 5 3 rate is 0.0052356
+entropy is 0.00678477
+the patternClose is 13 and the count rate is 0.0240185
+patternClose is 13 2 rate is 0.336438
+patternClose is 13 1 rate is 0.367485
+patternClose is 13 0 rate is 0.29523
+patternClose is 13 3 rate is 0.00084674
+entropy is 0.0381355
+the patternClose is 6 and the count rate is 0.0403699
+patternClose is 6 2 rate is 0.0623006
+patternClose is 6 0 rate is 0.625021
+patternClose is 6 1 rate is 0.310495
+patternClose is 6 3 rate is 0.00218304
+entropy is 0.0491092
+the patternClose is 26 and the count rate is 0.00394547
+patternClose is 26 0 rate is 0.109966
+patternClose is 26 2 rate is 0.597938
+patternClose is 26 1 rate is 0.134021
+patternClose is 26 3 rate is 0.158076
+entropy is 0.00632512
+the patternClose is 18 and the count rate is 0.0138227
+patternClose is 18 2 rate is 0.461991
+patternClose is 18 1 rate is 0.227072
+patternClose is 18 0 rate is 0.0402158
+patternClose is 18 3 rate is 0.270721
+entropy is 0.0234589
+the patternClose is 4 and the count rate is 0.0189952
+patternClose is 4 1 rate is 0.503212
+patternClose is 4 0 rate is 0.0949322
+patternClose is 4 2 rate is 0.334047
+patternClose is 4 3 rate is 0.0678087
+entropy is 0.030634
+the patternClose is 19 and the count rate is 0.0112941
+patternClose is 19 2 rate is 0.736495
+patternClose is 19 1 rate is 0.160264
+patternClose is 19 0 rate is 0.101441
+patternClose is 19 3 rate is 0.00180072
+entropy is 0.0124192
+the patternClose is 3 and the count rate is 0.0212323
+patternClose is 3 2 rate is 0.220626
+patternClose is 3 1 rate is 0.319285
+patternClose is 3 0 rate is 0.458812
+patternClose is 3 3 rate is 0.00127714
+entropy is 0.0325899
+the patternClose is 22 and the count rate is 0.0103857
+patternClose is 22 0 rate is 0.407963
+patternClose is 22 2 rate is 0.377937
+patternClose is 22 1 rate is 0.189948
+patternClose is 22 3 rate is 0.0241514
+entropy is 0.0170652
+the patternClose is 11 and the count rate is 0.00926711
+patternClose is 11 0 rate is 0.252377
+patternClose is 11 1 rate is 0.463058
+patternClose is 11 2 rate is 0.283833
+patternClose is 11 3 rate is 0.000731529
+entropy is 0.0142617
+the patternClose is 30 and the count rate is 0.0078706
+patternClose is 30 0 rate is 0.546942
+patternClose is 30 2 rate is 0.281654
+patternClose is 30 1 rate is 0.166236
+patternClose is 30 3 rate is 0.00516796
+entropy is 0.0114957
+the patternClose is 16 and the count rate is 0.0699744
+patternClose is 16 3 rate is 0.736195
+patternClose is 16 2 rate is 0.230575
+patternClose is 16 1 rate is 0.0310986
+patternClose is 16 0 rate is 0.00213137
+entropy is 0.0691321
+the patternClose is 14 and the count rate is 0.0106094
+patternClose is 14 0 rate is 0.759105
+patternClose is 14 1 rate is 0.178914
+patternClose is 14 2 rate is 0.0619808
+entropy is 0.0105531
+the patternClose is 20 and the count rate is 0.0135176
+patternClose is 20 1 rate is 0.0687061
+patternClose is 20 3 rate is 0.36008
+patternClose is 20 2 rate is 0.551655
+patternClose is 20 0 rate is 0.0195587
+entropy is 0.0186609
+the patternClose is 8 and the count rate is 0.0355024
+patternClose is 8 2 rate is 0.431927
+patternClose is 8 3 rate is 0.33607
+patternClose is 8 1 rate is 0.198014
+patternClose is 8 0 rate is 0.0339889
+entropy is 0.0596536
+the patternClose is 12 and the count rate is 0.0124398
+patternClose is 12 3 rate is 0.0381471
+patternClose is 12 1 rate is 0.623978
+patternClose is 12 2 rate is 0.200545
+patternClose is 12 0 rate is 0.13733
+entropy is 0.0181938
+the patternClose is 15 and the count rate is 0.0569788
+patternClose is 15 0 rate is 0.406782
+patternClose is 15 2 rate is 0.144557
+patternClose is 15 1 rate is 0.448067
+patternClose is 15 3 rate is 0.000594884
+entropy is 0.0829929
+the patternClose is 31 and the count rate is 0.0755605
+patternClose is 31 2 rate is 0.419971
+patternClose is 31 1 rate is 0.300108
+patternClose is 31 0 rate is 0.279742
+patternClose is 31 3 rate is 0.000179437
+entropy is 0.11811
+the patternClose is 21 and the count rate is 0.00269132
+patternClose is 21 2 rate is 0.486146
+patternClose is 21 0 rate is 0.0957179
+patternClose is 21 1 rate is 0.395466
+patternClose is 21 3 rate is 0.02267
+entropy is 0.00399122
+the patternClose is 24 and the count rate is 0.0908
+patternClose is 24 2 rate is 0.231372
+patternClose is 24 3 rate is 0.740779
+patternClose is 24 1 rate is 0.0234433
+patternClose is 24 0 rate is 0.00440496
+entropy is 0.0881375
+the patternClose is 28 and the count rate is 0.0119584
+patternClose is 28 2 rate is 0.584467
+patternClose is 28 0 rate is 0.0464853
+patternClose is 28 3 rate is 0.264739
+patternClose is 28 1 rate is 0.104308
+entropy is 0.0180142
+the patternClose is 7 and the count rate is 0.0877426
+patternClose is 7 1 rate is 0.234953
+patternClose is 7 0 rate is 0.641428
+patternClose is 7 2 rate is 0.123155
+patternClose is 7 3 rate is 0.000463571
+entropy is 0.112233
+the patternClose is 23 and the count rate is 0.0404038
+patternClose is 23 1 rate is 0.218289
+patternClose is 23 2 rate is 0.615101
+patternClose is 23 0 rate is 0.16443
+patternClose is 23 3 rate is 0.00218121
+entropy is 0.0548715
+the patternClose is 27 and the count rate is 0.0124533
+patternClose is 27 2 rate is 0.667937
+patternClose is 27 0 rate is 0.114861
+patternClose is 27 1 rate is 0.21448
+patternClose is 27 3 rate is 0.00272183
+entropy is 0.01553
+the patternClose is 25 and the count rate is 0.00660968
+patternClose is 25 1 rate is 0.10359
+patternClose is 25 2 rate is 0.804103
+patternClose is 25 0 rate is 0.0851282
+patternClose is 25 3 rate is 0.00717949
+entropy is 0.00624926
+the patternClose is 29 and the count rate is 0.0250286
+patternClose is 29 2 rate is 0.736457
+patternClose is 29 1 rate is 0.168202
+patternClose is 29 0 rate is 0.0931744
+patternClose is 29 3 rate is 0.00216685
+entropy is 0.0274261
+the patternClose is 17 and the count rate is 0.00134905
+patternClose is 17 2 rate is 0.723618
+patternClose is 17 1 rate is 0.155779
+patternClose is 17 0 rate is 0.0502513
+patternClose is 17 3 rate is 0.0703518
+entropy is 0.00167524
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1030517 points 
+positions bitstream size 30458 B (0.290179 bpp)
+positions processing time (user): 2.281 s
+colors bitstream size 45063 B (0.429324 bpp)
+colors processing time (user): 0.828 s
+Number of points = 330714
+Number of nodes = 29858
+Estimation of sampling = 1.20189
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClose
+the patternClose is 24 and the count rate is 0.0763621
+patternClose is 24 3 rate is 0.781492
+patternClose is 24 2 rate is 0.183492
+patternClose is 24 1 rate is 0.0259209
+patternClose is 24 0 rate is 0.00909504
+entropy is 0.0706428
+the patternClose is 0 and the count rate is 0.254436
+patternClose is 0 3 rate is 0.391292
+patternClose is 0 2 rate is 0.37007
+patternClose is 0 1 rate is 0.233315
+patternClose is 0 0 rate is 0.00532278
+entropy is 0.404681
+the patternClose is 1 and the count rate is 0.004306
+patternClose is 1 1 rate is 0.217742
+patternClose is 1 2 rate is 0.346774
+patternClose is 1 0 rate is 0.342742
+patternClose is 1 3 rate is 0.0927419
+entropy is 0.0079935
+the patternClose is 10 and the count rate is 0.00281279
+patternClose is 10 1 rate is 0.475309
+patternClose is 10 0 rate is 0.308642
+patternClose is 10 2 rate is 0.216049
+entropy is 0.00425036
+the patternClose is 26 and the count rate is 0.00362885
+patternClose is 26 2 rate is 0.535885
+patternClose is 26 0 rate is 0.133971
+patternClose is 26 1 rate is 0.167464
+patternClose is 26 3 rate is 0.162679
+entropy is 0.00627339
+the patternClose is 31 and the count rate is 0.0753377
+patternClose is 31 0 rate is 0.274257
+patternClose is 31 2 rate is 0.424522
+patternClose is 31 1 rate is 0.300761
+patternClose is 31 3 rate is 0.000460936
+entropy is 0.117756
+the patternClose is 15 and the count rate is 0.0514637
+patternClose is 15 1 rate is 0.438259
+patternClose is 15 2 rate is 0.123144
+patternClose is 15 0 rate is 0.438259
+patternClose is 15 3 rate is 0.000337382
+entropy is 0.0730354
+the patternClose is 23 and the count rate is 0.0481474
+patternClose is 23 1 rate is 0.242697
+patternClose is 23 2 rate is 0.608006
+patternClose is 23 0 rate is 0.148215
+patternClose is 23 3 rate is 0.00108186
+entropy is 0.0650522
+the patternClose is 2 and the count rate is 0.0263569
+patternClose is 2 0 rate is 0.140975
+patternClose is 2 1 rate is 0.366271
+patternClose is 2 2 rate is 0.346509
+patternClose is 2 3 rate is 0.146245
+entropy is 0.0491461
+the patternClose is 25 and the count rate is 0.00645901
+patternClose is 25 2 rate is 0.77957
+patternClose is 25 1 rate is 0.104839
+patternClose is 25 0 rate is 0.115591
+entropy is 0.00633631
+the patternClose is 12 and the count rate is 0.0129006
+patternClose is 12 0 rate is 0.195155
+patternClose is 12 1 rate is 0.507402
+patternClose is 12 2 rate is 0.20323
+patternClose is 12 3 rate is 0.0942127
+entropy is 0.0225109
+the patternClose is 16 and the count rate is 0.0666042
+patternClose is 16 1 rate is 0.0320647
+patternClose is 16 3 rate is 0.696298
+patternClose is 16 2 rate is 0.270073
+patternClose is 16 0 rate is 0.00156413
+entropy is 0.0697604
+the patternClose is 3 and the count rate is 0.0241171
+patternClose is 3 1 rate is 0.365731
+patternClose is 3 2 rate is 0.226782
+patternClose is 3 0 rate is 0.406048
+patternClose is 3 3 rate is 0.00143988
+entropy is 0.0375684
+the patternClose is 14 and the count rate is 0.0112859
+patternClose is 14 1 rate is 0.136923
+patternClose is 14 0 rate is 0.816923
+patternClose is 14 2 rate is 0.0446154
+patternClose is 14 3 rate is 0.00153846
+entropy is 0.00954365
+the patternClose is 17 and the count rate is 0.00135431
+patternClose is 17 2 rate is 0.705128
+patternClose is 17 1 rate is 0.153846
+patternClose is 17 0 rate is 0.102564
+patternClose is 17 3 rate is 0.0384615
+entropy is 0.00174518
+the patternClose is 18 and the count rate is 0.0208702
+patternClose is 18 2 rate is 0.544925
+patternClose is 18 1 rate is 0.133943
+patternClose is 18 0 rate is 0.0374376
+patternClose is 18 3 rate is 0.283694
+entropy is 0.0325332
+the patternClose is 27 and the count rate is 0.0130048
+patternClose is 27 2 rate is 0.70494
+patternClose is 27 1 rate is 0.194927
+patternClose is 27 0 rate is 0.0987984
+patternClose is 27 3 rate is 0.00133511
+entropy is 0.0150608
+the patternClose is 19 and the count rate is 0.01488
+patternClose is 19 2 rate is 0.773629
+patternClose is 19 1 rate is 0.134189
+patternClose is 19 0 rate is 0.0863477
+patternClose is 19 3 rate is 0.00583431
+entropy is 0.015233
+the patternClose is 6 and the count rate is 0.0389971
+patternClose is 6 0 rate is 0.640695
+patternClose is 6 1 rate is 0.274265
+patternClose is 6 2 rate is 0.0796972
+patternClose is 6 3 rate is 0.00534283
+entropy is 0.0489242
+the patternClose is 7 and the count rate is 0.0816925
+patternClose is 7 0 rate is 0.58406
+patternClose is 7 1 rate is 0.252922
+patternClose is 7 2 rate is 0.162593
+patternClose is 7 3 rate is 0.00042508
+entropy is 0.113192
+the patternClose is 30 and the count rate is 0.00951488
+patternClose is 30 2 rate is 0.306569
+patternClose is 30 0 rate is 0.543796
+patternClose is 30 1 rate is 0.138686
+patternClose is 30 3 rate is 0.0109489
+entropy is 0.0139624
+the patternClose is 22 and the count rate is 0.0112512
+patternClose is 22 2 rate is 0.455247
+patternClose is 22 0 rate is 0.358025
+patternClose is 22 1 rate is 0.174383
+patternClose is 22 3 rate is 0.0123457
+entropy is 0.0176085
+the patternClose is 21 and the count rate is 0.00310796
+patternClose is 21 0 rate is 0.134078
+patternClose is 21 2 rate is 0.553073
+patternClose is 21 1 rate is 0.307263
+patternClose is 21 3 rate is 0.00558659
+entropy is 0.00443246
+the patternClose is 28 and the count rate is 0.0160607
+patternClose is 28 3 rate is 0.322162
+patternClose is 28 2 rate is 0.571892
+patternClose is 28 1 rate is 0.0648649
+patternClose is 28 0 rate is 0.0410811
+entropy is 0.02301
+the patternClose is 20 and the count rate is 0.0135257
+patternClose is 20 2 rate is 0.587933
+patternClose is 20 3 rate is 0.288832
+patternClose is 20 1 rate is 0.0911425
+patternClose is 20 0 rate is 0.0320924
+entropy is 0.019507
+the patternClose is 13 and the count rate is 0.0229191
+patternClose is 13 0 rate is 0.336364
+patternClose is 13 1 rate is 0.379545
+patternClose is 13 2 rate is 0.282576
+patternClose is 13 3 rate is 0.00151515
+entropy is 0.0364096
+the patternClose is 5 and the count rate is 0.00552141
+patternClose is 5 0 rate is 0.525157
+patternClose is 5 2 rate is 0.138365
+patternClose is 5 1 rate is 0.330189
+patternClose is 5 3 rate is 0.00628931
+entropy is 0.00804263
+the patternClose is 4 and the count rate is 0.0181095
+patternClose is 4 2 rate is 0.314477
+patternClose is 4 1 rate is 0.485139
+patternClose is 4 0 rate is 0.151486
+patternClose is 4 3 rate is 0.0488974
+entropy is 0.0299979
+the patternClose is 11 and the count rate is 0.00904608
+patternClose is 11 1 rate is 0.395393
+patternClose is 11 0 rate is 0.328215
+patternClose is 11 2 rate is 0.276392
+entropy is 0.0141986
+the patternClose is 29 and the count rate is 0.0217036
+patternClose is 29 3 rate is 0.0024
+patternClose is 29 0 rate is 0.1464
+patternClose is 29 1 rate is 0.1952
+patternClose is 29 2 rate is 0.656
+entropy is 0.0279064
+the patternClose is 8 and the count rate is 0.0304546
+patternClose is 8 2 rate is 0.383694
+patternClose is 8 3 rate is 0.392816
+patternClose is 8 1 rate is 0.189282
+patternClose is 8 0 rate is 0.0342075
+entropy is 0.0511915
+the patternClose is 9 and the count rate is 0.00376775
+patternClose is 9 2 rate is 0.534562
+patternClose is 9 1 rate is 0.258065
+patternClose is 9 0 rate is 0.207373
+entropy is 0.00549338
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 405160 points 
+positions bitstream size 13476 B (0.325986 bpp)
+positions processing time (user): 0.796 s
+colors bitstream size 25842 B (0.62512 bpp)
+colors processing time (user): 0.328 s
+Total frame size 261265 B
+Total bitstream size 261265 B
+Processing time (wall): 32.179 s
+Processing time (user): 21.453 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClose_possition\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 2397 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 4704 B
+colors processing time (user): 0.031 s
+
+positions bitstream size 23359 B
+positions processing time (user): 1.453 s
+
+colors bitstream size 65530 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 24930 B
+positions processing time (user): 1.468 s
+
+colors bitstream size 25410 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 30458 B
+positions processing time (user): 1.671 s
+
+colors bitstream size 45063 B
+colors processing time (user): 0.843 s
+
+positions bitstream size 13476 B
+positions processing time (user): 0.625 s
+
+colors bitstream size 25842 B
+colors processing time (user): 0.296 s
+
+Total bitstream size 261265 B
+Processing time (wall): 9.491 s
+Processing time (user): 7.828 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\loot_viewdep_vox12.ply
+infile2:        F:\YK\position\patternClose_possition\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\loot_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1057 4001 1041
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1416 2790 648
+WARNING: 1267 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3017285, 3240506, 1.07398
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 1.77295
+   mse1,PSNR (p2point): 74.5293
+   mse1      (p2plane): 0.599468
+   mse1,PSNR (p2plane): 79.2386
+   c[0],    1         : 2.64076e-05
+   c[1],    1         : 3.83448e-06
+   c[2],    1         : 3.57151e-06
+   c[0],PSNR1         : 45.7827
+   c[1],PSNR1         : 54.1629
+   c[2],PSNR1         : 54.4715
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2.00743
+   mse2,PSNR (p2point): 73.9899
+   mse2      (p2plane): 1.05899
+   mse2,PSNR (p2plane): 76.7674
+   c[0],    2         : 2.8651e-05
+   c[1],    2         : 4.00006e-06
+   c[2],    2         : 3.74243e-06
+   c[0],PSNR2         : 45.4286
+   c[1],PSNR2         : 53.9793
+   c[2],PSNR2         : 54.2685
+3. Final (symmetric).
+   mseF      (p2point): 2.00743
+   mseF,PSNR (p2point): 73.9899
+   mseF      (p2plane): 1.05899
+   mseF,PSNR (p2plane): 76.7674
+   c[0],    F         : 2.8651e-05
+   c[1],    F         : 4.00006e-06
+   c[2],    F         : 3.74243e-06
+   c[0],PSNRF         : 45.4286
+   c[1],PSNRF         : 53.9793
+   c[2],PSNRF         : 54.2685
+Job done! 16.578 seconds elapsed (excluding the time to load the point clouds).

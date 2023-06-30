@@ -1,0 +1,2775 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "./output/enc.ply"
+    uncompressedDataPath  : "D:\work\pointcloud\code\ply\basketball_player_vox11_00000200.ply"
+    compressedStreamPath  : "./output/str.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 1
+    sequenceScale             : 1
+    positionQuantizationScale : 1
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 85950
+Number of nodes = 407
+Estimation of sampling = 1.10102
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.0221402
+entropy0 is 0
+entropy0 is 0.189489
+entropy0 is 0.00508282
+entropy0 is 0.0463085
+entropy0 is 0.125526
+entropy0 is 0.0571526
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.0238828
+entropy0 is 0
+entropy0 is 0.00891968
+entropy0 is 0
+entropy0 is 0.0152485
+entropy0 is 0.0111473
+entropy0 is 0.0111473
+entropy0 is 0.00802309
+entropy0 is 0.0508974
+entropy0 is 0.0853154
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.0101656
+entropy0 is 0
+entropy0 is 0.0143916
+entropy0 is 0
+entropy0 is 0.0101656
+entropy0 is 0
+entropy0 is 0.0305299
+entropy0 is 0.0349853
+entropy0 is 0
+entropy0 is 0.00738007
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.00598729
+entropy0 is 0
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.0221402
+entropy1 is 0
+entropy1 is 0.189489
+entropy1 is 0.00508282
+entropy1 is 0.0463085
+entropy1 is 0.125526
+entropy1 is 0.0571526
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.0238828
+entropy1 is 0
+entropy1 is 0.00891968
+entropy1 is 0
+entropy1 is 0.0152485
+entropy1 is 0.0111473
+entropy1 is 0.0111473
+entropy1 is 0.00802309
+entropy1 is 0.0508974
+entropy1 is 0.0853154
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.0101656
+entropy1 is 0
+entropy1 is 0.0143916
+entropy1 is 0
+entropy1 is 0.0101656
+entropy1 is 0
+entropy1 is 0.0216562
+entropy1 is 0.0349853
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00508282
+entropy1 is 0.00802309
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00508282
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.0740223
+entropy2 is 0.0574696
+entropy2 is 0.0191924
+entropy2 is 0.0191924
+entropy2 is 0.0638468
+entropy2 is 0.0320174
+entropy2 is 0.00508282
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0184502
+entropy2 is 0
+entropy2 is 0.00665985
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0111473
+entropy2 is 0
+entropy2 is 0.00802309
+entropy2 is 0.00369004
+entropy2 is 0.0230555
+entropy2 is 0
+entropy2 is 0.0508974
+entropy2 is 0.0627306
+entropy2 is 0.00369004
+entropy2 is 0.0179142
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0238828
+entropy2 is 0
+entropy2 is 0.0275865
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0138827
+entropy2 is 0.041129
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0185507
+entropy2 is 0.0109491
+entropy2 is 0
+entropy2 is 0.00764153
+entropy2 is 0
+entropy2 is 0.0179142
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00738007
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00738007
+entropy2 is 0.0111473
+entropy2 is 0.00369004
+entropy2 is 0.0152485
+entropy2 is 0.00369004
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0463085
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00369004
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0
+entropy3 is 0.0179142
+entropy3 is 0.0436741
+entropy3 is 0.0140876
+entropy3 is 0.0254141
+entropy3 is 0.0332834
+entropy3 is 0.00665985
+entropy3 is 0.00895711
+entropy3 is 0.0813251
+entropy3 is 0
+entropy3 is 0.0111473
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0110701
+entropy3 is 0
+entropy3 is 0.00895711
+entropy3 is 0.0119746
+entropy3 is 0.0127243
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00895711
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0.00719582
+entropy3 is 0.0304969
+entropy3 is 0.00598729
+entropy3 is 0
+entropy3 is 0.00895711
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0.0152485
+entropy3 is 0.00764153
+entropy3 is 0.00508282
+entropy3 is 0.0254487
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0110701
+entropy3 is 0.00738007
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00598729
+entropy3 is 0.0110649
+entropy3 is 0
+entropy3 is 0.00719582
+entropy3 is 0.020174
+entropy3 is 0.00738007
+entropy3 is 0.00738007
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00895711
+entropy3 is 0
+entropy3 is 0.00764153
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0.00738007
+entropy3 is 0.016457
+entropy3 is 0.00665985
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.016457
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00598729
+entropy3 is 0.00508282
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00598729
+entropy3 is 0.00598729
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00802309
+entropy3 is 0
+entropy3 is 0.00508282
+entropy3 is 0.0111473
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0
+entropy3 is 0.0126897
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0
+entropy3 is 0.00369004
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00598729
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 66948 points 
+positions bitstream size 306 B (0.0284817 bpp)
+positions processing time (user): 0.046 s
+colors bitstream size 305 B (0.0283886 bpp)
+colors processing time (user): 0.062 s
+Number of points = 175709
+Number of nodes = 785
+Estimation of sampling = 1.06944
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.168713
+entropy0 is 0.104062
+entropy0 is 0.00606611
+entropy0 is 0.0843275
+entropy0 is 0
+entropy0 is 0.104073
+entropy0 is 0.0395064
+entropy0 is 0.00200803
+entropy0 is 0.0126
+entropy0 is 0.0226639
+entropy0 is 0
+entropy0 is 0.0448226
+entropy0 is 0.0431174
+entropy0 is 0.00487425
+entropy0 is 0
+entropy0 is 0.0100402
+entropy0 is 0.0187564
+entropy0 is 0.00415834
+entropy0 is 0
+entropy0 is 0.0129964
+entropy0 is 0.00487425
+entropy0 is 0
+entropy0 is 0.0240964
+entropy0 is 0.00766614
+entropy0 is 0.00766614
+entropy0 is 0.0153323
+entropy0 is 0.00766614
+entropy0 is 0.0159873
+entropy0 is 0.026434
+entropy0 is 0.00415834
+entropy0 is 0.017911
+entropy0 is 0.00276595
+entropy0 is 0.00436598
+entropy0 is 0.00325815
+entropy0 is 0
+entropy0 is 0.037129
+entropy0 is 0
+entropy0 is 0.00766614
+entropy0 is 0.00325815
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.0109782
+entropy0 is 0
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.168713
+entropy1 is 0.104062
+entropy1 is 0.00606611
+entropy1 is 0.0843275
+entropy1 is 0
+entropy1 is 0.104073
+entropy1 is 0.0395064
+entropy1 is 0.00200803
+entropy1 is 0.0126
+entropy1 is 0.013971
+entropy1 is 0
+entropy1 is 0.0246722
+entropy1 is 0.0146227
+entropy1 is 0.0431174
+entropy1 is 0.00487425
+entropy1 is 0
+entropy1 is 0.0100402
+entropy1 is 0.00325815
+entropy1 is 0.0187564
+entropy1 is 0.00415834
+entropy1 is 0
+entropy1 is 0.0129964
+entropy1 is 0.00276595
+entropy1 is 0
+entropy1 is 0.0240964
+entropy1 is 0
+entropy1 is 0.00766614
+entropy1 is 0.0153323
+entropy1 is 0.00766614
+entropy1 is 0.0159873
+entropy1 is 0.026434
+entropy1 is 0.00415834
+entropy1 is 0.017911
+entropy1 is 0.00276595
+entropy1 is 0
+entropy1 is 0.00276595
+entropy1 is 0
+entropy1 is 0.037129
+entropy1 is 0
+entropy1 is 0.00606611
+entropy1 is 0.00325815
+entropy1 is 0.0039158
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00895551
+entropy1 is 0
+entropy1 is 0.00200803
+entropy1 is 0.00200803
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.104062
+entropy2 is 0.0088483
+entropy2 is 0.0317229
+entropy2 is 0.0507313
+entropy2 is 0.00651629
+entropy2 is 0
+entropy2 is 0.0716263
+entropy2 is 0.0389893
+entropy2 is 0
+entropy2 is 0.0158615
+entropy2 is 0.050312
+entropy2 is 0.0039158
+entropy2 is 0
+entropy2 is 0.0100402
+entropy2 is 0.0060241
+entropy2 is 0.00276595
+entropy2 is 0.019579
+entropy2 is 0.0210116
+entropy2 is 0.0109782
+entropy2 is 0.0199352
+entropy2 is 0.00690546
+entropy2 is 0.0210498
+entropy2 is 0.00829785
+entropy2 is 0
+entropy2 is 0.0110638
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0100402
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0088483
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0208881
+entropy2 is 0.00766614
+entropy2 is 0
+entropy2 is 0.00766614
+entropy2 is 0.0153323
+entropy2 is 0.00200803
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00619531
+entropy2 is 0.0153323
+entropy2 is 0.00200803
+entropy2 is 0.00487425
+entropy2 is 0.00692429
+entropy2 is 0.0210498
+entropy2 is 0
+entropy2 is 0.0160643
+entropy2 is 0.00401606
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0288913
+entropy2 is 0.00606611
+entropy2 is 0.0762671
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0129964
+entropy2 is 0.00200803
+entropy2 is 0
+entropy2 is 0.00276595
+entropy2 is 0.00200803
+entropy2 is 0.00487425
+entropy2 is 0.0060241
+entropy2 is 0.00415834
+entropy2 is 0.00606611
+entropy2 is 0.00415834
+entropy2 is 0
+entropy2 is 0.0060241
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0232458
+entropy3 is 0
+entropy3 is 0.0236077
+entropy3 is 0.0216338
+entropy3 is 0.00436598
+entropy3 is 0.0268698
+entropy3 is 0.0250925
+entropy3 is 0
+entropy3 is 0.00487425
+entropy3 is 0
+entropy3 is 0.0097485
+entropy3 is 0.0154049
+entropy3 is 0.00487425
+entropy3 is 0.024839
+entropy3 is 0.00487425
+entropy3 is 0.0039158
+entropy3 is 0.0101722
+entropy3 is 0
+entropy3 is 0.0146227
+entropy3 is 0.0229984
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0.0199352
+entropy3 is 0
+entropy3 is 0.0321285
+entropy3 is 0.00200803
+entropy3 is 0
+entropy3 is 0.0366577
+entropy3 is 0.0487782
+entropy3 is 0.00606611
+entropy3 is 0
+entropy3 is 0.00415834
+entropy3 is 0.00766614
+entropy3 is 0.00276595
+entropy3 is 0.0171638
+entropy3 is 0
+entropy3 is 0.00325815
+entropy3 is 0.00200803
+entropy3 is 0
+entropy3 is 0.00401606
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0097485
+entropy3 is 0
+entropy3 is 0.00692429
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00325815
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0236113
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0.0060241
+entropy3 is 0.0039158
+entropy3 is 0.00606611
+entropy3 is 0
+entropy3 is 0.0039158
+entropy3 is 0.00401606
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0134349
+entropy3 is 0
+entropy3 is 0.0055319
+entropy3 is 0.00325815
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00724827
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00200803
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00606611
+entropy3 is 0.00487425
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0.00803213
+entropy3 is 0
+entropy3 is 0.0138486
+entropy3 is 0.0125463
+entropy3 is 0.00401606
+entropy3 is 0.00276595
+entropy3 is 0.0055319
+entropy3 is 0.00276595
+entropy3 is 0.0039158
+entropy3 is 0.00325815
+entropy3 is 0
+entropy3 is 0.0060241
+entropy3 is 0
+entropy3 is 0.0132169
+entropy3 is 0
+entropy3 is 0.0055319
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00200803
+entropy3 is 0.0060241
+entropy3 is 0.00200803
+entropy3 is 0
+entropy3 is 0.00895551
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00362414
+entropy3 is 0
+entropy3 is 0.0187318
+entropy3 is 0.00362414
+entropy3 is 0.00200803
+entropy3 is 0.00200803
+entropy3 is 0.00829785
+entropy3 is 0.00200803
+entropy3 is 0.0055319
+entropy3 is 0.00325815
+entropy3 is 0.00415834
+entropy3 is 0.0039158
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0.0150119
+entropy3 is 0
+entropy3 is 0.00895551
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00200803
+entropy3 is 0.0039158
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00325815
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00200803
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00200803
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00276595
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 146738 points 
+positions bitstream size 574 B (0.0261341 bpp)
+positions processing time (user): 0.031 s
+colors bitstream size 1457 B (0.066337 bpp)
+colors processing time (user): 0.046 s
+Number of points = 832488
+Number of nodes = 3714
+Estimation of sampling = 1.06869
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.105232
+entropy0 is 0.00163465
+entropy0 is 0.101218
+entropy0 is 0.0415686
+entropy0 is 0.158772
+entropy0 is 0.124483
+entropy0 is 0.00579433
+entropy0 is 0.0110201
+entropy0 is 0.00306928
+entropy0 is 0.00589785
+entropy0 is 0.0181315
+entropy0 is 0.0118518
+entropy0 is 0
+entropy0 is 0.0528086
+entropy0 is 0.00111266
+entropy0 is 0.00117957
+entropy0 is 0.00147647
+entropy0 is 0.0100325
+entropy0 is 0.00868316
+entropy0 is 0.0431691
+entropy0 is 0.00268671
+entropy0 is 0.0196691
+entropy0 is 0.0212511
+entropy0 is 0
+entropy0 is 0.000886686
+entropy0 is 0.00199076
+entropy0 is 0.00732074
+entropy0 is 0.0127379
+entropy0 is 0
+entropy0 is 0.0228365
+entropy0 is 0.00103934
+entropy0 is 0.00147647
+entropy0 is 0.0205459
+entropy0 is 0.00802574
+entropy0 is 0.00425019
+entropy0 is 0.0130365
+entropy0 is 0.00302018
+entropy0 is 0.000886686
+entropy0 is 0.00093096
+entropy0 is 0.00786369
+entropy0 is 0.00433514
+entropy0 is 0.0106802
+entropy0 is 0.000834968
+entropy0 is 0.00207868
+entropy0 is 0.00433514
+entropy0 is 0
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.105232
+entropy1 is 0.00163465
+entropy1 is 0.101218
+entropy1 is 0.0415686
+entropy1 is 0.158772
+entropy1 is 0.124483
+entropy1 is 0.00579433
+entropy1 is 0.00589785
+entropy1 is 0.0181315
+entropy1 is 0.00643267
+entropy1 is 0
+entropy1 is 0.0266314
+entropy1 is 0.0150934
+entropy1 is 0.0110201
+entropy1 is 0.00306928
+entropy1 is 0
+entropy1 is 0.000589785
+entropy1 is 0.00103934
+entropy1 is 0.0100325
+entropy1 is 0.00868316
+entropy1 is 0.0431691
+entropy1 is 0.00268671
+entropy1 is 0.0196691
+entropy1 is 0.0212511
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00147246
+entropy1 is 0.00732074
+entropy1 is 0.00200812
+entropy1 is 0
+entropy1 is 0.0228365
+entropy1 is 0.00103934
+entropy1 is 0.000589785
+entropy1 is 0.000589785
+entropy1 is 0.000589785
+entropy1 is 0.000834968
+entropy1 is 0.0205459
+entropy1 is 0.00802574
+entropy1 is 0.00425019
+entropy1 is 0.0130365
+entropy1 is 0.00199076
+entropy1 is 0
+entropy1 is 0.0100264
+entropy1 is 0.000694736
+entropy1 is 0.00093096
+entropy1 is 0.00786369
+entropy1 is 0.00344764
+entropy1 is 0.000886686
+entropy1 is 0.000428174
+entropy1 is 0.00726652
+entropy1 is 0.00328223
+entropy1 is 0.00340898
+entropy1 is 0
+entropy1 is 0.00190959
+entropy1 is 0.00290901
+entropy1 is 0.00093096
+entropy1 is 0
+entropy1 is 0.00117957
+entropy1 is 0
+entropy1 is 0.000428174
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.124483
+entropy2 is 0
+entropy2 is 0.0123361
+entropy2 is 0.0584353
+entropy2 is 0.0344376
+entropy2 is 0.00579433
+entropy2 is 0.100891
+entropy2 is 0.00154555
+entropy2 is 0.0756573
+entropy2 is 0.0279876
+entropy2 is 0.0186238
+entropy2 is 0.00589785
+entropy2 is 0.0241614
+entropy2 is 0.0282598
+entropy2 is 0.00960959
+entropy2 is 0.0087198
+entropy2 is 0.000886686
+entropy2 is 0.0307194
+entropy2 is 0
+entropy2 is 0.00765016
+entropy2 is 0.0104396
+entropy2 is 0
+entropy2 is 0.00117957
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.000589785
+entropy2 is 0.0126076
+entropy2 is 0.00941982
+entropy2 is 0.0244573
+entropy2 is 0.0185862
+entropy2 is 0.00399419
+entropy2 is 0.0212511
+entropy2 is 0.0217969
+entropy2 is 0.00216903
+entropy2 is 0.00212623
+entropy2 is 0
+entropy2 is 0.0064674
+entropy2 is 0.000694736
+entropy2 is 0.00142827
+entropy2 is 0.00349819
+entropy2 is 0
+entropy2 is 0.0051967
+entropy2 is 0.00950958
+entropy2 is 0.00371947
+entropy2 is 0
+entropy2 is 0.000772777
+entropy2 is 0.0201176
+entropy2 is 0.0108888
+entropy2 is 0.0106161
+entropy2 is 0.00193934
+entropy2 is 0.00802574
+entropy2 is 0.00147647
+entropy2 is 0.00442941
+entropy2 is 0
+entropy2 is 0.00306928
+entropy2 is 0.0023848
+entropy2 is 0.000886686
+entropy2 is 0
+entropy2 is 0.00117957
+entropy2 is 0.00117957
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00190184
+entropy2 is 0.00163465
+entropy2 is 0.000886686
+entropy2 is 0.00277894
+entropy2 is 0.00590588
+entropy2 is 0.000834968
+entropy2 is 0
+entropy2 is 0.00458972
+entropy2 is 0.000428174
+entropy2 is 0
+entropy2 is 0.000428174
+entropy2 is 0
+entropy2 is 0.000772777
+entropy2 is 0
+entropy2 is 0.00258696
+entropy2 is 0
+entropy2 is 0.00590588
+entropy2 is 0
+entropy2 is 0.00322176
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0023848
+entropy2 is 0
+entropy2 is 0.000834968
+entropy2 is 0
+entropy2 is 0.000428174
+entropy2 is 0.00103934
+entropy2 is 0
+entropy2 is 0.00193934
+entropy2 is 0.0022467
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0
+entropy3 is 0.0289664
+entropy3 is 0
+entropy3 is 0.0227059
+entropy3 is 0.0258525
+entropy3 is 0.0323406
+entropy3 is 0
+entropy3 is 0.00997658
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0.0353089
+entropy3 is 0.0295294
+entropy3 is 0.0387314
+entropy3 is 0.00589785
+entropy3 is 0.00471828
+entropy3 is 0.00727694
+entropy3 is 0
+entropy3 is 0.0043102
+entropy3 is 0.00258696
+entropy3 is 0
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0283183
+entropy3 is 0.0120699
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00093096
+entropy3 is 0
+entropy3 is 0.00736441
+entropy3 is 0
+entropy3 is 0.00188673
+entropy3 is 0.0130232
+entropy3 is 0.00258696
+entropy3 is 0.0113754
+entropy3 is 0.000589785
+entropy3 is 0.00372384
+entropy3 is 0.00145205
+entropy3 is 0.0230699
+entropy3 is 0.0132521
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00842396
+entropy3 is 0.000589785
+entropy3 is 0.00546739
+entropy3 is 0
+entropy3 is 0.00447458
+entropy3 is 0.00103934
+entropy3 is 0
+entropy3 is 0.00281824
+entropy3 is 0
+entropy3 is 0.0274146
+entropy3 is 0.0111482
+entropy3 is 0.00863565
+entropy3 is 0.00904559
+entropy3 is 0.00572876
+entropy3 is 0.0218221
+entropy3 is 0.00258696
+entropy3 is 0.000694736
+entropy3 is 0.00311802
+entropy3 is 0.000772777
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000589785
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00363039
+entropy3 is 0
+entropy3 is 0.0176866
+entropy3 is 0.00295294
+entropy3 is 0.000428174
+entropy3 is 0.000428174
+entropy3 is 0.00399419
+entropy3 is 0.0260464
+entropy3 is 0.00147647
+entropy3 is 0.000428174
+entropy3 is 0.00111266
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00342539
+entropy3 is 0.000856348
+entropy3 is 0.0117116
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0.00294893
+entropy3 is 0.00781655
+entropy3 is 0.00745328
+entropy3 is 0.00467765
+entropy3 is 0.0107043
+entropy3 is 0.00161088
+entropy3 is 0.0119778
+entropy3 is 0.000834968
+entropy3 is 0.00963204
+entropy3 is 0.0022467
+entropy3 is 0.00147647
+entropy3 is 0
+entropy3 is 0.00534599
+entropy3 is 0.00190959
+entropy3 is 0.00975277
+entropy3 is 0
+entropy3 is 0.00659179
+entropy3 is 0.000694736
+entropy3 is 0.000589785
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00103934
+entropy3 is 0.00484041
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000589785
+entropy3 is 0.00471828
+entropy3 is 0.00235914
+entropy3 is 0.00129348
+entropy3 is 0.0022467
+entropy3 is 0
+entropy3 is 0.00147647
+entropy3 is 0.00381918
+entropy3 is 0
+entropy3 is 0.00377346
+entropy3 is 0
+entropy3 is 0.00386204
+entropy3 is 0.000834968
+entropy3 is 0.00585404
+entropy3 is 0.00117957
+entropy3 is 0.00154555
+entropy3 is 0.00415736
+entropy3 is 0.00214087
+entropy3 is 0.000856348
+entropy3 is 0
+entropy3 is 0.00176936
+entropy3 is 0
+entropy3 is 0.0102246
+entropy3 is 0.003201
+entropy3 is 0.00166994
+entropy3 is 0.00129348
+entropy3 is 0.00251733
+entropy3 is 0.00154555
+entropy3 is 0
+entropy3 is 0.0017127
+entropy3 is 0.000856348
+entropy3 is 0
+entropy3 is 0.00121001
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00534599
+entropy3 is 0
+entropy3 is 0.0023409
+entropy3 is 0.00188673
+entropy3 is 0
+entropy3 is 0.00247835
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00554248
+entropy3 is 0.000428174
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000856348
+entropy3 is 0
+entropy3 is 0.00163465
+entropy3 is 0.000772777
+entropy3 is 0.00166994
+entropy3 is 0
+entropy3 is 0.00222699
+entropy3 is 0.00129679
+entropy3 is 0.00100406
+entropy3 is 0.00416908
+entropy3 is 0.000856348
+entropy3 is 0.00258696
+entropy3 is 0.000772777
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00459697
+entropy3 is 0.000428174
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00147647
+entropy3 is 0.00277124
+entropy3 is 0
+entropy3 is 0.00207868
+entropy3 is 0.00309111
+entropy3 is 0
+entropy3 is 0.000589785
+entropy3 is 0
+entropy3 is 0.00727537
+entropy3 is 0.000969669
+entropy3 is 0.00534599
+entropy3 is 0.000428174
+entropy3 is 0.00258696
+entropy3 is 0
+entropy3 is 0.00128452
+entropy3 is 0.00663171
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000886686
+entropy3 is 0
+entropy3 is 0.00163465
+entropy3 is 0.0032848
+entropy3 is 0.000589785
+entropy3 is 0.00093096
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00163465
+entropy3 is 0.000589785
+entropy3 is 0
+entropy3 is 0.000856348
+entropy3 is 0
+entropy3 is 0.00199076
+entropy3 is 0
+entropy3 is 0.000589785
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0.000856348
+entropy3 is 0.000856348
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00256904
+entropy3 is 0.000886686
+entropy3 is 0
+entropy3 is 0.00193934
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00147246
+entropy3 is 0.00128452
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000589785
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000428174
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000856348
+entropy3 is 0.000428174
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000694736
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 685838 points 
+positions bitstream size 2293 B (0.0220352 bpp)
+positions processing time (user): 0.046 s
+colors bitstream size 5429 B (0.0521713 bpp)
+colors processing time (user): 0.203 s
+Number of points = 327006
+Number of nodes = 1449
+Estimation of sampling = 1.06507
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.00438676
+entropy0 is 0.00257683
+entropy0 is 0.159186
+entropy0 is 0.104559
+entropy0 is 0.00248936
+entropy0 is 0.140377
+entropy0 is 0.0435057
+entropy0 is 0.00793624
+entropy0 is 0.0124208
+entropy0 is 0.00292451
+entropy0 is 0.0209996
+entropy0 is 0.0105375
+entropy0 is 0.0402668
+entropy0 is 0.00438676
+entropy0 is 0.010823
+entropy0 is 0.0113973
+entropy0 is 0.0077305
+entropy0 is 0.0986066
+entropy0 is 0.00292451
+entropy0 is 0.00257683
+entropy0 is 0.0195458
+entropy0 is 0.008144
+entropy0 is 0.0262629
+entropy0 is 0.00344492
+entropy0 is 0
+entropy0 is 0.0113515
+entropy0 is 0.00730077
+entropy0 is 0.00623018
+entropy0 is 0
+entropy0 is 0.0467255
+entropy0 is 0.0159291
+entropy0 is 0.0146425
+entropy0 is 0.00146225
+entropy0 is 0.00687073
+entropy0 is 0.0105499
+entropy0 is 0.0152737
+entropy0 is 0.00212314
+entropy0 is 0.00191595
+entropy0 is 0.00172246
+entropy0 is 0.00257683
+entropy0 is 0.00292451
+entropy0 is 0.00191595
+entropy0 is 0
+entropy0 is 0.00106157
+entropy0 is 0.00318471
+entropy0 is 0.00146225
+entropy0 is 0.00230813
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.00438676
+entropy1 is 0.00257683
+entropy1 is 0.159186
+entropy1 is 0.104559
+entropy1 is 0.00248936
+entropy1 is 0.140377
+entropy1 is 0.0435057
+entropy1 is 0.00793624
+entropy1 is 0.0124208
+entropy1 is 0.00292451
+entropy1 is 0.0209996
+entropy1 is 0.0105375
+entropy1 is 0.0402668
+entropy1 is 0.00438676
+entropy1 is 0.00730132
+entropy1 is 0.0113973
+entropy1 is 0.0077305
+entropy1 is 0.0986066
+entropy1 is 0.00292451
+entropy1 is 0.00257683
+entropy1 is 0.0195458
+entropy1 is 0.008144
+entropy1 is 0.0262629
+entropy1 is 0
+entropy1 is 0.0113515
+entropy1 is 0.00257683
+entropy1 is 0
+entropy1 is 0.00730077
+entropy1 is 0.00358091
+entropy1 is 0.0303318
+entropy1 is 0.0127389
+entropy1 is 0.0107554
+entropy1 is 0.00366061
+entropy1 is 0
+entropy1 is 0.00687073
+entropy1 is 0.00907385
+entropy1 is 0.0109818
+entropy1 is 0.0152737
+entropy1 is 0
+entropy1 is 0.00191595
+entropy1 is 0.00516738
+entropy1 is 0.00172246
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00257683
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00257683
+entropy1 is 0.00106157
+entropy1 is 0.00212314
+entropy1 is 0.00106157
+entropy1 is 0.00106157
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00219836
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.0635169
+entropy2 is 0.0396632
+entropy2 is 0.0062412
+entropy2 is 0.021075
+entropy2 is 0.0040528
+entropy2 is 0.011698
+entropy2 is 0.0332874
+entropy2 is 0.0990121
+entropy2 is 0.00146225
+entropy2 is 0.0753661
+entropy2 is 0.020264
+entropy2 is 0.00248936
+entropy2 is 0.00438676
+entropy2 is 0
+entropy2 is 0.00574784
+entropy2 is 0.00291235
+entropy2 is 0.00292451
+entropy2 is 0.00793624
+entropy2 is 0.00257683
+entropy2 is 0.00881959
+entropy2 is 0.00191595
+entropy2 is 0.0105375
+entropy2 is 0.0172247
+entropy2 is 0.104559
+entropy2 is 0.0233197
+entropy2 is 0.00219836
+entropy2 is 0.008144
+entropy2 is 0.0228149
+entropy2 is 0.00344492
+entropy2 is 0.0149268
+entropy2 is 0.0477836
+entropy2 is 0.00356127
+entropy2 is 0.0253556
+entropy2 is 0.00172246
+entropy2 is 0.0129478
+entropy2 is 0.00580379
+entropy2 is 0.00257683
+entropy2 is 0.00318471
+entropy2 is 0.00248936
+entropy2 is 0
+entropy2 is 0.00318471
+entropy2 is 0
+entropy2 is 0.00666115
+entropy2 is 0.00698726
+entropy2 is 0.0137415
+entropy2 is 0.00663274
+entropy2 is 0.00146225
+entropy2 is 0
+entropy2 is 0.00146225
+entropy2 is 0.00473444
+entropy2 is 0.00606635
+entropy2 is 0.0040528
+entropy2 is 0.00146225
+entropy2 is 0.00732123
+entropy2 is 0.0104878
+entropy2 is 0.00471524
+entropy2 is 0.0040528
+entropy2 is 0.00191595
+entropy2 is 0.0117886
+entropy2 is 0.00146225
+entropy2 is 0
+entropy2 is 0.00621041
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00292451
+entropy2 is 0.00146225
+entropy2 is 0
+entropy2 is 0.00106157
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0024041
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00146225
+entropy2 is 0.0081056
+entropy2 is 0.00106157
+entropy2 is 0
+entropy2 is 0.00106157
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00636943
+entropy2 is 0.00230813
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00106157
+entropy2 is 0.00146225
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0.00106157
+entropy3 is 0.0224267
+entropy3 is 0
+entropy3 is 0.00172246
+entropy3 is 0.0409431
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.0128842
+entropy3 is 0.0307856
+entropy3 is 0.0302106
+entropy3 is 0.00399385
+entropy3 is 0.0492536
+entropy3 is 0.00366061
+entropy3 is 0.00106157
+entropy3 is 0.0264166
+entropy3 is 0.00473444
+entropy3 is 0.00146225
+entropy3 is 0.0131315
+entropy3 is 0.0251561
+entropy3 is 0.00172246
+entropy3 is 0
+entropy3 is 0.00606635
+entropy3 is 0.0099158
+entropy3 is 0.00344492
+entropy3 is 0.00584902
+entropy3 is 0.0081056
+entropy3 is 0.00257683
+entropy3 is 0
+entropy3 is 0.00106157
+entropy3 is 0
+entropy3 is 0.00212314
+entropy3 is 0.0105499
+entropy3 is 0.00257683
+entropy3 is 0.0040528
+entropy3 is 0.0275091
+entropy3 is 0
+entropy3 is 0.0209996
+entropy3 is 0
+entropy3 is 0.00219836
+entropy3 is 0.00146225
+entropy3 is 0.00191595
+entropy3 is 0.00900082
+entropy3 is 0.00275863
+entropy3 is 0.00146225
+entropy3 is 0.00900082
+entropy3 is 0.00212314
+entropy3 is 0.00861229
+entropy3 is 0.0184789
+entropy3 is 0.0049357
+entropy3 is 0
+entropy3 is 0.0083966
+entropy3 is 0.00230813
+entropy3 is 0.0268798
+entropy3 is 0.0270626
+entropy3 is 0.00366061
+entropy3 is 0.00172246
+entropy3 is 0.00146225
+entropy3 is 0.00146225
+entropy3 is 0.0083966
+entropy3 is 0.0049357
+entropy3 is 0.00191595
+entropy3 is 0.00212314
+entropy3 is 0.00663274
+entropy3 is 0.0256144
+entropy3 is 0.00520343
+entropy3 is 0.00516738
+entropy3 is 0
+entropy3 is 0.0083966
+entropy3 is 0.00207014
+entropy3 is 0.00320692
+entropy3 is 0.00606635
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00584902
+entropy3 is 0
+entropy3 is 0.00366061
+entropy3 is 0.00877353
+entropy3 is 0.00106157
+entropy3 is 0.00172246
+entropy3 is 0.00427387
+entropy3 is 0.00212314
+entropy3 is 0.00257683
+entropy3 is 0
+entropy3 is 0.0040528
+entropy3 is 0.0201295
+entropy3 is 0.00257683
+entropy3 is 0.00146225
+entropy3 is 0.0148073
+entropy3 is 0.00172246
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.00922167
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00552137
+entropy3 is 0
+entropy3 is 0.0040528
+entropy3 is 0.00257683
+entropy3 is 0
+entropy3 is 0.0040528
+entropy3 is 0.00207014
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00292451
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0.00516738
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00584902
+entropy3 is 0
+entropy3 is 0.00647389
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00366061
+entropy3 is 0.00146225
+entropy3 is 0.00828054
+entropy3 is 0
+entropy3 is 0.00320692
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0.0062412
+entropy3 is 0
+entropy3 is 0.00344492
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00172246
+entropy3 is 0
+entropy3 is 0.00344492
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00365066
+entropy3 is 0.00106157
+entropy3 is 0.0049357
+entropy3 is 0.00191595
+entropy3 is 0.00257683
+entropy3 is 0
+entropy3 is 0.00636943
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00106157
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.0077305
+entropy3 is 0.00106157
+entropy3 is 0
+entropy3 is 0.00106157
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00106157
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.00106157
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00292451
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00257683
+entropy3 is 0.00318471
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0.00438676
+entropy3 is 0.00146225
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 272602 points 
+positions bitstream size 1093 B (0.0267396 bpp)
+positions processing time (user): 0.109 s
+colors bitstream size 1973 B (0.0482682 bpp)
+colors processing time (user): 0.125 s
+Number of points = 902617
+Number of nodes = 4010
+Estimation of sampling = 1.06645
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.0211616
+entropy0 is 0.0127133
+entropy0 is 0.0561733
+entropy0 is 0.0978103
+entropy0 is 0.170475
+entropy0 is 0.101016
+entropy0 is 0.00610606
+entropy0 is 0.0117692
+entropy0 is 0.0077054
+entropy0 is 0.00555081
+entropy0 is 0.104725
+entropy0 is 0
+entropy0 is 0.0376339
+entropy0 is 0
+entropy0 is 0.0260315
+entropy0 is 0.00567361
+entropy0 is 0.0133085
+entropy0 is 0.00825588
+entropy0 is 0.00174656
+entropy0 is 0.0470453
+entropy0 is 0.0141052
+entropy0 is 0.0110991
+entropy0 is 0
+entropy0 is 0.000763684
+entropy0 is 0
+entropy0 is 0.000783239
+entropy0 is 0
+entropy0 is 0.00353233
+entropy0 is 0.000783239
+entropy0 is 0.0118864
+entropy0 is 0.0138145
+entropy0 is 0.0025417
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.00381842
+entropy0 is 0.0522553
+entropy0 is 0.00345131
+entropy0 is 0.00991611
+entropy0 is 0.00991694
+entropy0 is 0.00814746
+entropy0 is 0.00269717
+entropy0 is 0.00244685
+entropy0 is 0
+entropy0 is 0.000635424
+entropy0 is 0
+entropy0 is 0.000810987
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.0211616
+entropy1 is 0.0127133
+entropy1 is 0.0561733
+entropy1 is 0.0978103
+entropy1 is 0.170475
+entropy1 is 0.101016
+entropy1 is 0.00610606
+entropy1 is 0.00826052
+entropy1 is 0.0077054
+entropy1 is 0.00427831
+entropy1 is 0.104725
+entropy1 is 0
+entropy1 is 0.0376339
+entropy1 is 0
+entropy1 is 0.0260315
+entropy1 is 0.00244685
+entropy1 is 0.0133085
+entropy1 is 0.00635539
+entropy1 is 0.000783239
+entropy1 is 0.0277952
+entropy1 is 0.00127085
+entropy1 is 0.0141052
+entropy1 is 0.0110991
+entropy1 is 0
+entropy1 is 0.000635424
+entropy1 is 0.00292772
+entropy1 is 0.0123158
+entropy1 is 0
+entropy1 is 0.000539434
+entropy1 is 0
+entropy1 is 0.00353233
+entropy1 is 0.000783239
+entropy1 is 0.000539434
+entropy1 is 0.000950608
+entropy1 is 0.0118864
+entropy1 is 0.0138145
+entropy1 is 0.00134675
+entropy1 is 0
+entropy1 is 0.00127085
+entropy1 is 0.0522553
+entropy1 is 0.00345131
+entropy1 is 0.00728323
+entropy1 is 0.00991694
+entropy1 is 0.00814746
+entropy1 is 0.0029902
+entropy1 is 0.00247542
+entropy1 is 0.00269717
+entropy1 is 0.00244685
+entropy1 is 0
+entropy1 is 0.00118305
+entropy1 is 0
+entropy1 is 0.000539434
+entropy1 is 0.00262016
+entropy1 is 0
+entropy1 is 0.000635424
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.101016
+entropy2 is 0.0530578
+entropy2 is 0.00719136
+entropy2 is 0.00610606
+entropy2 is 0.1099
+entropy2 is 0.0490801
+entropy2 is 0.00117486
+entropy2 is 0.0032366
+entropy2 is 0.00118305
+entropy2 is 0.0025417
+entropy2 is 0.0209398
+entropy2 is 0.0127133
+entropy2 is 0.00952248
+entropy2 is 0.0306622
+entropy2 is 0.0202772
+entropy2 is 0.00244685
+entropy2 is 0.0276781
+entropy2 is 0.0795652
+entropy2 is 0.000539434
+entropy2 is 0.0115312
+entropy2 is 0.00198386
+entropy2 is 0.00245734
+entropy2 is 0.00354915
+entropy2 is 0.00642314
+entropy2 is 0.00822013
+entropy2 is 0.0289905
+entropy2 is 0.00726012
+entropy2 is 0.00107887
+entropy2 is 0.00325612
+entropy2 is 0.00114917
+entropy2 is 0.013037
+entropy2 is 0.00635665
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00895812
+entropy2 is 0.0244648
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00107887
+entropy2 is 0
+entropy2 is 0.00203686
+entropy2 is 0.0289798
+entropy2 is 0.0118864
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00135042
+entropy2 is 0.00404024
+entropy2 is 0.00174656
+entropy2 is 0.00461466
+entropy2 is 0.0232432
+entropy2 is 0.00581855
+entropy2 is 0.00600873
+entropy2 is 0.00234972
+entropy2 is 0.00103787
+entropy2 is 0.000886886
+entropy2 is 0
+entropy2 is 0.00618681
+entropy2 is 0.00444819
+entropy2 is 0.00333092
+entropy2 is 0.000635424
+entropy2 is 0.029479
+entropy2 is 0.0177497
+entropy2 is 0.00174656
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00174656
+entropy2 is 0.00396771
+entropy2 is 0
+entropy2 is 0.00626591
+entropy2 is 0.00244685
+entropy2 is 0.0110991
+entropy2 is 0
+entropy2 is 0.000391619
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00345131
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.000763684
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.000706803
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0.00107887
+entropy3 is 0.0200301
+entropy3 is 0
+entropy3 is 0.0283932
+entropy3 is 0.00571659
+entropy3 is 0
+entropy3 is 0.0273418
+entropy3 is 0.00143675
+entropy3 is 0.0211265
+entropy3 is 0
+entropy3 is 0.0247263
+entropy3 is 0
+entropy3 is 0.0388392
+entropy3 is 0.055463
+entropy3 is 0
+entropy3 is 0.000783239
+entropy3 is 0.0116637
+entropy3 is 0.00214105
+entropy3 is 0.00919305
+entropy3 is 0.0120924
+entropy3 is 0
+entropy3 is 0.00262016
+entropy3 is 0
+entropy3 is 0.0193495
+entropy3 is 0.0210508
+entropy3 is 0.0255475
+entropy3 is 0
+entropy3 is 0.0262227
+entropy3 is 0.00354915
+entropy3 is 0.0014951
+entropy3 is 0.0018061
+entropy3 is 0
+entropy3 is 0.00515532
+entropy3 is 0.000950608
+entropy3 is 0
+entropy3 is 0.0075319
+entropy3 is 0.00959394
+entropy3 is 0.00300202
+entropy3 is 0.0119114
+entropy3 is 0.0134104
+entropy3 is 0
+entropy3 is 0.00489371
+entropy3 is 0.00135042
+entropy3 is 0
+entropy3 is 0.00558783
+entropy3 is 0.00317712
+entropy3 is 0
+entropy3 is 0.0213231
+entropy3 is 0.0014951
+entropy3 is 0.000539434
+entropy3 is 0.00292772
+entropy3 is 0.000539434
+entropy3 is 0.00679593
+entropy3 is 0.00124797
+entropy3 is 0.00230241
+entropy3 is 0.0036532
+entropy3 is 0
+entropy3 is 0.0224249
+entropy3 is 0.00488959
+entropy3 is 0.00345131
+entropy3 is 0.00540168
+entropy3 is 0.00623589
+entropy3 is 0
+entropy3 is 0.00600873
+entropy3 is 0.00577709
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00377604
+entropy3 is 0.00905525
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000539434
+entropy3 is 0.00763296
+entropy3 is 0.00700189
+entropy3 is 0.000539434
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0030934
+entropy3 is 0.0098445
+entropy3 is 0.0262353
+entropy3 is 0.00919305
+entropy3 is 0.0016183
+entropy3 is 0.0288325
+entropy3 is 0.00604622
+entropy3 is 0.00473766
+entropy3 is 0
+entropy3 is 0.00434886
+entropy3 is 0
+entropy3 is 0.00625039
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00147335
+entropy3 is 0.00244685
+entropy3 is 0.00447582
+entropy3 is 0.00394223
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000635424
+entropy3 is 0.000783239
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00127085
+entropy3 is 0.00147335
+entropy3 is 0.00311795
+entropy3 is 0
+entropy3 is 0.00555611
+entropy3 is 0.0223693
+entropy3 is 0.0101821
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00420451
+entropy3 is 0.00270084
+entropy3 is 0.0023661
+entropy3 is 0
+entropy3 is 0.00833751
+entropy3 is 0
+entropy3 is 0.00371295
+entropy3 is 0
+entropy3 is 0.00394223
+entropy3 is 0
+entropy3 is 0.000763684
+entropy3 is 0.00157665
+entropy3 is 0.00127085
+entropy3 is 0.0029902
+entropy3 is 0.00127085
+entropy3 is 0.0029902
+entropy3 is 0.00107887
+entropy3 is 0
+entropy3 is 0.00978741
+entropy3 is 0.000539434
+entropy3 is 0
+entropy3 is 0.00127085
+entropy3 is 0
+entropy3 is 0.00190627
+entropy3 is 0.000706803
+entropy3 is 0.00135042
+entropy3 is 0.00430781
+entropy3 is 0
+entropy3 is 0.00172565
+entropy3 is 0.000783239
+entropy3 is 0.0019581
+entropy3 is 0.0014951
+entropy3 is 0.000635424
+entropy3 is 0
+entropy3 is 0.00127085
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00174656
+entropy3 is 0.00190122
+entropy3 is 0.000763684
+entropy3 is 0.00198386
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000635424
+entropy3 is 0.00110671
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00117486
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0.000635424
+entropy3 is 0.000391619
+entropy3 is 0.00245734
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00215773
+entropy3 is 0.00229105
+entropy3 is 0.00469943
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0050693
+entropy3 is 0.00107887
+entropy3 is 0.000950608
+entropy3 is 0
+entropy3 is 0.00107887
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000635424
+entropy3 is 0.0016183
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00107887
+entropy3 is 0
+entropy3 is 0.000950608
+entropy3 is 0.000539434
+entropy3 is 0.000783239
+entropy3 is 0
+entropy3 is 0.00117486
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00118305
+entropy3 is 0
+entropy3 is 0.00117486
+entropy3 is 0.000763684
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000635424
+entropy3 is 0.0025417
+entropy3 is 0.000950608
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000635424
+entropy3 is 0
+entropy3 is 0.000706803
+entropy3 is 0
+entropy3 is 0.000539434
+entropy3 is 0.000706803
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.0019581
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000950608
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00118305
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000950608
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000391619
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 735882 points 
+positions bitstream size 2480 B (0.0219805 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 7665 B (0.0679358 bpp)
+colors processing time (user): 0.218 s
+Number of points = 601744
+Number of nodes = 2730
+Estimation of sampling = 1.07769
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_5_2Ctx
+entropy0 is 0.0537017
+entropy0 is 0.0794063
+entropy0 is 0.00215353
+entropy0 is 0.231332
+entropy0 is 0.0428433
+entropy0 is 0.133385
+entropy0 is 0
+entropy0 is 0.0358506
+entropy0 is 0.0112095
+entropy0 is 0.00400687
+entropy0 is 0.00714686
+entropy0 is 0.00993966
+entropy0 is 0.00228964
+entropy0 is 0.00518762
+entropy0 is 0
+entropy0 is 0.0321197
+entropy0 is 0.0482696
+entropy0 is 0.00138365
+entropy0 is 0.00129632
+entropy0 is 0.0114275
+entropy0 is 0.0237326
+entropy0 is 0.00433356
+entropy0 is 0.0138116
+entropy0 is 0.00157037
+entropy0 is 0.00633026
+entropy0 is 0.00486863
+entropy0 is 0.00398258
+entropy0 is 0.00206619
+entropy0 is 0.0271873
+entropy0 is 0.00138945
+entropy0 is 0.00157692
+entropy0 is 0.00057241
+entropy0 is 0.000788462
+entropy0 is 0.0218024
+entropy0 is 0.0105127
+entropy0 is 0.00473077
+entropy0 is 0.00964921
+entropy0 is 0.00215353
+entropy0 is 0.00172921
+entropy0 is 0
+entropy0 is 0.00129632
+entropy0 is 0
+entropy0 is 0.00111624
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0
+entropy0 is 0.00057241
+
+
+encode the position and the data for the ctx1_5_3Ctx
+entropy1 is 0.231332
+entropy1 is 0.0428433
+entropy1 is 0.00215353
+entropy1 is 0.133385
+entropy1 is 0
+entropy1 is 0.0794063
+entropy1 is 0.0537017
+entropy1 is 0.0177938
+entropy1 is 0.00861696
+entropy1 is 0.00228964
+entropy1 is 0.00157692
+entropy1 is 0.00171723
+entropy1 is 0.00973097
+entropy1 is 0.00714686
+entropy1 is 0.00993966
+entropy1 is 0.00228964
+entropy1 is 0.00185753
+entropy1 is 0.0321197
+entropy1 is 0.0482696
+entropy1 is 0.00138365
+entropy1 is 0.00129632
+entropy1 is 0.0114275
+entropy1 is 0.0237326
+entropy1 is 0.00433356
+entropy1 is 0.0053467
+entropy1 is 0.00148748
+entropy1 is 0.00633026
+entropy1 is 0.001517
+entropy1 is 0
+entropy1 is 0.00206619
+entropy1 is 0.0271873
+entropy1 is 0
+entropy1 is 0.00331322
+entropy1 is 0.00138945
+entropy1 is 0.00157692
+entropy1 is 0.00057241
+entropy1 is 0.00057241
+entropy1 is 0.0218024
+entropy1 is 0.0105127
+entropy1 is 0.00473077
+entropy1 is 0.00237076
+entropy1 is 0.00723168
+entropy1 is 0.0037337
+entropy1 is 0
+entropy1 is 0.00817132
+entropy1 is 0.00196847
+entropy1 is 0.00172921
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0.00057241
+entropy1 is 0.00197384
+entropy1 is 0.000788462
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+entropy1 is 0
+
+
+encode the position and the data for the ctx1_5_4Ctx
+entropy2 is 0.0428433
+entropy2 is 0
+entropy2 is 0.0142668
+entropy2 is 0.031817
+entropy2 is 0.0536253
+entropy2 is 0.0300567
+entropy2 is 0.0475888
+entropy2 is 0
+entropy2 is 0.00406962
+entropy2 is 0.0442613
+entropy2 is 0.00998017
+entropy2 is 0.0179
+entropy2 is 0.00215353
+entropy2 is 0.0139529
+entropy2 is 0.0366376
+entropy2 is 0.00206619
+entropy2 is 0.144959
+entropy2 is 0.0123184
+entropy2 is 0.0476984
+entropy2 is 0.0105127
+entropy2 is 0.0317453
+entropy2 is 0.00297718
+entropy2 is 0.0168826
+entropy2 is 0.00714686
+entropy2 is 0
+entropy2 is 0.00197384
+entropy2 is 0
+entropy2 is 0.00218531
+entropy2 is 0
+entropy2 is 0.00223248
+entropy2 is 0.038296
+entropy2 is 0.00394231
+entropy2 is 0.00850468
+entropy2 is 0.000928767
+entropy2 is 0
+entropy2 is 0.0237326
+entropy2 is 0.00138365
+entropy2 is 0.00708062
+entropy2 is 0.00138945
+entropy2 is 0.00345841
+entropy2 is 0.00114482
+entropy2 is 0.00172921
+entropy2 is 0.00157037
+entropy2 is 0.00291137
+entropy2 is 0.00142124
+entropy2 is 0.00142124
+entropy2 is 0
+entropy2 is 0.00382975
+entropy2 is 0.00129632
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.026106
+entropy2 is 0.00474151
+entropy2 is 0.0102804
+entropy2 is 0.00183741
+entropy2 is 0.00672962
+entropy2 is 0.00507122
+entropy2 is 0.00475931
+entropy2 is 0.00111624
+entropy2 is 0.00138945
+entropy2 is 0
+entropy2 is 0.00138945
+entropy2 is 0.00129632
+entropy2 is 0
+entropy2 is 0.00400687
+entropy2 is 0
+entropy2 is 0.00114482
+entropy2 is 0.00297718
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00255286
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00266138
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00138365
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.0010331
+entropy2 is 0
+entropy2 is 0
+entropy2 is 0.00057241
+entropy2 is 0.00057241
+entropy2 is 0.00157692
+entropy2 is 0.000788462
+entropy2 is 0.000928767
+entropy2 is 0
+
+
+encode the position and the data for the ctx1_5_6Ctx
+entropy3 is 0.00157037
+entropy3 is 0.0173564
+entropy3 is 0.0254158
+entropy3 is 0.0841216
+entropy3 is 0.00400687
+entropy3 is 0.0650721
+entropy3 is 0.00794764
+entropy3 is 0.00809686
+entropy3 is 0.0208764
+entropy3 is 0.00555782
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00850246
+entropy3 is 0.0010331
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00864603
+entropy3 is 0
+entropy3 is 0.00183741
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00515169
+entropy3 is 0
+entropy3 is 0.00403757
+entropy3 is 0.00172921
+entropy3 is 0.00534197
+entropy3 is 0.00124457
+entropy3 is 0.00480396
+entropy3 is 0
+entropy3 is 0.0010331
+entropy3 is 0
+entropy3 is 0.0213965
+entropy3 is 0.0149808
+entropy3 is 0.0339733
+entropy3 is 0.0348969
+entropy3 is 0.00485333
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00452147
+entropy3 is 0.00416836
+entropy3 is 0
+entropy3 is 0.0010331
+entropy3 is 0.0117294
+entropy3 is 0.00114482
+entropy3 is 0
+entropy3 is 0.0085586
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0.00114482
+entropy3 is 0.00776844
+entropy3 is 0.00129632
+entropy3 is 0.00188678
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0.0010331
+entropy3 is 0.00272697
+entropy3 is 0.0189231
+entropy3 is 0.000788462
+entropy3 is 0.00886569
+entropy3 is 0.00510572
+entropy3 is 0.00255286
+entropy3 is 0.0231976
+entropy3 is 0.0565183
+entropy3 is 0.0157375
+entropy3 is 0.0346291
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00197384
+entropy3 is 0.0027863
+entropy3 is 0.00507122
+entropy3 is 0.0104497
+entropy3 is 0.00881232
+entropy3 is 0.00913273
+entropy3 is 0.00327104
+entropy3 is 0
+entropy3 is 0.0108758
+entropy3 is 0.00172921
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00138945
+entropy3 is 0.0234587
+entropy3 is 0
+entropy3 is 0.00336532
+entropy3 is 0.00714686
+entropy3 is 0.00111624
+entropy3 is 0.00734854
+entropy3 is 0.00555782
+entropy3 is 0.00111624
+entropy3 is 0.00280574
+entropy3 is 0.00359176
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00614552
+entropy3 is 0.0100113
+entropy3 is 0.00124457
+entropy3 is 0.00266138
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0.00157692
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00114482
+entropy3 is 0.00057241
+entropy3 is 0.00157692
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00516302
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00118538
+entropy3 is 0
+entropy3 is 0.0025223
+entropy3 is 0.000928767
+entropy3 is 0
+entropy3 is 0.00197384
+entropy3 is 0.000928767
+entropy3 is 0.00118538
+entropy3 is 0.000788462
+entropy3 is 0.00394768
+entropy3 is 0.00138945
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0.000788462
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0
+entropy3 is 0.00196847
+entropy3 is 0.00297718
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00255286
+entropy3 is 0
+entropy3 is 0.00185753
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00138945
+entropy3 is 0.000788462
+entropy3 is 0.0010331
+entropy3 is 0
+entropy3 is 0.00223248
+entropy3 is 0.00218531
+entropy3 is 0
+entropy3 is 0.000788462
+entropy3 is 0.00057241
+entropy3 is 0.00057241
+entropy3 is 0.00057241
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00138945
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000928767
+entropy3 is 0.000788462
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00138945
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.000928767
+entropy3 is 0
+entropy3 is 0.00057241
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 474744 points 
+positions bitstream size 1672 B (0.0222287 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 5564 B (0.0739717 bpp)
+colors processing time (user): 0.125 s
+Total frame size 30917 B
+Total bitstream size 30917 B
+Processing time (wall): 11.384 s
+Processing time (user): 3.968 s

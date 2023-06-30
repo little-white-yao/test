@@ -1,0 +1,288 @@
+%% ----------------------------------------------------------------------
+%% START OF FILE
+%% ----------------------------------------------------------------------
+%% 
+%% Filename: ch03-frontmatter.tex
+%% Author: Fred Qi
+%% Created: 2012-12-26 09:12:47(+0800)
+%% 
+%% ----------------------------------------------------------------------
+%%% CHANGE LOG
+%% ----------------------------------------------------------------------
+%% Last-Updated: 2016-02-08 16:55:23(-0700) [by Fred Qi]
+%%     Update #: 53
+%% ----------------------------------------------------------------------
+\ifx\allfiles\undefined
+\documentclass[bachelor,print,msfonts]{xduthesis}
+
+% 这里是可能用到的其他宏包，根据自己论文撰写的需要添加
+\usepackage{listings}
+\usepackage{overpic}
+\lstset{language=TeX, basicstyle=\ttfamily}
+
+
+\newcommand{\figref}[1]{图\ref{#1}}
+\newcommand{\sArt}{state-of-the-art}
+\newcommand{\wyh}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\secref}[1]{Sec. \ref{#1}}
+\newcommand{\tabref}[1]{Tab.~\ref{#1}}
+\newcommand{\thudot}[1]{} % thubib.bst 定义每条参考文献最后的点\thudot
+\graphicspath{{./}{./img/}{./fig/}{./image/}{./figure/}{./picture/}}
+\newcommand{\bs}{\boldsymbol}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{tcolorbox}
+\setcounter{chapter}{2}
+\begin{document}
+\mainmatter
+\fi
+
+\chapter{实验条件与结果分析}
+\label{cha:frontmatter}
+MPEG针对第一类静态点云序列和第三类动态点云序列构建了TMC13测试平台。并且针对不同版本的测试平台，发布了Common test conditions for GPCC\cite{ref23}的文件来统一测试条件。本次实验的参考测试平台是TMC13v20.0，实验使用的测试条件、软件配置情况与TMC13v20.0的通用测试条件、软件参考配置保持一致。测试得到的性能结果也是相对于TMC13v20.0性能的增益情况。
+\section{实验配置}
+\subsection{测试序列}
+本次实验测试的序列是根据点云的稠密程度划分的四类静态点云序列：具有连续表面的体素化点云（solid）、表面不完全连续的体素化点云（dense）、稀疏点云（sparse）、极其稀疏点云（scant）。下表 \ref{tab3} 介绍了四类点云序列中各种序列的参数情况。点数表示每个点云序列包含的所有点的个数，几何精度指示每个点云序列的几何信息表示精度，帧数表示每个点云序列包含点云帧的个数，本次实验测试的都是单帧点云，所以帧数都为1。属性格式指示的是点云属性的类型，有颜色 RGB 和反射率 reflectance 两种类型。
+
+{
+\tiny
+\begin{longtable}{cccccc}
+    %\fontsize{10.5pt}{15pt}\selectfont
+    %\centering
+    \caption{点云测试序列参数列表}
+    \label{tab3}                                                                                              \\
+    %\begin{tabular}{cccccc}
+    \toprule
+    序列种类              & 序列名                              & 点数     & 几何精度/bit位 & 帧数 & 属性格式 \\
+    \midrule
+    \endfirsthead
+    \toprule
+    序列种类              & 序列名                              & 点数     & 几何精度/bit位 & 帧数 & 属性格式 \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    \multirow{9}*{solid}  & basketball\_player\_vox11\_00000200 & 2925514  & 11             & 1    & RGB      \\
+                          & dancer\_vox11\_00000001             & 2592758  & 11             & 1    & RGB      \\
+                          & facade\_00064\_vox11                & 4061755  & 11             & 1    & RGB      \\
+                          & longdress\_vox10\_1300              & 857966   & 10             & 1    & RGB      \\
+                          & loot\_vox10\_1200                   & 805285   & 10             & 1    & RGB      \\
+                          & queen\_0200                         & 1000993  & 10             & 1    & RGB      \\
+                          & redandblack\_vox10\_1550            & 757691   & 10             & 1    & RGB      \\
+                          & soldier\_vox10\_0690                & 1089091  & 10             & 1    & RGB      \\
+                          & thaidancer\_viewdep\_vox12          & 3130215  & 12             & 1    & RGB      \\
+
+    \midrule
+    \multirow{12}*{dense} & boxer\_viewdep\_vox12               & 3493085  & 12             & 1    & RGB      \\
+                          & facade\_00009\_vox12                & 1596085  & 12             & 1    & RGB      \\
+                          & facade\_00015\_vox14                & 8907880  & 14             & 1    & RGB      \\
+                          & facade\_00064\_vox14                & 19702134 & 14             & 1    & RGB      \\
+                          & frog\_00067\_vox12                  & 3614251  & 12             & 1    & RGB      \\
+                          & head\_00039\_vox12                  & 13903516 & 12             & 1    & RGB      \\
+                          & house\_without\_roof\_00057\_vox12  & 4848745  & 12             & 1    & RGB      \\
+                          & landscape\_00014\_vox14             & 71948094 & 14             & 1    & RGB      \\
+                          & longdress\_viewdep\_vox12           & 3096122  & 12             & 1    & RGB      \\
+                          & loot\_viewdep\_vox12                & 3017285  & 12             & 1    & RGB      \\
+                          & vredandblack\_viewdep\_vox12        & 2770567  & 12             & 1    & RGB      \\
+                          & soldier\_viewdep\_vox12             & 4001754  & 12             & 1    & RGB      \\
+
+    \midrule
+    \multirow{12}*{dense} & arco\_valentino\_dense\_vox12       & 1481746  & 12             & 1    & RGB      \\
+                          & arco\_valentino\_dense\_vox12       & 1481746  & 12             & 1    & RGB      \\
+                          & egyptian\_mask\_vox12               & 272684   & 12             & 1    & RGB      \\
+                          & palazzo\_carignano\_dense\_vox14    & 4187594  & 14             & 1    & RGB      \\
+                          & shiva\_00035\_vox12                 & 1009132  & 12             & 1    & RGB      \\
+                          & stanford\_area\_2\_vox16            & 47062002 & 16             & 1    & RGB      \\
+                          & stanford\_area\_4\_vox16            & 43399204 & 16             & 1    & RGB      \\
+                          & staue\_klimt\_vox12                 & 499660   & 12             & 1    & RGB      \\
+                          & ulb\_unicorn\_hires\_vox15          & 63787119 & 15             & 1    & RGB      \\
+                          & ulb\_unicorn\_vox13                 & 1995189  & 13             & 1    & RGB      \\
+
+    \midrule
+    \multirow{12}*{dense} & arco\_valentino\_dense\_vox20       & 1530552  & 20             & 1    & RGB      \\
+                          & egyptian\_mask\_vox20               & 272689   & 20             & 1    & RGB      \\
+                          & facade\_00009\_vox20                & 1602990  & 20             & 1    & RGB      \\
+                          & facade\_00015\_vox20                & 8929532  & 20             & 1    & RGB      \\
+                          & facade\_00064\_vox20                & 19714629 & 20             & 1    & RGB      \\
+                          & frog\_00067\_vox20                  & 3630907  & 20             & 1    & RGB      \\
+                          & head\_00039\_vox20                  & 14025709 & 20             & 1    & RGB      \\
+                          & house\_without\_roof\_00057\_vox20  & 5001077  & 20             & 1    & RGB      \\
+                          & landscape\_00014\_vox20             & 72145549 & 20             & 1    & RGB      \\
+                          & palazzo\_carignano\_dense\_vox20    & 4203962  & 20             & 1    & RGB      \\
+                          & shiva\_00035\_vox20                 & 1010591  & 20             & 1    & RGB      \\
+                          & stanford\_area\_2\_vox20            & 47062018 & 20             & 1    & RGB      \\
+                          & stanford\_area\_4\_vox20            & 43399207 & 20             & 1    & RGB      \\
+                          & staue\_klimt\_vox20                 & 499886   & 20             & 1    & RGB      \\
+                          & ulb\_unicorn\_hires\_vox20          & 63864641 & 20             & 1    & RGB      \\
+                          & ulb\_unicorn\_vox20                 & 2000297  & 20             & 1    & RGB      \\
+    %\end{tabular}
+\end{longtable}
+}
+\subsection{测试条件}
+
+GPCC将通用测试条件根据几何、属性部分是否有损分为4种测试条件：C1(Lossless Geometry – Lossy attributes)代表着几何无损、属性有损；C2(Near-lossless | Lossy Geometry – Lossy Attributes)代表着几何有损、属性有损；CW(Lossless Geometry – Lossless Attributes)代表着几何无损、属性无损；C4(Lossless Geometry – Near-lossless Attributes)代表着几何无损、属性有限度有损。通过更改相应配置文件参数，可以实现不同条件的实验配置。本文对Trisoup几何信息编码的熵编码过程进行优化，测试条件是C2，即几何有损，属性有损。
+
+
+\section{实验结果分析}
+在GPCC中衡量一个编解码器的性能主要从三个方面考虑，一是点云压缩后输出的比特流大小；二是编解码点云的时间复杂度；三是编解码前后点云的失真情况。由于本文仅对trisoup几何信息编码过程中的熵编码过程进行了改动，因此最终的性能结果只需要关注点云压缩后输出的比特流的大小变化与编解码点云的时间复杂度的变化。D1，D2用来衡量本文所提出的改进方案是否带来性能提升，其中，D1用来表示点对点的几何失真，D2用来表示点对面的几何失真。当其值小于零时，表明改进方案存在性能增益，当其值大于零时，表明改进方案相比于现有压缩方案带来了一定loss。之所以可以用这一综合衡量指标代替比特流大小(bpip ratio)来衡量性能变化，是因为本文所提出的改进方案不对几何重建产生任何影响，即不会影响几何失真。因此D1，D2的变化全部来自于比特流大小变化。
+\subsection{上下文改进结果}
+\label{实验结果}
+1、仅将编码顶点标识信息时基于动态OBUF的熵编码所用到的次要信息中的六类上下文顺序改为：ctx4-ctx6-ctx1-ctx3-ctx5-ctx2，然后对所有测试序列进行压缩性能测试，测试结果与TMC13v20的anchor进行对比，得到综合性能表如表\ref{标识信息性能表}所示：
+{
+\scriptsize
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{标识信息性能表} 仅修改标识信息上下文的性能表}
+    \setlength{\tabcolsep}{10mm}{
+        \begin{tabular}{ccc}
+            \toprule
+            \multirow{3}*{C2\_ai } & \multicolumn{2}{c}{lossy geometry,lossy attributes [all intra]}          \\
+                                   & \multicolumn{2}{c}{Geom. BD-TotGeomRate [\%]}                            \\
+                                   & D1                                                              & D2     \\
+            \midrule
+            Solid average          & 1.3\%                                                           & 1.3\%  \\
+            Dense average          & 0.9\%                                                           & 1.0\%  \\
+            Sparse average         & -0.2\%                                                          & -0.1\% \\
+            Scant average          & 0.0\%                                                           & 0.1\%  \\
+            \midrule
+            Overall average        & 0.5\%                                                           & 0.5\%  \\
+            \bottomrule
+        \end{tabular} }
+\end{table}
+}
+{
+\scriptsize
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{高bit位置信息性能表} 仅修改高bit位置信息上下文的性能表}
+    \setlength{\tabcolsep}{10mm}{
+        \begin{tabular}{ccc}
+            \toprule
+            \multirow{3}*{C2\_ai } & \multicolumn{2}{c}{lossy geometry,lossy attributes [all intra]}         \\
+                                   & \multicolumn{2}{c}{Geom. BD-TotGeomRate [\%]}                           \\
+                                   & D1                                                              & D2    \\
+            \midrule
+            Solid average          & 0.6\%                                                           & 0.6\% \\
+            Dense average          & 0.4\%                                                           & 0.5\% \\
+            Sparse average         & 0.6\%                                                           & 0.6\% \\
+            Scant average          & 0.6\%                                                           & 0.6\% \\
+            \midrule
+            Overall average        & 0.5\%                                                           & 0.6\% \\
+            \bottomrule
+        \end{tabular} }
+\end{table}
+}
+
+2、仅将编码顶点位置信息的高bit位时次要信息上下文顺序改为：ctx4-ctx3-ctx1-ctx2，然后对所有测试序列进行压缩性能测试，测试结果与TMC13v20的anchor进行对比，得到综合性能表如表\ref{高bit位置信息性能表}所示;仅将编码顶点位置信息的低bit位时次要信息上下文顺序改为：ctx5-ctx6-ctx4-ctx1-ctx3-ctx2，然后对所有测试序列进行压缩性能测试，测试结果与TMC13v20的anchor进行对比，得到综合性能表如表\ref{低bit位置信息性能表}所示。
+
+{
+\scriptsize
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{低bit位置信息性能表} 仅修改低bit位置信息上下文的性能表}
+    \setlength{\tabcolsep}{10mm}{
+        \begin{tabular}{ccc}
+            \toprule
+            \multirow{3}*{C2\_ai } & \multicolumn{2}{c}{lossy geometry,lossy attributes [all intra]}         \\
+                                   & \multicolumn{2}{c}{Geom. BD-TotGeomRate [\%]}                           \\
+                                   & D1                                                              & D2    \\
+            \midrule
+            Solid average          & 0.4\%                                                           & 0.4\% \\
+            Dense average          & 0.2\%                                                           & 0.2\% \\
+            Sparse average         & 0.6\%                                                           & 0.7\% \\
+            Scant average          & 0.5\%                                                           & 0.5\% \\
+            \midrule
+            Overall average        & 0.4\%                                                           & 0.4\% \\
+            \bottomrule
+        \end{tabular} }
+\end{table}
+}
+
+{
+\scriptsize
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{整体修改性能表} 整体修改性能表}
+    \setlength{\tabcolsep}{10mm}{
+        \begin{tabular}{ccc}
+            \toprule
+            \multirow{3}*{C2\_ai } & \multicolumn{2}{c}{lossy geometry,lossy attributes [all intra]}         \\
+                                   & \multicolumn{2}{c}{Geom. BD-TotGeomRate [\%]}                           \\
+                                   & D1                                                              & D2    \\
+            \midrule
+            Solid average          & 2.1\%                                                           & 2.1\% \\
+            Dense average          & 1.2\%                                                           & 1.3\% \\
+            Sparse average         & 0.2\%                                                           & 0.2\% \\
+            Scant average          & 0.3\%                                                           & 0.3\% \\
+            \midrule
+            Overall average        & 0.9\%                                                           & 0.9\% \\
+            \bottomrule
+        \end{tabular} }
+\end{table}
+}
+
+3、将编码顶点标识信息和位置信息的上下文均按照条件熵递增的顺序修改后，我们得到本此研究实验的最终性能表如表\ref{整体修改性能表}所示。
+
+\subsection{结果分析}
+从\ref{实验结果}小节所展示的性能表可以看出，除了在修改标识信息上下文时，在sparse类型序列上整体有0.2\%的增益外，不论是单独看修改每部分上下文后的性能表还是看将三套上下文模型均修改后的性能表，得到的均是负增益。但是在C2测试条件下，展开查看各个序列的性能结果后发现，有个别序列性能增益较大，如表\ref{有增益序列}所示。
+
+由于同样也存在较多的负增益很大的序列，所以导致整体性能呈现负增益。本文在最初分析如何进行上下文改进时有提到，通过求解现有上下文的信息熵然后再基于信息熵最小的上下文一层一层按照条件熵递增的顺序排列剩余上下文的方法，得到的只能是局部的最优解，因为无法确定当选取信息熵较大的序列为第一个上下文后，其他上下文在此条件下会不会有更优异的性能，从而致使整体性能优于本文所得到的上下文顺序。为此，本文进行了一项额外实验，假设现有上下文顺序是通过一定方法选择出来的较优顺序，那么不改变现有上下文模型中排在最前面的那类上下文的位置，而剩余上下文仍旧按照条件熵递增的顺序排列，得到如图\ref{额外实验性能表}所示性能表。
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{有增益序列} 增益较大序列汇总表}
+    \begin{tabular}{cccc}
+        \toprule
+        序列所属类型 & 序列名称                 & D1     & D2     \\
+        \midrule
+        dense        & landscape\_00014\_vox14  & -2.4\% & -2.4\% \\
+        \midrule
+        sparse       & stanford\_area\_2\_vox16 & -3.3\% & -3.3\% \\
+                     & stanford\_area\_4\_vox16 & -3.8\% & -3.8\% \\
+        \midrule
+                     & landscape\_00014\_vox20  & -2.5\% & -2.5\% \\
+        scant        & stanford\_area\_2\_vox20 & -3.4\% & -3.2\% \\
+                     & stanford\_area\_4\_vox20 & -3.8\% & -3.6\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+{
+\scriptsize
+\begin{table}[h]
+    \fontsize{10.5pt}{15pt}\selectfont
+    \centering
+    \caption{\label{额外实验性能表} 额外实验性能表}
+    \setlength{\tabcolsep}{10mm}{
+        \begin{tabular}{ccc}
+            \toprule
+            \multirow{3}*{C2\_ai } & \multicolumn{2}{c}{lossy geometry,lossy attributes [all intra]}         \\
+                                   & \multicolumn{2}{c}{Geom. BD-TotGeomRate [\%]}                           \\
+                                   & D1                                                              & D2    \\
+            \midrule
+            Solid average          & 2.1\%                                                           & 2.1\% \\
+            Dense average          & 1.2\%                                                           & 1.3\% \\
+            Sparse average         & 0.2\%                                                           & 0.2\% \\
+            Scant average          & 0.3\%                                                           & 0.3\% \\
+            \midrule
+            Overall average        & 0.9\%                                                           & 0.9\% \\
+            \bottomrule
+        \end{tabular} }
+\end{table}
+}
+
+从表中可以看出，除了solid类型测试点云序列没有性能增益外，其他三类测试点云序列均有性能增益，并且sparse类型测试点云序列下甚至达到了1.1\%的增益。这一结果佐证了了本文对提出的上下文模型出现性能负增益的结果分析。
+
+另外，由于现有的动态OBUF技术的实现原理依据当前编码的bit位以及使用到的上下文信息，逐bit的更新次要信息，但是在Trisoup几何信息编码算法中，每类上下文模型的取值并不是二元的，因此动态OBUF可能并不能够很好的发挥其特点，甚至带来负面效果。这一猜想有待进一步实验验证。
+
+\ifx\allfiles\undefined
+\end{document}
+\fi
+%% ----------------------------------------------------------------------
+%%% END OF FILE 
+%% ----------------------------------------------------------------------

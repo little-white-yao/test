@@ -1,0 +1,4 @@
+flag信息下个别序列有增益
+position信息下所有序列均为loss
+
+将flag与position结合后，个别序列增益较大，主要是landscape与stanfor序列

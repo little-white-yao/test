@@ -1,0 +1,4707 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 27
+Number of points = 396603
+Number of nodes = 409
+Estimation of sampling = 1.02762
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.320755
+direction is 1 3 rate is 0.158824
+direction is 1 2 rate is 0.205882
+direction is 1 1 rate is 0.105882
+direction is 1 0 rate is 0.529412
+entropy is 0.55163
+the direction is 2 and the count rate is 0.492453
+direction is 2 0 rate is 0.413793
+direction is 2 1 rate is 0.0881226
+direction is 2 2 rate is 0.187739
+direction is 2 3 rate is 0.310345
+entropy is 0.892576
+the direction is 0 and the count rate is 0.186792
+direction is 0 2 rate is 0.323232
+direction is 0 0 rate is 0.282828
+direction is 0 3 rate is 0.232323
+direction is 0 1 rate is 0.161616
+entropy is 0.365393
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 467096 points 
+positions bitstream size 381 B (0.00768527 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 16904 B (0.340976 bpp)
+colors processing time (user): 1.265 s
+Number of points = 514651
+Number of nodes = 552
+Estimation of sampling = 1.048
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.441667
+direction is 2 3 rate is 0.349057
+direction is 2 0 rate is 0.267296
+direction is 2 2 rate is 0.128931
+direction is 2 1 rate is 0.254717
+entropy is 0.849071
+the direction is 1 and the count rate is 0.344444
+direction is 1 2 rate is 0.491935
+direction is 1 0 rate is 0.217742
+direction is 1 1 rate is 0.225806
+direction is 1 3 rate is 0.0645161
+entropy is 0.593215
+the direction is 0 and the count rate is 0.213889
+direction is 0 1 rate is 0.181818
+direction is 0 0 rate is 0.331169
+direction is 0 3 rate is 0.285714
+direction is 0 2 rate is 0.201299
+entropy is 0.418598
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 601660 points 
+positions bitstream size 498 B (0.00774117 bpp)
+positions processing time (user): 0.281 s
+colors bitstream size 21008 B (0.326559 bpp)
+colors processing time (user): 0.515 s
+Number of points = 617023
+Number of nodes = 758
+Estimation of sampling = 1.12159
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.273196
+direction is 1 1 rate is 0.49434
+direction is 1 3 rate is 0.128302
+direction is 1 2 rate is 0.237736
+direction is 1 0 rate is 0.139623
+entropy is 0.484061
+the direction is 2 and the count rate is 0.534021
+direction is 2 0 rate is 0.146718
+direction is 2 3 rate is 0.445946
+direction is 2 1 rate is 0.19112
+direction is 2 2 rate is 0.216216
+entropy is 0.993175
+the direction is 0 and the count rate is 0.192784
+direction is 0 1 rate is 0.315508
+direction is 0 0 rate is 0.171123
+direction is 0 2 rate is 0.251337
+direction is 0 3 rate is 0.262032
+entropy is 0.379389
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 789146 points 
+positions bitstream size 635 B (0.00823308 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 34038 B (0.441319 bpp)
+colors processing time (user): 0.703 s
+Number of points = 645292
+Number of nodes = 675
+Estimation of sampling = 1.03496
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.443416
+direction is 2 0 rate is 0.329466
+direction is 2 2 rate is 0.306265
+direction is 2 1 rate is 0.303944
+direction is 2 3 rate is 0.0603248
+entropy is 0.805763
+the direction is 0 and the count rate is 0.245885
+direction is 0 1 rate is 0.376569
+direction is 0 0 rate is 0.146444
+direction is 0 2 rate is 0.242678
+direction is 0 3 rate is 0.23431
+entropy is 0.472779
+the direction is 1 and the count rate is 0.3107
+direction is 1 0 rate is 0.215232
+direction is 1 2 rate is 0.321192
+direction is 1 3 rate is 0.221854
+direction is 1 1 rate is 0.241722
+entropy is 0.615296
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 741597 points 
+positions bitstream size 672 B (0.00833111 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 29938 B (0.371156 bpp)
+colors processing time (user): 0.703 s
+Number of points = 855902
+Number of nodes = 919
+Estimation of sampling = 1.04857
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.318462
+direction is 0 3 rate is 0.231884
+direction is 0 2 rate is 0.289855
+direction is 0 0 rate is 0.193237
+direction is 0 1 rate is 0.285024
+entropy is 0.630934
+the direction is 1 and the count rate is 0.271538
+direction is 1 0 rate is 0.232295
+direction is 1 3 rate is 0.17847
+direction is 1 1 rate is 0.371105
+direction is 1 2 rate is 0.21813
+entropy is 0.52755
+the direction is 2 and the count rate is 0.41
+direction is 2 3 rate is 0.395872
+direction is 2 0 rate is 0.133208
+direction is 2 2 rate is 0.243902
+direction is 2 1 rate is 0.227017
+entropy is 0.778489
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1018225 points 
+positions bitstream size 872 B (0.00815047 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 39439 B (0.368631 bpp)
+colors processing time (user): 0.937 s
+Number of points = 871448
+Number of nodes = 1103
+Estimation of sampling = 1.13846
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.46553
+direction is 1 3 rate is 0.10828
+direction is 1 2 rate is 0.377389
+direction is 1 1 rate is 0.348726
+direction is 1 0 rate is 0.165605
+entropy is 0.855388
+the direction is 2 and the count rate is 0.406968
+direction is 2 2 rate is 0.304189
+direction is 2 1 rate is 0.307832
+direction is 2 3 rate is 0.193078
+direction is 2 0 rate is 0.1949
+entropy is 0.799066
+the direction is 0 and the count rate is 0.127502
+direction is 0 0 rate is 0.197674
+direction is 0 3 rate is 0.0406977
+direction is 0 2 rate is 0.366279
+direction is 0 1 rate is 0.395349
+entropy is 0.21807
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1051892 points 
+positions bitstream size 591 B (0.00542545 bpp)
+positions processing time (user): 0.468 s
+colors bitstream size 25795 B (0.236801 bpp)
+colors processing time (user): 0.921 s
+Number of points = 889620
+Number of nodes = 907
+Estimation of sampling = 1.02177
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.236708
+direction is 1 1 rate is 0.338462
+direction is 1 2 rate is 0.323077
+direction is 1 0 rate is 0.243077
+direction is 1 3 rate is 0.0953846
+entropy is 0.443825
+the direction is 2 and the count rate is 0.490896
+direction is 2 0 rate is 0.275964
+direction is 2 2 rate is 0.197329
+direction is 2 3 rate is 0.15727
+direction is 2 1 rate is 0.369436
+entropy is 0.944993
+the direction is 0 and the count rate is 0.272396
+direction is 0 0 rate is 0.296791
+direction is 0 1 rate is 0.21123
+direction is 0 3 rate is 0.272727
+direction is 0 2 rate is 0.219251
+entropy is 0.540752
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1137619 points 
+Sub-sampling 2 gives 418906 points 
+positions bitstream size 855 B (0.00768868 bpp)
+positions processing time (user): 0.578 s
+colors bitstream size 23048 B (0.207262 bpp)
+colors processing time (user): 0.421 s
+Number of points = 898108
+Number of nodes = 819
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.38308
+direction is 1 3 rate is 0.119107
+direction is 1 2 rate is 0.424318
+direction is 1 0 rate is 0.171216
+direction is 1 1 rate is 0.28536
+entropy is 0.705863
+the direction is 2 and the count rate is 0.385932
+direction is 2 0 rate is 0.253695
+direction is 2 2 rate is 0.357143
+direction is 2 1 rate is 0.221675
+direction is 2 3 rate is 0.167488
+entropy is 0.751061
+the direction is 0 and the count rate is 0.230989
+direction is 0 1 rate is 0.251029
+direction is 0 0 rate is 0.222222
+direction is 0 3 rate is 0.197531
+direction is 0 2 rate is 0.329218
+entropy is 0.455664
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 946534 points 
+positions bitstream size 669 B (0.00595919 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 53265 B (0.474464 bpp)
+colors processing time (user): 0.859 s
+Number of points = 899624
+Number of nodes = 1050
+Estimation of sampling = 1.09324
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.585463
+direction is 2 3 rate is 0.21146
+direction is 2 2 rate is 0.459754
+direction is 2 0 rate is 0.150068
+direction is 2 1 rate is 0.178718
+entropy is 1.07961
+the direction is 1 and the count rate is 0.226837
+direction is 1 2 rate is 0.246479
+direction is 1 1 rate is 0.549296
+direction is 1 0 rate is 0.130282
+direction is 1 3 rate is 0.0739437
+entropy is 0.370581
+the direction is 0 and the count rate is 0.1877
+direction is 0 2 rate is 0.297872
+direction is 0 1 rate is 0.27234
+direction is 0 0 rate is 0.187234
+direction is 0 3 rate is 0.242553
+entropy is 0.371599
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 986933 points 
+positions bitstream size 720 B (0.00640267 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 45052 B (0.40063 bpp)
+colors processing time (user): 0.906 s
+Number of points = 921063
+Number of nodes = 945
+Estimation of sampling = 1.02499
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.361878
+direction is 1 3 rate is 0.158397
+direction is 1 2 rate is 0.347328
+direction is 1 1 rate is 0.248092
+direction is 1 0 rate is 0.246183
+entropy is 0.704842
+the direction is 2 and the count rate is 0.357735
+direction is 2 0 rate is 0.357143
+direction is 2 2 rate is 0.293436
+direction is 2 1 rate is 0.181467
+direction is 2 3 rate is 0.167954
+entropy is 0.689951
+the direction is 0 and the count rate is 0.280387
+direction is 0 1 rate is 0.275862
+direction is 0 3 rate is 0.231527
+direction is 0 0 rate is 0.270936
+direction is 0 2 rate is 0.221675
+entropy is 0.558947
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1079842 points 
+positions bitstream size 899 B (0.00780837 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 70813 B (0.615055 bpp)
+colors processing time (user): 1.078 s
+Number of points = 944977
+Number of nodes = 967
+Estimation of sampling = 1.02365
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.299345
+direction is 0 3 rate is 0.282238
+direction is 0 2 rate is 0.274939
+direction is 0 1 rate is 0.187348
+direction is 0 0 rate is 0.255474
+entropy is 0.593566
+the direction is 2 and the count rate is 0.435543
+direction is 2 3 rate is 0.183946
+direction is 2 0 rate is 0.160535
+direction is 2 1 rate is 0.413043
+direction is 2 2 rate is 0.242475
+entropy is 0.825574
+the direction is 1 and the count rate is 0.265113
+direction is 1 0 rate is 0.326923
+direction is 1 2 rate is 0.285714
+direction is 1 1 rate is 0.214286
+direction is 1 3 rate is 0.173077
+entropy is 0.519066
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1077666 points 
+positions bitstream size 865 B (0.00732293 bpp)
+positions processing time (user): 0.5 s
+colors bitstream size 39509 B (0.334476 bpp)
+colors processing time (user): 1.015 s
+Number of points = 954859
+Number of nodes = 1124
+Estimation of sampling = 1.0979
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.275194
+direction is 0 3 rate is 0.214085
+direction is 0 2 rate is 0.267606
+direction is 0 1 rate is 0.290141
+direction is 0 0 rate is 0.228169
+entropy is 0.547464
+the direction is 1 and the count rate is 0.34186
+direction is 1 1 rate is 0.290249
+direction is 1 2 rate is 0.290249
+direction is 1 3 rate is 0.14966
+direction is 1 0 rate is 0.269841
+entropy is 0.66869
+the direction is 2 and the count rate is 0.382946
+direction is 2 1 rate is 0.291498
+direction is 2 2 rate is 0.159919
+direction is 2 3 rate is 0.37247
+direction is 2 0 rate is 0.176113
+entropy is 0.732678
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1031032 points 
+positions bitstream size 874 B (0.00732255 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 51370 B (0.430388 bpp)
+colors processing time (user): 0.984 s
+Number of points = 1016727
+Number of nodes = 1307
+Estimation of sampling = 1.14732
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.278897
+direction is 1 3 rate is 0.207224
+direction is 1 0 rate is 0.102662
+direction is 1 1 rate is 0.287072
+direction is 1 2 rate is 0.403042
+entropy is 0.516785
+the direction is 2 and the count rate is 0.490456
+direction is 2 3 rate is 0.415135
+direction is 2 2 rate is 0.152432
+direction is 2 1 rate is 0.177297
+direction is 2 0 rate is 0.255135
+entropy is 0.924744
+the direction is 0 and the count rate is 0.230647
+direction is 0 2 rate is 0.328736
+direction is 0 1 rate is 0.324138
+direction is 0 3 rate is 0.181609
+direction is 0 0 rate is 0.165517
+entropy is 0.445359
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1324740 points 
+Sub-sampling 2 gives 486210 points 
+positions bitstream size 1095 B (0.00861588 bpp)
+positions processing time (user): 0.671 s
+colors bitstream size 27191 B (0.213949 bpp)
+colors processing time (user): 0.437 s
+Number of points = 1079392
+Number of nodes = 1181
+Estimation of sampling = 1.05849
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.38934
+direction is 2 2 rate is 0.233631
+direction is 2 1 rate is 0.252976
+direction is 2 0 rate is 0.34375
+direction is 2 3 rate is 0.169643
+entropy is 0.761345
+the direction is 1 and the count rate is 0.310545
+direction is 1 1 rate is 0.496269
+direction is 1 2 rate is 0.223881
+direction is 1 0 rate is 0.203358
+direction is 1 3 rate is 0.0764925
+entropy is 0.539108
+the direction is 0 and the count rate is 0.300116
+direction is 0 2 rate is 0.330116
+direction is 0 3 rate is 0.316602
+direction is 0 1 rate is 0.208494
+direction is 0 0 rate is 0.144788
+entropy is 0.578752
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1263215 points 
+Sub-sampling 2 gives 473516 points 
+positions bitstream size 1050 B (0.00778216 bpp)
+positions processing time (user): 0.656 s
+colors bitstream size 26845 B (0.198964 bpp)
+colors processing time (user): 0.421 s
+Number of points = 1080484
+Number of nodes = 1124
+Estimation of sampling = 1.03211
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.471333
+direction is 2 2 rate is 0.417256
+direction is 2 1 rate is 0.234795
+direction is 2 0 rate is 0.234795
+direction is 2 3 rate is 0.113154
+entropy is 0.87836
+the direction is 0 and the count rate is 0.270667
+direction is 0 2 rate is 0.248768
+direction is 0 3 rate is 0.349754
+direction is 0 1 rate is 0.157635
+direction is 0 0 rate is 0.243842
+entropy is 0.526718
+the direction is 1 and the count rate is 0.258
+direction is 1 2 rate is 0.229974
+direction is 1 1 rate is 0.359173
+direction is 1 0 rate is 0.224806
+direction is 1 3 rate is 0.186047
+entropy is 0.504054
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1290862 points 
+Sub-sampling 2 gives 491010 points 
+positions bitstream size 1035 B (0.00766323 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 32739 B (0.242402 bpp)
+colors processing time (user): 0.437 s
+Number of points = 686674
+Number of nodes = 736
+Estimation of sampling = 1.04764
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.426456
+direction is 2 3 rate is 0.252315
+direction is 2 0 rate is 0.210648
+direction is 2 1 rate is 0.210648
+direction is 2 2 rate is 0.326389
+entropy is 0.842334
+the direction is 1 and the count rate is 0.329714
+direction is 1 1 rate is 0.320359
+direction is 1 2 rate is 0.179641
+direction is 1 0 rate is 0.275449
+direction is 1 3 rate is 0.224551
+entropy is 0.648645
+the direction is 0 and the count rate is 0.24383
+direction is 0 1 rate is 0.218623
+direction is 0 2 rate is 0.550607
+direction is 0 3 rate is 0.153846
+direction is 0 0 rate is 0.0769231
+entropy is 0.403214
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 788444 points 
+positions bitstream size 691 B (0.0080504 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 29842 B (0.34767 bpp)
+colors processing time (user): 0.703 s
+Number of points = 477974
+Number of nodes = 507
+Estimation of sampling = 1.0422
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.41
+direction is 2 1 rate is 0.397213
+direction is 2 2 rate is 0.369338
+direction is 2 3 rate is 0.118467
+direction is 2 0 rate is 0.114983
+entropy is 0.731115
+the direction is 1 and the count rate is 0.27
+direction is 1 3 rate is 0.285714
+direction is 1 2 rate is 0.137566
+direction is 1 1 rate is 0.243386
+direction is 1 0 rate is 0.333333
+entropy is 0.522337
+the direction is 0 and the count rate is 0.32
+direction is 0 2 rate is 0.540179
+direction is 0 0 rate is 0.263393
+direction is 0 1 rate is 0.0982143
+direction is 0 3 rate is 0.0982143
+entropy is 0.526249
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 531482 points 
+positions bitstream size 506 B (0.00846908 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 19880 B (0.332738 bpp)
+colors processing time (user): 0.531 s
+Number of points = 844011
+Number of nodes = 997
+Estimation of sampling = 1.09982
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.479562
+direction is 2 0 rate is 0.375951
+direction is 2 3 rate is 0.228311
+direction is 2 1 rate is 0.210046
+direction is 2 2 rate is 0.185693
+entropy is 0.930846
+the direction is 0 and the count rate is 0.19562
+direction is 0 3 rate is 0.175373
+direction is 0 1 rate is 0.294776
+direction is 0 2 rate is 0.38806
+direction is 0 0 rate is 0.141791
+entropy is 0.369621
+the direction is 1 and the count rate is 0.324818
+direction is 1 1 rate is 0.496629
+direction is 1 2 rate is 0.193258
+direction is 1 3 rate is 0.094382
+direction is 1 0 rate is 0.21573
+entropy is 0.571197
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 996228 points 
+positions bitstream size 887 B (0.00840747 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 43929 B (0.416383 bpp)
+colors processing time (user): 0.89 s
+Number of points = 336816
+Number of nodes = 395
+Estimation of sampling = 1.09585
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.420827
+direction is 2 3 rate is 0.461017
+direction is 2 1 rate is 0.183051
+direction is 2 0 rate is 0.291525
+direction is 2 2 rate is 0.0644068
+entropy is 0.730842
+the direction is 0 and the count rate is 0.219686
+direction is 0 3 rate is 0.168831
+direction is 0 0 rate is 0.136364
+direction is 0 1 rate is 0.396104
+direction is 0 2 rate is 0.298701
+entropy is 0.411949
+the direction is 1 and the count rate is 0.359486
+direction is 1 1 rate is 0.492063
+direction is 1 3 rate is 0.0833333
+direction is 1 2 rate is 0.365079
+direction is 1 0 rate is 0.0595238
+entropy is 0.566255
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 465546 points 
+positions bitstream size 481 B (0.0114246 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 21512 B (0.51095 bpp)
+colors processing time (user): 0.453 s
+Number of points = 795010
+Number of nodes = 879
+Estimation of sampling = 1.06404
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.304813
+direction is 1 2 rate is 0.378446
+direction is 1 3 rate is 0.150376
+direction is 1 0 rate is 0.205514
+direction is 1 1 rate is 0.265664
+entropy is 0.584848
+the direction is 2 and the count rate is 0.368984
+direction is 2 2 rate is 0.300207
+direction is 2 1 rate is 0.20911
+direction is 2 0 rate is 0.285714
+direction is 2 3 rate is 0.204969
+entropy is 0.729962
+the direction is 0 and the count rate is 0.326203
+direction is 0 1 rate is 0.248244
+direction is 0 2 rate is 0.227166
+direction is 0 3 rate is 0.367681
+direction is 0 0 rate is 0.156909
+entropy is 0.631116
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 907634 points 
+positions bitstream size 823 B (0.00828166 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 35041 B (0.352609 bpp)
+colors processing time (user): 0.843 s
+Number of points = 388270
+Number of nodes = 410
+Estimation of sampling = 1.03986
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.426901
+direction is 2 3 rate is 0.287671
+direction is 2 1 rate is 0.181507
+direction is 2 0 rate is 0.44863
+direction is 2 2 rate is 0.0821918
+entropy is 0.759469
+the direction is 0 and the count rate is 0.28655
+direction is 0 2 rate is 0.362245
+direction is 0 0 rate is 0.0765306
+direction is 0 1 rate is 0.382653
+direction is 0 3 rate is 0.178571
+entropy is 0.512517
+the direction is 1 and the count rate is 0.28655
+direction is 1 1 rate is 0.336735
+direction is 1 3 rate is 0.204082
+direction is 1 2 rate is 0.372449
+direction is 1 0 rate is 0.0867347
+entropy is 0.525339
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 437270 points 
+positions bitstream size 481 B (0.00991063 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 20832 B (0.429227 bpp)
+colors processing time (user): 0.39 s
+Number of points = 782219
+Number of nodes = 792
+Estimation of sampling = 1.01824
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.528958
+direction is 2 2 rate is 0.304745
+direction is 2 0 rate is 0.136861
+direction is 2 3 rate is 0.337591
+direction is 2 1 rate is 0.220803
+entropy is 1.01833
+the direction is 1 and the count rate is 0.30695
+direction is 1 1 rate is 0.562893
+direction is 1 2 rate is 0.254717
+direction is 1 0 rate is 0.091195
+direction is 1 3 rate is 0.091195
+entropy is 0.49093
+the direction is 0 and the count rate is 0.164093
+direction is 0 0 rate is 0.217647
+direction is 0 2 rate is 0.317647
+direction is 0 1 rate is 0.270588
+direction is 0 3 rate is 0.194118
+entropy is 0.323874
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 887784 points 
+positions bitstream size 753 B (0.00770117 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 41753 B (0.427021 bpp)
+colors processing time (user): 0.796 s
+Number of points = 401474
+Number of nodes = 372
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.449524
+direction is 2 2 rate is 0.372881
+direction is 2 3 rate is 0.25
+direction is 2 1 rate is 0.144068
+direction is 2 0 rate is 0.233051
+entropy is 0.864475
+the direction is 0 and the count rate is 0.217143
+direction is 0 0 rate is 0.0614035
+direction is 0 2 rate is 0.368421
+direction is 0 3 rate is 0.464912
+direction is 0 1 rate is 0.105263
+entropy is 0.354707
+the direction is 1 and the count rate is 0.333333
+direction is 1 0 rate is 0.2
+direction is 1 1 rate is 0.48
+direction is 1 3 rate is 0.0914286
+direction is 1 2 rate is 0.228571
+entropy is 0.591629
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 463122 points 
+positions bitstream size 412 B (0.00820975 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 17347 B (0.345666 bpp)
+colors processing time (user): 0.484 s
+Number of points = 822103
+Number of nodes = 846
+Estimation of sampling = 1.02653
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.311013
+direction is 0 1 rate is 0.314448
+direction is 0 2 rate is 0.288952
+direction is 0 3 rate is 0.249292
+direction is 0 0 rate is 0.147309
+entropy is 0.606171
+the direction is 2 and the count rate is 0.514537
+direction is 2 1 rate is 0.268836
+direction is 2 3 rate is 0.292808
+direction is 2 2 rate is 0.34589
+direction is 2 0 rate is 0.0924658
+entropy is 0.965134
+the direction is 1 and the count rate is 0.174449
+direction is 1 2 rate is 0.348485
+direction is 1 1 rate is 0.272727
+direction is 1 3 rate is 0.156566
+direction is 1 0 rate is 0.222222
+entropy is 0.338824
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 945649 points 
+positions bitstream size 772 B (0.00751244 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 42699 B (0.41551 bpp)
+colors processing time (user): 0.937 s
+Number of points = 432361
+Number of nodes = 430
+Estimation of sampling = 1.00916
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.301538
+direction is 0 2 rate is 0.153061
+direction is 0 1 rate is 0.392857
+direction is 0 3 rate is 0.265306
+direction is 0 0 rate is 0.188776
+entropy is 0.57471
+the direction is 2 and the count rate is 0.375385
+direction is 2 3 rate is 0.22541
+direction is 2 1 rate is 0.258197
+direction is 2 2 rate is 0.377049
+direction is 2 0 rate is 0.139344
+entropy is 0.7191
+the direction is 1 and the count rate is 0.323077
+direction is 1 1 rate is 0.304762
+direction is 1 2 rate is 0.271429
+direction is 1 3 rate is 0.22381
+direction is 1 0 rate is 0.2
+entropy is 0.63996
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 497510 points 
+positions bitstream size 489 B (0.00904799 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 22511 B (0.416522 bpp)
+colors processing time (user): 0.437 s
+Number of points = 870807
+Number of nodes = 847
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.258765
+direction is 1 1 rate is 0.335484
+direction is 1 3 rate is 0.0806452
+direction is 1 0 rate is 0.2
+direction is 1 2 rate is 0.383871
+entropy is 0.469961
+the direction is 2 and the count rate is 0.553422
+direction is 2 0 rate is 0.177979
+direction is 2 3 rate is 0.205128
+direction is 2 2 rate is 0.410256
+direction is 2 1 rate is 0.206637
+entropy is 1.05671
+the direction is 0 and the count rate is 0.187813
+direction is 0 0 rate is 0.155556
+direction is 0 1 rate is 0.284444
+direction is 0 2 rate is 0.373333
+direction is 0 3 rate is 0.186667
+entropy is 0.359886
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1003178 points 
+positions bitstream size 821 B (0.00754243 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 48723 B (0.447612 bpp)
+colors processing time (user): 0.937 s
+Number of points = 425722
+Number of nodes = 423
+Estimation of sampling = 1.00869
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.429608
+direction is 2 1 rate is 0.226351
+direction is 2 3 rate is 0.182432
+direction is 2 2 rate is 0.253378
+direction is 2 0 rate is 0.337838
+entropy is 0.843627
+the direction is 1 and the count rate is 0.314949
+direction is 1 3 rate is 0.133641
+direction is 1 2 rate is 0.529954
+direction is 1 0 rate is 0.18894
+direction is 1 1 rate is 0.147465
+entropy is 0.546421
+the direction is 0 and the count rate is 0.255443
+direction is 0 0 rate is 0.0738636
+direction is 0 1 rate is 0.193182
+direction is 0 3 rate is 0.3125
+direction is 0 2 rate is 0.420455
+entropy is 0.456177
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 518685 points 
+positions bitstream size 494 B (0.00928305 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 19982 B (0.375494 bpp)
+colors processing time (user): 0.437 s
+Total frame size 920648 B
+Total bitstream size 920648 B
+Processing time (wall): 282.191 s
+Processing time (user): 198.265 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 381 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 16904 B
+colors processing time (user): 1.25 s
+
+positions bitstream size 498 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 21008 B
+colors processing time (user): 0.531 s
+
+positions bitstream size 635 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 34038 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 672 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 29938 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 872 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 39439 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 591 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.375 s
+
+colors bitstream size 25795 B
+colors processing time (user): 0.875 s
+
+positions bitstream size 855 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 23048 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 669 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 53265 B
+colors processing time (user): 0.843 s
+
+positions bitstream size 720 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.328 s
+
+colors bitstream size 45052 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 899 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 70813 B
+colors processing time (user): 0.906 s
+
+positions bitstream size 865 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 39509 B
+colors processing time (user): 0.984 s
+
+positions bitstream size 874 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 51370 B
+colors processing time (user): 0.875 s
+
+positions bitstream size 1095 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 27191 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 1050 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 26845 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 1035 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.125 s
+
+colors bitstream size 32739 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 691 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.281 s
+
+colors bitstream size 29842 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 506 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 19880 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 887 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.343 s
+
+colors bitstream size 43929 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 481 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.171 s
+
+colors bitstream size 21512 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 823 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 35041 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 481 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 20832 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 753 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.328 s
+
+colors bitstream size 41753 B
+colors processing time (user): 0.781 s
+
+positions bitstream size 412 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 17347 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 772 B
+positions processing time (user): 0.312 s
+
+colors bitstream size 42699 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 489 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 22511 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 821 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 48723 B
+colors processing time (user): 0.859 s
+
+positions bitstream size 494 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 19982 B
+colors processing time (user): 0.468 s
+
+Total bitstream size 920648 B
+Processing time (wall): 34.366 s
+Processing time (user): 25.875 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply
+infile2:        F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_2_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 52256 24576 1152
+WARNING: 29579 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 47062002, 20074218, 0.426548
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 4144.59
+   mse1,PSNR (p2point): 64.9259
+   mse1      (p2plane): 1251.88
+   mse1,PSNR (p2plane): 70.1251
+   c[0],    1         : 0.005466
+   c[1],    1         : 0.000240085
+   c[2],    1         : 0.000115322
+   c[0],PSNR1         : 22.6233
+   c[1],PSNR1         : 36.1964
+   c[2],PSNR1         : 39.3809
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2830
+   mse2,PSNR (p2point): 66.5828
+   mse2      (p2plane): 2519.25
+   mse2,PSNR (p2plane): 67.088
+   c[0],    2         : 0.00304627
+   c[1],    2         : 0.000134851
+   c[2],    2         : 6.98054e-05
+   c[0],PSNR2         : 25.1623
+   c[1],PSNR2         : 38.7015
+   c[2],PSNR2         : 41.5611
+3. Final (symmetric).
+   mseF      (p2point): 4144.59
+   mseF,PSNR (p2point): 64.9259
+   mseF      (p2plane): 2519.25
+   mseF,PSNR (p2plane): 67.088
+   c[0],    F         : 0.005466
+   c[1],    F         : 0.000240085
+   c[2],    F         : 0.000115322
+   c[0],PSNRF         : 22.6233
+   c[1],PSNRF         : 36.1964
+   c[2],PSNRF         : 39.3809
+Job done! 342.203 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 24
+Number of points = 470032
+Number of nodes = 2187
+Estimation of sampling = 1.09139
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.476342
+direction is 2 0 rate is 0.171119
+direction is 2 2 rate is 0.314691
+direction is 2 3 rate is 0.122705
+direction is 2 1 rate is 0.391486
+entropy is 0.88685
+the direction is 1 and the count rate is 0.3666
+direction is 1 1 rate is 0.251627
+direction is 1 2 rate is 0.235358
+direction is 1 3 rate is 0.219089
+direction is 1 0 rate is 0.293926
+entropy is 0.729981
+the direction is 0 and the count rate is 0.157058
+direction is 0 1 rate is 0.205063
+direction is 0 3 rate is 0.129114
+direction is 0 2 rate is 0.23038
+direction is 0 0 rate is 0.435443
+entropy is 0.29217
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 578418 points 
+positions bitstream size 1339 B (0.0227899 bpp)
+positions processing time (user): 0.312 s
+colors bitstream size 40384 B (0.68734 bpp)
+colors processing time (user): 0.484 s
+Number of points = 552416
+Number of nodes = 2872
+Estimation of sampling = 1.15366
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.27554
+direction is 1 3 rate is 0.509534
+direction is 1 2 rate is 0.174788
+direction is 1 0 rate is 0.172669
+direction is 1 1 rate is 0.143008
+entropy is 0.488879
+the direction is 2 and the count rate is 0.548745
+direction is 2 0 rate is 0.17766
+direction is 2 3 rate is 0.245745
+direction is 2 1 rate is 0.189362
+direction is 2 2 rate is 0.387234
+entropy is 1.05638
+the direction is 0 and the count rate is 0.175715
+direction is 0 2 rate is 0.337209
+direction is 0 1 rate is 0.315615
+direction is 0 0 rate is 0.182724
+direction is 0 3 rate is 0.164452
+entropy is 0.339185
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 650886 points 
+positions bitstream size 1828 B (0.0264728 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 55506 B (0.803829 bpp)
+colors processing time (user): 0.515 s
+Number of points = 756706
+Number of nodes = 3562
+Estimation of sampling = 1.09775
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.299733
+direction is 0 3 rate is 0.341112
+direction is 0 0 rate is 0.220316
+direction is 0 1 rate is 0.190803
+direction is 0 2 rate is 0.247769
+entropy is 0.588926
+the direction is 1 and the count rate is 0.273401
+direction is 1 2 rate is 0.234011
+direction is 1 3 rate is 0.317532
+direction is 1 1 rate is 0.252069
+direction is 1 0 rate is 0.196388
+entropy is 0.540831
+the direction is 2 and the count rate is 0.426867
+direction is 2 2 rate is 0.303133
+direction is 2 1 rate is 0.256386
+direction is 2 3 rate is 0.283855
+direction is 2 0 rate is 0.156627
+entropy is 0.836678
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 918368 points 
+positions bitstream size 2617 B (0.0276673 bpp)
+positions processing time (user): 0.468 s
+colors bitstream size 69951 B (0.739532 bpp)
+colors processing time (user): 0.687 s
+Number of points = 846153
+Number of nodes = 4150
+Estimation of sampling = 1.12052
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.180185
+direction is 0 0 rate is 0.187311
+direction is 0 1 rate is 0.350453
+direction is 0 2 rate is 0.413897
+direction is 0 3 rate is 0.0483384
+entropy is 0.310061
+the direction is 1 and the count rate is 0.39902
+direction is 1 1 rate is 0.129604
+direction is 1 3 rate is 0.363347
+direction is 1 2 rate is 0.0932242
+direction is 1 0 rate is 0.413824
+entropy is 0.701728
+the direction is 2 and the count rate is 0.420795
+direction is 2 1 rate is 0.26132
+direction is 2 2 rate is 0.250108
+direction is 2 3 rate is 0.229409
+direction is 2 0 rate is 0.259163
+entropy is 0.840806
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1048466 points 
+positions bitstream size 2065 B (0.0195237 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 51327 B (0.485274 bpp)
+colors processing time (user): 0.875 s
+Number of points = 862791
+Number of nodes = 3850
+Estimation of sampling = 1.0688
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.423204
+direction is 2 1 rate is 0.336815
+direction is 2 0 rate is 0.159269
+direction is 2 2 rate is 0.325326
+direction is 2 3 rate is 0.17859
+entropy is 0.81332
+the direction is 1 and the count rate is 0.325304
+direction is 1 2 rate is 0.127717
+direction is 1 1 rate is 0.44769
+direction is 1 3 rate is 0.144022
+direction is 1 0 rate is 0.280571
+entropy is 0.590534
+the direction is 0 and the count rate is 0.251492
+direction is 0 0 rate is 0.217047
+direction is 0 1 rate is 0.252197
+direction is 0 2 rate is 0.363796
+direction is 0 3 rate is 0.16696
+entropy is 0.488254
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1061947 points 
+positions bitstream size 2369 B (0.0219659 bpp)
+positions processing time (user): 0.531 s
+colors bitstream size 75204 B (0.697309 bpp)
+colors processing time (user): 0.937 s
+Number of points = 869943
+Number of nodes = 3681
+Estimation of sampling = 1.04078
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.276361
+direction is 0 3 rate is 0.204066
+direction is 0 0 rate is 0.232995
+direction is 0 1 rate is 0.372166
+direction is 0 2 rate is 0.190774
+entropy is 0.537311
+the direction is 2 and the count rate is 0.425022
+direction is 2 2 rate is 0.417387
+direction is 2 1 rate is 0.271988
+direction is 2 3 rate is 0.200305
+direction is 2 0 rate is 0.11032
+entropy is 0.787365
+the direction is 1 and the count rate is 0.298617
+direction is 1 1 rate is 0.280029
+direction is 1 3 rate is 0.152677
+direction is 1 2 rate is 0.351664
+direction is 1 0 rate is 0.21563
+entropy is 0.57803
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1011023 points 
+positions bitstream size 2486 B (0.0228613 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 84071 B (0.773117 bpp)
+colors processing time (user): 0.859 s
+Number of points = 912114
+Number of nodes = 4265
+Estimation of sampling = 1.09409
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.27551
+direction is 0 3 rate is 0.201162
+direction is 0 0 rate is 0.311547
+direction is 0 1 rate is 0.257081
+direction is 0 2 rate is 0.230211
+entropy is 0.545837
+the direction is 1 and the count rate is 0.346939
+direction is 1 2 rate is 0.252018
+direction is 1 1 rate is 0.313149
+direction is 1 3 rate is 0.159746
+direction is 1 0 rate is 0.275087
+entropy is 0.680207
+the direction is 2 and the count rate is 0.377551
+direction is 2 1 rate is 0.231055
+direction is 2 3 rate is 0.225755
+direction is 2 2 rate is 0.428193
+direction is 2 0 rate is 0.114997
+entropy is 0.7007
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1045233 points 
+positions bitstream size 2728 B (0.0239268 bpp)
+positions processing time (user): 0.531 s
+colors bitstream size 93140 B (0.816915 bpp)
+colors processing time (user): 0.953 s
+Number of points = 925254
+Number of nodes = 4552
+Estimation of sampling = 1.12225
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.554143
+direction is 2 1 rate is 0.316571
+direction is 2 2 rate is 0.22376
+direction is 2 0 rate is 0.285521
+direction is 2 3 rate is 0.174148
+entropy is 1.08838
+the direction is 0 and the count rate is 0.202918
+direction is 0 3 rate is 0.23871
+direction is 0 1 rate is 0.273733
+direction is 0 0 rate is 0.184332
+direction is 0 2 rate is 0.303226
+entropy is 0.401107
+the direction is 1 and the count rate is 0.24294
+direction is 1 2 rate is 0.493457
+direction is 1 3 rate is 0.176289
+direction is 1 0 rate is 0.095458
+direction is 1 1 rate is 0.234796
+entropy is 0.427237
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1057657 points 
+positions bitstream size 2855 B (0.0246851 bpp)
+positions processing time (user): 0.546 s
+colors bitstream size 99460 B (0.859958 bpp)
+colors processing time (user): 0.921 s
+Number of points = 928263
+Number of nodes = 3983
+Estimation of sampling = 1.04807
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.4
+direction is 1 2 rate is 0.323842
+direction is 1 3 rate is 0.212838
+direction is 1 1 rate is 0.210907
+direction is 1 0 rate is 0.252413
+entropy is 0.790699
+the direction is 2 and the count rate is 0.376641
+direction is 2 2 rate is 0.329575
+direction is 2 1 rate is 0.333162
+direction is 2 3 rate is 0.103537
+direction is 2 0 rate is 0.233726
+entropy is 0.70995
+the direction is 0 and the count rate is 0.223359
+direction is 0 1 rate is 0.269663
+direction is 0 0 rate is 0.191876
+direction is 0 2 rate is 0.333621
+direction is 0 3 rate is 0.20484
+entropy is 0.43863
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1101761 points 
+Sub-sampling 2 gives 429797 points 
+positions bitstream size 2740 B (0.023614 bpp)
+positions processing time (user): 0.593 s
+colors bitstream size 43516 B (0.375032 bpp)
+colors processing time (user): 0.312 s
+Number of points = 929438
+Number of nodes = 4715
+Estimation of sampling = 1.1396
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.482068
+direction is 2 1 rate is 0.162534
+direction is 2 2 rate is 0.258378
+direction is 2 0 rate is 0.282172
+direction is 2 3 rate is 0.296917
+entropy is 0.947612
+the direction is 0 and the count rate is 0.240711
+direction is 0 3 rate is 0.227517
+direction is 0 2 rate is 0.322148
+direction is 0 1 rate is 0.295302
+direction is 0 0 rate is 0.155034
+entropy is 0.469149
+the direction is 1 and the count rate is 0.277221
+direction is 1 2 rate is 0.249417
+direction is 1 1 rate is 0.268065
+direction is 1 3 rate is 0.227273
+direction is 1 0 rate is 0.255245
+entropy is 0.553739
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1068517 points 
+positions bitstream size 3352 B (0.0288518 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 95966 B (0.826013 bpp)
+colors processing time (user): 0.906 s
+Number of points = 963431
+Number of nodes = 4581
+Estimation of sampling = 1.10329
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.312291
+direction is 1 0 rate is 0.342627
+direction is 1 2 rate is 0.234853
+direction is 1 1 rate is 0.264343
+direction is 1 3 rate is 0.158177
+entropy is 0.608518
+the direction is 2 and the count rate is 0.37927
+direction is 2 1 rate is 0.233554
+direction is 2 0 rate is 0.35585
+direction is 2 3 rate is 0.192053
+direction is 2 2 rate is 0.218543
+entropy is 0.742285
+the direction is 0 and the count rate is 0.308439
+direction is 0 1 rate is 0.17861
+direction is 0 2 rate is 0.239414
+direction is 0 0 rate is 0.191097
+direction is 0 3 rate is 0.390879
+entropy is 0.593323
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1097892 points 
+positions bitstream size 3210 B (0.0266547 bpp)
+positions processing time (user): 0.515 s
+colors bitstream size 88079 B (0.731378 bpp)
+colors processing time (user): 0.875 s
+Number of points = 968488
+Number of nodes = 4258
+Estimation of sampling = 1.0609
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.403843
+direction is 2 1 rate is 0.383349
+direction is 2 0 rate is 0.220494
+direction is 2 2 rate is 0.240165
+direction is 2 3 rate is 0.155993
+entropy is 0.776824
+the direction is 1 and the count rate is 0.31683
+direction is 1 3 rate is 0.274052
+direction is 1 2 rate is 0.217493
+direction is 1 1 rate is 0.303207
+direction is 1 0 rate is 0.205248
+entropy is 0.627763
+the direction is 0 and the count rate is 0.279328
+direction is 0 3 rate is 0.279762
+direction is 0 2 rate is 0.311508
+direction is 0 0 rate is 0.253968
+direction is 0 1 rate is 0.154762
+entropy is 0.546659
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1168050 points 
+Sub-sampling 2 gives 453848 points 
+positions bitstream size 2922 B (0.0241366 bpp)
+positions processing time (user): 0.671 s
+colors bitstream size 45562 B (0.376356 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1034128
+Number of nodes = 5173
+Estimation of sampling = 1.13163
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.542577
+direction is 2 0 rate is 0.301287
+direction is 2 2 rate is 0.219118
+direction is 2 1 rate is 0.227061
+direction is 2 3 rate is 0.252534
+entropy is 1.07887
+the direction is 1 and the count rate is 0.236885
+direction is 1 1 rate is 0.261606
+direction is 1 2 rate is 0.275408
+direction is 1 0 rate is 0.130489
+direction is 1 3 rate is 0.332497
+entropy is 0.457193
+the direction is 0 and the count rate is 0.220538
+direction is 0 2 rate is 0.298518
+direction is 0 1 rate is 0.326146
+direction is 0 3 rate is 0.188005
+direction is 0 0 rate is 0.187332
+entropy is 0.430887
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1200045 points 
+Sub-sampling 2 gives 456290 points 
+positions bitstream size 3522 B (0.0272461 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 50012 B (0.386892 bpp)
+colors processing time (user): 0.359 s
+Number of points = 1053622
+Number of nodes = 4799
+Estimation of sampling = 1.07982
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.23817
+direction is 1 2 rate is 0.348197
+direction is 1 3 rate is 0.148197
+direction is 1 0 rate is 0.126557
+direction is 1 1 rate is 0.377049
+entropy is 0.439696
+the direction is 2 and the count rate is 0.479463
+direction is 2 3 rate is 0.285993
+direction is 2 0 rate is 0.239088
+direction is 2 2 rate is 0.208469
+direction is 2 1 rate is 0.26645
+entropy is 0.954149
+the direction is 0 and the count rate is 0.282368
+direction is 0 0 rate is 0.27323
+direction is 0 1 rate is 0.204646
+direction is 0 2 rate is 0.330752
+direction is 0 3 rate is 0.191372
+entropy is 0.554653
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1295908 points 
+Sub-sampling 2 gives 498810 points 
+positions bitstream size 3228 B (0.0245097 bpp)
+positions processing time (user): 0.781 s
+colors bitstream size 52098 B (0.395573 bpp)
+colors processing time (user): 0.437 s
+Number of points = 1058351
+Number of nodes = 4938
+Estimation of sampling = 1.0929
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.292892
+direction is 0 3 rate is 0.304833
+direction is 0 2 rate is 0.29846
+direction is 0 1 rate is 0.229952
+direction is 0 0 rate is 0.166755
+entropy is 0.574551
+the direction is 2 and the count rate is 0.445481
+direction is 2 1 rate is 0.230098
+direction is 2 3 rate is 0.249651
+direction is 2 2 rate is 0.317388
+direction is 2 0 rate is 0.202863
+entropy is 0.882011
+the direction is 1 and the count rate is 0.261627
+direction is 1 2 rate is 0.335315
+direction is 1 1 rate is 0.292509
+direction is 1 0 rate is 0.171819
+direction is 1 3 rate is 0.200357
+entropy is 0.509817
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1269077 points 
+Sub-sampling 2 gives 506918 points 
+positions bitstream size 3565 B (0.0269476 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 56392 B (0.426263 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1066544
+Number of nodes = 4696
+Estimation of sampling = 1.06168
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.389654
+direction is 1 1 rate is 0.329406
+direction is 1 0 rate is 0.278659
+direction is 1 2 rate is 0.136837
+direction is 1 3 rate is 0.255097
+entropy is 0.754695
+the direction is 0 and the count rate is 0.26077
+direction is 0 3 rate is 0.199729
+direction is 0 1 rate is 0.317536
+direction is 0 0 rate is 0.17671
+direction is 0 2 rate is 0.306026
+entropy is 0.509627
+the direction is 2 and the count rate is 0.349576
+direction is 2 2 rate is 0.315152
+direction is 2 1 rate is 0.312626
+direction is 2 0 rate is 0.256061
+direction is 2 3 rate is 0.116162
+entropy is 0.668907
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1211607 points 
+Sub-sampling 2 gives 473060 points 
+positions bitstream size 3127 B (0.0234552 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 73057 B (0.547991 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1079680
+Number of nodes = 5111
+Estimation of sampling = 1.10084
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.468775
+direction is 2 0 rate is 0.276661
+direction is 2 2 rate is 0.206814
+direction is 2 1 rate is 0.400341
+direction is 2 3 rate is 0.116184
+entropy is 0.877842
+the direction is 0 and the count rate is 0.276953
+direction is 0 0 rate is 0.250865
+direction is 0 1 rate is 0.250288
+direction is 0 2 rate is 0.275087
+direction is 0 3 rate is 0.22376
+entropy is 0.552847
+the direction is 1 and the count rate is 0.254272
+direction is 1 3 rate is 0.17902
+direction is 1 2 rate is 0.407035
+direction is 1 0 rate is 0.153266
+direction is 1 1 rate is 0.260678
+entropy is 0.481204
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1315306 points 
+Sub-sampling 2 gives 522393 points 
+positions bitstream size 3602 B (0.0266894 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 58075 B (0.430313 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1083857
+Number of nodes = 4773
+Estimation of sampling = 1.06177
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.346476
+direction is 1 1 rate is 0.336739
+direction is 1 2 rate is 0.341384
+direction is 1 0 rate is 0.208546
+direction is 1 3 rate is 0.11333
+entropy is 0.653371
+the direction is 2 and the count rate is 0.375603
+direction is 2 0 rate is 0.439589
+direction is 2 3 rate is 0.117395
+direction is 2 2 rate is 0.200086
+direction is 2 1 rate is 0.242931
+entropy is 0.69278
+the direction is 0 and the count rate is 0.277921
+direction is 0 0 rate is 0.298205
+direction is 0 2 rate is 0.221772
+direction is 0 3 rate is 0.246671
+direction is 0 1 rate is 0.233353
+entropy is 0.553187
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1270399 points 
+Sub-sampling 2 gives 499630 points 
+positions bitstream size 3414 B (0.0251989 bpp)
+positions processing time (user): 0.718 s
+colors bitstream size 72961 B (0.538529 bpp)
+colors processing time (user): 0.468 s
+Number of points = 823608
+Number of nodes = 3750
+Estimation of sampling = 1.07963
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.360676
+direction is 2 2 rate is 0.214604
+direction is 2 0 rate is 0.324415
+direction is 2 1 rate is 0.159978
+direction is 2 3 rate is 0.301003
+entropy is 0.702497
+the direction is 1 and the count rate is 0.373945
+direction is 1 1 rate is 0.285484
+direction is 1 0 rate is 0.186559
+direction is 1 3 rate is 0.107527
+direction is 1 2 rate is 0.42043
+entropy is 0.687948
+the direction is 0 and the count rate is 0.26538
+direction is 0 2 rate is 0.239394
+direction is 0 0 rate is 0.152273
+direction is 0 1 rate is 0.504545
+direction is 0 3 rate is 0.103788
+entropy is 0.462926
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 981642 points 
+positions bitstream size 2477 B (0.02406 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 72769 B (0.706831 bpp)
+colors processing time (user): 0.984 s
+Number of points = 332705
+Number of nodes = 1503
+Estimation of sampling = 1.0754
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.361097
+direction is 2 3 rate is 0.28453
+direction is 2 1 rate is 0.26105
+direction is 2 2 rate is 0.258287
+direction is 2 0 rate is 0.196133
+entropy is 0.717542
+the direction is 1 and the count rate is 0.316708
+direction is 1 1 rate is 0.289764
+direction is 1 2 rate is 0.368504
+direction is 1 0 rate is 0.2
+direction is 1 3 rate is 0.141732
+entropy is 0.60569
+the direction is 0 and the count rate is 0.322195
+direction is 0 1 rate is 0.281734
+direction is 0 2 rate is 0.213622
+direction is 0 0 rate is 0.431889
+direction is 0 3 rate is 0.0727554
+entropy is 0.576345
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 407194 points 
+positions bitstream size 1169 B (0.028109 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 30596 B (0.735691 bpp)
+colors processing time (user): 0.359 s
+Number of points = 814615
+Number of nodes = 3864
+Estimation of sampling = 1.10195
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.275071
+direction is 1 3 rate is 0.158672
+direction is 1 0 rate is 0.267159
+direction is 1 2 rate is 0.314391
+direction is 1 1 rate is 0.259779
+entropy is 0.539182
+the direction is 2 and the count rate is 0.517458
+direction is 2 0 rate is 0.28521
+direction is 2 2 rate is 0.309533
+direction is 2 3 rate is 0.140447
+direction is 2 1 rate is 0.26481
+entropy is 1.00658
+the direction is 0 and the count rate is 0.207471
+direction is 0 0 rate is 0.217221
+direction is 0 1 rate is 0.299413
+direction is 0 3 rate is 0.192759
+direction is 0 2 rate is 0.290607
+entropy is 0.409825
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 974161 points 
+positions bitstream size 2841 B (0.0279003 bpp)
+positions processing time (user): 0.546 s
+colors bitstream size 93303 B (0.916291 bpp)
+colors processing time (user): 0.812 s
+Number of points = 341864
+Number of nodes = 1515
+Estimation of sampling = 1.06512
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.425743
+direction is 2 2 rate is 0.238901
+direction is 2 0 rate is 0.348837
+direction is 2 3 rate is 0.158562
+direction is 2 1 rate is 0.2537
+entropy is 0.828823
+the direction is 0 and the count rate is 0.263276
+direction is 0 2 rate is 0.347009
+direction is 0 3 rate is 0.191453
+direction is 0 1 rate is 0.381197
+direction is 0 0 rate is 0.0803419
+entropy is 0.4763
+the direction is 1 and the count rate is 0.310981
+direction is 1 1 rate is 0.421129
+direction is 1 2 rate is 0.224313
+direction is 1 0 rate is 0.199711
+direction is 1 3 rate is 0.154848
+entropy is 0.587748
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 433802 points 
+positions bitstream size 1332 B (0.0311703 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 36494 B (0.854 bpp)
+colors processing time (user): 0.343 s
+Number of points = 823965
+Number of nodes = 3707
+Estimation of sampling = 1.07319
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.572449
+direction is 2 3 rate is 0.271841
+direction is 2 2 rate is 0.301872
+direction is 2 0 rate is 0.181357
+direction is 2 1 rate is 0.24493
+entropy is 1.13131
+the direction is 0 and the count rate is 0.219245
+direction is 0 0 rate is 0.202648
+direction is 0 1 rate is 0.364562
+direction is 0 3 rate is 0.206721
+direction is 0 2 rate is 0.226069
+entropy is 0.428075
+the direction is 1 and the count rate is 0.208305
+direction is 1 3 rate is 0.374062
+direction is 1 1 rate is 0.241158
+direction is 1 2 rate is 0.265809
+direction is 1 0 rate is 0.118971
+entropy is 0.395574
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 925281 points 
+positions bitstream size 2597 B (0.0252147 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 97666 B (0.948254 bpp)
+colors processing time (user): 0.75 s
+Number of points = 351246
+Number of nodes = 1531
+Estimation of sampling = 1.05634
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.570378
+direction is 2 1 rate is 0.439227
+direction is 2 2 rate is 0.220994
+direction is 2 0 rate is 0.164825
+direction is 2 3 rate is 0.174954
+entropy is 1.06738
+the direction is 1 and the count rate is 0.201155
+direction is 1 1 rate is 0.234987
+direction is 1 2 rate is 0.156658
+direction is 1 3 rate is 0.501305
+direction is 1 0 rate is 0.10705
+entropy is 0.352913
+the direction is 0 and the count rate is 0.228466
+direction is 0 2 rate is 0.586207
+direction is 0 1 rate is 0.252874
+direction is 0 3 rate is 0.0597701
+direction is 0 0 rate is 0.101149
+entropy is 0.349676
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 431723 points 
+positions bitstream size 1075 B (0.0244843 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 29430 B (0.670299 bpp)
+colors processing time (user): 0.312 s
+Total frame size 1627771 B
+Total bitstream size 1627771 B
+Processing time (wall): 229.325 s
+Processing time (user): 154.125 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 1339 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.218 s
+
+colors bitstream size 40384 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 1828 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 55506 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 2617 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 69951 B
+colors processing time (user): 0.703 s
+
+positions bitstream size 2065 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 51327 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 2369 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 75204 B
+colors processing time (user): 0.781 s
+
+positions bitstream size 2486 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 84071 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 2728 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 93140 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 2855 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.359 s
+
+colors bitstream size 99460 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 2740 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 43516 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 3352 B
+positions processing time (user): 0.453 s
+
+colors bitstream size 95966 B
+colors processing time (user): 0.828 s
+
+positions bitstream size 3210 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 88079 B
+colors processing time (user): 0.828 s
+
+positions bitstream size 2922 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 45562 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 3522 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 50012 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 3228 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 52098 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 3565 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 56392 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 3127 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 73057 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 3602 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 58075 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 3414 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 72961 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 2477 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.39 s
+
+colors bitstream size 72769 B
+colors processing time (user): 0.875 s
+
+positions bitstream size 1169 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.171 s
+
+colors bitstream size 30596 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 2841 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 93303 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 1332 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 36494 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 2597 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.39 s
+
+colors bitstream size 97666 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 1075 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.156 s
+
+colors bitstream size 29430 B
+colors processing time (user): 0.312 s
+
+Total bitstream size 1627771 B
+Processing time (wall): 26.984 s
+Processing time (user): 20.265 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply
+infile2:        F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_2_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 50720 33792 1184
+WARNING: 25595 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 47062002, 17507361, 0.372006
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 941.796
+   mse1,PSNR (p2point): 71.3611
+   mse1      (p2plane): 289.946
+   mse1,PSNR (p2plane): 76.4775
+   c[0],    1         : 0.00329602
+   c[1],    1         : 0.000149012
+   c[2],    1         : 7.48787e-05
+   c[0],PSNR1         : 24.8201
+   c[1],PSNR1         : 38.2678
+   c[2],PSNR1         : 41.2564
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 584.387
+   mse2,PSNR (p2point): 73.4337
+   mse2      (p2plane): 518.996
+   mse2,PSNR (p2plane): 73.949
+   c[0],    2         : 0.00208119
+   c[1],    2         : 9.50633e-05
+   c[2],    2         : 5.08789e-05
+   c[0],PSNR2         : 26.8169
+   c[1],PSNR2         : 40.2199
+   c[2],PSNR2         : 42.9346
+3. Final (symmetric).
+   mseF      (p2point): 941.796
+   mseF,PSNR (p2point): 71.3611
+   mseF      (p2plane): 518.996
+   mseF,PSNR (p2plane): 73.949
+   c[0],    F         : 0.00329602
+   c[1],    F         : 0.000149012
+   c[2],    F         : 7.48787e-05
+   c[0],PSNRF         : 24.8201
+   c[1],PSNRF         : 38.2678
+   c[2],PSNRF         : 41.2564
+Job done! 259.968 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 23
+Number of points = 325984
+Number of nodes = 6365
+Estimation of sampling = 1.11787
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.327097
+direction is 1 3 rate is 0.167461
+direction is 1 2 rate is 0.40197
+direction is 1 1 rate is 0.316174
+direction is 1 0 rate is 0.114395
+entropy is 0.60294
+the direction is 2 and the count rate is 0.333022
+direction is 2 3 rate is 0.165418
+direction is 2 0 rate is 0.154806
+direction is 2 1 rate is 0.291511
+direction is 2 2 rate is 0.388265
+entropy is 0.630877
+the direction is 0 and the count rate is 0.339882
+direction is 0 0 rate is 0.397248
+direction is 0 1 rate is 0.287462
+direction is 0 2 rate is 0.176453
+direction is 0 3 rate is 0.138838
+entropy is 0.640061
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 400206 points 
+positions bitstream size 3909 B (0.0959311 bpp)
+positions processing time (user): 0.281 s
+colors bitstream size 68502 B (1.68111 bpp)
+colors processing time (user): 0.312 s
+Number of points = 534033
+Number of nodes = 10626
+Estimation of sampling = 1.12847
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.303653
+direction is 1 3 rate is 0.278568
+direction is 1 2 rate is 0.404916
+direction is 1 1 rate is 0.218844
+direction is 1 0 rate is 0.0976714
+entropy is 0.561538
+the direction is 2 and the count rate is 0.477151
+direction is 2 1 rate is 0.285675
+direction is 2 2 rate is 0.230928
+direction is 2 0 rate is 0.270445
+direction is 2 3 rate is 0.212953
+entropy is 0.949562
+the direction is 0 and the count rate is 0.219196
+direction is 0 1 rate is 0.338112
+direction is 0 0 rate is 0.14098
+direction is 0 2 rate is 0.373955
+direction is 0 3 rate is 0.146953
+entropy is 0.408723
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 641621 points 
+positions bitstream size 5838 B (0.0874553 bpp)
+positions processing time (user): 0.531 s
+colors bitstream size 104877 B (1.57109 bpp)
+colors processing time (user): 0.531 s
+Number of points = 707906
+Number of nodes = 13535
+Estimation of sampling = 1.10619
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.317217
+direction is 0 3 rate is 0.231775
+direction is 0 2 rate is 0.306178
+direction is 0 1 rate is 0.306929
+direction is 0 0 rate is 0.155118
+entropy is 0.619124
+the direction is 1 and the count rate is 0.304201
+direction is 1 1 rate is 0.266614
+direction is 1 2 rate is 0.348903
+direction is 1 3 rate is 0.181191
+direction is 1 0 rate is 0.203292
+entropy is 0.593882
+the direction is 2 and the count rate is 0.378582
+direction is 2 2 rate is 0.313602
+direction is 2 1 rate is 0.248992
+direction is 2 3 rate is 0.240932
+direction is 2 0 rate is 0.196474
+entropy is 0.749606
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 853425 points 
+positions bitstream size 7741 B (0.0874805 bpp)
+positions processing time (user): 0.625 s
+colors bitstream size 119616 B (1.35177 bpp)
+colors processing time (user): 0.656 s
+Number of points = 784851
+Number of nodes = 14279
+Estimation of sampling = 1.07906
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.295486
+direction is 0 3 rate is 0.193684
+direction is 0 1 rate is 0.276136
+direction is 0 0 rate is 0.14748
+direction is 0 2 rate is 0.382701
+entropy is 0.564057
+the direction is 2 and the count rate is 0.374322
+direction is 2 2 rate is 0.293012
+direction is 2 3 rate is 0.19526
+direction is 2 0 rate is 0.233084
+direction is 2 1 rate is 0.278644
+entropy is 0.742078
+the direction is 1 and the count rate is 0.330192
+direction is 1 1 rate is 0.287484
+direction is 1 0 rate is 0.254351
+direction is 1 2 rate is 0.314353
+direction is 1 3 rate is 0.143812
+entropy is 0.642742
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 944898 points 
+positions bitstream size 7880 B (0.080321 bpp)
+positions processing time (user): 0.656 s
+colors bitstream size 139909 B (1.42609 bpp)
+colors processing time (user): 0.734 s
+Number of points = 830849
+Number of nodes = 16238
+Estimation of sampling = 1.11839
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.353967
+direction is 1 2 rate is 0.228727
+direction is 1 1 rate is 0.472822
+direction is 1 0 rate is 0.207137
+direction is 1 3 rate is 0.0913132
+entropy is 0.631312
+the direction is 2 and the count rate is 0.347044
+direction is 2 2 rate is 0.262953
+direction is 2 1 rate is 0.321503
+direction is 2 0 rate is 0.28044
+direction is 2 3 rate is 0.135104
+entropy is 0.672443
+the direction is 0 and the count rate is 0.298989
+direction is 0 2 rate is 0.329274
+direction is 0 1 rate is 0.22553
+direction is 0 3 rate is 0.267479
+direction is 0 0 rate is 0.177718
+entropy is 0.587242
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 989699 points 
+positions bitstream size 8179 B (0.0787532 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 126517 B (1.21819 bpp)
+colors processing time (user): 0.781 s
+Number of points = 833555
+Number of nodes = 15787
+Estimation of sampling = 1.10096
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.189562
+direction is 0 2 rate is 0.456257
+direction is 0 1 rate is 0.370149
+direction is 0 0 rate is 0.131573
+direction is 0 3 rate is 0.0420207
+entropy is 0.307923
+the direction is 1 and the count rate is 0.406982
+direction is 1 3 rate is 0.265455
+direction is 1 2 rate is 0.260535
+direction is 1 0 rate is 0.16246
+direction is 1 1 rate is 0.311551
+entropy is 0.799153
+the direction is 2 and the count rate is 0.403456
+direction is 2 3 rate is 0.179415
+direction is 2 0 rate is 0.204769
+direction is 2 2 rate is 0.332938
+direction is 2 1 rate is 0.282878
+entropy is 0.789482
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1011234 points 
+positions bitstream size 5694 B (0.0546479 bpp)
+positions processing time (user): 0.718 s
+colors bitstream size 98541 B (0.945742 bpp)
+colors processing time (user): 0.843 s
+Number of points = 842952
+Number of nodes = 15567
+Estimation of sampling = 1.08715
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.250759
+direction is 1 1 rate is 0.326002
+direction is 1 2 rate is 0.509974
+direction is 1 3 rate is 0.0731458
+direction is 1 0 rate is 0.0908781
+entropy is 0.404479
+the direction is 2 and the count rate is 0.479157
+direction is 2 1 rate is 0.250915
+direction is 2 3 rate is 0.267868
+direction is 2 0 rate is 0.195414
+direction is 2 2 rate is 0.285804
+entropy is 0.951731
+the direction is 0 and the count rate is 0.270084
+direction is 0 1 rate is 0.240621
+direction is 0 0 rate is 0.242362
+direction is 0 2 rate is 0.321355
+direction is 0 3 rate is 0.195662
+entropy is 0.533928
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1024379 points 
+positions bitstream size 7754 B (0.073589 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 168983 B (1.60373 bpp)
+colors processing time (user): 0.812 s
+Number of points = 879677
+Number of nodes = 16470
+Estimation of sampling = 1.09465
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.239614
+direction is 0 3 rate is 0.127621
+direction is 0 2 rate is 0.305014
+direction is 0 0 rate is 0.20237
+direction is 0 1 rate is 0.364995
+entropy is 0.454959
+the direction is 1 and the count rate is 0.348434
+direction is 1 2 rate is 0.323596
+direction is 1 1 rate is 0.321966
+direction is 1 0 rate is 0.146439
+direction is 1 3 rate is 0.207999
+entropy is 0.672552
+the direction is 2 and the count rate is 0.411952
+direction is 2 1 rate is 0.33701
+direction is 2 2 rate is 0.307211
+direction is 2 3 rate is 0.168717
+direction is 2 0 rate is 0.187063
+entropy is 0.798136
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1056063 points 
+positions bitstream size 8268 B (0.0751912 bpp)
+positions processing time (user): 0.75 s
+colors bitstream size 185731 B (1.68908 bpp)
+colors processing time (user): 0.843 s
+Number of points = 906387
+Number of nodes = 18015
+Estimation of sampling = 1.12785
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.421548
+direction is 2 0 rate is 0.245881
+direction is 2 3 rate is 0.226313
+direction is 2 1 rate is 0.261672
+direction is 2 2 rate is 0.266135
+entropy is 0.841896
+the direction is 1 and the count rate is 0.298904
+direction is 1 1 rate is 0.278383
+direction is 1 2 rate is 0.309005
+direction is 1 3 rate is 0.210724
+direction is 1 0 rate is 0.201888
+entropy is 0.590802
+the direction is 0 and the count rate is 0.279548
+direction is 0 2 rate is 0.369872
+direction is 0 3 rate is 0.200336
+direction is 0 1 rate is 0.275269
+direction is 0 0 rate is 0.154523
+entropy is 0.537855
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1071003 points 
+positions bitstream size 10750 B (0.0948822 bpp)
+positions processing time (user): 0.89 s
+colors bitstream size 183400 B (1.61873 bpp)
+colors processing time (user): 0.796 s
+Number of points = 913117
+Number of nodes = 18157
+Estimation of sampling = 1.1281
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.482902
+direction is 2 2 rate is 0.248329
+direction is 2 1 rate is 0.253421
+direction is 2 3 rate is 0.253819
+direction is 2 0 rate is 0.24443
+entropy is 0.96572
+the direction is 1 and the count rate is 0.273112
+direction is 1 3 rate is 0.123523
+direction is 1 1 rate is 0.36058
+direction is 1 2 rate is 0.336382
+direction is 1 0 rate is 0.179516
+entropy is 0.512592
+the direction is 0 and the count rate is 0.243987
+direction is 0 1 rate is 0.293858
+direction is 0 0 rate is 0.16063
+direction is 0 3 rate is 0.170551
+direction is 0 2 rate is 0.374961
+entropy is 0.465723
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1075257 points 
+positions bitstream size 10180 B (0.089189 bpp)
+positions processing time (user): 0.875 s
+colors bitstream size 195151 B (1.70976 bpp)
+colors processing time (user): 0.89 s
+Number of points = 916516
+Number of nodes = 17592
+Estimation of sampling = 1.10835
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.31217
+direction is 0 1 rate is 0.323818
+direction is 0 2 rate is 0.337295
+direction is 0 3 rate is 0.144082
+direction is 0 0 rate is 0.194805
+entropy is 0.598759
+the direction is 2 and the count rate is 0.358487
+direction is 2 2 rate is 0.318255
+direction is 2 1 rate is 0.330417
+direction is 2 3 rate is 0.167929
+direction is 2 0 rate is 0.183399
+entropy is 0.693526
+the direction is 1 and the count rate is 0.329343
+direction is 1 0 rate is 0.210777
+direction is 1 1 rate is 0.268958
+direction is 1 2 rate is 0.298223
+direction is 1 3 rate is 0.222042
+entropy is 0.653955
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1083311 points 
+positions bitstream size 9650 B (0.084232 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 175505 B (1.53193 bpp)
+colors processing time (user): 0.875 s
+Number of points = 940800
+Number of nodes = 17045
+Estimation of sampling = 1.07681
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.390821
+direction is 1 2 rate is 0.266361
+direction is 1 1 rate is 0.365851
+direction is 1 0 rate is 0.224057
+direction is 1 3 rate is 0.143731
+entropy is 0.752276
+the direction is 2 and the count rate is 0.347715
+direction is 2 0 rate is 0.242667
+direction is 2 1 rate is 0.297319
+direction is 2 3 rate is 0.205202
+direction is 2 2 rate is 0.254812
+entropy is 0.69109
+the direction is 0 and the count rate is 0.261464
+direction is 0 2 rate is 0.397379
+direction is 0 1 rate is 0.332775
+direction is 0 3 rate is 0.148712
+direction is 0 0 rate is 0.121134
+entropy is 0.479806
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1113756 points 
+Sub-sampling 2 gives 445932 points 
+positions bitstream size 8895 B (0.0756378 bpp)
+positions processing time (user): 0.984 s
+colors bitstream size 82276 B (0.699626 bpp)
+colors processing time (user): 0.328 s
+Number of points = 942105
+Number of nodes = 17381
+Estimation of sampling = 1.08662
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.361119
+direction is 2 2 rate is 0.303034
+direction is 2 0 rate is 0.175817
+direction is 2 1 rate is 0.257424
+direction is 2 3 rate is 0.263726
+entropy is 0.712841
+the direction is 1 and the count rate is 0.343838
+direction is 1 2 rate is 0.37357
+direction is 1 3 rate is 0.193291
+direction is 1 1 rate is 0.291227
+direction is 1 0 rate is 0.141912
+entropy is 0.655725
+the direction is 0 and the count rate is 0.295043
+direction is 0 2 rate is 0.330762
+direction is 0 1 rate is 0.267355
+direction is 0 3 rate is 0.147862
+direction is 0 0 rate is 0.25402
+entropy is 0.574365
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1130262 points 
+Sub-sampling 2 gives 453516 points 
+positions bitstream size 8983 B (0.0762802 bpp)
+positions processing time (user): 1.015 s
+colors bitstream size 81559 B (0.692568 bpp)
+colors processing time (user): 0.328 s
+Number of points = 947168
+Number of nodes = 17670
+Estimation of sampling = 1.09268
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.371274
+direction is 2 3 rate is 0.242449
+direction is 2 1 rate is 0.224987
+direction is 2 2 rate is 0.311089
+direction is 2 0 rate is 0.221475
+entropy is 0.737179
+the direction is 1 and the count rate is 0.343629
+direction is 1 2 rate is 0.349778
+direction is 1 3 rate is 0.233004
+direction is 1 0 rate is 0.103437
+direction is 1 1 rate is 0.313781
+entropy is 0.647061
+the direction is 0 and the count rate is 0.285097
+direction is 0 0 rate is 0.180998
+direction is 0 2 rate is 0.365656
+direction is 0 1 rate is 0.320962
+direction is 0 3 rate is 0.132384
+entropy is 0.538684
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1166433 points 
+Sub-sampling 2 gives 464881 points 
+positions bitstream size 8914 B (0.0752897 bpp)
+positions processing time (user): 1.062 s
+colors bitstream size 80416 B (0.679212 bpp)
+colors processing time (user): 0.343 s
+Number of points = 1006541
+Number of nodes = 19242
+Estimation of sampling = 1.10611
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.308847
+direction is 0 3 rate is 0.241984
+direction is 0 2 rate is 0.298067
+direction is 0 1 rate is 0.268015
+direction is 0 0 rate is 0.191934
+entropy is 0.612146
+the direction is 2 and the count rate is 0.400248
+direction is 2 3 rate is 0.228534
+direction is 2 0 rate is 0.216034
+direction is 2 2 rate is 0.276379
+direction is 2 1 rate is 0.279052
+entropy is 0.796836
+the direction is 1 and the count rate is 0.290905
+direction is 1 0 rate is 0.183252
+direction is 1 2 rate is 0.288222
+direction is 1 3 rate is 0.186811
+direction is 1 1 rate is 0.341715
+entropy is 0.566512
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1226914 points 
+Sub-sampling 2 gives 516633 points 
+positions bitstream size 11318 B (0.0899556 bpp)
+positions processing time (user): 1.203 s
+colors bitstream size 101735 B (0.808591 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1017389
+Number of nodes = 18794
+Estimation of sampling = 1.08732
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.330378
+direction is 2 3 rate is 0.198048
+direction is 2 0 rate is 0.266578
+direction is 2 2 rate is 0.274673
+direction is 2 1 rate is 0.260701
+entropy is 0.657058
+the direction is 1 and the count rate is 0.379836
+direction is 1 2 rate is 0.341821
+direction is 1 0 rate is 0.145351
+direction is 1 1 rate is 0.283468
+direction is 1 3 rate is 0.22936
+entropy is 0.735584
+the direction is 0 and the count rate is 0.289786
+direction is 0 2 rate is 0.383186
+direction is 0 1 rate is 0.277244
+direction is 0 3 rate is 0.166625
+direction is 0 0 rate is 0.172946
+entropy is 0.554074
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1208888 points 
+Sub-sampling 2 gives 498341 points 
+positions bitstream size 10994 B (0.0864487 bpp)
+positions processing time (user): 1.046 s
+colors bitstream size 123990 B (0.974966 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1030086
+Number of nodes = 18738
+Estimation of sampling = 1.07898
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.339018
+direction is 1 3 rate is 0.141319
+direction is 1 2 rate is 0.326868
+direction is 1 1 rate is 0.310668
+direction is 1 0 rate is 0.221145
+entropy is 0.654856
+the direction is 2 and the count rate is 0.374824
+direction is 2 2 rate is 0.221612
+direction is 2 1 rate is 0.361963
+direction is 2 0 rate is 0.261423
+direction is 2 3 rate is 0.155003
+entropy is 0.725406
+the direction is 0 and the count rate is 0.286158
+direction is 0 1 rate is 0.295202
+direction is 0 2 rate is 0.353535
+direction is 0 3 rate is 0.183586
+direction is 0 0 rate is 0.167677
+entropy is 0.552538
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1238447 points 
+Sub-sampling 2 gives 511178 points 
+positions bitstream size 10946 B (0.0850104 bpp)
+positions processing time (user): 1.156 s
+colors bitstream size 131353 B (1.02013 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1036877
+Number of nodes = 20588
+Estimation of sampling = 1.12728
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.499308
+direction is 2 2 rate is 0.230962
+direction is 2 0 rate is 0.296291
+direction is 2 1 rate is 0.248053
+direction is 2 3 rate is 0.224693
+entropy is 0.994207
+the direction is 1 and the count rate is 0.254794
+direction is 1 2 rate is 0.369585
+direction is 1 3 rate is 0.222682
+direction is 1 0 rate is 0.13229
+direction is 1 1 rate is 0.275443
+entropy is 0.487089
+the direction is 0 and the count rate is 0.245898
+direction is 0 1 rate is 0.302157
+direction is 0 3 rate is 0.177811
+direction is 0 2 rate is 0.366073
+direction is 0 0 rate is 0.15396
+entropy is 0.469928
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1242484 points 
+Sub-sampling 2 gives 519319 points 
+positions bitstream size 11849 B (0.0914207 bpp)
+positions processing time (user): 1.125 s
+colors bitstream size 108652 B (0.838302 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1051725
+Number of nodes = 20500
+Estimation of sampling = 1.1169
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.292895
+direction is 1 3 rate is 0.191424
+direction is 1 2 rate is 0.314664
+direction is 1 1 rate is 0.27496
+direction is 1 0 rate is 0.218952
+entropy is 0.57801
+the direction is 0 and the count rate is 0.266164
+direction is 0 3 rate is 0.21729
+direction is 0 1 rate is 0.293837
+direction is 0 2 rate is 0.358266
+direction is 0 0 rate is 0.130607
+entropy is 0.508861
+the direction is 2 and the count rate is 0.44094
+direction is 2 3 rate is 0.180392
+direction is 2 2 rate is 0.253675
+direction is 2 1 rate is 0.291511
+direction is 2 0 rate is 0.274422
+entropy is 0.872215
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1301374 points 
+Sub-sampling 2 gives 550675 points 
+positions bitstream size 12220 B (0.0929521 bpp)
+positions processing time (user): 1.265 s
+colors bitstream size 114453 B (0.870593 bpp)
+colors processing time (user): 0.453 s
+Number of points = 1055011
+Number of nodes = 20265
+Estimation of sampling = 1.10875
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.417767
+direction is 2 1 rate is 0.244085
+direction is 2 3 rate is 0.247779
+direction is 2 0 rate is 0.234416
+direction is 2 2 rate is 0.273721
+entropy is 0.834528
+the direction is 1 and the count rate is 0.272479
+direction is 1 3 rate is 0.106062
+direction is 1 2 rate is 0.373629
+direction is 1 1 rate is 0.338436
+direction is 1 0 rate is 0.181873
+entropy is 0.504146
+the direction is 0 and the count rate is 0.309754
+direction is 0 0 rate is 0.127969
+direction is 0 1 rate is 0.366094
+direction is 0 2 rate is 0.358142
+direction is 0 3 rate is 0.147795
+entropy is 0.572586
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1277566 points 
+Sub-sampling 2 gives 526792 points 
+positions bitstream size 11549 B (0.0875744 bpp)
+positions processing time (user): 1.156 s
+colors bitstream size 110753 B (0.839824 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1097572
+Number of nodes = 20595
+Estimation of sampling = 1.09586
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.338034
+direction is 2 3 rate is 0.260305
+direction is 2 0 rate is 0.270386
+direction is 2 1 rate is 0.237748
+direction is 2 2 rate is 0.23156
+entropy is 0.675083
+the direction is 0 and the count rate is 0.304565
+direction is 0 2 rate is 0.419298
+direction is 0 3 rate is 0.134375
+direction is 0 1 rate is 0.314501
+direction is 0 0 rate is 0.131827
+entropy is 0.555865
+the direction is 1 and the count rate is 0.357401
+direction is 1 2 rate is 0.289908
+direction is 1 1 rate is 0.383366
+direction is 1 3 rate is 0.146606
+direction is 1 0 rate is 0.180119
+entropy is 0.678945
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1316998 points 
+Sub-sampling 2 gives 519490 points 
+positions bitstream size 10127 B (0.0738138 bpp)
+positions processing time (user): 1.203 s
+colors bitstream size 91296 B (0.66544 bpp)
+colors processing time (user): 0.343 s
+Number of points = 847684
+Number of nodes = 15941
+Estimation of sampling = 1.09706
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.505596
+direction is 2 1 rate is 0.286989
+direction is 2 2 rate is 0.277452
+direction is 2 0 rate is 0.19993
+direction is 2 3 rate is 0.235629
+entropy is 1.00399
+the direction is 1 and the count rate is 0.240257
+direction is 1 3 rate is 0.172896
+direction is 1 1 rate is 0.299577
+direction is 1 0 rate is 0.107347
+direction is 1 2 rate is 0.42018
+entropy is 0.439663
+the direction is 0 and the count rate is 0.254147
+direction is 0 1 rate is 0.284769
+direction is 0 2 rate is 0.388686
+direction is 0 0 rate is 0.159095
+direction is 0 3 rate is 0.16745
+entropy is 0.482776
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 995180 points 
+positions bitstream size 9265 B (0.0874382 bpp)
+positions processing time (user): 0.75 s
+colors bitstream size 192487 B (1.81659 bpp)
+colors processing time (user): 0.843 s
+Number of points = 400429
+Number of nodes = 7452
+Estimation of sampling = 1.09135
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.489067
+direction is 2 1 rate is 0.256387
+direction is 2 0 rate is 0.14562
+direction is 2 3 rate is 0.264234
+direction is 2 2 rate is 0.333759
+entropy is 0.95073
+the direction is 0 and the count rate is 0.261223
+direction is 0 3 rate is 0.106935
+direction is 0 1 rate is 0.241203
+direction is 0 0 rate is 0.367954
+direction is 0 2 rate is 0.283908
+entropy is 0.492722
+the direction is 1 and the count rate is 0.24971
+direction is 1 2 rate is 0.555039
+direction is 1 1 rate is 0.293781
+direction is 1 3 rate is 0.0900643
+direction is 1 0 rate is 0.0611151
+entropy is 0.387001
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 488454 points 
+positions bitstream size 4015 B (0.080214 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 69730 B (1.39311 bpp)
+colors processing time (user): 0.375 s
+Total frame size 3060632 B
+Total bitstream size 3060632 B
+Processing time (wall): 227.252 s
+Processing time (user): 151.718 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 3909 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.234 s
+
+colors bitstream size 68502 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 5838 B
+positions processing time (user): 0.406 s
+
+colors bitstream size 104877 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 7741 B
+positions processing time (user): 0.5 s
+
+colors bitstream size 119616 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 7880 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 139909 B
+colors processing time (user): 0.687 s
+
+positions bitstream size 8179 B
+positions processing time (user): 0.515 s
+
+colors bitstream size 126517 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 5694 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 98541 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 7754 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 168983 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 8268 B
+positions processing time (user): 0.593 s
+
+colors bitstream size 185731 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 10750 B
+positions processing time (user): 0.656 s
+
+colors bitstream size 183400 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 10180 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.656 s
+
+colors bitstream size 195151 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 9650 B
+positions processing time (user): 0.593 s
+
+colors bitstream size 175505 B
+colors processing time (user): 0.828 s
+
+positions bitstream size 8895 B
+positions processing time (user): 0.312 s
+
+colors bitstream size 82276 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 8983 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 81559 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 8914 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 80416 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 11318 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 101735 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 10994 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.39 s
+
+colors bitstream size 123990 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 10946 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 131353 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 11849 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 108652 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 12220 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 114453 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 11549 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 110753 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 10127 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.375 s
+
+colors bitstream size 91296 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 9265 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.562 s
+
+colors bitstream size 192487 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 4015 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.281 s
+
+colors bitstream size 69730 B
+colors processing time (user): 0.328 s
+
+Total bitstream size 3060632 B
+Processing time (wall): 29.45 s
+Processing time (user): 22.687 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply
+infile2:        F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_2_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 49936 33280 1104
+WARNING: 27285 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 47062002, 16614202, 0.353028
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 247.717
+   mse1,PSNR (p2point): 77.1611
+   mse1      (p2plane): 90.1468
+   mse1,PSNR (p2plane): 81.5512
+   c[0],    1         : 0.00197779
+   c[1],    1         : 8.40207e-05
+   c[2],    1         : 4.56207e-05
+   c[0],PSNR1         : 27.0382
+   c[1],PSNR1         : 40.7561
+   c[2],PSNR1         : 43.4084
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 194.044
+   mse2,PSNR (p2point): 78.2217
+   mse2      (p2plane): 151.27
+   mse2,PSNR (p2plane): 79.3032
+   c[0],    2         : 0.00158277
+   c[1],    2         : 6.8781e-05
+   c[2],    2         : 3.86327e-05
+   c[0],PSNR2         : 28.0058
+   c[1],PSNR2         : 41.6253
+   c[2],PSNR2         : 44.1304
+3. Final (symmetric).
+   mseF      (p2point): 247.717
+   mseF,PSNR (p2point): 77.1611
+   mseF      (p2plane): 151.27
+   mseF,PSNR (p2plane): 79.3032
+   c[0],    F         : 0.00197779
+   c[1],    F         : 8.40207e-05
+   c[2],    F         : 4.56207e-05
+   c[0],PSNRF         : 27.0382
+   c[1],PSNRF         : 40.7561
+   c[2],PSNRF         : 43.4084
+Job done! 244.515 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 24
+Number of points = 401096
+Number of nodes = 30465
+Estimation of sampling = 1.10239
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.318895
+direction is 1 3 rate is 0.14764
+direction is 1 1 rate is 0.245033
+direction is 1 0 rate is 0.153246
+direction is 1 2 rate is 0.454081
+entropy is 0.585653
+the direction is 2 and the count rate is 0.341845
+direction is 2 3 rate is 0.153975
+direction is 2 2 rate is 0.407302
+direction is 2 1 rate is 0.276203
+direction is 2 0 rate is 0.162519
+entropy is 0.643391
+the direction is 0 and the count rate is 0.33926
+direction is 0 1 rate is 0.272052
+direction is 0 2 rate is 0.41337
+direction is 0 3 rate is 0.125559
+direction is 0 0 rate is 0.18902
+entropy is 0.63371
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 464019 points 
+positions bitstream size 13550 B (0.270259 bpp)
+positions processing time (user): 0.89 s
+colors bitstream size 131083 B (2.6145 bpp)
+colors processing time (user): 0.437 s
+Number of points = 441927
+Number of nodes = 32805
+Estimation of sampling = 1.08982
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.3223
+direction is 1 3 rate is 0.160547
+direction is 1 2 rate is 0.464435
+direction is 1 1 rate is 0.277857
+direction is 1 0 rate is 0.0971616
+entropy is 0.572956
+the direction is 2 and the count rate is 0.358734
+direction is 2 1 rate is 0.276811
+direction is 2 2 rate is 0.342436
+direction is 2 0 rate is 0.18573
+direction is 2 3 rate is 0.195023
+entropy is 0.700745
+the direction is 0 and the count rate is 0.318966
+direction is 0 1 rate is 0.317169
+direction is 0 2 rate is 0.508371
+direction is 0 0 rate is 0.0984743
+direction is 0 3 rate is 0.0759857
+entropy is 0.521023
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 506556 points 
+positions bitstream size 10567 B (0.19129 bpp)
+positions processing time (user): 0.937 s
+colors bitstream size 115508 B (2.09099 bpp)
+colors processing time (user): 1.234 s
+Number of points = 523683
+Number of nodes = 40470
+Estimation of sampling = 1.11197
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.326831
+direction is 1 3 rate is 0.119451
+direction is 1 2 rate is 0.473165
+direction is 1 1 rate is 0.304683
+direction is 1 0 rate is 0.102701
+entropy is 0.567585
+the direction is 2 and the count rate is 0.400851
+direction is 2 3 rate is 0.23704
+direction is 2 1 rate is 0.255185
+direction is 2 2 rate is 0.283846
+direction is 2 0 rate is 0.223928
+entropy is 0.799389
+the direction is 0 and the count rate is 0.272318
+direction is 0 2 rate is 0.513142
+direction is 0 3 rate is 0.111085
+direction is 0 0 rate is 0.092964
+direction is 0 1 rate is 0.282809
+entropy is 0.457499
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 609147 points 
+positions bitstream size 17052 B (0.260493 bpp)
+positions processing time (user): 1.203 s
+colors bitstream size 172740 B (2.63885 bpp)
+colors processing time (user): 1.734 s
+Number of points = 542534
+Number of nodes = 40511
+Estimation of sampling = 1.09303
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.268745
+direction is 0 3 rate is 0.024662
+direction is 0 2 rate is 0.625502
+direction is 0 1 rate is 0.310331
+direction is 0 0 rate is 0.0395049
+entropy is 0.339475
+the direction is 1 and the count rate is 0.364799
+direction is 1 2 rate is 0.392134
+direction is 1 3 rate is 0.232118
+direction is 1 1 rate is 0.222966
+direction is 1 0 rate is 0.152782
+entropy is 0.698791
+the direction is 2 and the count rate is 0.366456
+direction is 2 3 rate is 0.168771
+direction is 2 2 rate is 0.375624
+direction is 2 0 rate is 0.183039
+direction is 2 1 rate is 0.272566
+entropy is 0.704837
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 628246 points 
+positions bitstream size 11709 B (0.172656 bpp)
+positions processing time (user): 1.171 s
+colors bitstream size 120312 B (1.77407 bpp)
+colors processing time (user): 0.609 s
+Number of points = 678846
+Number of nodes = 51978
+Estimation of sampling = 1.10684
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.335984
+direction is 2 3 rate is 0.229054
+direction is 2 2 rate is 0.367032
+direction is 2 1 rate is 0.229634
+direction is 2 0 rate is 0.17428
+entropy is 0.653307
+the direction is 1 and the count rate is 0.344786
+direction is 1 2 rate is 0.41149
+direction is 1 3 rate is 0.172775
+direction is 1 1 rate is 0.268459
+direction is 1 0 rate is 0.147276
+entropy is 0.648577
+the direction is 0 and the count rate is 0.31923
+direction is 0 2 rate is 0.493428
+direction is 0 0 rate is 0.0962526
+direction is 0 1 rate is 0.29753
+direction is 0 3 rate is 0.112789
+entropy is 0.543757
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 787366 points 
+positions bitstream size 22786 B (0.268526 bpp)
+positions processing time (user): 1.625 s
+colors bitstream size 279238 B (3.29074 bpp)
+colors processing time (user): 0.765 s
+Number of points = 685730
+Number of nodes = 52316
+Estimation of sampling = 1.10484
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.3239
+direction is 0 3 rate is 0.192471
+direction is 0 2 rate is 0.432723
+direction is 0 1 rate is 0.256608
+direction is 0 0 rate is 0.118198
+entropy is 0.598629
+the direction is 1 and the count rate is 0.323484
+direction is 1 3 rate is 0.124248
+direction is 1 2 rate is 0.44819
+direction is 1 1 rate is 0.304392
+direction is 1 0 rate is 0.12317
+entropy is 0.578135
+the direction is 2 and the count rate is 0.352616
+direction is 2 3 rate is 0.20017
+direction is 2 1 rate is 0.253234
+direction is 2 2 rate is 0.359444
+direction is 2 0 rate is 0.187152
+entropy is 0.687384
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 789368 points 
+positions bitstream size 21246 B (0.247864 bpp)
+positions processing time (user): 1.578 s
+colors bitstream size 191910 B (2.2389 bpp)
+colors processing time (user): 0.75 s
+Number of points = 706804
+Number of nodes = 52089
+Estimation of sampling = 1.08588
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.311839
+direction is 0 3 rate is 0.134741
+direction is 0 1 rate is 0.313201
+direction is 0 0 rate is 0.111846
+direction is 0 2 rate is 0.440212
+entropy is 0.557808
+the direction is 2 and the count rate is 0.358904
+direction is 2 3 rate is 0.175551
+direction is 2 2 rate is 0.365421
+direction is 2 1 rate is 0.283705
+direction is 2 0 rate is 0.175322
+entropy is 0.691753
+the direction is 1 and the count rate is 0.329257
+direction is 1 1 rate is 0.344892
+direction is 1 2 rate is 0.443468
+direction is 1 0 rate is 0.0888245
+direction is 1 3 rate is 0.122815
+entropy is 0.570187
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 809947 points 
+positions bitstream size 19201 B (0.217328 bpp)
+positions processing time (user): 1.578 s
+colors bitstream size 213390 B (2.41527 bpp)
+colors processing time (user): 0.765 s
+Number of points = 800734
+Number of nodes = 63597
+Estimation of sampling = 1.12729
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.423508
+direction is 2 3 rate is 0.252616
+direction is 2 1 rate is 0.243672
+direction is 2 2 rate is 0.264747
+direction is 2 0 rate is 0.238966
+entropy is 0.846546
+the direction is 1 and the count rate is 0.27998
+direction is 1 2 rate is 0.509685
+direction is 1 0 rate is 0.0831561
+direction is 1 1 rate is 0.296322
+direction is 1 3 rate is 0.110837
+entropy is 0.466351
+the direction is 0 and the count rate is 0.296512
+direction is 0 2 rate is 0.457165
+direction is 0 1 rate is 0.275167
+direction is 0 3 rate is 0.145417
+direction is 0 0 rate is 0.122252
+entropy is 0.534814
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 933203 points 
+positions bitstream size 29368 B (0.293411 bpp)
+positions processing time (user): 1.921 s
+colors bitstream size 309026 B (3.08743 bpp)
+colors processing time (user): 0.984 s
+Number of points = 823239
+Number of nodes = 60686
+Estimation of sampling = 1.08603
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.282841
+direction is 1 3 rate is 0.0768129
+direction is 1 2 rate is 0.522433
+direction is 1 0 rate is 0.101628
+direction is 1 1 rate is 0.299126
+entropy is 0.460979
+the direction is 2 and the count rate is 0.410567
+direction is 2 2 rate is 0.356744
+direction is 2 1 rate is 0.250005
+direction is 2 0 rate is 0.170831
+direction is 2 3 rate is 0.222419
+entropy is 0.79993
+the direction is 0 and the count rate is 0.306592
+direction is 0 0 rate is 0.149221
+direction is 0 2 rate is 0.476541
+direction is 0 1 rate is 0.27021
+direction is 0 3 rate is 0.104028
+entropy is 0.542323
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 946476 points 
+positions bitstream size 21742 B (0.211283 bpp)
+positions processing time (user): 1.843 s
+colors bitstream size 261880 B (2.54487 bpp)
+colors processing time (user): 0.875 s
+Number of points = 947455
+Number of nodes = 70088
+Estimation of sampling = 1.08793
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.354427
+direction is 1 3 rate is 0.217827
+direction is 1 2 rate is 0.367834
+direction is 1 1 rate is 0.275455
+direction is 1 0 rate is 0.138885
+entropy is 0.679653
+the direction is 2 and the count rate is 0.352456
+direction is 2 0 rate is 0.145055
+direction is 2 2 rate is 0.432836
+direction is 2 1 rate is 0.266945
+direction is 2 3 rate is 0.155164
+entropy is 0.652986
+the direction is 0 and the count rate is 0.293117
+direction is 0 2 rate is 0.510361
+direction is 0 3 rate is 0.118952
+direction is 0 1 rate is 0.258244
+direction is 0 0 rate is 0.112443
+entropy is 0.504023
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1090810 points 
+positions bitstream size 27599 B (0.233037 bpp)
+positions processing time (user): 2.125 s
+colors bitstream size 287046 B (2.42372 bpp)
+colors processing time (user): 1.093 s
+Number of points = 950130
+Number of nodes = 74126
+Estimation of sampling = 1.11726
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.361746
+direction is 2 1 rate is 0.249572
+direction is 2 3 rate is 0.210365
+direction is 2 0 rate is 0.209795
+direction is 2 2 rate is 0.330268
+entropy is 0.71387
+the direction is 1 and the count rate is 0.331411
+direction is 1 0 rate is 0.149708
+direction is 1 1 rate is 0.264889
+direction is 1 2 rate is 0.409499
+direction is 1 3 rate is 0.175904
+entropy is 0.625145
+the direction is 0 and the count rate is 0.306843
+direction is 0 2 rate is 0.458503
+direction is 0 1 rate is 0.273567
+direction is 0 0 rate is 0.121108
+direction is 0 3 rate is 0.146822
+entropy is 0.553123
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1101296 points 
+Sub-sampling 2 gives 657586 points 
+positions bitstream size 32490 B (0.273563 bpp)
+positions processing time (user): 2.859 s
+colors bitstream size 206227 B (1.73641 bpp)
+colors processing time (user): 0.828 s
+Number of points = 953109
+Number of nodes = 72482
+Estimation of sampling = 1.10307
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.317346
+direction is 0 2 rate is 0.435482
+direction is 0 3 rate is 0.153266
+direction is 0 1 rate is 0.264544
+direction is 0 0 rate is 0.146709
+entropy is 0.587324
+the direction is 1 and the count rate is 0.333433
+direction is 1 3 rate is 0.171284
+direction is 1 2 rate is 0.391574
+direction is 1 1 rate is 0.262502
+direction is 1 0 rate is 0.17464
+entropy is 0.637477
+the direction is 2 and the count rate is 0.349221
+direction is 2 1 rate is 0.265815
+direction is 2 3 rate is 0.156547
+direction is 2 2 rate is 0.442289
+direction is 2 0 rate is 0.13535
+entropy is 0.641862
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1092076 points 
+positions bitstream size 30531 B (0.256264 bpp)
+positions processing time (user): 2.234 s
+colors bitstream size 295388 B (2.47936 bpp)
+colors processing time (user): 1.14 s
+Number of points = 959024
+Number of nodes = 73519
+Estimation of sampling = 1.1075
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.326169
+direction is 0 3 rate is 0.169769
+direction is 0 2 rate is 0.42191
+direction is 0 1 rate is 0.28558
+direction is 0 0 rate is 0.122741
+entropy is 0.602563
+the direction is 2 and the count rate is 0.366299
+direction is 2 2 rate is 0.354414
+direction is 2 0 rate is 0.18391
+direction is 2 1 rate is 0.250806
+direction is 2 3 rate is 0.21087
+entropy is 0.715613
+the direction is 1 and the count rate is 0.307532
+direction is 1 3 rate is 0.152321
+direction is 1 2 rate is 0.468688
+direction is 1 1 rate is 0.261803
+direction is 1 0 rate is 0.117189
+entropy is 0.551895
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1118492 points 
+Sub-sampling 2 gives 660268 points 
+positions bitstream size 31612 B (0.263701 bpp)
+positions processing time (user): 2.906 s
+colors bitstream size 207643 B (1.73212 bpp)
+colors processing time (user): 0.734 s
+Number of points = 979479
+Number of nodes = 72618
+Estimation of sampling = 1.08914
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.348157
+direction is 1 3 rate is 0.145104
+direction is 1 0 rate is 0.122951
+direction is 1 1 rate is 0.270365
+direction is 1 2 rate is 0.46158
+entropy is 0.62699
+the direction is 2 and the count rate is 0.341214
+direction is 2 1 rate is 0.256665
+direction is 2 2 rate is 0.416566
+direction is 2 3 rate is 0.181541
+direction is 2 0 rate is 0.145228
+entropy is 0.641828
+the direction is 0 and the count rate is 0.31063
+direction is 0 3 rate is 0.119122
+direction is 0 2 rate is 0.430523
+direction is 0 1 rate is 0.293641
+direction is 0 0 rate is 0.156714
+entropy is 0.567592
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1137368 points 
+Sub-sampling 2 gives 654343 points 
+positions bitstream size 26773 B (0.218671 bpp)
+positions processing time (user): 2.703 s
+colors bitstream size 192162 B (1.5695 bpp)
+colors processing time (user): 0.75 s
+Number of points = 983087
+Number of nodes = 73233
+Estimation of sampling = 1.09174
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.358457
+direction is 2 3 rate is 0.160001
+direction is 2 2 rate is 0.388713
+direction is 2 0 rate is 0.176235
+direction is 2 1 rate is 0.275051
+entropy is 0.683396
+the direction is 1 and the count rate is 0.338348
+direction is 1 1 rate is 0.241768
+direction is 1 0 rate is 0.126183
+direction is 1 2 rate is 0.446314
+direction is 1 3 rate is 0.185735
+entropy is 0.623437
+the direction is 0 and the count rate is 0.303196
+direction is 0 2 rate is 0.493998
+direction is 0 1 rate is 0.289547
+direction is 0 3 rate is 0.0969889
+direction is 0 0 rate is 0.119467
+entropy is 0.519382
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1135064 points 
+Sub-sampling 2 gives 654604 points 
+positions bitstream size 26024 B (0.211774 bpp)
+positions processing time (user): 2.828 s
+colors bitstream size 185811 B (1.51206 bpp)
+colors processing time (user): 0.656 s
+Number of points = 989506
+Number of nodes = 76288
+Estimation of sampling = 1.11065
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.389804
+direction is 2 2 rate is 0.321878
+direction is 2 1 rate is 0.268308
+direction is 2 0 rate is 0.20364
+direction is 2 3 rate is 0.206173
+entropy is 0.769036
+the direction is 1 and the count rate is 0.315333
+direction is 1 0 rate is 0.14175
+direction is 1 1 rate is 0.285054
+direction is 1 2 rate is 0.431762
+direction is 1 3 rate is 0.141435
+entropy is 0.579564
+the direction is 0 and the count rate is 0.294862
+direction is 0 0 rate is 0.087445
+direction is 0 1 rate is 0.268334
+direction is 0 2 rate is 0.504673
+direction is 0 3 rate is 0.139548
+entropy is 0.504527
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1158533 points 
+Sub-sampling 2 gives 675307 points 
+positions bitstream size 32725 B (0.264576 bpp)
+positions processing time (user): 2.953 s
+colors bitstream size 217216 B (1.75616 bpp)
+colors processing time (user): 0.828 s
+Number of points = 1005120
+Number of nodes = 77056
+Estimation of sampling = 1.10753
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.389
+direction is 2 0 rate is 0.203121
+direction is 2 2 rate is 0.333733
+direction is 2 3 rate is 0.208323
+direction is 2 1 rate is 0.254822
+entropy is 0.766156
+the direction is 1 and the count rate is 0.291618
+direction is 1 1 rate is 0.275008
+direction is 1 0 rate is 0.0960179
+direction is 1 2 rate is 0.509811
+direction is 1 3 rate is 0.119163
+entropy is 0.495171
+the direction is 0 and the count rate is 0.319382
+direction is 0 2 rate is 0.444146
+direction is 0 3 rate is 0.175869
+direction is 0 1 rate is 0.251082
+direction is 0 0 rate is 0.128904
+entropy is 0.588499
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1168792 points 
+Sub-sampling 2 gives 697219 points 
+positions bitstream size 34099 B (0.271402 bpp)
+positions processing time (user): 2.875 s
+colors bitstream size 237843 B (1.89305 bpp)
+colors processing time (user): 0.859 s
+Number of points = 1019655
+Number of nodes = 75522
+Estimation of sampling = 1.0886
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 1 and the count rate is 0.337703
+direction is 1 3 rate is 0.148161
+direction is 1 2 rate is 0.414188
+direction is 1 1 rate is 0.300022
+direction is 1 0 rate is 0.13763
+entropy is 0.624656
+the direction is 2 and the count rate is 0.350113
+direction is 2 0 rate is 0.148756
+direction is 2 2 rate is 0.384204
+direction is 2 1 rate is 0.256047
+direction is 2 3 rate is 0.210993
+entropy is 0.670831
+the direction is 0 and the count rate is 0.312184
+direction is 0 1 rate is 0.275807
+direction is 0 2 rate is 0.464994
+direction is 0 0 rate is 0.136658
+direction is 0 3 rate is 0.122541
+entropy is 0.558727
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1180039 points 
+Sub-sampling 2 gives 685783 points 
+positions bitstream size 31465 B (0.246868 bpp)
+positions processing time (user): 2.921 s
+colors bitstream size 267075 B (2.09541 bpp)
+colors processing time (user): 0.828 s
+Number of points = 1030669
+Number of nodes = 78844
+Estimation of sampling = 1.10633
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.345212
+direction is 2 0 rate is 0.180952
+direction is 2 1 rate is 0.286144
+direction is 2 3 rate is 0.156956
+direction is 2 2 rate is 0.375948
+entropy is 0.660307
+the direction is 1 and the count rate is 0.357845
+direction is 1 2 rate is 0.483355
+direction is 1 1 rate is 0.268978
+direction is 1 3 rate is 0.133744
+direction is 1 0 rate is 0.113924
+entropy is 0.630427
+the direction is 0 and the count rate is 0.296944
+direction is 0 2 rate is 0.448791
+direction is 0 1 rate is 0.283465
+direction is 0 0 rate is 0.126746
+direction is 0 3 rate is 0.140998
+entropy is 0.537617
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1188585 points 
+Sub-sampling 2 gives 671130 points 
+positions bitstream size 26745 B (0.207593 bpp)
+positions processing time (user): 2.859 s
+colors bitstream size 168847 B (1.31058 bpp)
+colors processing time (user): 0.718 s
+Number of points = 1042412
+Number of nodes = 78496
+Estimation of sampling = 1.09765
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.342427
+direction is 2 0 rate is 0.182925
+direction is 2 1 rate is 0.262887
+direction is 2 3 rate is 0.180276
+direction is 2 2 rate is 0.373912
+entropy is 0.661316
+the direction is 1 and the count rate is 0.352557
+direction is 1 2 rate is 0.482447
+direction is 1 3 rate is 0.139139
+direction is 1 1 rate is 0.273644
+direction is 1 0 rate is 0.10477
+entropy is 0.619032
+the direction is 0 and the count rate is 0.305016
+direction is 0 2 rate is 0.453224
+direction is 0 1 rate is 0.284025
+direction is 0 0 rate is 0.141039
+direction is 0 3 rate is 0.121712
+entropy is 0.549512
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1199578 points 
+Sub-sampling 2 gives 685829 points 
+positions bitstream size 27971 B (0.214664 bpp)
+positions processing time (user): 2.968 s
+colors bitstream size 191868 B (1.47249 bpp)
+colors processing time (user): 0.75 s
+Number of points = 1043235
+Number of nodes = 78281
+Estimation of sampling = 1.09571
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.331772
+direction is 2 1 rate is 0.277313
+direction is 2 3 rate is 0.163645
+direction is 2 0 rate is 0.186394
+direction is 2 2 rate is 0.372648
+entropy is 0.637969
+the direction is 1 and the count rate is 0.360118
+direction is 1 2 rate is 0.412612
+direction is 1 3 rate is 0.15931
+direction is 1 1 rate is 0.28388
+direction is 1 0 rate is 0.144197
+entropy is 0.672603
+the direction is 0 and the count rate is 0.30811
+direction is 0 2 rate is 0.454844
+direction is 0 1 rate is 0.309896
+direction is 0 0 rate is 0.112344
+direction is 0 3 rate is 0.122916
+entropy is 0.544365
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1206190 points 
+Sub-sampling 2 gives 696946 points 
+positions bitstream size 34508 B (0.264623 bpp)
+positions processing time (user): 3.187 s
+colors bitstream size 270264 B (2.07251 bpp)
+colors processing time (user): 0.75 s
+Number of points = 1061861
+Number of nodes = 82389
+Estimation of sampling = 1.11419
+distanceSearchEncoder = 1
+
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.415604
+direction is 2 1 rate is 0.283545
+direction is 2 0 rate is 0.230687
+direction is 2 2 rate is 0.262826
+direction is 2 3 rate is 0.222942
+entropy is 0.82835
+the direction is 1 and the count rate is 0.301037
+direction is 1 2 rate is 0.494001
+direction is 1 1 rate is 0.30141
+direction is 1 3 rate is 0.112776
+direction is 1 0 rate is 0.0918123
+entropy is 0.510404
+the direction is 0 and the count rate is 0.283359
+direction is 0 2 rate is 0.48068
+direction is 0 3 rate is 0.132715
+direction is 0 1 rate is 0.274843
+direction is 0 0 rate is 0.111762
+entropy is 0.498752
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1241672 points 
+Sub-sampling 2 gives 720997 points 
+positions bitstream size 35605 B (0.268246 bpp)
+positions processing time (user): 3.218 s
+colors bitstream size 252353 B (1.90121 bpp)
+colors processing time (user): 0.812 s
+Number of points = 866312
+Number of nodes = 65731
+Estimation of sampling = 1.10181
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 0 and the count rate is 0.302267
+direction is 0 1 rate is 0.297766
+direction is 0 3 rate is 0.126822
+direction is 0 2 rate is 0.462556
+direction is 0 0 rate is 0.112856
+entropy is 0.534392
+the direction is 2 and the count rate is 0.406572
+direction is 2 1 rate is 0.264351
+direction is 2 3 rate is 0.226538
+direction is 2 2 rate is 0.317293
+direction is 2 0 rate is 0.191819
+entropy is 0.803029
+the direction is 1 and the count rate is 0.291161
+direction is 1 2 rate is 0.470233
+direction is 1 3 rate is 0.116206
+direction is 1 1 rate is 0.29208
+direction is 1 0 rate is 0.121481
+entropy is 0.512669
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1003046 points 
+positions bitstream size 28797 B (0.265927 bpp)
+positions processing time (user): 1.984 s
+colors bitstream size 333487 B (3.0796 bpp)
+colors processing time (user): 0.968 s
+Number of points = 413567
+Number of nodes = 31256
+Estimation of sampling = 1.09965
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the direction
+the direction is 2 and the count rate is 0.412544
+direction is 2 1 rate is 0.237832
+direction is 2 2 rate is 0.302176
+direction is 2 3 rate is 0.243056
+direction is 2 0 rate is 0.216935
+entropy is 0.820451
+the direction is 1 and the count rate is 0.305667
+direction is 1 3 rate is 0.0759866
+direction is 1 2 rate is 0.47271
+direction is 1 1 rate is 0.334077
+direction is 1 0 rate is 0.117226
+entropy is 0.514889
+the direction is 0 and the count rate is 0.281789
+direction is 0 3 rate is 0.103004
+direction is 0 2 rate is 0.519753
+direction is 0 1 rate is 0.269176
+direction is 0 0 rate is 0.108066
+entropy is 0.474821
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 481834 points 
+positions bitstream size 13051 B (0.252457 bpp)
+positions processing time (user): 0.968 s
+colors bitstream size 129834 B (2.5115 bpp)
+colors processing time (user): 0.453 s
+Total frame size 5845659 B
+Total bitstream size 5845659 B
+Processing time (wall): 306.763 s
+Processing time (user): 217.218 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\direction_position\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 13550 B
+positions processing time (user): 0.687 s
+
+colors bitstream size 131083 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 10567 B
+positions processing time (user): 0.796 s
+
+colors bitstream size 115508 B
+colors processing time (user): 1.234 s
+
+positions bitstream size 17052 B
+positions processing time (user): 0.937 s
+
+colors bitstream size 172740 B
+colors processing time (user): 1.734 s
+
+positions bitstream size 11709 B
+positions processing time (user): 0.89 s
+
+colors bitstream size 120312 B
+colors processing time (user): 0.531 s
+
+positions bitstream size 22786 B
+positions processing time (user): 1.25 s
+
+colors bitstream size 279238 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 21246 B
+positions processing time (user): 1.312 s
+
+colors bitstream size 191910 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 19201 B
+positions processing time (user): 1.25 s
+
+colors bitstream size 213390 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 29368 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 1.625 s
+
+colors bitstream size 309026 B
+colors processing time (user): 0.828 s
+
+positions bitstream size 21742 B
+positions processing time (user): 1.39 s
+
+colors bitstream size 261880 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 27599 B
+positions processing time (user): 1.671 s
+
+colors bitstream size 287046 B
+colors processing time (user): 0.968 s
+
+positions bitstream size 32490 B
+positions processing time (user): 1.265 s
+
+colors bitstream size 206227 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 30531 B
+positions processing time (user): 1.625 s
+
+colors bitstream size 295388 B
+colors processing time (user): 0.968 s
+
+positions bitstream size 31612 B
+positions processing time (user): 1.171 s
+
+colors bitstream size 207643 B
+colors processing time (user): 0.687 s
+
+positions bitstream size 26773 B
+positions processing time (user): 1.218 s
+
+colors bitstream size 192162 B
+colors processing time (user): 0.687 s
+
+positions bitstream size 26024 B
+positions processing time (user): 1.187 s
+
+colors bitstream size 185811 B
+colors processing time (user): 0.703 s
+
+positions bitstream size 32725 B
+positions processing time (user): 1.25 s
+
+colors bitstream size 217216 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 34099 B
+positions processing time (user): 1.203 s
+
+colors bitstream size 237843 B
+colors processing time (user): 0.593 s
+
+positions bitstream size 31465 B
+positions processing time (user): 1.218 s
+
+colors bitstream size 267075 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 26745 B
+positions processing time (user): 1.296 s
+
+colors bitstream size 168847 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 27971 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 1.281 s
+
+colors bitstream size 191868 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 34508 B
+positions processing time (user): 1.437 s
+
+colors bitstream size 270264 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 35605 B
+positions processing time (user): 1.39 s
+
+colors bitstream size 252353 B
+colors processing time (user): 0.687 s
+
+positions bitstream size 28797 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 1.718 s
+
+colors bitstream size 333487 B
+colors processing time (user): 0.859 s
+
+positions bitstream size 13051 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.765 s
+
+colors bitstream size 129834 B
+colors processing time (user): 0.437 s
+
+Total bitstream size 5845659 B
+Processing time (wall): 66.339 s
+Processing time (user): 48.734 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_2_vox16.ply
+infile2:        F:\YK\position\direction_position\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_2_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 47446 44397 1099
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 49536 32896 3408
+WARNING: 12504 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 47062002, 17589602, 0.373754
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 113.615
+   mse1,PSNR (p2point): 80.5463
+   mse1      (p2plane): 27.663
+   mse1,PSNR (p2plane): 86.6817
+   c[0],    1         : 0.00137076
+   c[1],    1         : 4.77567e-05
+   c[2],    1         : 2.8804e-05
+   c[0],PSNR1         : 28.6304
+   c[1],PSNR1         : 43.2097
+   c[2],PSNR1         : 45.4055
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 86.834
+   mse2,PSNR (p2point): 81.7138
+   mse2      (p2plane): 48.0697
+   mse2,PSNR (p2plane): 84.282
+   c[0],    2         : 0.001296
+   c[1],    2         : 4.45164e-05
+   c[2],    2         : 2.7302e-05
+   c[0],PSNR2         : 28.874
+   c[1],PSNR2         : 43.5148
+   c[2],PSNR2         : 45.6381
+3. Final (symmetric).
+   mseF      (p2point): 113.615
+   mseF,PSNR (p2point): 80.5463
+   mseF      (p2plane): 48.0697
+   mseF,PSNR (p2plane): 84.282
+   c[0],    F         : 0.00137076
+   c[1],    F         : 4.77567e-05
+   c[2],    F         : 2.8804e-05
+   c[0],PSNRF         : 28.6304
+   c[1],PSNRF         : 43.2097
+   c[2],PSNRF         : 45.4055
+Job done! 314 seconds elapsed (excluding the time to load the point clouds).

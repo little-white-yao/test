@@ -1,0 +1,4613 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply"
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.25
+    sequenceScale             : 0.25
+    positionQuantizationScale : 0.25
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 23
+Number of points = 500755
+Number of nodes = 525
+Estimation of sampling = 1.03614
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0228311
+missedCloseStart is 4 1 rate is 0.8
+missedCloseStart is 4 0 rate is 0.2
+entropy is 0.0164824
+the missedCloseStart is 3 and the count rate is 0.0487062
+missedCloseStart is 3 0 rate is 0.28125
+missedCloseStart is 3 1 rate is 0.71875
+entropy is 0.0417485
+the missedCloseStart is 0 and the count rate is 0.222222
+missedCloseStart is 0 0 rate is 0.684932
+missedCloseStart is 0 1 rate is 0.315068
+entropy is 0.199764
+the missedCloseStart is 1 and the count rate is 0.219178
+missedCloseStart is 1 0 rate is 0.680556
+missedCloseStart is 1 1 rate is 0.319444
+entropy is 0.198088
+the missedCloseStart is 2 and the count rate is 0.487062
+missedCloseStart is 2 1 rate is 0.671875
+missedCloseStart is 2 0 rate is 0.328125
+entropy is 0.444688
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 390676 points 
+positions bitstream size 401 B (0.00640633 bpp)
+positions processing time (user): 0.171 s
+colors bitstream size 3218 B (0.0514104 bpp)
+colors processing time (user): 0.296 s
+Number of points = 545547
+Number of nodes = 564
+Estimation of sampling = 1.0289
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.891304
+missedCloseStart is 2 1 rate is 0.640798
+missedCloseStart is 2 0 rate is 0.359202
+entropy is 0.839625
+the missedCloseStart is 1 and the count rate is 0.0573123
+missedCloseStart is 1 0 rate is 0.689655
+missedCloseStart is 1 1 rate is 0.310345
+entropy is 0.0512126
+the missedCloseStart is 0 and the count rate is 0.0237154
+missedCloseStart is 0 0 rate is 0.75
+missedCloseStart is 0 1 rate is 0.25
+entropy is 0.0192398
+the missedCloseStart is 3 and the count rate is 0.0158103
+missedCloseStart is 3 1 rate is 0.75
+missedCloseStart is 3 0 rate is 0.25
+entropy is 0.0128265
+the missedCloseStart is 4 and the count rate is 0.0118577
+missedCloseStart is 4 1 rate is 0.5
+missedCloseStart is 4 0 rate is 0.5
+entropy is 0.0118577
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 432730 points 
+positions bitstream size 349 B (0.0051178 bpp)
+positions processing time (user): 0.187 s
+colors bitstream size 3161 B (0.0463535 bpp)
+colors processing time (user): 0.328 s
+Number of points = 549085
+Number of nodes = 462
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.591176
+missedCloseStart is 2 0 rate is 0.465174
+missedCloseStart is 2 1 rate is 0.534826
+entropy is 0.589106
+the missedCloseStart is 1 and the count rate is 0.277941
+missedCloseStart is 1 0 rate is 0.693122
+missedCloseStart is 1 1 rate is 0.306878
+entropy is 0.247239
+the missedCloseStart is 0 and the count rate is 0.114706
+missedCloseStart is 0 1 rate is 0.282051
+missedCloseStart is 0 0 rate is 0.717949
+entropy is 0.0984441
+the missedCloseStart is 3 and the count rate is 0.0161765
+missedCloseStart is 3 0 rate is 0.363636
+missedCloseStart is 3 1 rate is 0.636364
+entropy is 0.0152974
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 509576 points 
+positions bitstream size 344 B (0.00501197 bpp)
+positions processing time (user): 0.156 s
+colors bitstream size 5447 B (0.0793611 bpp)
+colors processing time (user): 0.359 s
+Number of points = 554248
+Number of nodes = 502
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.596932
+missedCloseStart is 2 0 rate is 0.350467
+missedCloseStart is 2 1 rate is 0.649533
+entropy is 0.557823
+the missedCloseStart is 1 and the count rate is 0.218968
+missedCloseStart is 1 0 rate is 0.605096
+missedCloseStart is 1 1 rate is 0.394904
+entropy is 0.211937
+the missedCloseStart is 0 and the count rate is 0.168759
+missedCloseStart is 0 0 rate is 0.644628
+missedCloseStart is 0 1 rate is 0.355372
+entropy is 0.158426
+the missedCloseStart is 3 and the count rate is 0.0153417
+missedCloseStart is 3 1 rate is 0.636364
+missedCloseStart is 3 0 rate is 0.363636
+entropy is 0.014508
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 539627 points 
+positions bitstream size 334 B (0.00482095 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 3058 B (0.0441391 bpp)
+colors processing time (user): 0.421 s
+Number of points = 554462
+Number of nodes = 448
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.789091
+missedCloseStart is 2 1 rate is 0.693548
+missedCloseStart is 2 0 rate is 0.306452
+entropy is 0.701529
+the missedCloseStart is 1 and the count rate is 0.125455
+missedCloseStart is 1 1 rate is 0.333333
+missedCloseStart is 1 0 rate is 0.666667
+entropy is 0.115204
+the missedCloseStart is 0 and the count rate is 0.0745455
+missedCloseStart is 0 1 rate is 0.365854
+missedCloseStart is 0 0 rate is 0.634146
+entropy is 0.070627
+the missedCloseStart is 3 and the count rate is 0.0109091
+missedCloseStart is 3 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 468514 points 
+positions bitstream size 284 B (0.00409767 bpp)
+positions processing time (user): 0.187 s
+colors bitstream size 3116 B (0.0449589 bpp)
+colors processing time (user): 0.359 s
+Number of points = 561148
+Number of nodes = 524
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.707447
+missedCloseStart is 2 1 rate is 0.568922
+missedCloseStart is 2 0 rate is 0.431078
+entropy is 0.697719
+the missedCloseStart is 1 and the count rate is 0.125887
+missedCloseStart is 1 0 rate is 0.647887
+missedCloseStart is 1 1 rate is 0.352113
+entropy is 0.117822
+the missedCloseStart is 3 and the count rate is 0.0514184
+missedCloseStart is 3 1 rate is 0.724138
+missedCloseStart is 3 0 rate is 0.275862
+entropy is 0.0436929
+the missedCloseStart is 0 and the count rate is 0.111702
+missedCloseStart is 0 0 rate is 0.650794
+missedCloseStart is 0 1 rate is 0.349206
+entropy is 0.104258
+the missedCloseStart is 4 and the count rate is 0.0035461
+missedCloseStart is 4 0 rate is 0.5
+missedCloseStart is 4 1 rate is 0.5
+entropy is 0.0035461
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 392843 points 
+positions bitstream size 369 B (0.00526064 bpp)
+positions processing time (user): 0.171 s
+colors bitstream size 3749 B (0.0534476 bpp)
+colors processing time (user): 0.296 s
+Number of points = 561174
+Number of nodes = 468
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.681159
+missedCloseStart is 2 1 rate is 0.527187
+missedCloseStart is 2 0 rate is 0.472813
+entropy is 0.679706
+the missedCloseStart is 1 and the count rate is 0.199678
+missedCloseStart is 1 0 rate is 0.66129
+missedCloseStart is 1 1 rate is 0.33871
+entropy is 0.184418
+the missedCloseStart is 0 and the count rate is 0.101449
+missedCloseStart is 0 0 rate is 0.730159
+missedCloseStart is 0 1 rate is 0.269841
+entropy is 0.0853429
+the missedCloseStart is 3 and the count rate is 0.0177134
+missedCloseStart is 3 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 491568 points 
+positions bitstream size 315 B (0.00449059 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 3194 B (0.0455331 bpp)
+colors processing time (user): 0.359 s
+Number of points = 562132
+Number of nodes = 466
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.680124
+missedCloseStart is 2 1 rate is 0.575342
+missedCloseStart is 2 0 rate is 0.424658
+entropy is 0.668942
+the missedCloseStart is 1 and the count rate is 0.189441
+missedCloseStart is 1 0 rate is 0.631148
+missedCloseStart is 1 1 rate is 0.368852
+entropy is 0.179929
+the missedCloseStart is 0 and the count rate is 0.110248
+missedCloseStart is 0 1 rate is 0.28169
+missedCloseStart is 0 0 rate is 0.71831
+entropy is 0.0945649
+the missedCloseStart is 3 and the count rate is 0.0170807
+missedCloseStart is 3 1 rate is 0.636364
+missedCloseStart is 3 0 rate is 0.363636
+entropy is 0.0161526
+the missedCloseStart is 4 and the count rate is 0.00310559
+missedCloseStart is 4 1 rate is 0.5
+missedCloseStart is 4 0 rate is 0.5
+entropy is 0.00310559
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 504580 points 
+positions bitstream size 341 B (0.00485295 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 5955 B (0.0847488 bpp)
+colors processing time (user): 0.437 s
+Number of points = 579696
+Number of nodes = 562
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.56172
+missedCloseStart is 2 1 rate is 0.609877
+missedCloseStart is 2 0 rate is 0.390123
+entropy is 0.541992
+the missedCloseStart is 3 and the count rate is 0.0499307
+missedCloseStart is 3 1 rate is 0.527778
+missedCloseStart is 3 0 rate is 0.472222
+entropy is 0.0498194
+the missedCloseStart is 1 and the count rate is 0.231623
+missedCloseStart is 1 0 rate is 0.652695
+missedCloseStart is 1 1 rate is 0.347305
+entropy is 0.215789
+the missedCloseStart is 0 and the count rate is 0.156727
+missedCloseStart is 0 0 rate is 0.716814
+missedCloseStart is 0 1 rate is 0.283186
+entropy is 0.134747
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 472195 points 
+positions bitstream size 410 B (0.00565814 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 3993 B (0.0551047 bpp)
+colors processing time (user): 0.359 s
+Number of points = 605535
+Number of nodes = 493
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.742902
+missedCloseStart is 2 0 rate is 0.375796
+missedCloseStart is 2 1 rate is 0.624204
+entropy is 0.709486
+the missedCloseStart is 1 and the count rate is 0.176656
+missedCloseStart is 1 0 rate is 0.633929
+missedCloseStart is 1 1 rate is 0.366071
+entropy is 0.167401
+the missedCloseStart is 0 and the count rate is 0.0488959
+missedCloseStart is 0 0 rate is 0.580645
+missedCloseStart is 0 1 rate is 0.419355
+entropy is 0.0479743
+the missedCloseStart is 4 and the count rate is 0.0126183
+missedCloseStart is 4 1 rate is 0.5
+missedCloseStart is 4 0 rate is 0.5
+entropy is 0.0126183
+the missedCloseStart is 3 and the count rate is 0.0189274
+missedCloseStart is 3 1 rate is 0.5
+missedCloseStart is 3 0 rate is 0.5
+entropy is 0.0189274
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 490085 points 
+positions bitstream size 363 B (0.00479576 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 3065 B (0.0404931 bpp)
+colors processing time (user): 0.359 s
+Number of points = 611145
+Number of nodes = 570
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.59787
+missedCloseStart is 2 0 rate is 0.400891
+missedCloseStart is 2 1 rate is 0.599109
+entropy is 0.580812
+the missedCloseStart is 1 and the count rate is 0.23036
+missedCloseStart is 1 1 rate is 0.346821
+missedCloseStart is 1 0 rate is 0.653179
+entropy is 0.21451
+the missedCloseStart is 0 and the count rate is 0.123835
+missedCloseStart is 0 0 rate is 0.795699
+missedCloseStart is 0 1 rate is 0.204301
+entropy is 0.0904549
+the missedCloseStart is 3 and the count rate is 0.0399467
+missedCloseStart is 3 0 rate is 0.3
+missedCloseStart is 3 1 rate is 0.7
+entropy is 0.0352047
+the missedCloseStart is 4 and the count rate is 0.00798935
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 529441 points 
+positions bitstream size 462 B (0.00604766 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 5822 B (0.076211 bpp)
+colors processing time (user): 0.437 s
+Number of points = 620547
+Number of nodes = 673
+Estimation of sampling = 1.05383
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.580076
+missedCloseStart is 2 1 rate is 0.63913
+missedCloseStart is 2 0 rate is 0.36087
+entropy is 0.547245
+the missedCloseStart is 3 and the count rate is 0.0567465
+missedCloseStart is 3 0 rate is 0.333333
+missedCloseStart is 3 1 rate is 0.666667
+entropy is 0.0521101
+the missedCloseStart is 1 and the count rate is 0.196721
+missedCloseStart is 1 0 rate is 0.557692
+missedCloseStart is 1 1 rate is 0.442308
+entropy is 0.194828
+the missedCloseStart is 0 and the count rate is 0.114754
+missedCloseStart is 0 0 rate is 0.692308
+missedCloseStart is 0 1 rate is 0.307692
+entropy is 0.102188
+the missedCloseStart is 4 and the count rate is 0.0517024
+missedCloseStart is 4 1 rate is 0.609756
+missedCloseStart is 4 0 rate is 0.390244
+entropy is 0.0498906
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 518502 points 
+positions bitstream size 530 B (0.00683268 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 6126 B (0.0789755 bpp)
+colors processing time (user): 0.453 s
+Number of points = 630644
+Number of nodes = 531
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.526316
+missedCloseStart is 2 0 rate is 0.4925
+missedCloseStart is 2 1 rate is 0.5075
+entropy is 0.52623
+the missedCloseStart is 3 and the count rate is 0.0302632
+missedCloseStart is 3 0 rate is 0.434783
+missedCloseStart is 3 1 rate is 0.565217
+entropy is 0.0298907
+the missedCloseStart is 1 and the count rate is 0.280263
+missedCloseStart is 1 0 rate is 0.591549
+missedCloseStart is 1 1 rate is 0.408451
+entropy is 0.273447
+the missedCloseStart is 0 and the count rate is 0.159211
+missedCloseStart is 0 0 rate is 0.793388
+missedCloseStart is 0 1 rate is 0.206612
+entropy is 0.117013
+the missedCloseStart is 4 and the count rate is 0.00394737
+missedCloseStart is 4 0 rate is 0.333333
+missedCloseStart is 4 1 rate is 0.666667
+entropy is 0.00362485
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 545162 points 
+positions bitstream size 414 B (0.00525177 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 12379 B (0.157033 bpp)
+colors processing time (user): 0.437 s
+Number of points = 642769
+Number of nodes = 541
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.633803
+missedCloseStart is 2 0 rate is 0.38
+missedCloseStart is 2 1 rate is 0.62
+entropy is 0.60721
+the missedCloseStart is 1 and the count rate is 0.198592
+missedCloseStart is 1 0 rate is 0.638298
+missedCloseStart is 1 1 rate is 0.361702
+entropy is 0.187488
+the missedCloseStart is 0 and the count rate is 0.128169
+missedCloseStart is 0 0 rate is 0.714286
+missedCloseStart is 0 1 rate is 0.285714
+entropy is 0.110625
+the missedCloseStart is 3 and the count rate is 0.0380282
+missedCloseStart is 3 1 rate is 0.740741
+missedCloseStart is 3 0 rate is 0.259259
+entropy is 0.0313971
+the missedCloseStart is 4 and the count rate is 0.00140845
+missedCloseStart is 4 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 502613 points 
+positions bitstream size 428 B (0.00532695 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 20112 B (0.250317 bpp)
+colors processing time (user): 0.406 s
+Number of points = 685488
+Number of nodes = 771
+Estimation of sampling = 1.07319
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.48
+missedCloseStart is 2 1 rate is 0.676357
+missedCloseStart is 2 0 rate is 0.323643
+entropy is 0.435984
+the missedCloseStart is 1 and the count rate is 0.305116
+missedCloseStart is 1 0 rate is 0.640244
+missedCloseStart is 1 1 rate is 0.359756
+entropy is 0.287566
+the missedCloseStart is 0 and the count rate is 0.175814
+missedCloseStart is 0 0 rate is 0.703704
+missedCloseStart is 0 1 rate is 0.296296
+entropy is 0.154139
+the missedCloseStart is 3 and the count rate is 0.0325581
+missedCloseStart is 3 0 rate is 0.228571
+missedCloseStart is 3 1 rate is 0.771429
+entropy is 0.0252492
+the missedCloseStart is 4 and the count rate is 0.00651163
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 677557 points 
+positions bitstream size 505 B (0.00589361 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 5089 B (0.0593913 bpp)
+colors processing time (user): 0.531 s
+Number of points = 703735
+Number of nodes = 1190
+Estimation of sampling = 1.31589
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.50349
+missedCloseStart is 2 1 rate is 0.576238
+missedCloseStart is 2 0 rate is 0.423762
+entropy is 0.495013
+the missedCloseStart is 1 and the count rate is 0.235294
+missedCloseStart is 1 0 rate is 0.622881
+missedCloseStart is 1 1 rate is 0.377119
+entropy is 0.224937
+the missedCloseStart is 3 and the count rate is 0.0917248
+missedCloseStart is 3 1 rate is 0.630435
+missedCloseStart is 3 0 rate is 0.369565
+entropy is 0.0871696
+the missedCloseStart is 0 and the count rate is 0.139581
+missedCloseStart is 0 0 rate is 0.757143
+missedCloseStart is 0 1 rate is 0.242857
+entropy is 0.111631
+the missedCloseStart is 4 and the count rate is 0.0299103
+missedCloseStart is 4 1 rate is 0.7
+missedCloseStart is 4 0 rate is 0.3
+entropy is 0.0263596
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 522176 points 
+positions bitstream size 855 B (0.00971957 bpp)
+positions processing time (user): 0.281 s
+colors bitstream size 10324 B (0.117362 bpp)
+colors processing time (user): 0.437 s
+Number of points = 721203
+Number of nodes = 597
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.503991
+missedCloseStart is 2 0 rate is 0.459276
+missedCloseStart is 2 1 rate is 0.540724
+entropy is 0.501576
+the missedCloseStart is 1 and the count rate is 0.262258
+missedCloseStart is 1 0 rate is 0.543478
+missedCloseStart is 1 1 rate is 0.456522
+entropy is 0.260825
+the missedCloseStart is 0 and the count rate is 0.205245
+missedCloseStart is 0 0 rate is 0.761111
+missedCloseStart is 0 1 rate is 0.238889
+entropy is 0.162798
+the missedCloseStart is 3 and the count rate is 0.027366
+missedCloseStart is 3 0 rate is 0.25
+missedCloseStart is 3 1 rate is 0.75
+entropy is 0.0222015
+the missedCloseStart is 4 and the count rate is 0.00114025
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 580184 points 
+positions bitstream size 472 B (0.0052357 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 15761 B (0.17483 bpp)
+colors processing time (user): 0.5 s
+Number of points = 755577
+Number of nodes = 679
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.551724
+missedCloseStart is 2 1 rate is 0.638672
+missedCloseStart is 2 0 rate is 0.361328
+entropy is 0.520706
+the missedCloseStart is 1 and the count rate is 0.256466
+missedCloseStart is 1 0 rate is 0.651261
+missedCloseStart is 1 1 rate is 0.348739
+entropy is 0.239266
+the missedCloseStart is 0 and the count rate is 0.184267
+missedCloseStart is 0 0 rate is 0.684211
+missedCloseStart is 0 1 rate is 0.315789
+entropy is 0.165793
+the missedCloseStart is 3 and the count rate is 0.0075431
+missedCloseStart is 3 1 rate is 0.571429
+missedCloseStart is 3 0 rate is 0.428571
+entropy is 0.00743168
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 663148 points 
+positions bitstream size 400 B (0.00423517 bpp)
+positions processing time (user): 0.312 s
+colors bitstream size 3062 B (0.0324203 bpp)
+colors processing time (user): 0.546 s
+Number of points = 776186
+Number of nodes = 685
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.72807
+missedCloseStart is 2 0 rate is 0.476764
+missedCloseStart is 2 1 rate is 0.523236
+entropy is 0.726936
+the missedCloseStart is 1 and the count rate is 0.149123
+missedCloseStart is 1 1 rate is 0.344538
+missedCloseStart is 1 0 rate is 0.655462
+entropy is 0.138549
+the missedCloseStart is 0 and the count rate is 0.0588972
+missedCloseStart is 0 0 rate is 0.744681
+missedCloseStart is 0 1 rate is 0.255319
+entropy is 0.0482722
+the missedCloseStart is 3 and the count rate is 0.0513784
+missedCloseStart is 3 1 rate is 0.512195
+missedCloseStart is 3 0 rate is 0.487805
+entropy is 0.0513564
+the missedCloseStart is 4 and the count rate is 0.0125313
+missedCloseStart is 4 1 rate is 0.4
+missedCloseStart is 4 0 rate is 0.6
+entropy is 0.0121673
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 649851 points 
+positions bitstream size 442 B (0.00455561 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 10904 B (0.112385 bpp)
+colors processing time (user): 0.5 s
+Number of points = 804621
+Number of nodes = 626
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.882948
+missedCloseStart is 2 0 rate is 0.621931
+missedCloseStart is 2 1 rate is 0.378069
+entropy is 0.844687
+the missedCloseStart is 3 and the count rate is 0.015896
+missedCloseStart is 3 1 rate is 0.545455
+missedCloseStart is 3 0 rate is 0.454545
+entropy is 0.0158011
+the missedCloseStart is 1 and the count rate is 0.0693642
+missedCloseStart is 1 0 rate is 0.6875
+missedCloseStart is 1 1 rate is 0.3125
+entropy is 0.0621529
+the missedCloseStart is 0 and the count rate is 0.0317919
+missedCloseStart is 0 0 rate is 0.818182
+missedCloseStart is 0 1 rate is 0.181818
+entropy is 0.0217469
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 643203 points 
+positions bitstream size 308 B (0.00306231 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 4202 B (0.0417787 bpp)
+colors processing time (user): 0.5 s
+Number of points = 829709
+Number of nodes = 620
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.525253
+missedCloseStart is 2 1 rate is 0.553419
+missedCloseStart is 2 0 rate is 0.446581
+entropy is 0.52092
+the missedCloseStart is 3 and the count rate is 0.0224467
+missedCloseStart is 3 1 rate is 0.7
+missedCloseStart is 3 0 rate is 0.3
+entropy is 0.0197821
+the missedCloseStart is 1 and the count rate is 0.244669
+missedCloseStart is 1 0 rate is 0.573394
+missedCloseStart is 1 1 rate is 0.426606
+entropy is 0.240852
+the missedCloseStart is 0 and the count rate is 0.204265
+missedCloseStart is 0 0 rate is 0.741758
+missedCloseStart is 0 1 rate is 0.258242
+entropy is 0.168331
+the missedCloseStart is 4 and the count rate is 0.003367
+missedCloseStart is 4 1 rate is 0.666667
+missedCloseStart is 4 0 rate is 0.333333
+entropy is 0.00309191
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 599398 points 
+positions bitstream size 484 B (0.0046667 bpp)
+positions processing time (user): 0.281 s
+colors bitstream size 31384 B (0.302602 bpp)
+colors processing time (user): 0.531 s
+Number of points = 949556
+Number of nodes = 902
+Estimation of sampling = 1
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.675624
+missedCloseStart is 2 1 rate is 0.473011
+missedCloseStart is 2 0 rate is 0.526989
+entropy is 0.674203
+the missedCloseStart is 3 and the count rate is 0.0172745
+missedCloseStart is 3 1 rate is 0.611111
+missedCloseStart is 3 0 rate is 0.388889
+entropy is 0.016654
+the missedCloseStart is 1 and the count rate is 0.200576
+missedCloseStart is 1 0 rate is 0.679426
+missedCloseStart is 1 1 rate is 0.320574
+entropy is 0.181522
+the missedCloseStart is 0 and the count rate is 0.103647
+missedCloseStart is 0 1 rate is 0.314815
+missedCloseStart is 0 0 rate is 0.685185
+entropy is 0.0931426
+the missedCloseStart is 4 and the count rate is 0.00287908
+missedCloseStart is 4 1 rate is 0.666667
+missedCloseStart is 4 0 rate is 0.333333
+entropy is 0.00264385
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 794578 points 
+positions bitstream size 532 B (0.00448209 bpp)
+positions processing time (user): 0.296 s
+colors bitstream size 6595 B (0.0555628 bpp)
+colors processing time (user): 0.625 s
+Number of points = 954750
+Number of nodes = 986
+Estimation of sampling = 1.02836
+distanceSearchEncoder = 2
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.590106
+missedCloseStart is 2 1 rate is 0.58982
+missedCloseStart is 2 0 rate is 0.41018
+entropy is 0.576294
+the missedCloseStart is 3 and the count rate is 0.0468198
+missedCloseStart is 3 0 rate is 0.283019
+missedCloseStart is 3 1 rate is 0.716981
+entropy is 0.0402431
+the missedCloseStart is 1 and the count rate is 0.199647
+missedCloseStart is 1 0 rate is 0.659292
+missedCloseStart is 1 1 rate is 0.340708
+entropy is 0.184772
+the missedCloseStart is 4 and the count rate is 0.0141343
+missedCloseStart is 4 0 rate is 0.3125
+missedCloseStart is 4 1 rate is 0.6875
+entropy is 0.0126649
+the missedCloseStart is 0 and the count rate is 0.149293
+missedCloseStart is 0 0 rate is 0.721893
+missedCloseStart is 0 1 rate is 0.278107
+entropy is 0.127326
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 770532 points 
+positions bitstream size 668 B (0.00559728 bpp)
+positions processing time (user): 0.328 s
+colors bitstream size 9728 B (0.0815124 bpp)
+colors processing time (user): 0.671 s
+Total frame size 189727 B
+Total bitstream size 189727 B
+Processing time (wall): 269.826 s
+Processing time (user): 168.187 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 401 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 3218 B
+colors processing time (user): 0.265 s
+
+positions bitstream size 349 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.109 s
+
+colors bitstream size 3161 B
+colors processing time (user): 0.265 s
+
+positions bitstream size 344 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 5447 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 334 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 3058 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 284 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 3116 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 369 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 3749 B
+colors processing time (user): 0.234 s
+
+positions bitstream size 315 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 3194 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 341 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 5955 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 410 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 3993 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 363 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 3065 B
+colors processing time (user): 0.265 s
+
+positions bitstream size 462 B
+positions processing time (user): 0.125 s
+
+colors bitstream size 5822 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 530 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 6126 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 414 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 12379 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 428 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 20112 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 505 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.171 s
+
+colors bitstream size 5089 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 855 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.156 s
+
+colors bitstream size 10324 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 472 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 15761 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 400 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 3062 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 442 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 10904 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 308 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 4202 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 484 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 31384 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 532 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.203 s
+
+colors bitstream size 6595 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 668 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 9728 B
+colors processing time (user): 0.5 s
+
+Total bitstream size 189727 B
+Processing time (wall): 16.195 s
+Processing time (user): 12.14 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 5128 4484 432
+WARNING: 20463 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 12668276, 0.176075
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 140.553
+   mse1,PSNR (p2point): 67.5807
+   mse1      (p2plane): 39.1706
+   mse1,PSNR (p2plane): 73.1295
+   c[0],    1         : 0.00445679
+   c[1],    1         : 0.000181357
+   c[2],    1         : 0.00014628
+   c[0],PSNR1         : 23.5098
+   c[1],PSNR1         : 37.4146
+   c[2],PSNR1         : 38.3481
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 50.3342
+   mse2,PSNR (p2point): 72.0404
+   mse2      (p2plane): 40.2336
+   mse2,PSNR (p2plane): 73.0132
+   c[0],    2         : 0.00356853
+   c[1],    2         : 0.000143108
+   c[2],    2         : 0.000135191
+   c[0],PSNR2         : 24.4751
+   c[1],PSNR2         : 38.4434
+   c[2],PSNR2         : 38.6905
+3. Final (symmetric).
+   mseF      (p2point): 140.553
+   mseF,PSNR (p2point): 67.5807
+   mseF      (p2plane): 40.2336
+   mseF,PSNR (p2plane): 73.0132
+   c[0],    F         : 0.00445679
+   c[1],    F         : 0.000181357
+   c[2],    F         : 0.00014628
+   c[0],PSNRF         : 23.5098
+   c[1],PSNRF         : 37.4146
+   c[2],PSNRF         : 38.3481
+Job done! 269.953 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply"
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.25
+    sequenceScale             : 0.25
+    positionQuantizationScale : 0.25
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 23
+Number of points = 500755
+Number of nodes = 2027
+Estimation of sampling = 1.01797
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0183076
+missedCloseStart is 4 1 rate is 0.644444
+missedCloseStart is 4 0 rate is 0.355556
+entropy is 0.0171896
+the missedCloseStart is 3 and the count rate is 0.0484133
+missedCloseStart is 3 1 rate is 0.621849
+missedCloseStart is 3 0 rate is 0.378151
+entropy is 0.0463183
+the missedCloseStart is 2 and the count rate is 0.482913
+missedCloseStart is 2 1 rate is 0.620051
+missedCloseStart is 2 0 rate is 0.379949
+entropy is 0.462634
+the missedCloseStart is 0 and the count rate is 0.244915
+missedCloseStart is 0 0 rate is 0.692691
+missedCloseStart is 0 1 rate is 0.307309
+entropy is 0.217984
+the missedCloseStart is 1 and the count rate is 0.205452
+missedCloseStart is 1 1 rate is 0.409901
+missedCloseStart is 1 0 rate is 0.590099
+entropy is 0.200613
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 378610 points 
+positions bitstream size 1233 B (0.0196983 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 11411 B (0.182301 bpp)
+colors processing time (user): 0.281 s
+Number of points = 545547
+Number of nodes = 2378
+Estimation of sampling = 1.05635
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.608904
+missedCloseStart is 2 1 rate is 0.598187
+missedCloseStart is 2 0 rate is 0.401813
+entropy is 0.591855
+the missedCloseStart is 3 and the count rate is 0.0305372
+missedCloseStart is 3 1 rate is 0.626506
+missedCloseStart is 3 0 rate is 0.373494
+entropy is 0.0291116
+the missedCloseStart is 1 and the count rate is 0.221118
+missedCloseStart is 1 0 rate is 0.579035
+missedCloseStart is 1 1 rate is 0.420965
+entropy is 0.217116
+the missedCloseStart is 0 and the count rate is 0.133186
+missedCloseStart is 0 1 rate is 0.337017
+missedCloseStart is 0 0 rate is 0.662983
+entropy is 0.122789
+the missedCloseStart is 4 and the count rate is 0.0062546
+missedCloseStart is 4 0 rate is 0.235294
+missedCloseStart is 4 1 rate is 0.764706
+entropy is 0.00492316
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 494588 points 
+positions bitstream size 1245 B (0.0182569 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 14012 B (0.205475 bpp)
+colors processing time (user): 0.39 s
+Number of points = 549085
+Number of nodes = 1874
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.691084
+missedCloseStart is 2 0 rate is 0.440339
+missedCloseStart is 2 1 rate is 0.559661
+entropy is 0.68397
+the missedCloseStart is 1 and the count rate is 0.195898
+missedCloseStart is 1 0 rate is 0.655983
+missedCloseStart is 1 1 rate is 0.344017
+entropy is 0.181913
+the missedCloseStart is 3 and the count rate is 0.012139
+missedCloseStart is 3 1 rate is 0.862069
+missedCloseStart is 3 0 rate is 0.137931
+entropy is 0.00702597
+the missedCloseStart is 0 and the count rate is 0.100879
+missedCloseStart is 0 1 rate is 0.294606
+missedCloseStart is 0 0 rate is 0.705394
+entropy is 0.0882285
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 493020 points 
+positions bitstream size 919 B (0.0133895 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 19979 B (0.291088 bpp)
+colors processing time (user): 0.39 s
+Number of points = 554248
+Number of nodes = 1946
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.660922
+missedCloseStart is 2 0 rate is 0.391753
+missedCloseStart is 2 1 rate is 0.608247
+entropy is 0.638398
+the missedCloseStart is 1 and the count rate is 0.178357
+missedCloseStart is 1 0 rate is 0.575281
+missedCloseStart is 1 1 rate is 0.424719
+entropy is 0.175429
+the missedCloseStart is 3 and the count rate is 0.0136273
+missedCloseStart is 3 1 rate is 0.558824
+missedCloseStart is 3 0 rate is 0.441176
+entropy is 0.0134909
+the missedCloseStart is 0 and the count rate is 0.147094
+missedCloseStart is 0 1 rate is 0.294278
+missedCloseStart is 0 0 rate is 0.705722
+entropy is 0.128587
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 506193 points 
+positions bitstream size 940 B (0.0135679 bpp)
+positions processing time (user): 0.203 s
+colors bitstream size 12480 B (0.180136 bpp)
+colors processing time (user): 0.39 s
+Number of points = 554462
+Number of nodes = 1893
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.682907
+missedCloseStart is 2 0 rate is 0.510883
+missedCloseStart is 2 1 rate is 0.489117
+entropy is 0.682673
+the missedCloseStart is 1 and the count rate is 0.190751
+missedCloseStart is 1 1 rate is 0.341991
+missedCloseStart is 1 0 rate is 0.658009
+entropy is 0.176772
+the missedCloseStart is 0 and the count rate is 0.113955
+missedCloseStart is 0 1 rate is 0.307971
+missedCloseStart is 0 0 rate is 0.692029
+entropy is 0.101513
+the missedCloseStart is 3 and the count rate is 0.0123865
+missedCloseStart is 3 1 rate is 0.833333
+missedCloseStart is 3 0 rate is 0.166667
+entropy is 0.00805148
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 486673 points 
+positions bitstream size 917 B (0.0132308 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 13614 B (0.196428 bpp)
+colors processing time (user): 0.39 s
+Number of points = 561148
+Number of nodes = 2127
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.541553
+missedCloseStart is 2 0 rate is 0.364553
+missedCloseStart is 2 1 rate is 0.635447
+entropy is 0.512525
+the missedCloseStart is 3 and the count rate is 0.0421381
+missedCloseStart is 3 0 rate is 0.425926
+missedCloseStart is 3 1 rate is 0.574074
+entropy is 0.0414685
+the missedCloseStart is 1 and the count rate is 0.23293
+missedCloseStart is 1 1 rate is 0.396985
+missedCloseStart is 1 0 rate is 0.603015
+entropy is 0.225746
+the missedCloseStart is 0 and the count rate is 0.176746
+missedCloseStart is 0 1 rate is 0.295806
+missedCloseStart is 0 0 rate is 0.704194
+entropy is 0.154848
+the missedCloseStart is 4 and the count rate is 0.00663285
+missedCloseStart is 4 0 rate is 0.352941
+missedCloseStart is 4 1 rate is 0.647059
+entropy is 0.00621278
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 434398 points 
+positions bitstream size 1231 B (0.0175497 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 14948 B (0.213106 bpp)
+colors processing time (user): 0.281 s
+Number of points = 561174
+Number of nodes = 1999
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.604712
+missedCloseStart is 2 0 rate is 0.387755
+missedCloseStart is 2 1 rate is 0.612245
+entropy is 0.582541
+the missedCloseStart is 1 and the count rate is 0.238594
+missedCloseStart is 1 0 rate is 0.628527
+missedCloseStart is 1 1 rate is 0.371473
+entropy is 0.227093
+the missedCloseStart is 0 and the count rate is 0.142483
+missedCloseStart is 0 1 rate is 0.335958
+missedCloseStart is 0 0 rate is 0.664042
+entropy is 0.131212
+the missedCloseStart is 3 and the count rate is 0.0142109
+missedCloseStart is 3 1 rate is 0.710526
+missedCloseStart is 3 0 rate is 0.289474
+entropy is 0.0123357
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 505782 points 
+positions bitstream size 952 B (0.0135715 bpp)
+positions processing time (user): 0.218 s
+colors bitstream size 13023 B (0.185654 bpp)
+colors processing time (user): 0.39 s
+Number of points = 562132
+Number of nodes = 1951
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.648243
+missedCloseStart is 2 0 rate is 0.450061
+missedCloseStart is 2 1 rate is 0.549939
+entropy is 0.643571
+the missedCloseStart is 1 and the count rate is 0.203316
+missedCloseStart is 1 0 rate is 0.638835
+missedCloseStart is 1 1 rate is 0.361165
+entropy is 0.191859
+the missedCloseStart is 0 and the count rate is 0.120805
+missedCloseStart is 0 1 rate is 0.323529
+missedCloseStart is 0 0 rate is 0.676471
+entropy is 0.109713
+the missedCloseStart is 3 and the count rate is 0.0221082
+missedCloseStart is 3 1 rate is 0.714286
+missedCloseStart is 3 0 rate is 0.285714
+entropy is 0.019082
+the missedCloseStart is 4 and the count rate is 0.00552704
+missedCloseStart is 4 1 rate is 0.857143
+missedCloseStart is 4 0 rate is 0.142857
+entropy is 0.0032702
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 502072 points 
+positions bitstream size 1019 B (0.0145019 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 20579 B (0.292871 bpp)
+colors processing time (user): 0.421 s
+Number of points = 579696
+Number of nodes = 2163
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.608155
+missedCloseStart is 2 0 rate is 0.421456
+missedCloseStart is 2 1 rate is 0.578544
+entropy is 0.597285
+the missedCloseStart is 3 and the count rate is 0.0302913
+missedCloseStart is 3 0 rate is 0.423077
+missedCloseStart is 3 1 rate is 0.576923
+entropy is 0.029772
+the missedCloseStart is 1 and the count rate is 0.21165
+missedCloseStart is 1 1 rate is 0.385321
+missedCloseStart is 1 0 rate is 0.614679
+entropy is 0.203547
+the missedCloseStart is 0 and the count rate is 0.147184
+missedCloseStart is 0 0 rate is 0.704485
+missedCloseStart is 0 1 rate is 0.295515
+entropy is 0.128895
+the missedCloseStart is 4 and the count rate is 0.00271845
+missedCloseStart is 4 1 rate is 0.571429
+missedCloseStart is 4 0 rate is 0.428571
+entropy is 0.00267829
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 474657 points 
+positions bitstream size 1143 B (0.0157738 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 16436 B (0.226822 bpp)
+colors processing time (user): 0.359 s
+Number of points = 605535
+Number of nodes = 2056
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.64645
+missedCloseStart is 2 1 rate is 0.580092
+missedCloseStart is 2 0 rate is 0.419908
+entropy is 0.634433
+the missedCloseStart is 1 and the count rate is 0.206731
+missedCloseStart is 1 0 rate is 0.644007
+missedCloseStart is 1 1 rate is 0.355993
+entropy is 0.194184
+the missedCloseStart is 0 and the count rate is 0.117234
+missedCloseStart is 0 0 rate is 0.675079
+missedCloseStart is 0 1 rate is 0.324921
+entropy is 0.106642
+the missedCloseStart is 3 and the count rate is 0.0214497
+missedCloseStart is 3 0 rate is 0.362069
+missedCloseStart is 3 1 rate is 0.637931
+entropy is 0.0202568
+the missedCloseStart is 4 and the count rate is 0.00813609
+missedCloseStart is 4 0 rate is 0.363636
+missedCloseStart is 4 1 rate is 0.636364
+entropy is 0.00769398
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 511250 points 
+positions bitstream size 1093 B (0.0144401 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 12531 B (0.165553 bpp)
+colors processing time (user): 0.39 s
+Number of points = 611145
+Number of nodes = 2326
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.596624
+missedCloseStart is 2 1 rate is 0.586605
+missedCloseStart is 2 0 rate is 0.413395
+entropy is 0.583647
+the missedCloseStart is 1 and the count rate is 0.210816
+missedCloseStart is 1 0 rate is 0.619281
+missedCloseStart is 1 1 rate is 0.380719
+entropy is 0.202078
+the missedCloseStart is 0 and the count rate is 0.133999
+missedCloseStart is 0 0 rate is 0.732648
+missedCloseStart is 0 1 rate is 0.267352
+entropy is 0.112243
+the missedCloseStart is 4 and the count rate is 0.00964519
+missedCloseStart is 4 1 rate is 0.714286
+missedCloseStart is 4 0 rate is 0.285714
+entropy is 0.00832497
+the missedCloseStart is 3 and the count rate is 0.0489149
+missedCloseStart is 3 1 rate is 0.669014
+missedCloseStart is 3 0 rate is 0.330986
+entropy is 0.0448027
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 520649 points 
+positions bitstream size 1367 B (0.0178943 bpp)
+positions processing time (user): 0.281 s
+colors bitstream size 20289 B (0.265587 bpp)
+colors processing time (user): 0.421 s
+Number of points = 620547
+Number of nodes = 2595
+Estimation of sampling = 1.03467
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0433884
+missedCloseStart is 4 0 rate is 0.333333
+missedCloseStart is 4 1 rate is 0.666667
+entropy is 0.0398434
+the missedCloseStart is 2 and the count rate is 0.575413
+missedCloseStart is 2 1 rate is 0.570916
+missedCloseStart is 2 0 rate is 0.429084
+entropy is 0.567035
+the missedCloseStart is 1 and the count rate is 0.18905
+missedCloseStart is 1 0 rate is 0.635701
+missedCloseStart is 1 1 rate is 0.364299
+entropy is 0.178878
+the missedCloseStart is 3 and the count rate is 0.0475207
+missedCloseStart is 3 0 rate is 0.449275
+missedCloseStart is 3 1 rate is 0.550725
+entropy is 0.0471673
+the missedCloseStart is 0 and the count rate is 0.144628
+missedCloseStart is 0 0 rate is 0.709524
+missedCloseStart is 0 1 rate is 0.290476
+entropy is 0.12573
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 507707 points 
+positions bitstream size 1474 B (0.0190026 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 21355 B (0.275305 bpp)
+colors processing time (user): 0.421 s
+Number of points = 630644
+Number of nodes = 2187
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.537429
+missedCloseStart is 2 0 rate is 0.377264
+missedCloseStart is 2 1 rate is 0.622736
+entropy is 0.513828
+the missedCloseStart is 1 and the count rate is 0.251762
+missedCloseStart is 1 1 rate is 0.373333
+missedCloseStart is 1 0 rate is 0.626667
+entropy is 0.239979
+the missedCloseStart is 0 and the count rate is 0.177912
+missedCloseStart is 0 0 rate is 0.701887
+missedCloseStart is 0 1 rate is 0.298113
+entropy is 0.15638
+the missedCloseStart is 3 and the count rate is 0.0255119
+missedCloseStart is 3 1 rate is 0.657895
+missedCloseStart is 3 0 rate is 0.342105
+entropy is 0.0236449
+the missedCloseStart is 4 and the count rate is 0.00738503
+missedCloseStart is 4 1 rate is 0.818182
+missedCloseStart is 4 0 rate is 0.181818
+entropy is 0.00505164
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 547702 points 
+positions bitstream size 1260 B (0.0159837 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 43272 B (0.548925 bpp)
+colors processing time (user): 0.437 s
+Number of points = 642769
+Number of nodes = 2204
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.580034
+missedCloseStart is 2 0 rate is 0.400593
+missedCloseStart is 2 1 rate is 0.599407
+entropy is 0.563386
+the missedCloseStart is 1 and the count rate is 0.209294
+missedCloseStart is 1 0 rate is 0.623355
+missedCloseStart is 1 1 rate is 0.376645
+entropy is 0.20001
+the missedCloseStart is 3 and the count rate is 0.0344234
+missedCloseStart is 3 0 rate is 0.29
+missedCloseStart is 3 1 rate is 0.71
+entropy is 0.0299043
+the missedCloseStart is 0 and the count rate is 0.16833
+missedCloseStart is 0 0 rate is 0.717791
+missedCloseStart is 0 1 rate is 0.282209
+entropy is 0.144502
+the missedCloseStart is 4 and the count rate is 0.00791738
+missedCloseStart is 4 1 rate is 0.652174
+missedCloseStart is 4 0 rate is 0.347826
+entropy is 0.00737989
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 518742 points 
+positions bitstream size 1359 B (0.0169143 bpp)
+positions processing time (user): 0.296 s
+colors bitstream size 61953 B (0.771076 bpp)
+colors processing time (user): 0.437 s
+Number of points = 685488
+Number of nodes = 2909
+Estimation of sampling = 1.0423
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.517609
+missedCloseStart is 2 1 rate is 0.626289
+missedCloseStart is 2 0 rate is 0.373711
+entropy is 0.49353
+the missedCloseStart is 3 and the count rate is 0.0240128
+missedCloseStart is 3 1 rate is 0.544444
+missedCloseStart is 3 0 rate is 0.455556
+entropy is 0.0238758
+the missedCloseStart is 1 and the count rate is 0.272946
+missedCloseStart is 1 0 rate is 0.676442
+missedCloseStart is 1 1 rate is 0.323558
+entropy is 0.247892
+the missedCloseStart is 4 and the count rate is 0.00560299
+missedCloseStart is 4 1 rate is 0.47619
+missedCloseStart is 4 0 rate is 0.52381
+entropy is 0.00559382
+the missedCloseStart is 0 and the count rate is 0.179829
+missedCloseStart is 0 0 rate is 0.689911
+missedCloseStart is 0 1 rate is 0.310089
+entropy is 0.160637
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 628019 points 
+positions bitstream size 1441 B (0.0168172 bpp)
+positions processing time (user): 0.312 s
+colors bitstream size 18128 B (0.211563 bpp)
+colors processing time (user): 0.484 s
+Number of points = 703735
+Number of nodes = 4123
+Estimation of sampling = 1.22468
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.452094
+missedCloseStart is 2 0 rate is 0.382166
+missedCloseStart is 2 1 rate is 0.617834
+entropy is 0.43381
+the missedCloseStart is 1 and the count rate is 0.235079
+missedCloseStart is 1 0 rate is 0.599109
+missedCloseStart is 1 1 rate is 0.400891
+entropy is 0.228372
+the missedCloseStart is 3 and the count rate is 0.0900524
+missedCloseStart is 3 0 rate is 0.360465
+missedCloseStart is 3 1 rate is 0.639535
+entropy is 0.0849255
+the missedCloseStart is 0 and the count rate is 0.188743
+missedCloseStart is 0 0 rate is 0.743412
+missedCloseStart is 0 1 rate is 0.256588
+entropy is 0.155063
+the missedCloseStart is 4 and the count rate is 0.0340314
+missedCloseStart is 4 1 rate is 0.661538
+missedCloseStart is 4 0 rate is 0.338462
+entropy is 0.0314225
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 513507 points 
+positions bitstream size 2663 B (0.0302728 bpp)
+positions processing time (user): 0.328 s
+colors bitstream size 35987 B (0.409097 bpp)
+colors processing time (user): 0.437 s
+Number of points = 721203
+Number of nodes = 2484
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.514609
+missedCloseStart is 2 1 rate is 0.626304
+missedCloseStart is 2 0 rate is 0.373696
+entropy is 0.490664
+the missedCloseStart is 3 and the count rate is 0.0381634
+missedCloseStart is 3 1 rate is 0.695312
+missedCloseStart is 3 0 rate is 0.304688
+entropy is 0.0338488
+the missedCloseStart is 1 and the count rate is 0.22749
+missedCloseStart is 1 1 rate is 0.435125
+missedCloseStart is 1 0 rate is 0.564875
+entropy is 0.224719
+the missedCloseStart is 0 and the count rate is 0.215265
+missedCloseStart is 0 0 rate is 0.685596
+missedCloseStart is 0 1 rate is 0.314404
+entropy is 0.19335
+the missedCloseStart is 4 and the count rate is 0.00447227
+missedCloseStart is 4 1 rate is 0.666667
+missedCloseStart is 4 0 rate is 0.333333
+entropy is 0.00410687
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 584616 points 
+positions bitstream size 1515 B (0.0168053 bpp)
+positions processing time (user): 0.328 s
+colors bitstream size 58044 B (0.643858 bpp)
+colors processing time (user): 0.453 s
+Number of points = 755577
+Number of nodes = 2592
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.619727
+missedCloseStart is 2 0 rate is 0.403526
+missedCloseStart is 2 1 rate is 0.596474
+entropy is 0.602979
+the missedCloseStart is 1 and the count rate is 0.202124
+missedCloseStart is 1 1 rate is 0.402402
+missedCloseStart is 1 0 rate is 0.597598
+entropy is 0.196533
+the missedCloseStart is 0 and the count rate is 0.163885
+missedCloseStart is 0 1 rate is 0.342593
+missedCloseStart is 0 0 rate is 0.657407
+entropy is 0.151967
+the missedCloseStart is 3 and the count rate is 0.014264
+missedCloseStart is 3 1 rate is 0.553191
+missedCloseStart is 3 0 rate is 0.446809
+entropy is 0.0141474
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 641476 points 
+positions bitstream size 1178 B (0.0124726 bpp)
+positions processing time (user): 0.328 s
+colors bitstream size 11304 B (0.119686 bpp)
+colors processing time (user): 0.5 s
+Number of points = 776186
+Number of nodes = 2907
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.622222
+missedCloseStart is 2 1 rate is 0.627087
+missedCloseStart is 2 0 rate is 0.372913
+entropy is 0.592905
+the missedCloseStart is 1 and the count rate is 0.203752
+missedCloseStart is 1 1 rate is 0.369688
+missedCloseStart is 1 0 rate is 0.630312
+entropy is 0.193652
+the missedCloseStart is 0 and the count rate is 0.117749
+missedCloseStart is 0 1 rate is 0.291667
+missedCloseStart is 0 0 rate is 0.708333
+entropy is 0.102543
+the missedCloseStart is 3 and the count rate is 0.0487734
+missedCloseStart is 3 0 rate is 0.378698
+missedCloseStart is 3 1 rate is 0.621302
+entropy is 0.0466819
+the missedCloseStart is 4 and the count rate is 0.00750361
+missedCloseStart is 4 1 rate is 0.615385
+missedCloseStart is 4 0 rate is 0.384615
+entropy is 0.00721274
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 672626 points 
+positions bitstream size 1431 B (0.014749 bpp)
+positions processing time (user): 0.328 s
+colors bitstream size 39306 B (0.405119 bpp)
+colors processing time (user): 0.484 s
+Number of points = 804621
+Number of nodes = 2745
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.699255
+missedCloseStart is 2 1 rate is 0.655584
+missedCloseStart is 2 0 rate is 0.344416
+entropy is 0.649595
+the missedCloseStart is 1 and the count rate is 0.163338
+missedCloseStart is 1 1 rate is 0.366788
+missedCloseStart is 1 0 rate is 0.633212
+entropy is 0.154873
+the missedCloseStart is 3 and the count rate is 0.0184799
+missedCloseStart is 3 1 rate is 0.580645
+missedCloseStart is 3 0 rate is 0.419355
+entropy is 0.0181316
+the missedCloseStart is 0 and the count rate is 0.118927
+missedCloseStart is 0 0 rate is 0.719298
+missedCloseStart is 0 1 rate is 0.280702
+entropy is 0.10185
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 697304 points 
+positions bitstream size 1159 B (0.0115234 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 18760 B (0.186523 bpp)
+colors processing time (user): 0.531 s
+Number of points = 829709
+Number of nodes = 2626
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.478357
+missedCloseStart is 2 0 rate is 0.3683
+missedCloseStart is 2 1 rate is 0.6317
+entropy is 0.454132
+the missedCloseStart is 1 and the count rate is 0.26027
+missedCloseStart is 1 0 rate is 0.555085
+missedCloseStart is 1 1 rate is 0.444915
+entropy is 0.257987
+the missedCloseStart is 0 and the count rate is 0.220292
+missedCloseStart is 0 0 rate is 0.708385
+missedCloseStart is 0 1 rate is 0.291615
+entropy is 0.19183
+the missedCloseStart is 3 and the count rate is 0.0363937
+missedCloseStart is 3 1 rate is 0.628788
+missedCloseStart is 3 0 rate is 0.371212
+entropy is 0.0346322
+the missedCloseStart is 4 and the count rate is 0.00468707
+missedCloseStart is 4 1 rate is 0.764706
+missedCloseStart is 4 0 rate is 0.235294
+entropy is 0.00368932
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 623501 points 
+positions bitstream size 1734 B (0.0167191 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 103122 B (0.994296 bpp)
+colors processing time (user): 0.562 s
+Number of points = 949556
+Number of nodes = 3732
+Estimation of sampling = 1.00307
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.587613
+missedCloseStart is 2 0 rate is 0.367967
+missedCloseStart is 2 1 rate is 0.632033
+entropy is 0.557702
+the missedCloseStart is 1 and the count rate is 0.223275
+missedCloseStart is 1 0 rate is 0.659427
+missedCloseStart is 1 1 rate is 0.340573
+entropy is 0.206611
+the missedCloseStart is 3 and the count rate is 0.0301962
+missedCloseStart is 3 1 rate is 0.583942
+missedCloseStart is 3 0 rate is 0.416058
+entropy is 0.0295793
+the missedCloseStart is 0 and the count rate is 0.153405
+missedCloseStart is 0 0 rate is 0.724138
+missedCloseStart is 0 1 rate is 0.275862
+entropy is 0.130356
+the missedCloseStart is 4 and the count rate is 0.00551025
+missedCloseStart is 4 0 rate is 0.4
+missedCloseStart is 4 1 rate is 0.6
+entropy is 0.00535018
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 837000 points 
+positions bitstream size 1885 B (0.0158811 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 26180 B (0.220566 bpp)
+colors processing time (user): 0.671 s
+Number of points = 954750
+Number of nodes = 3846
+Estimation of sampling = 1.0155
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 3 and the count rate is 0.0426444
+missedCloseStart is 3 1 rate is 0.624339
+missedCloseStart is 3 0 rate is 0.375661
+entropy is 0.040722
+the missedCloseStart is 2 and the count rate is 0.584838
+missedCloseStart is 2 1 rate is 0.586806
+missedCloseStart is 2 0 rate is 0.413194
+entropy is 0.572057
+the missedCloseStart is 1 and the count rate is 0.206453
+missedCloseStart is 1 0 rate is 0.660109
+missedCloseStart is 1 1 rate is 0.339891
+entropy is 0.19091
+the missedCloseStart is 0 and the count rate is 0.153881
+missedCloseStart is 0 0 rate is 0.727273
+missedCloseStart is 0 1 rate is 0.272727
+entropy is 0.130083
+the missedCloseStart is 4 and the count rate is 0.0121841
+missedCloseStart is 4 0 rate is 0.425926
+missedCloseStart is 4 1 rate is 0.574074
+entropy is 0.0119905
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 780068 points 
+positions bitstream size 2099 B (0.0175879 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 36572 B (0.306443 bpp)
+colors processing time (user): 0.687 s
+Total frame size 674815 B
+Total bitstream size 674815 B
+Processing time (wall): 252.287 s
+Processing time (user): 150.921 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 1233 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 11411 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 1245 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.156 s
+
+colors bitstream size 14012 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 919 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 19979 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 940 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 12480 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 917 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 13614 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 1231 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 14948 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 952 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 13023 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 1019 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 20579 B
+colors processing time (user): 0.265 s
+
+positions bitstream size 1143 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 16436 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 1093 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 12531 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 1367 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 20289 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 1474 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 21355 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 1260 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 43272 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 1359 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 61953 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 1441 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 18128 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 2663 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 35987 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 1515 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 58044 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 1178 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 11304 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 1431 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 39306 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 1159 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 18760 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 1734 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 103122 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 1885 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 26180 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 2099 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 36572 B
+colors processing time (user): 0.531 s
+
+Total bitstream size 674815 B
+Processing time (wall): 17.032 s
+Processing time (user): 13.062 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 5128 4544 424
+WARNING: 19890 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 12840270, 0.178466
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 40.2906
+   mse1,PSNR (p2point): 73.007
+   mse1      (p2plane): 13.3217
+   mse1,PSNR (p2plane): 77.8135
+   c[0],    1         : 0.00307219
+   c[1],    1         : 0.000137601
+   c[2],    1         : 0.00010551
+   c[0],PSNR1         : 25.1255
+   c[1],PSNR1         : 38.6138
+   c[2],PSNR1         : 39.767
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 17.0872
+   mse2,PSNR (p2point): 76.7324
+   mse2      (p2plane): 13.7142
+   mse2,PSNR (p2plane): 77.6874
+   c[0],    2         : 0.00257623
+   c[1],    2         : 0.000113047
+   c[2],    2         : 9.71992e-05
+   c[0],PSNR2         : 25.8902
+   c[1],PSNR2         : 39.4674
+   c[2],PSNR2         : 40.1234
+3. Final (symmetric).
+   mseF      (p2point): 40.2906
+   mseF,PSNR (p2point): 73.007
+   mseF      (p2plane): 13.7142
+   mseF,PSNR (p2plane): 77.6874
+   c[0],    F         : 0.00307219
+   c[1],    F         : 0.000137601
+   c[2],    F         : 0.00010551
+   c[0],PSNRF         : 25.1255
+   c[1],PSNRF         : 38.6138
+   c[2],PSNRF         : 39.767
+Job done! 241.11 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply"
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.25
+    sequenceScale             : 0.25
+    positionQuantizationScale : 0.25
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 23
+Number of points = 500755
+Number of nodes = 8078
+Estimation of sampling = 1.01608
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0132484
+missedCloseStart is 4 0 rate is 0.303797
+missedCloseStart is 4 1 rate is 0.696203
+entropy is 0.0117365
+the missedCloseStart is 2 and the count rate is 0.369613
+missedCloseStart is 2 1 rate is 0.629991
+missedCloseStart is 2 0 rate is 0.370009
+entropy is 0.351383
+the missedCloseStart is 3 and the count rate is 0.0471239
+missedCloseStart is 3 0 rate is 0.339858
+missedCloseStart is 3 1 rate is 0.660142
+entropy is 0.0435747
+the missedCloseStart is 1 and the count rate is 0.263039
+missedCloseStart is 1 0 rate is 0.553714
+missedCloseStart is 1 1 rate is 0.446286
+entropy is 0.260845
+the missedCloseStart is 0 and the count rate is 0.306976
+missedCloseStart is 0 0 rate is 0.635072
+missedCloseStart is 0 1 rate is 0.364928
+entropy is 0.290614
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 437553 points 
+positions bitstream size 5344 B (0.0853751 bpp)
+positions processing time (user): 0.375 s
+colors bitstream size 36527 B (0.583551 bpp)
+colors processing time (user): 0.359 s
+Number of points = 545547
+Number of nodes = 9484
+Estimation of sampling = 1.0548
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.442682
+missedCloseStart is 2 1 rate is 0.6557
+missedCloseStart is 2 0 rate is 0.3443
+entropy is 0.411196
+the missedCloseStart is 3 and the count rate is 0.0296323
+missedCloseStart is 3 1 rate is 0.63747
+missedCloseStart is 3 0 rate is 0.36253
+entropy is 0.0279955
+the missedCloseStart is 1 and the count rate is 0.29827
+missedCloseStart is 1 0 rate is 0.631617
+missedCloseStart is 1 1 rate is 0.368383
+entropy is 0.283184
+the missedCloseStart is 0 and the count rate is 0.223071
+missedCloseStart is 0 1 rate is 0.300905
+missedCloseStart is 0 0 rate is 0.699095
+entropy is 0.196837
+the missedCloseStart is 4 and the count rate is 0.00634463
+missedCloseStart is 4 1 rate is 0.647727
+missedCloseStart is 4 0 rate is 0.352273
+entropy is 0.00593909
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 542346 points 
+positions bitstream size 5132 B (0.0752566 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 55029 B (0.806955 bpp)
+colors processing time (user): 0.39 s
+Number of points = 549085
+Number of nodes = 8458
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.462549
+missedCloseStart is 2 1 rate is 0.635572
+missedCloseStart is 2 0 rate is 0.364428
+entropy is 0.437709
+the missedCloseStart is 1 and the count rate is 0.303023
+missedCloseStart is 1 0 rate is 0.637754
+missedCloseStart is 1 1 rate is 0.362246
+entropy is 0.286215
+the missedCloseStart is 3 and the count rate is 0.0139775
+missedCloseStart is 3 0 rate is 0.309783
+missedCloseStart is 3 1 rate is 0.690217
+entropy is 0.0124808
+the missedCloseStart is 0 and the count rate is 0.22045
+missedCloseStart is 0 0 rate is 0.692281
+missedCloseStart is 0 1 rate is 0.307719
+entropy is 0.196315
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 544452 points 
+positions bitstream size 4230 B (0.0616298 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 70703 B (1.03012 bpp)
+colors processing time (user): 0.453 s
+Number of points = 554248
+Number of nodes = 8350
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.456208
+missedCloseStart is 2 0 rate is 0.365082
+missedCloseStart is 2 1 rate is 0.634918
+entropy is 0.431947
+the missedCloseStart is 1 and the count rate is 0.293131
+missedCloseStart is 1 0 rate is 0.634184
+missedCloseStart is 1 1 rate is 0.365816
+entropy is 0.277714
+the missedCloseStart is 0 and the count rate is 0.236908
+missedCloseStart is 0 1 rate is 0.338437
+missedCloseStart is 0 0 rate is 0.661563
+entropy is 0.218741
+the missedCloseStart is 3 and the count rate is 0.0137535
+missedCloseStart is 3 0 rate is 0.335165
+missedCloseStart is 3 1 rate is 0.664835
+entropy is 0.0126548
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 551925 points 
+positions bitstream size 4143 B (0.0597999 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 56175 B (0.810828 bpp)
+colors processing time (user): 0.437 s
+Number of points = 554462
+Number of nodes = 8141
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.466751
+missedCloseStart is 2 1 rate is 0.661546
+missedCloseStart is 2 0 rate is 0.338454
+entropy is 0.430966
+the missedCloseStart is 1 and the count rate is 0.299086
+missedCloseStart is 1 1 rate is 0.361433
+missedCloseStart is 1 0 rate is 0.638567
+entropy is 0.282297
+the missedCloseStart is 0 and the count rate is 0.218799
+missedCloseStart is 0 0 rate is 0.693914
+missedCloseStart is 0 1 rate is 0.306086
+entropy is 0.194426
+the missedCloseStart is 3 and the count rate is 0.015364
+missedCloseStart is 3 1 rate is 0.671795
+missedCloseStart is 3 0 rate is 0.328205
+entropy is 0.0140286
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 531545 points 
+positions bitstream size 4047 B (0.0583917 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 61669 B (0.889785 bpp)
+colors processing time (user): 0.421 s
+Number of points = 561148
+Number of nodes = 8708
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.426529
+missedCloseStart is 2 0 rate is 0.372236
+missedCloseStart is 2 1 rate is 0.627764
+entropy is 0.406215
+the missedCloseStart is 1 and the count rate is 0.265518
+missedCloseStart is 1 0 rate is 0.586026
+missedCloseStart is 1 1 rate is 0.413974
+entropy is 0.25982
+the missedCloseStart is 0 and the count rate is 0.265981
+missedCloseStart is 0 1 rate is 0.336821
+missedCloseStart is 0 0 rate is 0.663179
+entropy is 0.245167
+the missedCloseStart is 3 and the count rate is 0.0369483
+missedCloseStart is 3 0 rate is 0.359833
+missedCloseStart is 3 1 rate is 0.640167
+entropy is 0.0348254
+the missedCloseStart is 4 and the count rate is 0.00502435
+missedCloseStart is 4 0 rate is 0.384615
+missedCloseStart is 4 1 rate is 0.615385
+entropy is 0.00482959
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 505799 points 
+positions bitstream size 5185 B (0.0739199 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 46009 B (0.655927 bpp)
+colors processing time (user): 0.406 s
+Number of points = 561174
+Number of nodes = 8453
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.456115
+missedCloseStart is 2 0 rate is 0.36
+missedCloseStart is 2 1 rate is 0.64
+entropy is 0.429972
+the missedCloseStart is 1 and the count rate is 0.306029
+missedCloseStart is 1 0 rate is 0.620952
+missedCloseStart is 1 1 rate is 0.379048
+entropy is 0.292982
+the missedCloseStart is 0 and the count rate is 0.223365
+missedCloseStart is 0 0 rate is 0.666218
+missedCloseStart is 0 1 rate is 0.333782
+entropy is 0.205215
+the missedCloseStart is 3 and the count rate is 0.0143404
+missedCloseStart is 3 0 rate is 0.413613
+missedCloseStart is 3 1 rate is 0.586387
+entropy is 0.0140301
+the missedCloseStart is 4 and the count rate is 0.000150161
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 546868 points 
+positions bitstream size 4138 B (0.0589906 bpp)
+positions processing time (user): 0.375 s
+colors bitstream size 57369 B (0.817843 bpp)
+colors processing time (user): 0.39 s
+Number of points = 562132
+Number of nodes = 8465
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.451774
+missedCloseStart is 2 0 rate is 0.347776
+missedCloseStart is 2 1 rate is 0.652224
+entropy is 0.421083
+the missedCloseStart is 1 and the count rate is 0.302279
+missedCloseStart is 1 0 rate is 0.647553
+missedCloseStart is 1 1 rate is 0.352447
+entropy is 0.283004
+the missedCloseStart is 3 and the count rate is 0.0212925
+missedCloseStart is 3 0 rate is 0.357895
+missedCloseStart is 3 1 rate is 0.642105
+entropy is 0.0200346
+the missedCloseStart is 0 and the count rate is 0.219499
+missedCloseStart is 0 1 rate is 0.301906
+missedCloseStart is 0 0 rate is 0.698094
+entropy is 0.193952
+the missedCloseStart is 4 and the count rate is 0.00515502
+missedCloseStart is 4 0 rate is 0.405797
+missedCloseStart is 4 1 rate is 0.594203
+entropy is 0.00502224
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 551020 points 
+positions bitstream size 4539 B (0.0645969 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 71182 B (1.01303 bpp)
+colors processing time (user): 0.421 s
+Number of points = 579696
+Number of nodes = 9056
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 3 and the count rate is 0.0269797
+missedCloseStart is 3 1 rate is 0.616216
+missedCloseStart is 3 0 rate is 0.383784
+entropy is 0.0259186
+the missedCloseStart is 1 and the count rate is 0.29736
+missedCloseStart is 1 0 rate is 0.613536
+missedCloseStart is 1 1 rate is 0.386464
+entropy is 0.286203
+the missedCloseStart is 2 and the count rate is 0.433134
+missedCloseStart is 2 0 rate is 0.357576
+missedCloseStart is 2 1 rate is 0.642424
+entropy is 0.407429
+the missedCloseStart is 0 and the count rate is 0.239245
+missedCloseStart is 0 1 rate is 0.317281
+missedCloseStart is 0 0 rate is 0.682719
+entropy is 0.215655
+the missedCloseStart is 4 and the count rate is 0.00328132
+missedCloseStart is 4 0 rate is 0.244444
+missedCloseStart is 4 1 rate is 0.755556
+entropy is 0.00263278
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 538192 points 
+positions bitstream size 5042 B (0.0695813 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 53590 B (0.73956 bpp)
+colors processing time (user): 0.437 s
+Number of points = 605535
+Number of nodes = 8589
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.476162
+missedCloseStart is 2 1 rate is 0.607947
+missedCloseStart is 2 0 rate is 0.392053
+entropy is 0.460026
+the missedCloseStart is 1 and the count rate is 0.289258
+missedCloseStart is 1 0 rate is 0.621942
+missedCloseStart is 1 1 rate is 0.378058
+entropy is 0.276721
+the missedCloseStart is 0 and the count rate is 0.202473
+missedCloseStart is 0 1 rate is 0.313098
+missedCloseStart is 0 0 rate is 0.686902
+entropy is 0.181561
+the missedCloseStart is 3 and the count rate is 0.0272646
+missedCloseStart is 3 0 rate is 0.360656
+missedCloseStart is 3 1 rate is 0.639344
+entropy is 0.0257167
+the missedCloseStart is 4 and the count rate is 0.00484207
+missedCloseStart is 4 1 rate is 0.492308
+missedCloseStart is 4 0 rate is 0.507692
+entropy is 0.00484125
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 558214 points 
+positions bitstream size 4616 B (0.0609841 bpp)
+positions processing time (user): 0.375 s
+colors bitstream size 50909 B (0.672582 bpp)
+colors processing time (user): 0.437 s
+Number of points = 611145
+Number of nodes = 9727
+Estimation of sampling = 1.00927
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.430056
+missedCloseStart is 2 1 rate is 0.623286
+missedCloseStart is 2 0 rate is 0.376714
+entropy is 0.410999
+the missedCloseStart is 1 and the count rate is 0.296669
+missedCloseStart is 1 0 rate is 0.63127
+missedCloseStart is 1 1 rate is 0.36873
+entropy is 0.281744
+the missedCloseStart is 0 and the count rate is 0.225216
+missedCloseStart is 0 1 rate is 0.29494
+missedCloseStart is 0 0 rate is 0.70506
+entropy is 0.197068
+the missedCloseStart is 3 and the count rate is 0.0404183
+missedCloseStart is 3 0 rate is 0.303483
+missedCloseStart is 3 1 rate is 0.696517
+entropy is 0.0357906
+the missedCloseStart is 4 and the count rate is 0.00764126
+missedCloseStart is 4 1 rate is 0.824561
+missedCloseStart is 4 0 rate is 0.175439
+entropy is 0.00511962
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 571391 points 
+positions bitstream size 5430 B (0.0710797 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 69225 B (0.906168 bpp)
+colors processing time (user): 0.437 s
+Number of points = 620547
+Number of nodes = 10518
+Estimation of sampling = 1.04152
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0280349
+missedCloseStart is 4 1 rate is 0.66747
+missedCloseStart is 4 0 rate is 0.33253
+entropy is 0.0257217
+the missedCloseStart is 2 and the count rate is 0.426873
+missedCloseStart is 2 0 rate is 0.387561
+missedCloseStart is 2 1 rate is 0.612439
+entropy is 0.411167
+the missedCloseStart is 3 and the count rate is 0.0355333
+missedCloseStart is 3 1 rate is 0.617871
+missedCloseStart is 3 0 rate is 0.382129
+entropy is 0.0340954
+the missedCloseStart is 1 and the count rate is 0.277038
+missedCloseStart is 1 1 rate is 0.395269
+missedCloseStart is 1 0 rate is 0.604731
+entropy is 0.268205
+the missedCloseStart is 0 and the count rate is 0.23252
+missedCloseStart is 0 0 rate is 0.683614
+missedCloseStart is 0 1 rate is 0.316386
+entropy is 0.209363
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 576318 points 
+positions bitstream size 6240 B (0.0804452 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 70058 B (0.903177 bpp)
+colors processing time (user): 0.5 s
+Number of points = 630644
+Number of nodes = 9470
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.420897
+missedCloseStart is 2 1 rate is 0.61853
+missedCloseStart is 2 0 rate is 0.38147
+entropy is 0.403671
+the missedCloseStart is 3 and the count rate is 0.0270288
+missedCloseStart is 3 0 rate is 0.370647
+missedCloseStart is 3 1 rate is 0.629353
+entropy is 0.025709
+the missedCloseStart is 1 and the count rate is 0.29409
+missedCloseStart is 1 0 rate is 0.585277
+missedCloseStart is 1 1 rate is 0.414723
+entropy is 0.287889
+the missedCloseStart is 0 and the count rate is 0.251597
+missedCloseStart is 0 0 rate is 0.662747
+missedCloseStart is 0 1 rate is 0.337253
+entropy is 0.232014
+the missedCloseStart is 4 and the count rate is 0.00638741
+missedCloseStart is 4 1 rate is 0.852632
+missedCloseStart is 4 0 rate is 0.147368
+entropy is 0.00385299
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 593387 points 
+positions bitstream size 5650 B (0.0716728 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 117373 B (1.48893 bpp)
+colors processing time (user): 0.484 s
+Number of points = 642769
+Number of nodes = 9481
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.416181
+missedCloseStart is 2 1 rate is 0.628581
+missedCloseStart is 2 0 rate is 0.371419
+entropy is 0.396103
+the missedCloseStart is 1 and the count rate is 0.274329
+missedCloseStart is 1 0 rate is 0.569824
+missedCloseStart is 1 1 rate is 0.430176
+entropy is 0.270457
+the missedCloseStart is 3 and the count rate is 0.0373049
+missedCloseStart is 3 1 rate is 0.67325
+missedCloseStart is 3 0 rate is 0.32675
+entropy is 0.0340061
+the missedCloseStart is 0 and the count rate is 0.265756
+missedCloseStart is 0 1 rate is 0.347026
+missedCloseStart is 0 0 rate is 0.652974
+entropy is 0.247521
+the missedCloseStart is 4 and the count rate is 0.00642958
+missedCloseStart is 4 1 rate is 0.791667
+missedCloseStart is 4 0 rate is 0.208333
+entropy is 0.00474686
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 582402 points 
+positions bitstream size 6011 B (0.0748138 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 137883 B (1.71611 bpp)
+colors processing time (user): 0.5 s
+Number of points = 685488
+Number of nodes = 11009
+Estimation of sampling = 1.01383
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.435587
+missedCloseStart is 2 0 rate is 0.357349
+missedCloseStart is 2 1 rate is 0.642651
+entropy is 0.409653
+the missedCloseStart is 3 and the count rate is 0.0207822
+missedCloseStart is 3 0 rate is 0.311239
+missedCloseStart is 3 1 rate is 0.688761
+entropy is 0.0185917
+the missedCloseStart is 1 and the count rate is 0.323112
+missedCloseStart is 1 0 rate is 0.639666
+missedCloseStart is 1 1 rate is 0.360334
+entropy is 0.304682
+the missedCloseStart is 0 and the count rate is 0.216446
+missedCloseStart is 0 0 rate is 0.699779
+missedCloseStart is 0 1 rate is 0.300221
+entropy is 0.19081
+the missedCloseStart is 4 and the count rate is 0.00407259
+missedCloseStart is 4 1 rate is 0.705882
+missedCloseStart is 4 0 rate is 0.294118
+entropy is 0.00355936
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 659919 points 
+positions bitstream size 5530 B (0.064538 bpp)
+positions processing time (user): 0.515 s
+colors bitstream size 76296 B (0.890414 bpp)
+colors processing time (user): 0.546 s
+Number of points = 703735
+Number of nodes = 14299
+Estimation of sampling = 1.14035
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.374242
+missedCloseStart is 2 1 rate is 0.617733
+missedCloseStart is 2 0 rate is 0.382267
+entropy is 0.359132
+the missedCloseStart is 3 and the count rate is 0.0738534
+missedCloseStart is 3 1 rate is 0.666913
+missedCloseStart is 3 0 rate is 0.333087
+entropy is 0.067801
+the missedCloseStart is 1 and the count rate is 0.262942
+missedCloseStart is 1 0 rate is 0.566528
+missedCloseStart is 1 1 rate is 0.433472
+entropy is 0.259574
+the missedCloseStart is 0 and the count rate is 0.263653
+missedCloseStart is 0 0 rate is 0.65395
+missedCloseStart is 0 1 rate is 0.34605
+entropy is 0.245327
+the missedCloseStart is 4 and the count rate is 0.0253102
+missedCloseStart is 4 0 rate is 0.293737
+missedCloseStart is 4 1 rate is 0.706263
+entropy is 0.0221085
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 604500 points 
+positions bitstream size 10056 B (0.114316 bpp)
+positions processing time (user): 0.546 s
+colors bitstream size 102841 B (1.16909 bpp)
+colors processing time (user): 0.515 s
+Number of points = 721203
+Number of nodes = 10718
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.388461
+missedCloseStart is 2 1 rate is 0.620288
+missedCloseStart is 2 0 rate is 0.379712
+entropy is 0.372083
+the missedCloseStart is 1 and the count rate is 0.275187
+missedCloseStart is 1 0 rate is 0.566574
+missedCloseStart is 1 1 rate is 0.433426
+entropy is 0.271657
+the missedCloseStart is 0 and the count rate is 0.293654
+missedCloseStart is 0 0 rate is 0.620068
+missedCloseStart is 0 1 rate is 0.379932
+entropy is 0.281319
+the missedCloseStart is 3 and the count rate is 0.0389931
+missedCloseStart is 3 1 rate is 0.675716
+missedCloseStart is 3 0 rate is 0.324284
+entropy is 0.0354439
+the missedCloseStart is 4 and the count rate is 0.00370523
+missedCloseStart is 4 1 rate is 0.793651
+missedCloseStart is 4 0 rate is 0.206349
+entropy is 0.00272129
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 664777 points 
+positions bitstream size 7013 B (0.0777922 bpp)
+positions processing time (user): 0.578 s
+colors bitstream size 143657 B (1.59353 bpp)
+colors processing time (user): 0.546 s
+Number of points = 755577
+Number of nodes = 11290
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.440343
+missedCloseStart is 2 1 rate is 0.628601
+missedCloseStart is 2 0 rate is 0.371399
+entropy is 0.419092
+the missedCloseStart is 1 and the count rate is 0.286514
+missedCloseStart is 1 0 rate is 0.604707
+missedCloseStart is 1 1 rate is 0.395293
+entropy is 0.277383
+the missedCloseStart is 3 and the count rate is 0.018
+missedCloseStart is 3 1 rate is 0.638095
+missedCloseStart is 3 0 rate is 0.361905
+entropy is 0.0169966
+the missedCloseStart is 0 and the count rate is 0.255029
+missedCloseStart is 0 1 rate is 0.326014
+missedCloseStart is 0 0 rate is 0.673986
+entropy is 0.23228
+the missedCloseStart is 4 and the count rate is 0.000114286
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 716318 points 
+positions bitstream size 6020 B (0.0637394 bpp)
+positions processing time (user): 0.515 s
+colors bitstream size 57198 B (0.605609 bpp)
+colors processing time (user): 0.578 s
+Number of points = 776186
+Number of nodes = 12202
+Estimation of sampling = 1.00305
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.449132
+missedCloseStart is 2 0 rate is 0.371847
+missedCloseStart is 2 1 rate is 0.628153
+entropy is 0.427609
+the missedCloseStart is 1 and the count rate is 0.289621
+missedCloseStart is 1 1 rate is 0.386478
+missedCloseStart is 1 0 rate is 0.613522
+entropy is 0.278757
+the missedCloseStart is 0 and the count rate is 0.215288
+missedCloseStart is 0 1 rate is 0.32874
+missedCloseStart is 0 0 rate is 0.67126
+entropy is 0.196694
+the missedCloseStart is 3 and the count rate is 0.0358723
+missedCloseStart is 3 0 rate is 0.360902
+missedCloseStart is 3 1 rate is 0.639098
+entropy is 0.033843
+the missedCloseStart is 4 and the count rate is 0.0100874
+missedCloseStart is 4 1 rate is 0.625668
+missedCloseStart is 4 0 rate is 0.374332
+entropy is 0.00962276
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 747193 points 
+positions bitstream size 6626 B (0.0682929 bpp)
+positions processing time (user): 0.546 s
+colors bitstream size 121245 B (1.24965 bpp)
+colors processing time (user): 0.625 s
+Number of points = 804621
+Number of nodes = 12077
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.489534
+missedCloseStart is 2 0 rate is 0.436139
+missedCloseStart is 2 1 rate is 0.563861
+entropy is 0.483758
+the missedCloseStart is 1 and the count rate is 0.271788
+missedCloseStart is 1 0 rate is 0.634327
+missedCloseStart is 1 1 rate is 0.365673
+entropy is 0.257463
+the missedCloseStart is 0 and the count rate is 0.21693
+missedCloseStart is 0 0 rate is 0.681955
+missedCloseStart is 0 1 rate is 0.318045
+entropy is 0.195724
+the missedCloseStart is 3 and the count rate is 0.0214756
+missedCloseStart is 3 1 rate is 0.643038
+missedCloseStart is 3 0 rate is 0.356962
+entropy is 0.0201899
+the missedCloseStart is 4 and the count rate is 0.000271843
+missedCloseStart is 4 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 778971 points 
+positions bitstream size 6093 B (0.0605801 bpp)
+positions processing time (user): 0.562 s
+colors bitstream size 83376 B (0.828972 bpp)
+colors processing time (user): 0.64 s
+Number of points = 829709
+Number of nodes = 12011
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.343364
+missedCloseStart is 2 0 rate is 0.370481
+missedCloseStart is 2 1 rate is 0.629519
+entropy is 0.326553
+the missedCloseStart is 1 and the count rate is 0.284101
+missedCloseStart is 1 0 rate is 0.529941
+missedCloseStart is 1 1 rate is 0.470059
+entropy is 0.283366
+the missedCloseStart is 0 and the count rate is 0.327577
+missedCloseStart is 0 1 rate is 0.388802
+missedCloseStart is 0 0 rate is 0.611198
+entropy is 0.315792
+the missedCloseStart is 3 and the count rate is 0.0405129
+missedCloseStart is 3 0 rate is 0.306431
+missedCloseStart is 3 1 rate is 0.693569
+entropy is 0.0360164
+the missedCloseStart is 4 and the count rate is 0.00444467
+missedCloseStart is 4 0 rate is 0.344828
+missedCloseStart is 4 1 rate is 0.655172
+entropy is 0.00413072
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 736340 points 
+positions bitstream size 8371 B (0.0807126 bpp)
+positions processing time (user): 0.593 s
+colors bitstream size 222996 B (2.15011 bpp)
+colors processing time (user): 0.656 s
+Number of points = 949556
+Number of nodes = 15139
+Estimation of sampling = 1.01013
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.459485
+missedCloseStart is 2 1 rate is 0.613736
+missedCloseStart is 2 0 rate is 0.386264
+entropy is 0.442184
+the missedCloseStart is 3 and the count rate is 0.0273222
+missedCloseStart is 3 0 rate is 0.402936
+missedCloseStart is 3 1 rate is 0.597064
+entropy is 0.0265747
+the missedCloseStart is 1 and the count rate is 0.292164
+missedCloseStart is 1 1 rate is 0.369184
+missedCloseStart is 1 0 rate is 0.630816
+entropy is 0.277569
+the missedCloseStart is 0 and the count rate is 0.217775
+missedCloseStart is 0 1 rate is 0.32808
+missedCloseStart is 0 0 rate is 0.67192
+entropy is 0.198818
+the missedCloseStart is 4 and the count rate is 0.0032537
+missedCloseStart is 4 1 rate is 0.643836
+missedCloseStart is 4 0 rate is 0.356164
+entropy is 0.0030567
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 919724 points 
+positions bitstream size 8033 B (0.0676779 bpp)
+positions processing time (user): 0.718 s
+colors bitstream size 107153 B (0.902763 bpp)
+colors processing time (user): 0.781 s
+Number of points = 954750
+Number of nodes = 15674
+Estimation of sampling = 1.02503
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 3 and the count rate is 0.035589
+missedCloseStart is 3 1 rate is 0.63747
+missedCloseStart is 3 0 rate is 0.36253
+entropy is 0.0336232
+the missedCloseStart is 2 and the count rate is 0.427675
+missedCloseStart is 2 1 rate is 0.629378
+missedCloseStart is 2 0 rate is 0.370622
+entropy is 0.406782
+the missedCloseStart is 1 and the count rate is 0.285535
+missedCloseStart is 1 0 rate is 0.620773
+missedCloseStart is 1 1 rate is 0.379227
+entropy is 0.273398
+the missedCloseStart is 0 and the count rate is 0.24133
+missedCloseStart is 0 1 rate is 0.321313
+missedCloseStart is 0 0 rate is 0.678687
+entropy is 0.218598
+the missedCloseStart is 4 and the count rate is 0.00987141
+missedCloseStart is 4 1 rate is 0.767544
+missedCloseStart is 4 0 rate is 0.232456
+entropy is 0.00772209
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 892420 points 
+positions bitstream size 9313 B (0.0780351 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 110188 B (0.923283 bpp)
+colors processing time (user): 0.718 s
+Total frame size 2115726 B
+Total bitstream size 2115726 B
+Processing time (wall): 253.254 s
+Processing time (user): 153.25 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 5344 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 36527 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 5132 B
+positions processing time (user): 0.328 s
+
+colors bitstream size 55029 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 4230 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 70703 B
+colors processing time (user): 0.296 s
+
+positions bitstream size 4143 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 56175 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 4047 B
+positions processing time (user): 0.312 s
+
+colors bitstream size 61669 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 5185 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 46009 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 4138 B
+positions processing time (user): 0.312 s
+
+colors bitstream size 57369 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 4539 B
+positions processing time (user): 0.328 s
+
+colors bitstream size 71182 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 5042 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 53590 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 4616 B
+positions processing time (user): 0.296 s
+
+colors bitstream size 50909 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 5430 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 69225 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 6240 B
+positions processing time (user): 0.328 s
+
+colors bitstream size 70058 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 5650 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 117373 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 6011 B
+positions processing time (user): 0.406 s
+
+colors bitstream size 137883 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 5530 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 76296 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 10056 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 102841 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 7013 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 143657 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 6020 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 57198 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 6626 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 121245 B
+colors processing time (user): 0.515 s
+
+positions bitstream size 6093 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 83376 B
+colors processing time (user): 0.515 s
+
+positions bitstream size 8371 B
+positions processing time (user): 0.468 s
+
+colors bitstream size 222996 B
+colors processing time (user): 0.562 s
+
+positions bitstream size 8033 B
+positions processing time (user): 0.531 s
+
+colors bitstream size 107153 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 9313 B
+positions processing time (user): 0.515 s
+
+colors bitstream size 110188 B
+colors processing time (user): 0.64 s
+
+Total bitstream size 2115726 B
+Processing time (wall): 22.831 s
+Processing time (user): 18.609 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 5124 5120 460
+WARNING: 21680 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 14329894, 0.19917
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 11.5522
+   mse1,PSNR (p2point): 78.4324
+   mse1      (p2plane): 4.61554
+   mse1,PSNR (p2plane): 82.4168
+   c[0],    1         : 0.00222206
+   c[1],    1         : 9.76976e-05
+   c[2],    1         : 7.13249e-05
+   c[0],PSNR1         : 26.5324
+   c[1],PSNR1         : 40.1012
+   c[2],PSNR1         : 41.4676
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 9.05721
+   mse2,PSNR (p2point): 79.4891
+   mse2      (p2plane): 6.77172
+   mse2,PSNR (p2plane): 80.7521
+   c[0],    2         : 0.0017337
+   c[1],    2         : 8.64825e-05
+   c[2],    2         : 6.61435e-05
+   c[0],PSNR2         : 27.6103
+   c[1],PSNR2         : 40.6307
+   c[2],PSNR2         : 41.7951
+3. Final (symmetric).
+   mseF      (p2point): 11.5522
+   mseF,PSNR (p2point): 78.4324
+   mseF      (p2plane): 6.77172
+   mseF,PSNR (p2plane): 80.7521
+   c[0],    F         : 0.00222206
+   c[1],    F         : 9.76976e-05
+   c[2],    F         : 7.13249e-05
+   c[0],PSNRF         : 26.5324
+   c[1],PSNRF         : 40.1012
+   c[2],PSNRF         : 41.4676
+Job done! 228.531 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply"
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.25
+    sequenceScale             : 0.25
+    positionQuantizationScale : 0.25
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 21
+Number of points = 487543
+Number of nodes = 32922
+Estimation of sampling = 1.03943
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0109385
+missedCloseStart is 4 1 rate is 0.694329
+missedCloseStart is 4 0 rate is 0.305671
+entropy is 0.00971459
+the missedCloseStart is 3 and the count rate is 0.0401531
+missedCloseStart is 3 0 rate is 0.35569
+missedCloseStart is 3 1 rate is 0.64431
+entropy is 0.0377057
+the missedCloseStart is 2 and the count rate is 0.256714
+missedCloseStart is 2 0 rate is 0.382249
+missedCloseStart is 2 1 rate is 0.617751
+entropy is 0.246346
+the missedCloseStart is 1 and the count rate is 0.295944
+missedCloseStart is 1 1 rate is 0.387812
+missedCloseStart is 1 0 rate is 0.612188
+entropy is 0.285104
+the missedCloseStart is 0 and the count rate is 0.396251
+missedCloseStart is 0 0 rate is 0.537131
+missedCloseStart is 0 1 rate is 0.462869
+entropy is 0.394673
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 504244 points 
+positions bitstream size 22254 B (0.365162 bpp)
+positions processing time (user): 0.828 s
+colors bitstream size 91074 B (1.49442 bpp)
+colors processing time (user): 0.421 s
+Number of points = 547869
+Number of nodes = 34892
+Estimation of sampling = 1.00945
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.306206
+missedCloseStart is 2 1 rate is 0.640149
+missedCloseStart is 2 0 rate is 0.359851
+entropy is 0.288617
+the missedCloseStart is 1 and the count rate is 0.375471
+missedCloseStart is 1 1 rate is 0.29819
+missedCloseStart is 1 0 rate is 0.70181
+entropy is 0.330064
+the missedCloseStart is 0 and the count rate is 0.303574
+missedCloseStart is 0 1 rate is 0.388049
+missedCloseStart is 0 0 rate is 0.611951
+entropy is 0.292503
+the missedCloseStart is 3 and the count rate is 0.0145792
+missedCloseStart is 3 0 rate is 0.335907
+missedCloseStart is 3 1 rate is 0.664093
+entropy is 0.0134253
+the missedCloseStart is 4 and the count rate is 0.000168871
+missedCloseStart is 4 0 rate is 0.416667
+missedCloseStart is 4 1 rate is 0.583333
+entropy is 0.000165472
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 548082 points 
+positions bitstream size 16342 B (0.238626 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 140265 B (2.04815 bpp)
+colors processing time (user): 0.453 s
+Number of points = 552595
+Number of nodes = 36113
+Estimation of sampling = 1.02256
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 3 and the count rate is 0.0328369
+missedCloseStart is 3 1 rate is 0.653556
+missedCloseStart is 3 0 rate is 0.346444
+entropy is 0.0305663
+the missedCloseStart is 2 and the count rate is 0.278344
+missedCloseStart is 2 1 rate is 0.617059
+missedCloseStart is 2 0 rate is 0.382941
+entropy is 0.267236
+the missedCloseStart is 1 and the count rate is 0.32547
+missedCloseStart is 1 1 rate is 0.327536
+missedCloseStart is 1 0 rate is 0.672464
+entropy is 0.296955
+the missedCloseStart is 0 and the count rate is 0.358815
+missedCloseStart is 0 1 rate is 0.441262
+missedCloseStart is 0 0 rate is 0.558738
+entropy is 0.355235
+the missedCloseStart is 4 and the count rate is 0.00453396
+missedCloseStart is 4 1 rate is 0.681818
+missedCloseStart is 4 0 rate is 0.318182
+entropy is 0.00409142
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 557413 points 
+positions bitstream size 21612 B (0.31288 bpp)
+positions processing time (user): 0.921 s
+colors bitstream size 104825 B (1.51757 bpp)
+colors processing time (user): 0.437 s
+Number of points = 560442
+Number of nodes = 38093
+Estimation of sampling = 1.04284
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.308855
+missedCloseStart is 2 0 rate is 0.376764
+missedCloseStart is 2 1 rate is 0.623236
+entropy is 0.295181
+the missedCloseStart is 1 and the count rate is 0.37051
+missedCloseStart is 1 1 rate is 0.296259
+missedCloseStart is 1 0 rate is 0.703741
+entropy is 0.324815
+the missedCloseStart is 0 and the count rate is 0.290344
+missedCloseStart is 0 1 rate is 0.400922
+missedCloseStart is 0 0 rate is 0.599078
+entropy is 0.282066
+the missedCloseStart is 3 and the count rate is 0.0257854
+missedCloseStart is 3 0 rate is 0.331449
+missedCloseStart is 3 1 rate is 0.668551
+entropy is 0.0236298
+the missedCloseStart is 4 and the count rate is 0.00450516
+missedCloseStart is 4 1 rate is 0.664706
+missedCloseStart is 4 0 rate is 0.335294
+entropy is 0.00414585
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 562027 points 
+positions bitstream size 19505 B (0.278423 bpp)
+positions processing time (user): 0.921 s
+colors bitstream size 125524 B (1.79179 bpp)
+colors processing time (user): 0.453 s
+Number of points = 573454
+Number of nodes = 36821
+Estimation of sampling = 1.01358
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.293993
+missedCloseStart is 2 0 rate is 0.384008
+missedCloseStart is 2 1 rate is 0.615992
+entropy is 0.282475
+the missedCloseStart is 3 and the count rate is 0.0256008
+missedCloseStart is 3 1 rate is 0.646226
+missedCloseStart is 3 0 rate is 0.353774
+entropy is 0.023998
+the missedCloseStart is 1 and the count rate is 0.356774
+missedCloseStart is 1 0 rate is 0.688906
+missedCloseStart is 1 1 rate is 0.311094
+entropy is 0.31911
+the missedCloseStart is 0 and the count rate is 0.320171
+missedCloseStart is 0 1 rate is 0.423686
+missedCloseStart is 0 0 rate is 0.576314
+entropy is 0.314769
+the missedCloseStart is 4 and the count rate is 0.00346174
+missedCloseStart is 4 1 rate is 0.74031
+missedCloseStart is 4 0 rate is 0.25969
+entropy is 0.00286036
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 560996 points 
+positions bitstream size 19675 B (0.274477 bpp)
+positions processing time (user): 0.968 s
+colors bitstream size 119593 B (1.66839 bpp)
+colors processing time (user): 0.468 s
+Number of points = 598189
+Number of nodes = 36789
+Estimation of sampling = 1
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.301435
+missedCloseStart is 2 1 rate is 0.599011
+missedCloseStart is 2 0 rate is 0.400989
+entropy is 0.292852
+the missedCloseStart is 1 and the count rate is 0.365808
+missedCloseStart is 1 0 rate is 0.671846
+missedCloseStart is 1 1 rate is 0.328154
+entropy is 0.333993
+the missedCloseStart is 0 and the count rate is 0.308754
+missedCloseStart is 0 0 rate is 0.591175
+missedCloseStart is 0 1 rate is 0.408825
+entropy is 0.301307
+the missedCloseStart is 3 and the count rate is 0.0213257
+missedCloseStart is 3 0 rate is 0.296846
+missedCloseStart is 3 1 rate is 0.703154
+entropy is 0.0187112
+the missedCloseStart is 4 and the count rate is 0.00267725
+missedCloseStart is 4 1 rate is 0.802956
+missedCloseStart is 4 0 rate is 0.197044
+entropy is 0.00191685
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 569454 points 
+positions bitstream size 18194 B (0.243321 bpp)
+positions processing time (user): 0.906 s
+colors bitstream size 135783 B (1.81592 bpp)
+colors processing time (user): 0.484 s
+Number of points = 604274
+Number of nodes = 39344
+Estimation of sampling = 1.02066
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.301934
+missedCloseStart is 2 1 rate is 0.59902
+missedCloseStart is 2 0 rate is 0.40098
+entropy is 0.293335
+the missedCloseStart is 1 and the count rate is 0.345387
+missedCloseStart is 1 0 rate is 0.67695
+missedCloseStart is 1 1 rate is 0.32305
+entropy is 0.313496
+the missedCloseStart is 0 and the count rate is 0.315875
+missedCloseStart is 0 0 rate is 0.585467
+missedCloseStart is 0 1 rate is 0.414533
+entropy is 0.309184
+the missedCloseStart is 3 and the count rate is 0.0316734
+missedCloseStart is 3 0 rate is 0.271349
+missedCloseStart is 3 1 rate is 0.728651
+entropy is 0.0267131
+the missedCloseStart is 4 and the count rate is 0.00513145
+missedCloseStart is 4 0 rate is 0.150246
+missedCloseStart is 4 1 rate is 0.849754
+entropy is 0.00313252
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 587945 points 
+positions bitstream size 19570 B (0.259088 bpp)
+positions processing time (user): 0.953 s
+colors bitstream size 158696 B (2.10098 bpp)
+colors processing time (user): 0.515 s
+Number of points = 621884
+Number of nodes = 39788
+Estimation of sampling = 1.01177
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.274557
+missedCloseStart is 2 1 rate is 0.618447
+missedCloseStart is 2 0 rate is 0.381553
+entropy is 0.263336
+the missedCloseStart is 1 and the count rate is 0.359616
+missedCloseStart is 1 0 rate is 0.671155
+missedCloseStart is 1 1 rate is 0.328845
+entropy is 0.328596
+the missedCloseStart is 3 and the count rate is 0.0244072
+missedCloseStart is 3 0 rate is 0.302104
+missedCloseStart is 3 1 rate is 0.697896
+entropy is 0.0215723
+the missedCloseStart is 0 and the count rate is 0.334903
+missedCloseStart is 0 0 rate is 0.571053
+missedCloseStart is 0 1 rate is 0.428947
+entropy is 0.330008
+the missedCloseStart is 4 and the count rate is 0.00651757
+missedCloseStart is 4 1 rate is 0.80863
+missedCloseStart is 4 0 rate is 0.19137
+entropy is 0.0045905
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 618222 points 
+positions bitstream size 21834 B (0.280876 bpp)
+positions processing time (user): 0.984 s
+colors bitstream size 222198 B (2.85839 bpp)
+colors processing time (user): 0.515 s
+Number of points = 621999
+Number of nodes = 43153
+Estimation of sampling = 1.05359
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.0172424
+missedCloseStart is 4 1 rate is 0.728328
+missedCloseStart is 4 0 rate is 0.271672
+entropy is 0.0145501
+the missedCloseStart is 3 and the count rate is 0.0301183
+missedCloseStart is 3 1 rate is 0.624853
+missedCloseStart is 3 0 rate is 0.375147
+entropy is 0.0287492
+the missedCloseStart is 1 and the count rate is 0.34892
+missedCloseStart is 1 1 rate is 0.328139
+missedCloseStart is 1 0 rate is 0.671861
+entropy is 0.318569
+the missedCloseStart is 2 and the count rate is 0.282046
+missedCloseStart is 2 1 rate is 0.620431
+missedCloseStart is 2 0 rate is 0.379569
+entropy is 0.270126
+the missedCloseStart is 0 and the count rate is 0.321674
+missedCloseStart is 0 0 rate is 0.572427
+missedCloseStart is 0 1 rate is 0.427573
+entropy is 0.316788
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 624790 points 
+positions bitstream size 25309 B (0.325518 bpp)
+positions processing time (user): 1.031 s
+colors bitstream size 160925 B (2.06978 bpp)
+colors processing time (user): 0.531 s
+Number of points = 656176
+Number of nodes = 41923
+Estimation of sampling = 1.01106
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.279671
+missedCloseStart is 2 1 rate is 0.613998
+missedCloseStart is 2 0 rate is 0.386002
+entropy is 0.269092
+the missedCloseStart is 1 and the count rate is 0.319603
+missedCloseStart is 1 1 rate is 0.367923
+missedCloseStart is 1 0 rate is 0.632077
+entropy is 0.303324
+the missedCloseStart is 3 and the count rate is 0.0302023
+missedCloseStart is 3 1 rate is 0.686752
+missedCloseStart is 3 0 rate is 0.313248
+entropy is 0.0270881
+the missedCloseStart is 0 and the count rate is 0.364691
+missedCloseStart is 0 1 rate is 0.447124
+missedCloseStart is 0 0 rate is 0.552876
+entropy is 0.361743
+the missedCloseStart is 4 and the count rate is 0.00583281
+missedCloseStart is 4 1 rate is 0.818
+missedCloseStart is 4 0 rate is 0.182
+entropy is 0.00399217
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 655585 points 
+positions bitstream size 24828 B (0.302699 bpp)
+positions processing time (user): 1.093 s
+colors bitstream size 264092 B (3.21977 bpp)
+colors processing time (user): 0.64 s
+Number of points = 686995
+Number of nodes = 45021
+Estimation of sampling = 1.02398
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.302652
+missedCloseStart is 2 0 rate is 0.376459
+missedCloseStart is 2 1 rate is 0.623541
+entropy is 0.289185
+the missedCloseStart is 1 and the count rate is 0.380632
+missedCloseStart is 1 0 rate is 0.693393
+missedCloseStart is 1 1 rate is 0.306607
+entropy is 0.338465
+the missedCloseStart is 0 and the count rate is 0.291944
+missedCloseStart is 0 1 rate is 0.407108
+missedCloseStart is 0 0 rate is 0.592892
+entropy is 0.284633
+the missedCloseStart is 3 and the count rate is 0.0205415
+missedCloseStart is 3 1 rate is 0.673315
+missedCloseStart is 3 0 rate is 0.326685
+entropy is 0.0187236
+the missedCloseStart is 4 and the count rate is 0.00423011
+missedCloseStart is 4 1 rate is 0.706806
+missedCloseStart is 4 0 rate is 0.293194
+entropy is 0.00369209
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 671153 points 
+positions bitstream size 21390 B (0.249085 bpp)
+positions processing time (user): 1.078 s
+colors bitstream size 183028 B (2.13135 bpp)
+colors processing time (user): 0.546 s
+Number of points = 703574
+Number of nodes = 45483
+Estimation of sampling = 1.01702
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.263186
+missedCloseStart is 2 1 rate is 0.610317
+missedCloseStart is 2 0 rate is 0.389683
+entropy is 0.253868
+the missedCloseStart is 1 and the count rate is 0.324418
+missedCloseStart is 1 0 rate is 0.629234
+missedCloseStart is 1 1 rate is 0.370766
+entropy is 0.308605
+the missedCloseStart is 0 and the count rate is 0.373164
+missedCloseStart is 0 1 rate is 0.454824
+missedCloseStart is 0 0 rate is 0.545176
+entropy is 0.370964
+the missedCloseStart is 3 and the count rate is 0.0352126
+missedCloseStart is 3 1 rate is 0.707347
+missedCloseStart is 3 0 rate is 0.292653
+entropy is 0.0307098
+the missedCloseStart is 4 and the count rate is 0.00401941
+missedCloseStart is 4 1 rate is 0.781915
+missedCloseStart is 4 0 rate is 0.218085
+entropy is 0.00304131
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 723896 points 
+positions bitstream size 27855 B (0.316726 bpp)
+positions processing time (user): 1.281 s
+colors bitstream size 273435 B (3.1091 bpp)
+colors processing time (user): 0.64 s
+Number of points = 734934
+Number of nodes = 54810
+Estimation of sampling = 1.09236
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.265525
+missedCloseStart is 2 1 rate is 0.606802
+missedCloseStart is 2 0 rate is 0.393198
+entropy is 0.256718
+the missedCloseStart is 1 and the count rate is 0.304867
+missedCloseStart is 1 1 rate is 0.377422
+missedCloseStart is 1 0 rate is 0.622578
+entropy is 0.291514
+the missedCloseStart is 3 and the count rate is 0.054069
+missedCloseStart is 3 0 rate is 0.328576
+missedCloseStart is 3 1 rate is 0.671424
+entropy is 0.0493901
+the missedCloseStart is 0 and the count rate is 0.357897
+missedCloseStart is 0 0 rate is 0.537249
+missedCloseStart is 0 1 rate is 0.462751
+entropy is 0.356463
+the missedCloseStart is 4 and the count rate is 0.017642
+missedCloseStart is 4 1 rate is 0.729482
+missedCloseStart is 4 0 rate is 0.270518
+entropy is 0.0148582
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 755593 points 
+positions bitstream size 39087 B (0.425475 bpp)
+positions processing time (user): 1.343 s
+colors bitstream size 234937 B (2.55737 bpp)
+colors processing time (user): 0.718 s
+Number of points = 778457
+Number of nodes = 50480
+Estimation of sampling = 1.0186
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.300484
+missedCloseStart is 2 1 rate is 0.624335
+missedCloseStart is 2 0 rate is 0.375665
+entropy is 0.286939
+the missedCloseStart is 1 and the count rate is 0.361858
+missedCloseStart is 1 1 rate is 0.31214
+missedCloseStart is 1 0 rate is 0.68786
+entropy is 0.32409
+the missedCloseStart is 3 and the count rate is 0.025236
+missedCloseStart is 3 1 rate is 0.666927
+missedCloseStart is 3 0 rate is 0.333073
+entropy is 0.0231676
+the missedCloseStart is 0 and the count rate is 0.303444
+missedCloseStart is 0 1 rate is 0.406723
+missedCloseStart is 0 0 rate is 0.593277
+entropy is 0.295781
+the missedCloseStart is 4 and the count rate is 0.00897763
+missedCloseStart is 4 1 rate is 0.685714
+missedCloseStart is 4 0 rate is 0.314286
+entropy is 0.00806244
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 757840 points 
+positions bitstream size 25463 B (0.261677 bpp)
+positions processing time (user): 1.312 s
+colors bitstream size 249132 B (2.56026 bpp)
+colors processing time (user): 0.703 s
+Number of points = 794563
+Number of nodes = 50399
+Estimation of sampling = 1.00741
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.289624
+missedCloseStart is 2 0 rate is 0.372242
+missedCloseStart is 2 1 rate is 0.627758
+entropy is 0.275832
+the missedCloseStart is 1 and the count rate is 0.358495
+missedCloseStart is 1 0 rate is 0.68055
+missedCloseStart is 1 1 rate is 0.31945
+entropy is 0.324001
+the missedCloseStart is 0 and the count rate is 0.332265
+missedCloseStart is 0 1 rate is 0.421381
+missedCloseStart is 0 0 rate is 0.578619
+entropy is 0.326315
+the missedCloseStart is 3 and the count rate is 0.0190219
+missedCloseStart is 3 0 rate is 0.350742
+missedCloseStart is 3 1 rate is 0.649258
+entropy is 0.0177804
+the missedCloseStart is 4 and the count rate is 0.000594131
+missedCloseStart is 4 1 rate is 0.688525
+missedCloseStart is 4 0 rate is 0.311475
+entropy is 0.000531669
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 793461 points 
+positions bitstream size 26906 B (0.270901 bpp)
+positions processing time (user): 1.234 s
+colors bitstream size 179406 B (1.80634 bpp)
+colors processing time (user): 0.734 s
+Number of points = 818528
+Number of nodes = 52670
+Estimation of sampling = 1.01467
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.236195
+missedCloseStart is 2 0 rate is 0.383259
+missedCloseStart is 2 1 rate is 0.616741
+entropy is 0.226821
+the missedCloseStart is 3 and the count rate is 0.0365731
+missedCloseStart is 3 1 rate is 0.726205
+missedCloseStart is 3 0 rate is 0.273795
+entropy is 0.0309722
+the missedCloseStart is 1 and the count rate is 0.302379
+missedCloseStart is 1 0 rate is 0.611192
+missedCloseStart is 1 1 rate is 0.388808
+entropy is 0.291501
+the missedCloseStart is 0 and the count rate is 0.418795
+missedCloseStart is 0 1 rate is 0.475021
+missedCloseStart is 0 0 rate is 0.524979
+entropy is 0.418041
+the missedCloseStart is 4 and the count rate is 0.00605745
+missedCloseStart is 4 1 rate is 0.79638
+missedCloseStart is 4 0 rate is 0.20362
+entropy is 0.00441654
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 856487 points 
+positions bitstream size 34717 B (0.339312 bpp)
+positions processing time (user): 1.437 s
+colors bitstream size 394778 B (3.85842 bpp)
+colors processing time (user): 0.828 s
+Number of points = 834733
+Number of nodes = 52303
+Estimation of sampling = 1.00127
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.297832
+missedCloseStart is 2 1 rate is 0.626458
+missedCloseStart is 2 0 rate is 0.373542
+entropy is 0.283939
+the missedCloseStart is 1 and the count rate is 0.374085
+missedCloseStart is 1 0 rate is 0.685956
+missedCloseStart is 1 1 rate is 0.314044
+entropy is 0.335848
+the missedCloseStart is 0 and the count rate is 0.307157
+missedCloseStart is 0 1 rate is 0.420424
+missedCloseStart is 0 0 rate is 0.579576
+entropy is 0.301521
+the missedCloseStart is 3 and the count rate is 0.0204771
+missedCloseStart is 3 1 rate is 0.702789
+missedCloseStart is 3 0 rate is 0.297211
+entropy is 0.017976
+the missedCloseStart is 4 and the count rate is 0.00044943
+missedCloseStart is 4 1 rate is 0.6875
+missedCloseStart is 4 0 rate is 0.3125
+entropy is 0.000402706
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 817591 points 
+positions bitstream size 25929 B (0.248501 bpp)
+positions processing time (user): 1.343 s
+colors bitstream size 218506 B (2.09414 bpp)
+colors processing time (user): 0.671 s
+Number of points = 941457
+Number of nodes = 62403
+Estimation of sampling = 1.02982
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 4 and the count rate is 0.00693391
+missedCloseStart is 4 0 rate is 0.252315
+missedCloseStart is 4 1 rate is 0.747685
+entropy is 0.00565063
+the missedCloseStart is 3 and the count rate is 0.029758
+missedCloseStart is 3 1 rate is 0.682309
+missedCloseStart is 3 0 rate is 0.317691
+entropy is 0.0268374
+the missedCloseStart is 2 and the count rate is 0.292171
+missedCloseStart is 2 1 rate is 0.614926
+missedCloseStart is 2 0 rate is 0.385074
+entropy is 0.280936
+the missedCloseStart is 1 and the count rate is 0.346519
+missedCloseStart is 1 1 rate is 0.302399
+missedCloseStart is 1 0 rate is 0.697601
+entropy is 0.306394
+the missedCloseStart is 0 and the count rate is 0.324618
+missedCloseStart is 0 1 rate is 0.429133
+missedCloseStart is 0 0 rate is 0.570867
+entropy is 0.319898
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 944573 points 
+positions bitstream size 34980 B (0.297241 bpp)
+positions processing time (user): 1.593 s
+colors bitstream size 239080 B (2.03157 bpp)
+colors processing time (user): 0.796 s
+Number of points = 948348
+Number of nodes = 63020
+Estimation of sampling = 1.03113
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 3 and the count rate is 0.0231596
+missedCloseStart is 3 1 rate is 0.662783
+missedCloseStart is 3 0 rate is 0.337217
+entropy is 0.0213562
+the missedCloseStart is 2 and the count rate is 0.297067
+missedCloseStart is 2 1 rate is 0.624436
+missedCloseStart is 2 0 rate is 0.375564
+entropy is 0.283654
+the missedCloseStart is 1 and the count rate is 0.363673
+missedCloseStart is 1 0 rate is 0.685275
+missedCloseStart is 1 1 rate is 0.314725
+entropy is 0.326779
+the missedCloseStart is 0 and the count rate is 0.312631
+missedCloseStart is 0 1 rate is 0.412262
+missedCloseStart is 0 0 rate is 0.587738
+entropy is 0.305651
+the missedCloseStart is 4 and the count rate is 0.00346839
+missedCloseStart is 4 0 rate is 0.292906
+missedCloseStart is 4 1 rate is 0.707094
+entropy is 0.00302598
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 951312 points 
+positions bitstream size 32225 B (0.271841 bpp)
+positions processing time (user): 1.578 s
+colors bitstream size 252192 B (2.12742 bpp)
+colors processing time (user): 0.828 s
+Number of points = 1094934
+Number of nodes = 69460
+Estimation of sampling = 1.00747
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.306079
+missedCloseStart is 2 1 rate is 0.629729
+missedCloseStart is 2 0 rate is 0.370271
+entropy is 0.291044
+the missedCloseStart is 3 and the count rate is 0.0154415
+missedCloseStart is 3 1 rate is 0.672927
+missedCloseStart is 3 0 rate is 0.327073
+entropy is 0.0140813
+the missedCloseStart is 1 and the count rate is 0.381356
+missedCloseStart is 1 0 rate is 0.696789
+missedCloseStart is 1 1 rate is 0.303211
+entropy is 0.337568
+the missedCloseStart is 0 and the count rate is 0.29689
+missedCloseStart is 0 1 rate is 0.397527
+missedCloseStart is 0 0 rate is 0.602473
+entropy is 0.287831
+the missedCloseStart is 4 and the count rate is 0.000233427
+missedCloseStart is 4 0 rate is 0.181818
+missedCloseStart is 4 1 rate is 0.818182
+entropy is 0.000159673
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1068801 points 
+positions bitstream size 31210 B (0.228032 bpp)
+positions processing time (user): 1.687 s
+colors bitstream size 293232 B (2.14246 bpp)
+colors processing time (user): 0.89 s
+Number of points = 1098764
+Number of nodes = 68848
+Estimation of sampling = 1.00128
+distanceSearchEncoder = 1
+
+encode the position and the data for the missedCloseStart
+the missedCloseStart is 2 and the count rate is 0.311308
+missedCloseStart is 2 1 rate is 0.610113
+missedCloseStart is 2 0 rate is 0.389887
+entropy is 0.300328
+the missedCloseStart is 1 and the count rate is 0.385111
+missedCloseStart is 1 0 rate is 0.69444
+missedCloseStart is 1 1 rate is 0.30556
+entropy is 0.341972
+the missedCloseStart is 0 and the count rate is 0.284032
+missedCloseStart is 0 1 rate is 0.403753
+missedCloseStart is 0 0 rate is 0.596247
+entropy is 0.276392
+the missedCloseStart is 3 and the count rate is 0.0175985
+missedCloseStart is 3 1 rate is 0.668419
+missedCloseStart is 3 0 rate is 0.331581
+entropy is 0.0161297
+the missedCloseStart is 4 and the count rate is 0.00194986
+missedCloseStart is 4 1 rate is 0.784672
+missedCloseStart is 4 0 rate is 0.215328
+entropy is 0.00146541
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1064983 points 
+positions bitstream size 31658 B (0.230499 bpp)
+positions processing time (user): 1.734 s
+colors bitstream size 298820 B (2.17568 bpp)
+colors processing time (user): 0.921 s
+Total frame size 4880317 B
+Total bitstream size 4880317 B
+Processing time (wall): 274.75 s
+Processing time (user): 171.468 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\second\missedCloseStart\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 22254 B
+positions processing time (user): 0.703 s
+
+colors bitstream size 91074 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 16342 B
+positions processing time (user): 0.703 s
+
+colors bitstream size 140265 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 21612 B
+positions processing time (user): 0.687 s
+
+colors bitstream size 104825 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 19505 B
+positions processing time (user): 0.718 s
+
+colors bitstream size 125524 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 19675 B
+positions processing time (user): 0.671 s
+
+colors bitstream size 119593 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 18194 B
+positions processing time (user): 0.734 s
+
+colors bitstream size 135783 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 19570 B
+positions processing time (user): 0.859 s
+
+colors bitstream size 158696 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 21834 B
+positions processing time (user): 0.796 s
+
+colors bitstream size 222198 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 25309 B
+positions processing time (user): 0.812 s
+
+colors bitstream size 160925 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 24828 B
+positions processing time (user): 0.906 s
+
+colors bitstream size 264092 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 21390 B
+positions processing time (user): 0.89 s
+
+colors bitstream size 183028 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 27855 B
+positions processing time (user): 1 s
+
+colors bitstream size 273435 B
+colors processing time (user): 0.562 s
+
+positions bitstream size 39087 B
+positions processing time (user): 1.14 s
+
+colors bitstream size 234937 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 25463 B
+positions processing time (user): 1.078 s
+
+colors bitstream size 249132 B
+colors processing time (user): 0.546 s
+
+positions bitstream size 26906 B
+positions processing time (user): 1.031 s
+
+colors bitstream size 179406 B
+colors processing time (user): 0.578 s
+
+positions bitstream size 34717 B
+positions processing time (user): 1.203 s
+
+colors bitstream size 394778 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 25929 B
+positions processing time (user): 1.046 s
+
+colors bitstream size 218506 B
+colors processing time (user): 0.609 s
+
+positions bitstream size 34980 B
+positions processing time (user): 1.265 s
+
+colors bitstream size 239080 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 32225 B
+positions processing time (user): 1.281 s
+
+colors bitstream size 252192 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 31210 B
+positions processing time (user): 1.312 s
+
+colors bitstream size 293232 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 31658 B
+positions processing time (user): 1.359 s
+
+colors bitstream size 298820 B
+colors processing time (user): 0.687 s
+
+Total bitstream size 4880317 B
+Processing time (wall): 37.516 s
+Processing time (user): 31.609 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 10176 7628 496
+WARNING: 5165 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 15189283, 0.211114
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 6.39388
+   mse1,PSNR (p2point): 81.0014
+   mse1      (p2plane): 2.39179
+   mse1,PSNR (p2plane): 85.2718
+   c[0],    1         : 0.00179144
+   c[1],    1         : 6.85084e-05
+   c[2],    1         : 4.85378e-05
+   c[0],PSNR1         : 27.468
+   c[1],PSNR1         : 41.6426
+   c[2],PSNR1         : 43.1392
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 6.0558
+   mse2,PSNR (p2point): 81.2374
+   mse2      (p2plane): 4.16518
+   mse2,PSNR (p2plane): 82.8627
+   c[0],    2         : 0.00131084
+   c[1],    2         : 6.43041e-05
+   c[2],    2         : 4.52096e-05
+   c[0],PSNR2         : 28.8245
+   c[1],PSNR2         : 41.9176
+   c[2],PSNR2         : 43.4477
+3. Final (symmetric).
+   mseF      (p2point): 6.39388
+   mseF,PSNR (p2point): 81.0014
+   mseF      (p2plane): 4.16518
+   mseF,PSNR (p2plane): 82.8627
+   c[0],    F         : 0.00179144
+   c[1],    F         : 6.85084e-05
+   c[2],    F         : 4.85378e-05
+   c[0],PSNRF         : 27.468
+   c[1],PSNRF         : 41.6426
+   c[2],PSNRF         : 43.1392
+Job done! 237.625 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
+MPEG PCC tmc3 version 
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 10176 7628 496
+WARNING: 5165 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 15189283, 0.211114
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 6.39388
+   mse1,PSNR (p2point): 81.0014
+   mse1      (p2plane): 2.39179
+   mse1,PSNR (p2plane): 85.2718
+   c[0],    1         : 0.00179144
+   c[1],    1         : 6.85084e-05
+   c[2],    1         : 4.85378e-05
+   c[0],PSNR1         : 27.468
+   c[1],PSNR1         : 41.6426
+   c[2],PSNR1         : 43.1392
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 6.0558
+   mse2,PSNR (p2point): 81.2374
+   mse2      (p2plane): 4.16518
+   mse2,PSNR (p2plane): 82.8627
+   c[0],    2         : 0.00131084
+   c[1],    2         : 6.43041e-05
+   c[2],    2         : 4.52096e-05
+   c[0],PSNR2         : 28.8245
+   c[1],PSNR2         : 41.9176
+   c[2],PSNR2         : 43.4477
+3. Final (symmetric).
+   mseF      (p2point): 6.39388
+   mseF,PSNR (p2point): 81.0014
+   mseF      (p2plane): 4.16518
+   mseF,PSNR (p2plane): 82.8627
+   c[0],    F         : 0.00179144
+   c[1],    F         : 6.85084e-05
+   c[2],    F         : 4.85378e-05
+   c[0],PSNRF         : 27.468
+   c[1],PSNRF         : 41.6426
+   c[2],PSNRF         : 43.1392
+Job done! 190.891 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
+MPEG PCC tmc3 version 
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\landscape_00014_vox14.ply
+infile2:        F:\YK\position\second\missedCloseStart\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\landscape_00014_vox14_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     16383
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 9601 4844 299
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 10176 7628 496
+WARNING: 5165 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 16383
+Peak distance for PSNR: 16383
+Point cloud sizes for org version, dec version, and the scaling ratio: 71948094, 15189283, 0.211114
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 6.39388
+   mse1,PSNR (p2point): 81.0014
+   mse1      (p2plane): 2.39179
+   mse1,PSNR (p2plane): 85.2718
+   c[0],    1         : 0.00179144
+   c[1],    1         : 6.85084e-05
+   c[2],    1         : 4.85378e-05
+   c[0],PSNR1         : 27.468
+   c[1],PSNR1         : 41.6426
+   c[2],PSNR1         : 43.1392
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 6.0558
+   mse2,PSNR (p2point): 81.2374
+   mse2      (p2plane): 4.16518
+   mse2,PSNR (p2plane): 82.8627
+   c[0],    2         : 0.00131084
+   c[1],    2         : 6.43041e-05
+   c[2],    2         : 4.52096e-05
+   c[0],PSNR2         : 28.8245
+   c[1],PSNR2         : 41.9176
+   c[2],PSNR2         : 43.4477
+3. Final (symmetric).
+   mseF      (p2point): 6.39388
+   mseF,PSNR (p2point): 81.0014
+   mseF      (p2plane): 4.16518
+   mseF,PSNR (p2plane): 82.8627
+   c[0],    F         : 0.00179144
+   c[1],    F         : 6.85084e-05
+   c[2],    F         : 4.85378e-05
+   c[0],PSNRF         : 27.468
+   c[1],PSNRF         : 41.6426
+   c[2],PSNRF         : 43.1392
+Job done! 191.859 seconds elapsed (excluding the time to load the point clouds).

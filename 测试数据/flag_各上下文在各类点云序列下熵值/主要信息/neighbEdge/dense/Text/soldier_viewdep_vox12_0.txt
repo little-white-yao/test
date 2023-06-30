@@ -1,0 +1,2881 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 28008
+Number of nodes = 46
+Estimation of sampling = 1.29684
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0899281
+neighbEdgeSegCtx is 1 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 12 and the count rate is 0.100719
+neighbEdgeSegCtx is 12 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 4 and the count rate is 0.122302
+neighbEdgeSegCtx is 4 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 5 and the count rate is 0.0431655
+neighbEdgeSegCtx is 5 0 rate is 0.916667
+neighbEdgeSegCtx is 5 1 rate is 0.0833333
+entropy is 0.0178626
+the neighbEdgeSegCtx is 3 and the count rate is 0.118705
+neighbEdgeSegCtx is 3 1 rate is 0.393939
+neighbEdgeSegCtx is 3 0 rate is 0.606061
+entropy is 0.114823
+the neighbEdgeSegCtx is 2 and the count rate is 0.111511
+neighbEdgeSegCtx is 2 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 8 and the count rate is 0.0971223
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 15 and the count rate is 0.136691
+neighbEdgeSegCtx is 15 1 rate is 0.868421
+neighbEdgeSegCtx is 15 0 rate is 0.131579
+entropy is 0.0767863
+the neighbEdgeSegCtx is 13 and the count rate is 0.0503597
+neighbEdgeSegCtx is 13 0 rate is 0.928571
+neighbEdgeSegCtx is 13 1 rate is 0.0714286
+entropy is 0.0186952
+the neighbEdgeSegCtx is 14 and the count rate is 0.0251799
+neighbEdgeSegCtx is 14 1 rate is 0.142857
+neighbEdgeSegCtx is 14 0 rate is 0.857143
+entropy is 0.0148982
+the neighbEdgeSegCtx is 11 and the count rate is 0.0395683
+neighbEdgeSegCtx is 11 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 7 and the count rate is 0.0179856
+neighbEdgeSegCtx is 7 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 10 and the count rate is 0.0467626
+neighbEdgeSegCtx is 10 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 30501 points 
+positions bitstream size 72 B (0.0205656 bpp)
+positions processing time (user): 0.031 s
+colors bitstream size 680 B (0.19423 bpp)
+colors processing time (user): 0.031 s
+Number of points = 184927
+Number of nodes = 285
+Estimation of sampling = 1.25624
+distanceSearchEncoder = 2
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.04811
+neighbEdgeSegCtx is 1 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 13 and the count rate is 0.04811
+neighbEdgeSegCtx is 13 1 rate is 0.142857
+neighbEdgeSegCtx is 13 0 rate is 0.857143
+entropy is 0.0284654
+the neighbEdgeSegCtx is 5 and the count rate is 0.105842
+neighbEdgeSegCtx is 5 0 rate is 0.876623
+neighbEdgeSegCtx is 5 1 rate is 0.123377
+entropy is 0.0570477
+the neighbEdgeSegCtx is 12 and the count rate is 0.0886598
+neighbEdgeSegCtx is 12 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 4 and the count rate is 0.0618557
+neighbEdgeSegCtx is 4 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 3 and the count rate is 0.0914089
+neighbEdgeSegCtx is 3 0 rate is 0.864662
+neighbEdgeSegCtx is 3 1 rate is 0.135338
+entropy is 0.0522767
+the neighbEdgeSegCtx is 15 and the count rate is 0.202749
+neighbEdgeSegCtx is 15 1 rate is 0.915254
+neighbEdgeSegCtx is 15 0 rate is 0.0847458
+entropy is 0.0848879
+the neighbEdgeSegCtx is 2 and the count rate is 0.0707904
+neighbEdgeSegCtx is 2 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 11 and the count rate is 0.0570447
+neighbEdgeSegCtx is 11 0 rate is 0.807229
+neighbEdgeSegCtx is 11 1 rate is 0.192771
+entropy is 0.0403438
+the neighbEdgeSegCtx is 14 and the count rate is 0.0460481
+neighbEdgeSegCtx is 14 1 rate is 0.0597015
+neighbEdgeSegCtx is 14 0 rate is 0.940299
+entropy is 0.0150236
+the neighbEdgeSegCtx is 8 and the count rate is 0.0597938
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 10 and the count rate is 0.0852234
+neighbEdgeSegCtx is 10 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 7 and the count rate is 0.0343643
+neighbEdgeSegCtx is 7 0 rate is 0.86
+neighbEdgeSegCtx is 7 1 rate is 0.14
+entropy is 0.0200769
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 223037 points 
+positions bitstream size 272 B (0.0117668 bpp)
+positions processing time (user): 0.125 s
+colors bitstream size 3473 B (0.150243 bpp)
+colors processing time (user): 0.14 s
+Number of points = 874052
+Number of nodes = 1284
+Estimation of sampling = 1.22649
+distanceSearchEncoder = 2
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0459144
+neighbEdgeSegCtx is 1 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 13 and the count rate is 0.0516732
+neighbEdgeSegCtx is 13 0 rate is 0.816265
+neighbEdgeSegCtx is 13 1 rate is 0.183735
+entropy is 0.0355604
+the neighbEdgeSegCtx is 5 and the count rate is 0.118132
+neighbEdgeSegCtx is 5 0 rate is 0.981555
+neighbEdgeSegCtx is 5 1 rate is 0.0184453
+entropy is 0.0156667
+the neighbEdgeSegCtx is 12 and the count rate is 0.0785992
+neighbEdgeSegCtx is 12 0 rate is 0.922772
+neighbEdgeSegCtx is 12 1 rate is 0.0772277
+entropy is 0.0308372
+the neighbEdgeSegCtx is 4 and the count rate is 0.0571206
+neighbEdgeSegCtx is 4 0 rate is 0.989101
+neighbEdgeSegCtx is 4 1 rate is 0.0108992
+entropy is 0.00495218
+the neighbEdgeSegCtx is 15 and the count rate is 0.210117
+neighbEdgeSegCtx is 15 1 rate is 0.93037
+neighbEdgeSegCtx is 15 0 rate is 0.0696296
+entropy is 0.0765959
+the neighbEdgeSegCtx is 7 and the count rate is 0.0403113
+neighbEdgeSegCtx is 7 0 rate is 0.814672
+neighbEdgeSegCtx is 7 1 rate is 0.185328
+entropy is 0.0278791
+the neighbEdgeSegCtx is 3 and the count rate is 0.0823346
+neighbEdgeSegCtx is 3 0 rate is 0.990548
+neighbEdgeSegCtx is 3 1 rate is 0.0094518
+entropy is 0.00635101
+the neighbEdgeSegCtx is 2 and the count rate is 0.0564981
+neighbEdgeSegCtx is 2 0 rate is 0.997245
+neighbEdgeSegCtx is 2 1 rate is 0.00275482
+entropy is 0.00154779
+the neighbEdgeSegCtx is 11 and the count rate is 0.0510506
+neighbEdgeSegCtx is 11 1 rate is 0.213415
+neighbEdgeSegCtx is 11 0 rate is 0.786585
+entropy is 0.0381838
+the neighbEdgeSegCtx is 14 and the count rate is 0.0434241
+neighbEdgeSegCtx is 14 0 rate is 0.831541
+neighbEdgeSegCtx is 14 1 rate is 0.168459
+entropy is 0.0284066
+the neighbEdgeSegCtx is 10 and the count rate is 0.115642
+neighbEdgeSegCtx is 10 0 rate is 0.944818
+neighbEdgeSegCtx is 10 1 rate is 0.0551817
+entropy is 0.0356193
+the neighbEdgeSegCtx is 8 and the count rate is 0.0490272
+neighbEdgeSegCtx is 8 0 rate is 0.993651
+neighbEdgeSegCtx is 8 1 rate is 0.00634921
+entropy is 0.00271979
+the neighbEdgeSegCtx is 6 and the count rate is 0.000155642
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1082953 points 
+positions bitstream size 958 B (0.00876836 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 9554 B (0.0874456 bpp)
+colors processing time (user): 0.75 s
+Number of points = 467804
+Number of nodes = 736
+Estimation of sampling = 1.26928
+distanceSearchEncoder = 2
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0695767
+neighbEdgeSegCtx is 1 0 rate is 0.996198
+neighbEdgeSegCtx is 1 1 rate is 0.00380228
+entropy is 0.00250764
+the neighbEdgeSegCtx is 5 and the count rate is 0.100794
+neighbEdgeSegCtx is 5 0 rate is 0.908136
+neighbEdgeSegCtx is 5 1 rate is 0.0918635
+entropy is 0.0446173
+the neighbEdgeSegCtx is 12 and the count rate is 0.0825397
+neighbEdgeSegCtx is 12 0 rate is 0.884615
+neighbEdgeSegCtx is 12 1 rate is 0.115385
+entropy is 0.0425861
+the neighbEdgeSegCtx is 4 and the count rate is 0.0529101
+neighbEdgeSegCtx is 4 0 rate is 0.99
+neighbEdgeSegCtx is 4 1 rate is 0.01
+entropy is 0.00427477
+the neighbEdgeSegCtx is 15 and the count rate is 0.193386
+neighbEdgeSegCtx is 15 1 rate is 0.942544
+neighbEdgeSegCtx is 15 0 rate is 0.0574555
+entropy is 0.0613538
+the neighbEdgeSegCtx is 7 and the count rate is 0.0568783
+neighbEdgeSegCtx is 7 0 rate is 0.781395
+neighbEdgeSegCtx is 7 1 rate is 0.218605
+entropy is 0.0430917
+the neighbEdgeSegCtx is 3 and the count rate is 0.0767196
+neighbEdgeSegCtx is 3 0 rate is 0.886207
+neighbEdgeSegCtx is 3 1 rate is 0.113793
+entropy is 0.039223
+the neighbEdgeSegCtx is 14 and the count rate is 0.0566138
+neighbEdgeSegCtx is 14 0 rate is 0.771028
+neighbEdgeSegCtx is 14 1 rate is 0.228972
+entropy is 0.0439444
+the neighbEdgeSegCtx is 10 and the count rate is 0.0955026
+neighbEdgeSegCtx is 10 0 rate is 0.905817
+neighbEdgeSegCtx is 10 1 rate is 0.0941828
+entropy is 0.0430029
+the neighbEdgeSegCtx is 8 and the count rate is 0.0693122
+neighbEdgeSegCtx is 8 0 rate is 0.992366
+neighbEdgeSegCtx is 8 1 rate is 0.00763359
+entropy is 0.0044818
+the neighbEdgeSegCtx is 2 and the count rate is 0.0584656
+neighbEdgeSegCtx is 2 0 rate is 0.977376
+neighbEdgeSegCtx is 2 1 rate is 0.0226244
+entropy is 0.0091167
+the neighbEdgeSegCtx is 11 and the count rate is 0.0460317
+neighbEdgeSegCtx is 11 0 rate is 0.827586
+neighbEdgeSegCtx is 11 1 rate is 0.172414
+entropy is 0.0305281
+the neighbEdgeSegCtx is 13 and the count rate is 0.0404762
+neighbEdgeSegCtx is 13 0 rate is 0.823529
+neighbEdgeSegCtx is 13 1 rate is 0.176471
+entropy is 0.0272119
+the neighbEdgeSegCtx is 6 and the count rate is 0.000529101
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 9 and the count rate is 0.00026455
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 585349 points 
+positions bitstream size 652 B (0.01115 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 6613 B (0.11309 bpp)
+colors processing time (user): 0.39 s
+Number of points = 1021563
+Number of nodes = 1501
+Estimation of sampling = 1.22661
+distanceSearchEncoder = 2
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0568227
+neighbEdgeSegCtx is 1 0 rate is 0.99536
+neighbEdgeSegCtx is 1 1 rate is 0.00464037
+entropy is 0.00242344
+the neighbEdgeSegCtx is 13 and the count rate is 0.04588
+neighbEdgeSegCtx is 13 1 rate is 0.183908
+neighbEdgeSegCtx is 13 0 rate is 0.816092
+entropy is 0.0315908
+the neighbEdgeSegCtx is 5 and the count rate is 0.0911009
+neighbEdgeSegCtx is 5 0 rate is 0.946454
+neighbEdgeSegCtx is 5 1 rate is 0.0535456
+entropy is 0.0274461
+the neighbEdgeSegCtx is 12 and the count rate is 0.0987475
+neighbEdgeSegCtx is 12 0 rate is 0.915888
+neighbEdgeSegCtx is 12 1 rate is 0.0841121
+entropy is 0.0411289
+the neighbEdgeSegCtx is 4 and the count rate is 0.0570864
+neighbEdgeSegCtx is 4 0 rate is 0.974596
+neighbEdgeSegCtx is 4 1 rate is 0.0254042
+entropy is 0.00974991
+the neighbEdgeSegCtx is 15 and the count rate is 0.21002
+neighbEdgeSegCtx is 15 1 rate is 0.915254
+neighbEdgeSegCtx is 15 0 rate is 0.0847458
+entropy is 0.087932
+the neighbEdgeSegCtx is 7 and the count rate is 0.0453527
+neighbEdgeSegCtx is 7 0 rate is 0.848837
+neighbEdgeSegCtx is 7 1 rate is 0.151163
+entropy is 0.0277895
+the neighbEdgeSegCtx is 3 and the count rate is 0.0976928
+neighbEdgeSegCtx is 3 0 rate is 0.952767
+neighbEdgeSegCtx is 3 1 rate is 0.0472335
+entropy is 0.0268193
+the neighbEdgeSegCtx is 14 and the count rate is 0.045089
+neighbEdgeSegCtx is 14 0 rate is 0.783626
+neighbEdgeSegCtx is 14 1 rate is 0.216374
+entropy is 0.0339742
+the neighbEdgeSegCtx is 10 and the count rate is 0.0905735
+neighbEdgeSegCtx is 10 0 rate is 0.902475
+neighbEdgeSegCtx is 10 1 rate is 0.0975255
+entropy is 0.0417636
+the neighbEdgeSegCtx is 8 and the count rate is 0.056559
+neighbEdgeSegCtx is 8 0 rate is 0.986014
+neighbEdgeSegCtx is 8 1 rate is 0.013986
+entropy is 0.00600588
+the neighbEdgeSegCtx is 2 and the count rate is 0.0578774
+neighbEdgeSegCtx is 2 0 rate is 0.993166
+neighbEdgeSegCtx is 2 1 rate is 0.00683371
+entropy is 0.00341366
+the neighbEdgeSegCtx is 11 and the count rate is 0.0466711
+neighbEdgeSegCtx is 11 0 rate is 0.810734
+neighbEdgeSegCtx is 11 1 rate is 0.189266
+entropy is 0.0326666
+the neighbEdgeSegCtx is 9 and the count rate is 0.000131839
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 6 and the count rate is 0.000395517
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1273289 points 
+Sub-sampling 2 gives 527964 points 
+positions bitstream size 1236 B (0.00967929 bpp)
+positions processing time (user): 0.656 s
+colors bitstream size 7366 B (0.0576842 bpp)
+colors processing time (user): 0.296 s
+Number of points = 1009848
+Number of nodes = 1587
+Estimation of sampling = 1.26856
+distanceSearchEncoder = 2
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0519297
+neighbEdgeSegCtx is 1 0 rate is 0.992593
+neighbEdgeSegCtx is 1 1 rate is 0.00740741
+entropy is 0.00327509
+the neighbEdgeSegCtx is 5 and the count rate is 0.0765483
+neighbEdgeSegCtx is 5 0 rate is 0.882747
+neighbEdgeSegCtx is 5 1 rate is 0.117253
+entropy is 0.0399132
+the neighbEdgeSegCtx is 4 and the count rate is 0.0635979
+neighbEdgeSegCtx is 4 0 rate is 0.995968
+neighbEdgeSegCtx is 4 1 rate is 0.00403226
+entropy is 0.00240902
+the neighbEdgeSegCtx is 10 and the count rate is 0.0685985
+neighbEdgeSegCtx is 10 0 rate is 0.949533
+neighbEdgeSegCtx is 10 1 rate is 0.0504673
+entropy is 0.0197824
+the neighbEdgeSegCtx is 2 and the count rate is 0.0652648
+neighbEdgeSegCtx is 2 0 rate is 0.996071
+neighbEdgeSegCtx is 2 1 rate is 0.00392927
+entropy is 0.00241861
+the neighbEdgeSegCtx is 8 and the count rate is 0.0582126
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 15 and the count rate is 0.237851
+neighbEdgeSegCtx is 15 1 rate is 0.860377
+neighbEdgeSegCtx is 15 0 rate is 0.139623
+entropy is 0.138727
+the neighbEdgeSegCtx is 7 and the count rate is 0.0432107
+neighbEdgeSegCtx is 7 0 rate is 0.84273
+neighbEdgeSegCtx is 7 1 rate is 0.15727
+entropy is 0.027125
+the neighbEdgeSegCtx is 14 and the count rate is 0.0494935
+neighbEdgeSegCtx is 14 1 rate is 0.176166
+neighbEdgeSegCtx is 14 0 rate is 0.823834
+entropy is 0.0332407
+the neighbEdgeSegCtx is 12 and the count rate is 0.083344
+neighbEdgeSegCtx is 12 0 rate is 0.946154
+neighbEdgeSegCtx is 12 1 rate is 0.0538462
+entropy is 0.0252129
+the neighbEdgeSegCtx is 3 and the count rate is 0.08796
+neighbEdgeSegCtx is 3 0 rate is 0.906706
+neighbEdgeSegCtx is 3 1 rate is 0.0932945
+entropy is 0.0393508
+the neighbEdgeSegCtx is 11 and the count rate is 0.0570586
+neighbEdgeSegCtx is 11 0 rate is 0.811236
+neighbEdgeSegCtx is 11 1 rate is 0.188764
+entropy is 0.039877
+the neighbEdgeSegCtx is 13 and the count rate is 0.0553917
+neighbEdgeSegCtx is 13 1 rate is 0.171296
+neighbEdgeSegCtx is 13 0 rate is 0.828704
+entropy is 0.0365952
+the neighbEdgeSegCtx is 9 and the count rate is 0.000512886
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 6 and the count rate is 0.00102577
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1316976 points 
+Sub-sampling 2 gives 557466 points 
+positions bitstream size 1330 B (0.0105362 bpp)
+positions processing time (user): 0.593 s
+colors bitstream size 10772 B (0.0853356 bpp)
+colors processing time (user): 0.359 s
+Total frame size 43084 B
+Total bitstream size 43084 B
+Processing time (wall): 28.268 s
+Processing time (user): 15.953 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 72 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.031 s
+
+colors bitstream size 680 B
+colors processing time (user): 0.031 s
+
+positions bitstream size 272 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 3473 B
+colors processing time (user): 0.171 s
+
+positions bitstream size 958 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 9554 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 652 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 6613 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 1236 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 7366 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 1330 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 10772 B
+colors processing time (user): 0.39 s
+
+Total bitstream size 43084 B
+Processing time (wall): 4.137 s
+Processing time (user): 3.031 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply
+infile2:        F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\soldier_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1496 3392 1860
+WARNING: 2831 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 4001754, 3004439, 0.750781
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 19.052
+   mse1,PSNR (p2point): 64.2169
+   mse1      (p2plane): 10.2478
+   mse1,PSNR (p2plane): 66.91
+   c[0],    1         : 0.000546594
+   c[1],    1         : 2.01331e-05
+   c[2],    1         : 1.62916e-05
+   c[0],PSNR1         : 32.6234
+   c[1],PSNR1         : 46.9609
+   c[2],PSNR1         : 47.8803
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 24.051
+   mse2,PSNR (p2point): 63.205
+   mse2      (p2plane): 22.0791
+   mse2,PSNR (p2plane): 63.5765
+   c[0],    2         : 0.000381912
+   c[1],    2         : 1.83856e-05
+   c[2],    2         : 1.44096e-05
+   c[0],PSNR2         : 34.1804
+   c[1],PSNR2         : 47.3552
+   c[2],PSNR2         : 48.4135
+3. Final (symmetric).
+   mseF      (p2point): 24.051
+   mseF,PSNR (p2point): 63.205
+   mseF      (p2plane): 22.0791
+   mseF,PSNR (p2plane): 63.5765
+   c[0],    F         : 0.000546594
+   c[1],    F         : 2.01331e-05
+   c[2],    F         : 1.62916e-05
+   c[0],PSNRF         : 32.6234
+   c[1],PSNRF         : 46.9609
+   c[2],PSNRF         : 47.8803
+Job done! 17.953 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 34385
+Number of nodes = 246
+Estimation of sampling = 1.35333
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0480769
+neighbEdgeSegCtx is 1 0 rate is 0.983333
+neighbEdgeSegCtx is 1 1 rate is 0.0166667
+entropy is 0.0058794
+the neighbEdgeSegCtx is 12 and the count rate is 0.0873397
+neighbEdgeSegCtx is 12 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 4 and the count rate is 0.0889423
+neighbEdgeSegCtx is 4 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 2 and the count rate is 0.0825321
+neighbEdgeSegCtx is 2 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 8 and the count rate is 0.0600962
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 5 and the count rate is 0.0544872
+neighbEdgeSegCtx is 5 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 3 and the count rate is 0.105769
+neighbEdgeSegCtx is 3 1 rate is 0.257576
+neighbEdgeSegCtx is 3 0 rate is 0.742424
+entropy is 0.0870551
+the neighbEdgeSegCtx is 7 and the count rate is 0.0280449
+neighbEdgeSegCtx is 7 1 rate is 0.228571
+neighbEdgeSegCtx is 7 0 rate is 0.771429
+entropy is 0.0217492
+the neighbEdgeSegCtx is 13 and the count rate is 0.068109
+neighbEdgeSegCtx is 13 0 rate is 0.835294
+neighbEdgeSegCtx is 13 1 rate is 0.164706
+entropy is 0.0439609
+the neighbEdgeSegCtx is 15 and the count rate is 0.223558
+neighbEdgeSegCtx is 15 1 rate is 0.792115
+neighbEdgeSegCtx is 15 0 rate is 0.207885
+entropy is 0.164856
+the neighbEdgeSegCtx is 14 and the count rate is 0.0400641
+neighbEdgeSegCtx is 14 0 rate is 0.82
+neighbEdgeSegCtx is 14 1 rate is 0.18
+entropy is 0.0272467
+the neighbEdgeSegCtx is 11 and the count rate is 0.0616987
+neighbEdgeSegCtx is 11 0 rate is 0.792208
+neighbEdgeSegCtx is 11 1 rate is 0.207792
+entropy is 0.0454868
+the neighbEdgeSegCtx is 9 and the count rate is 0.00160256
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 10 and the count rate is 0.0488782
+neighbEdgeSegCtx is 10 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 6 and the count rate is 0.000801282
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 43887 points 
+positions bitstream size 251 B (0.0583976 bpp)
+positions processing time (user): 0.046 s
+colors bitstream size 1627 B (0.378537 bpp)
+colors processing time (user): 0.031 s
+Number of points = 208222
+Number of nodes = 1310
+Estimation of sampling = 1.26909
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0531657
+neighbEdgeSegCtx is 1 0 rate is 0.997151
+neighbEdgeSegCtx is 1 1 rate is 0.002849
+entropy is 0.00149893
+the neighbEdgeSegCtx is 13 and the count rate is 0.0587701
+neighbEdgeSegCtx is 13 1 rate is 0.203608
+neighbEdgeSegCtx is 13 0 rate is 0.796392
+entropy is 0.0428484
+the neighbEdgeSegCtx is 5 and the count rate is 0.0922448
+neighbEdgeSegCtx is 5 0 rate is 0.944171
+neighbEdgeSegCtx is 5 1 rate is 0.0558292
+entropy is 0.0286569
+the neighbEdgeSegCtx is 12 and the count rate is 0.0848228
+neighbEdgeSegCtx is 12 0 rate is 0.989286
+neighbEdgeSegCtx is 12 1 rate is 0.0107143
+entropy is 0.00725167
+the neighbEdgeSegCtx is 4 and the count rate is 0.0625568
+neighbEdgeSegCtx is 4 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 3 and the count rate is 0.0827022
+neighbEdgeSegCtx is 3 0 rate is 0.945055
+neighbEdgeSegCtx is 3 1 rate is 0.0549451
+entropy is 0.0253931
+the neighbEdgeSegCtx is 15 and the count rate is 0.198425
+neighbEdgeSegCtx is 15 1 rate is 0.955725
+neighbEdgeSegCtx is 15 0 rate is 0.0442748
+entropy is 0.0518999
+the neighbEdgeSegCtx is 14 and the count rate is 0.0489246
+neighbEdgeSegCtx is 14 0 rate is 0.798762
+neighbEdgeSegCtx is 14 1 rate is 0.201238
+entropy is 0.0354409
+the neighbEdgeSegCtx is 8 and the count rate is 0.0530142
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 2 and the count rate is 0.0645259
+neighbEdgeSegCtx is 2 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 10 and the count rate is 0.0904271
+neighbEdgeSegCtx is 10 0 rate is 0.981575
+neighbEdgeSegCtx is 10 1 rate is 0.0184255
+entropy is 0.0119822
+the neighbEdgeSegCtx is 11 and the count rate is 0.0607392
+neighbEdgeSegCtx is 11 0 rate is 0.795511
+neighbEdgeSegCtx is 11 1 rate is 0.204489
+entropy is 0.0443891
+the neighbEdgeSegCtx is 7 and the count rate is 0.049076
+neighbEdgeSegCtx is 7 0 rate is 0.820988
+neighbEdgeSegCtx is 7 1 rate is 0.179012
+entropy is 0.0332692
+the neighbEdgeSegCtx is 9 and the count rate is 0.000151469
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 6 and the count rate is 0.000454408
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 243307 points 
+positions bitstream size 927 B (0.0356158 bpp)
+positions processing time (user): 0.14 s
+colors bitstream size 7091 B (0.27244 bpp)
+colors processing time (user): 0.171 s
+Number of points = 874052
+Number of nodes = 5268
+Estimation of sampling = 1.24215
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.047745
+neighbEdgeSegCtx is 1 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 5 and the count rate is 0.114716
+neighbEdgeSegCtx is 5 0 rate is 0.99078
+neighbEdgeSegCtx is 5 1 rate is 0.00921962
+entropy is 0.00866959
+the neighbEdgeSegCtx is 12 and the count rate is 0.0789076
+neighbEdgeSegCtx is 12 0 rate is 0.962183
+neighbEdgeSegCtx is 12 1 rate is 0.0378171
+entropy is 0.0183218
+the neighbEdgeSegCtx is 4 and the count rate is 0.0576792
+neighbEdgeSegCtx is 4 0 rate is 0.99738
+neighbEdgeSegCtx is 4 1 rate is 0.00261952
+entropy is 0.00151353
+the neighbEdgeSegCtx is 15 and the count rate is 0.198232
+neighbEdgeSegCtx is 15 1 rate is 0.970465
+neighbEdgeSegCtx is 15 0 rate is 0.0295351
+entropy is 0.0380715
+the neighbEdgeSegCtx is 7 and the count rate is 0.0455919
+neighbEdgeSegCtx is 7 1 rate is 0.199669
+neighbEdgeSegCtx is 7 0 rate is 0.800331
+entropy is 0.0328838
+the neighbEdgeSegCtx is 3 and the count rate is 0.079512
+neighbEdgeSegCtx is 3 0 rate is 0.986698
+neighbEdgeSegCtx is 3 1 rate is 0.0133017
+entropy is 0.00810715
+the neighbEdgeSegCtx is 14 and the count rate is 0.0460452
+neighbEdgeSegCtx is 14 1 rate is 0.205906
+neighbEdgeSegCtx is 14 0 rate is 0.794094
+entropy is 0.033778
+the neighbEdgeSegCtx is 8 and the count rate is 0.0481982
+neighbEdgeSegCtx is 8 0 rate is 0.996082
+neighbEdgeSegCtx is 8 1 rate is 0.0039185
+entropy is 0.001782
+the neighbEdgeSegCtx is 2 and the count rate is 0.0575281
+neighbEdgeSegCtx is 2 0 rate is 0.999343
+neighbEdgeSegCtx is 2 1 rate is 0.000656599
+entropy is 0.000453839
+the neighbEdgeSegCtx is 10 and the count rate is 0.114414
+neighbEdgeSegCtx is 10 0 rate is 0.966326
+neighbEdgeSegCtx is 10 1 rate is 0.0336745
+entropy is 0.0243127
+the neighbEdgeSegCtx is 9 and the count rate is 0.00026441
+neighbEdgeSegCtx is 9 0 rate is 0.857143
+neighbEdgeSegCtx is 9 1 rate is 0.142857
+entropy is 0.000156444
+the neighbEdgeSegCtx is 13 and the count rate is 0.0555262
+neighbEdgeSegCtx is 13 0 rate is 0.79932
+neighbEdgeSegCtx is 13 1 rate is 0.20068
+entropy is 0.0401613
+the neighbEdgeSegCtx is 11 and the count rate is 0.0553751
+neighbEdgeSegCtx is 11 1 rate is 0.214188
+neighbEdgeSegCtx is 11 0 rate is 0.785812
+entropy is 0.0414988
+the neighbEdgeSegCtx is 6 and the count rate is 0.00026441
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1012136 points 
+positions bitstream size 3084 B (0.0282272 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 19027 B (0.17415 bpp)
+colors processing time (user): 0.64 s
+Number of points = 443210
+Number of nodes = 2768
+Estimation of sampling = 1.26444
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0674729
+neighbEdgeSegCtx is 1 0 rate is 0.998952
+neighbEdgeSegCtx is 1 1 rate is 0.00104822
+entropy is 0.000802022
+the neighbEdgeSegCtx is 5 and the count rate is 0.10708
+neighbEdgeSegCtx is 5 0 rate is 0.952444
+neighbEdgeSegCtx is 5 1 rate is 0.0475561
+entropy is 0.0295458
+the neighbEdgeSegCtx is 12 and the count rate is 0.0763845
+neighbEdgeSegCtx is 12 0 rate is 0.935185
+neighbEdgeSegCtx is 12 1 rate is 0.0648148
+entropy is 0.0264495
+the neighbEdgeSegCtx is 4 and the count rate is 0.0508523
+neighbEdgeSegCtx is 4 0 rate is 0.995828
+neighbEdgeSegCtx is 4 1 rate is 0.00417246
+entropy is 0.00198272
+the neighbEdgeSegCtx is 3 and the count rate is 0.0763845
+neighbEdgeSegCtx is 3 0 rate is 0.942593
+neighbEdgeSegCtx is 3 1 rate is 0.0574074
+entropy is 0.0242189
+the neighbEdgeSegCtx is 7 and the count rate is 0.0597638
+neighbEdgeSegCtx is 7 0 rate is 0.794083
+neighbEdgeSegCtx is 7 1 rate is 0.205917
+entropy is 0.043843
+the neighbEdgeSegCtx is 15 and the count rate is 0.190112
+neighbEdgeSegCtx is 15 1 rate is 0.960193
+neighbEdgeSegCtx is 15 0 rate is 0.0398065
+entropy is 0.045894
+the neighbEdgeSegCtx is 14 and the count rate is 0.0600467
+neighbEdgeSegCtx is 14 0 rate is 0.783274
+neighbEdgeSegCtx is 14 1 rate is 0.216726
+entropy is 0.0452838
+the neighbEdgeSegCtx is 8 and the count rate is 0.0677559
+neighbEdgeSegCtx is 8 0 rate is 0.994781
+neighbEdgeSegCtx is 8 1 rate is 0.00521921
+entropy is 0.00319007
+the neighbEdgeSegCtx is 13 and the count rate is 0.0430724
+neighbEdgeSegCtx is 13 0 rate is 0.779967
+neighbEdgeSegCtx is 13 1 rate is 0.220033
+entropy is 0.0327448
+the neighbEdgeSegCtx is 2 and the count rate is 0.0511352
+neighbEdgeSegCtx is 2 0 rate is 0.986169
+neighbEdgeSegCtx is 2 1 rate is 0.0138313
+entropy is 0.00538128
+the neighbEdgeSegCtx is 11 and the count rate is 0.0433553
+neighbEdgeSegCtx is 11 0 rate is 0.75367
+neighbEdgeSegCtx is 11 1 rate is 0.24633
+entropy is 0.0349187
+the neighbEdgeSegCtx is 10 and the count rate is 0.106514
+neighbEdgeSegCtx is 10 0 rate is 0.947543
+neighbEdgeSegCtx is 10 1 rate is 0.0524568
+entropy is 0.0316073
+the neighbEdgeSegCtx is 9 and the count rate is 7.07264e-05
+neighbEdgeSegCtx is 9 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 513487 points 
+positions bitstream size 1763 B (0.0318224 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 12275 B (0.221565 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1046157
+Number of nodes = 6333
+Estimation of sampling = 1.24488
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0557474
+neighbEdgeSegCtx is 1 0 rate is 0.997185
+neighbEdgeSegCtx is 1 1 rate is 0.00281532
+entropy is 0.00155583
+the neighbEdgeSegCtx is 13 and the count rate is 0.0488103
+neighbEdgeSegCtx is 13 0 rate is 0.806431
+neighbEdgeSegCtx is 13 1 rate is 0.193569
+entropy is 0.0346006
+the neighbEdgeSegCtx is 5 and the count rate is 0.0921276
+neighbEdgeSegCtx is 5 0 rate is 0.973765
+neighbEdgeSegCtx is 5 1 rate is 0.0262351
+entropy is 0.0161356
+the neighbEdgeSegCtx is 12 and the count rate is 0.0969301
+neighbEdgeSegCtx is 12 0 rate is 0.956282
+neighbEdgeSegCtx is 12 1 rate is 0.0437176
+entropy is 0.0251131
+the neighbEdgeSegCtx is 4 and the count rate is 0.053864
+neighbEdgeSegCtx is 4 0 rate is 0.997086
+neighbEdgeSegCtx is 4 1 rate is 0.00291375
+entropy is 0.00154804
+the neighbEdgeSegCtx is 15 and the count rate is 0.202618
+neighbEdgeSegCtx is 15 1 rate is 0.939892
+neighbEdgeSegCtx is 15 0 rate is 0.0601084
+entropy is 0.0664334
+the neighbEdgeSegCtx is 7 and the count rate is 0.0509134
+neighbEdgeSegCtx is 7 0 rate is 0.807028
+neighbEdgeSegCtx is 7 1 rate is 0.192972
+entropy is 0.0360287
+the neighbEdgeSegCtx is 14 and the count rate is 0.0508193
+neighbEdgeSegCtx is 14 0 rate is 0.804818
+neighbEdgeSegCtx is 14 1 rate is 0.195182
+entropy is 0.0361928
+the neighbEdgeSegCtx is 8 and the count rate is 0.0556532
+neighbEdgeSegCtx is 8 0 rate is 0.996616
+neighbEdgeSegCtx is 8 1 rate is 0.00338409
+entropy is 0.00181692
+the neighbEdgeSegCtx is 10 and the count rate is 0.0932262
+neighbEdgeSegCtx is 10 0 rate is 0.955219
+neighbEdgeSegCtx is 10 1 rate is 0.0447811
+entropy is 0.024593
+the neighbEdgeSegCtx is 3 and the count rate is 0.0978404
+neighbEdgeSegCtx is 3 0 rate is 0.971126
+neighbEdgeSegCtx is 3 1 rate is 0.0288739
+entropy is 0.0184637
+the neighbEdgeSegCtx is 2 and the count rate is 0.0528596
+neighbEdgeSegCtx is 2 0 rate is 0.999406
+neighbEdgeSegCtx is 2 1 rate is 0.000593824
+entropy is 0.000381692
+the neighbEdgeSegCtx is 11 and the count rate is 0.0478059
+neighbEdgeSegCtx is 11 0 rate is 0.818122
+neighbEdgeSegCtx is 11 1 rate is 0.181878
+entropy is 0.0327073
+the neighbEdgeSegCtx is 9 and the count rate is 0.000502229
+neighbEdgeSegCtx is 9 0 rate is 0.9375
+neighbEdgeSegCtx is 9 1 rate is 0.0625
+entropy is 0.000169397
+the neighbEdgeSegCtx is 6 and the count rate is 0.000282504
+neighbEdgeSegCtx is 6 0 rate is 0.888889
+neighbEdgeSegCtx is 6 1 rate is 0.111111
+entropy is 0.000142172
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1219966 points 
+Sub-sampling 2 gives 529831 points 
+positions bitstream size 3976 B (0.0304046 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 14906 B (0.113987 bpp)
+colors processing time (user): 0.296 s
+Number of points = 980176
+Number of nodes = 6250
+Estimation of sampling = 1.27764
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0522054
+neighbEdgeSegCtx is 1 0 rate is 0.997548
+neighbEdgeSegCtx is 1 1 rate is 0.00245248
+entropy is 0.00129473
+the neighbEdgeSegCtx is 5 and the count rate is 0.0764356
+neighbEdgeSegCtx is 5 0 rate is 0.936348
+neighbEdgeSegCtx is 5 1 rate is 0.0636516
+entropy is 0.0261236
+the neighbEdgeSegCtx is 12 and the count rate is 0.0903271
+neighbEdgeSegCtx is 12 0 rate is 0.969525
+neighbEdgeSegCtx is 12 1 rate is 0.0304748
+entropy is 0.0177735
+the neighbEdgeSegCtx is 4 and the count rate is 0.0648486
+neighbEdgeSegCtx is 4 0 rate is 0.997532
+neighbEdgeSegCtx is 4 1 rate is 0.00246792
+entropy is 0.00161696
+the neighbEdgeSegCtx is 3 and the count rate is 0.089911
+neighbEdgeSegCtx is 3 0 rate is 0.954788
+neighbEdgeSegCtx is 3 1 rate is 0.0452118
+entropy is 0.0238892
+the neighbEdgeSegCtx is 15 and the count rate is 0.205749
+neighbEdgeSegCtx is 15 1 rate is 0.933105
+neighbEdgeSegCtx is 15 0 rate is 0.0668948
+entropy is 0.0728818
+the neighbEdgeSegCtx is 14 and the count rate is 0.0491326
+neighbEdgeSegCtx is 14 0 rate is 0.80456
+neighbEdgeSegCtx is 14 1 rate is 0.19544
+entropy is 0.0350174
+the neighbEdgeSegCtx is 8 and the count rate is 0.0525895
+neighbEdgeSegCtx is 8 0 rate is 0.998783
+neighbEdgeSegCtx is 8 1 rate is 0.00121729
+entropy is 0.000712114
+the neighbEdgeSegCtx is 2 and the count rate is 0.0656488
+neighbEdgeSegCtx is 2 0 rate is 0.99805
+neighbEdgeSegCtx is 2 1 rate is 0.00195027
+entropy is 0.0013371
+the neighbEdgeSegCtx is 10 and the count rate is 0.0752513
+neighbEdgeSegCtx is 10 0 rate is 0.980859
+neighbEdgeSegCtx is 10 1 rate is 0.0191408
+entropy is 0.0102785
+the neighbEdgeSegCtx is 7 and the count rate is 0.0487485
+neighbEdgeSegCtx is 7 0 rate is 0.812869
+neighbEdgeSegCtx is 7 1 rate is 0.187131
+entropy is 0.0339012
+the neighbEdgeSegCtx is 13 and the count rate is 0.0628641
+neighbEdgeSegCtx is 13 0 rate is 0.815173
+neighbEdgeSegCtx is 13 1 rate is 0.184827
+entropy is 0.0434091
+the neighbEdgeSegCtx is 11 and the count rate is 0.0636643
+neighbEdgeSegCtx is 11 1 rate is 0.184012
+neighbEdgeSegCtx is 11 0 rate is 0.815988
+entropy is 0.0438504
+the neighbEdgeSegCtx is 6 and the count rate is 0.00204852
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 9 and the count rate is 0.000576147
+neighbEdgeSegCtx is 9 0 rate is 0.944444
+neighbEdgeSegCtx is 9 1 rate is 0.0555556
+entropy is 0.000178343
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1160240 points 
+Sub-sampling 2 gives 517091 points 
+positions bitstream size 4058 B (0.0331206 bpp)
+positions processing time (user): 0.734 s
+colors bitstream size 20142 B (0.164395 bpp)
+colors processing time (user): 0.359 s
+Total frame size 89233 B
+Total bitstream size 89233 B
+Processing time (wall): 26.942 s
+Processing time (user): 14.671 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 251 B
+positions processing time (user): 0.031 s
+
+colors bitstream size 1627 B
+colors processing time (user): 0.031 s
+
+positions bitstream size 927 B
+positions processing time (user): 0.125 s
+
+colors bitstream size 7091 B
+colors processing time (user): 0.14 s
+
+positions bitstream size 3084 B
+positions processing time (user): 0.468 s
+
+colors bitstream size 19027 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 1763 B
+positions processing time (user): 0.25 s
+
+colors bitstream size 12275 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 3976 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 14906 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 4058 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 20142 B
+colors processing time (user): 0.312 s
+
+Total bitstream size 89233 B
+Processing time (wall): 4.11 s
+Processing time (user): 3.125 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply
+infile2:        F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\soldier_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1484 3360 1824
+WARNING: 3067 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 4001754, 2856672, 0.713855
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 4.98853
+   mse1,PSNR (p2point): 70.0366
+   mse1      (p2plane): 2.29154
+   mse1,PSNR (p2plane): 73.415
+   c[0],    1         : 0.000260339
+   c[1],    1         : 1.36341e-05
+   c[2],    1         : 1.06912e-05
+   c[0],PSNR1         : 35.8446
+   c[1],PSNR1         : 48.6537
+   c[2],PSNR1         : 49.7097
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 5.25387
+   mse2,PSNR (p2point): 69.8115
+   mse2      (p2plane): 4.08596
+   mse2,PSNR (p2plane): 70.9034
+   c[0],    2         : 0.000205373
+   c[1],    2         : 1.25675e-05
+   c[2],    2         : 9.75584e-06
+   c[0],PSNR2         : 36.8746
+   c[1],PSNR2         : 49.0075
+   c[2],PSNR2         : 50.1074
+3. Final (symmetric).
+   mseF      (p2point): 5.25387
+   mseF,PSNR (p2point): 69.8115
+   mseF      (p2plane): 4.08596
+   mseF,PSNR (p2plane): 70.9034
+   c[0],    F         : 0.000260339
+   c[1],    F         : 1.36341e-05
+   c[2],    F         : 1.06912e-05
+   c[0],PSNRF         : 35.8446
+   c[1],PSNRF         : 48.6537
+   c[2],PSNRF         : 49.7097
+Job done! 15.515 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 38231
+Number of nodes = 1066
+Estimation of sampling = 1.33586
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0534603
+neighbEdgeSegCtx is 1 0 rate is 0.982877
+neighbEdgeSegCtx is 1 1 rate is 0.0171233
+entropy is 0.00668086
+the neighbEdgeSegCtx is 12 and the count rate is 0.0864152
+neighbEdgeSegCtx is 12 0 rate is 0.947034
+neighbEdgeSegCtx is 12 1 rate is 0.0529661
+entropy is 0.0258265
+the neighbEdgeSegCtx is 4 and the count rate is 0.0844013
+neighbEdgeSegCtx is 4 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 5 and the count rate is 0.0565727
+neighbEdgeSegCtx is 5 0 rate is 0.967638
+neighbEdgeSegCtx is 5 1 rate is 0.0323625
+entropy is 0.0116599
+the neighbEdgeSegCtx is 3 and the count rate is 0.0889784
+neighbEdgeSegCtx is 3 1 rate is 0.166667
+neighbEdgeSegCtx is 3 0 rate is 0.833333
+entropy is 0.057838
+the neighbEdgeSegCtx is 2 and the count rate is 0.0842182
+neighbEdgeSegCtx is 2 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 8 and the count rate is 0.0558404
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 7 and the count rate is 0.0455877
+neighbEdgeSegCtx is 7 0 rate is 0.742972
+neighbEdgeSegCtx is 7 1 rate is 0.257028
+entropy is 0.0374835
+the neighbEdgeSegCtx is 15 and the count rate is 0.186196
+neighbEdgeSegCtx is 15 1 rate is 0.94297
+neighbEdgeSegCtx is 15 0 rate is 0.0570305
+entropy is 0.0587526
+the neighbEdgeSegCtx is 13 and the count rate is 0.077078
+neighbEdgeSegCtx is 13 0 rate is 0.719715
+neighbEdgeSegCtx is 13 1 rate is 0.280285
+entropy is 0.0659663
+the neighbEdgeSegCtx is 14 and the count rate is 0.0479678
+neighbEdgeSegCtx is 14 0 rate is 0.664122
+neighbEdgeSegCtx is 14 1 rate is 0.335878
+entropy is 0.0441697
+the neighbEdgeSegCtx is 11 and the count rate is 0.0768949
+neighbEdgeSegCtx is 11 1 rate is 0.295238
+neighbEdgeSegCtx is 11 0 rate is 0.704762
+entropy is 0.0673132
+the neighbEdgeSegCtx is 10 and the count rate is 0.0543757
+neighbEdgeSegCtx is 10 0 rate is 0.976431
+neighbEdgeSegCtx is 10 1 rate is 0.023569
+entropy is 0.00875644
+the neighbEdgeSegCtx is 9 and the count rate is 0.000732332
+neighbEdgeSegCtx is 9 0 rate is 0.75
+neighbEdgeSegCtx is 9 1 rate is 0.25
+entropy is 0.000594125
+the neighbEdgeSegCtx is 6 and the count rate is 0.00128158
+neighbEdgeSegCtx is 6 0 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 48475 points 
+positions bitstream size 856 B (0.179122 bpp)
+positions processing time (user): 0.062 s
+colors bitstream size 3491 B (0.730507 bpp)
+colors processing time (user): 0.031 s
+Number of points = 218306
+Number of nodes = 5412
+Estimation of sampling = 1.25961
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0537151
+neighbEdgeSegCtx is 1 0 rate is 0.995277
+neighbEdgeSegCtx is 1 1 rate is 0.00472335
+entropy is 0.00232536
+the neighbEdgeSegCtx is 13 and the count rate is 0.0621964
+neighbEdgeSegCtx is 13 1 rate is 0.365967
+neighbEdgeSegCtx is 13 0 rate is 0.634033
+entropy is 0.0589327
+the neighbEdgeSegCtx is 5 and the count rate is 0.0914824
+neighbEdgeSegCtx is 5 0 rate is 0.953645
+neighbEdgeSegCtx is 5 1 rate is 0.046355
+entropy is 0.0247649
+the neighbEdgeSegCtx is 12 and the count rate is 0.0867343
+neighbEdgeSegCtx is 12 0 rate is 0.960719
+neighbEdgeSegCtx is 12 1 rate is 0.0392812
+entropy is 0.0207284
+the neighbEdgeSegCtx is 4 and the count rate is 0.0642262
+neighbEdgeSegCtx is 4 0 rate is 0.999436
+neighbEdgeSegCtx is 4 1 rate is 0.000564334
+entropy is 0.000443402
+the neighbEdgeSegCtx is 3 and the count rate is 0.0863719
+neighbEdgeSegCtx is 3 0 rate is 0.949643
+neighbEdgeSegCtx is 3 1 rate is 0.0503567
+entropy is 0.0248673
+the neighbEdgeSegCtx is 15 and the count rate is 0.180899
+neighbEdgeSegCtx is 15 1 rate is 0.985774
+neighbEdgeSegCtx is 15 0 rate is 0.0142256
+entropy is 0.0194748
+the neighbEdgeSegCtx is 2 and the count rate is 0.063755
+neighbEdgeSegCtx is 2 0 rate is 0.999431
+neighbEdgeSegCtx is 2 1 rate is 0.000568505
+entropy is 0.000443016
+the neighbEdgeSegCtx is 10 and the count rate is 0.0927872
+neighbEdgeSegCtx is 10 0 rate is 0.971484
+neighbEdgeSegCtx is 10 1 rate is 0.0285156
+entropy is 0.0173412
+the neighbEdgeSegCtx is 8 and the count rate is 0.0528815
+neighbEdgeSegCtx is 8 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 7 and the count rate is 0.0517941
+neighbEdgeSegCtx is 7 1 rate is 0.402379
+neighbEdgeSegCtx is 7 0 rate is 0.597621
+entropy is 0.0503607
+the neighbEdgeSegCtx is 14 and the count rate is 0.0509605
+neighbEdgeSegCtx is 14 1 rate is 0.415363
+neighbEdgeSegCtx is 14 0 rate is 0.584637
+entropy is 0.0499021
+the neighbEdgeSegCtx is 11 and the count rate is 0.0617253
+neighbEdgeSegCtx is 11 1 rate is 0.388139
+neighbEdgeSegCtx is 11 0 rate is 0.611861
+entropy is 0.0594777
+the neighbEdgeSegCtx is 6 and the count rate is 0.000181225
+neighbEdgeSegCtx is 6 0 rate is 0.2
+neighbEdgeSegCtx is 6 1 rate is 0.8
+entropy is 0.000130831
+the neighbEdgeSegCtx is 9 and the count rate is 0.00028996
+neighbEdgeSegCtx is 9 1 rate is 0.75
+neighbEdgeSegCtx is 9 0 rate is 0.25
+entropy is 0.000235238
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 257746 points 
+positions bitstream size 3108 B (0.113895 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 14004 B (0.513188 bpp)
+colors processing time (user): 0.14 s
+Number of points = 874052
+Number of nodes = 20837
+Estimation of sampling = 1.2352
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0488337
+neighbEdgeSegCtx is 1 0 rate is 1
+entropy is 0
+the neighbEdgeSegCtx is 13 and the count rate is 0.057056
+neighbEdgeSegCtx is 13 0 rate is 0.596625
+neighbEdgeSegCtx is 13 1 rate is 0.403375
+entropy is 0.0555093
+the neighbEdgeSegCtx is 5 and the count rate is 0.116094
+neighbEdgeSegCtx is 5 0 rate is 0.96471
+neighbEdgeSegCtx is 5 1 rate is 0.0352903
+entropy is 0.0255715
+the neighbEdgeSegCtx is 12 and the count rate is 0.0799483
+neighbEdgeSegCtx is 12 1 rate is 0.0429803
+neighbEdgeSegCtx is 12 0 rate is 0.95702
+entropy is 0.0204503
+the neighbEdgeSegCtx is 4 and the count rate is 0.0582171
+neighbEdgeSegCtx is 4 0 rate is 0.997892
+neighbEdgeSegCtx is 4 1 rate is 0.00210799
+entropy is 0.00126785
+the neighbEdgeSegCtx is 15 and the count rate is 0.182619
+neighbEdgeSegCtx is 15 1 rate is 0.992091
+neighbEdgeSegCtx is 15 0 rate is 0.00790902
+entropy is 0.0121602
+the neighbEdgeSegCtx is 7 and the count rate is 0.047597
+neighbEdgeSegCtx is 7 0 rate is 0.589845
+neighbEdgeSegCtx is 7 1 rate is 0.410155
+entropy is 0.0464824
+the neighbEdgeSegCtx is 3 and the count rate is 0.0806752
+neighbEdgeSegCtx is 3 0 rate is 0.967938
+neighbEdgeSegCtx is 3 1 rate is 0.0320618
+entropy is 0.0165084
+the neighbEdgeSegCtx is 14 and the count rate is 0.0483428
+neighbEdgeSegCtx is 14 1 rate is 0.407342
+neighbEdgeSegCtx is 14 0 rate is 0.592658
+entropy is 0.0471383
+the neighbEdgeSegCtx is 8 and the count rate is 0.0495794
+neighbEdgeSegCtx is 8 0 rate is 0.997715
+neighbEdgeSegCtx is 8 1 rate is 0.00228484
+entropy is 0.00115714
+the neighbEdgeSegCtx is 2 and the count rate is 0.058236
+neighbEdgeSegCtx is 2 0 rate is 0.998217
+neighbEdgeSegCtx is 2 1 rate is 0.00178311
+entropy is 0.00109789
+the neighbEdgeSegCtx is 11 and the count rate is 0.0570749
+neighbEdgeSegCtx is 11 0 rate is 0.590969
+neighbEdgeSegCtx is 11 1 rate is 0.409031
+entropy is 0.0557044
+the neighbEdgeSegCtx is 10 and the count rate is 0.11533
+neighbEdgeSegCtx is 10 0 rate is 0.95539
+neighbEdgeSegCtx is 10 1 rate is 0.04461
+entropy is 0.0303367
+the neighbEdgeSegCtx is 6 and the count rate is 0.000236003
+neighbEdgeSegCtx is 6 0 rate is 0.24
+neighbEdgeSegCtx is 6 1 rate is 0.76
+entropy is 0.000187632
+the neighbEdgeSegCtx is 9 and the count rate is 0.000160482
+neighbEdgeSegCtx is 9 0 rate is 0.176471
+neighbEdgeSegCtx is 9 1 rate is 0.823529
+entropy is 0.000107891
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1023900 points 
+positions bitstream size 9972 B (0.0912715 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 37708 B (0.345133 bpp)
+colors processing time (user): 0.64 s
+Number of points = 430910
+Number of nodes = 10603
+Estimation of sampling = 1.25491
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0686941
+neighbEdgeSegCtx is 1 0 rate is 0.997859
+neighbEdgeSegCtx is 1 1 rate is 0.00214133
+entropy is 0.00151634
+the neighbEdgeSegCtx is 13 and the count rate is 0.0449748
+neighbEdgeSegCtx is 13 0 rate is 0.611611
+neighbEdgeSegCtx is 13 1 rate is 0.388389
+entropy is 0.0433446
+the neighbEdgeSegCtx is 5 and the count rate is 0.108355
+neighbEdgeSegCtx is 5 0 rate is 0.951128
+neighbEdgeSegCtx is 5 1 rate is 0.0488715
+entropy is 0.030511
+the neighbEdgeSegCtx is 12 and the count rate is 0.0751664
+neighbEdgeSegCtx is 12 0 rate is 0.947407
+neighbEdgeSegCtx is 12 1 rate is 0.052593
+entropy is 0.0223478
+the neighbEdgeSegCtx is 4 and the count rate is 0.0492222
+neighbEdgeSegCtx is 4 0 rate is 0.995891
+neighbEdgeSegCtx is 4 1 rate is 0.00410908
+entropy is 0.00189449
+the neighbEdgeSegCtx is 15 and the count rate is 0.178226
+neighbEdgeSegCtx is 15 1 rate is 0.990715
+neighbEdgeSegCtx is 15 0 rate is 0.00928505
+entropy is 0.0135479
+the neighbEdgeSegCtx is 7 and the count rate is 0.0644651
+neighbEdgeSegCtx is 7 0 rate is 0.636052
+neighbEdgeSegCtx is 7 1 rate is 0.363948
+entropy is 0.0609783
+the neighbEdgeSegCtx is 3 and the count rate is 0.0748722
+neighbEdgeSegCtx is 3 0 rate is 0.950147
+neighbEdgeSegCtx is 3 1 rate is 0.0498527
+entropy is 0.0213963
+the neighbEdgeSegCtx is 14 and the count rate is 0.0642629
+neighbEdgeSegCtx is 14 1 rate is 0.367668
+neighbEdgeSegCtx is 14 0 rate is 0.632332
+entropy is 0.0609768
+the neighbEdgeSegCtx is 8 and the count rate is 0.0684919
+neighbEdgeSegCtx is 8 0 rate is 0.995705
+neighbEdgeSegCtx is 8 1 rate is 0.0042953
+entropy is 0.00273677
+the neighbEdgeSegCtx is 10 and the count rate is 0.108465
+neighbEdgeSegCtx is 10 0 rate is 0.947279
+neighbEdgeSegCtx is 10 1 rate is 0.0527208
+entropy is 0.0323058
+the neighbEdgeSegCtx is 2 and the count rate is 0.0493142
+neighbEdgeSegCtx is 2 0 rate is 0.992916
+neighbEdgeSegCtx is 2 1 rate is 0.00708427
+entropy is 0.00299702
+the neighbEdgeSegCtx is 11 and the count rate is 0.0450667
+neighbEdgeSegCtx is 11 1 rate is 0.410445
+neighbEdgeSegCtx is 11 0 rate is 0.589555
+entropy is 0.0440182
+the neighbEdgeSegCtx is 9 and the count rate is 0.000220645
+neighbEdgeSegCtx is 9 0 rate is 0.75
+neighbEdgeSegCtx is 9 1 rate is 0.25
+entropy is 0.000179004
+the neighbEdgeSegCtx is 6 and the count rate is 0.000202258
+neighbEdgeSegCtx is 6 1 rate is 0.818182
+neighbEdgeSegCtx is 6 0 rate is 0.181818
+entropy is 0.000138352
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 504889 points 
+positions bitstream size 5366 B (0.0996217 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 23731 B (0.440575 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1033590
+Number of nodes = 24855
+Estimation of sampling = 1.24057
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0565696
+neighbEdgeSegCtx is 1 0 rate is 0.998603
+neighbEdgeSegCtx is 1 1 rate is 0.00139684
+entropy is 0.000863305
+the neighbEdgeSegCtx is 13 and the count rate is 0.0512675
+neighbEdgeSegCtx is 13 1 rate is 0.421856
+neighbEdgeSegCtx is 13 0 rate is 0.578144
+entropy is 0.0503604
+the neighbEdgeSegCtx is 5 and the count rate is 0.0938587
+neighbEdgeSegCtx is 5 0 rate is 0.962283
+neighbEdgeSegCtx is 5 1 rate is 0.0377168
+entropy is 0.0217493
+the neighbEdgeSegCtx is 12 and the count rate is 0.0981415
+neighbEdgeSegCtx is 12 1 rate is 0.0478261
+neighbEdgeSegCtx is 12 0 rate is 0.952174
+entropy is 0.027194
+the neighbEdgeSegCtx is 4 and the count rate is 0.0538435
+neighbEdgeSegCtx is 4 0 rate is 0.994864
+neighbEdgeSegCtx is 4 1 rate is 0.00513648
+entropy is 0.00250126
+the neighbEdgeSegCtx is 3 and the count rate is 0.0984734
+neighbEdgeSegCtx is 3 0 rate is 0.958032
+neighbEdgeSegCtx is 3 1 rate is 0.0419676
+entropy is 0.0247406
+the neighbEdgeSegCtx is 7 and the count rate is 0.0540647
+neighbEdgeSegCtx is 7 0 rate is 0.591348
+neighbEdgeSegCtx is 7 1 rate is 0.408652
+entropy is 0.0527557
+the neighbEdgeSegCtx is 15 and the count rate is 0.18349
+neighbEdgeSegCtx is 15 1 rate is 0.978296
+neighbEdgeSegCtx is 15 0 rate is 0.0217045
+entropy is 0.0276898
+the neighbEdgeSegCtx is 2 and the count rate is 0.0536696
+neighbEdgeSegCtx is 2 0 rate is 0.996761
+neighbEdgeSegCtx is 2 1 rate is 0.0032391
+entropy is 0.0016881
+the neighbEdgeSegCtx is 11 and the count rate is 0.0510936
+neighbEdgeSegCtx is 11 0 rate is 0.588308
+neighbEdgeSegCtx is 11 1 rate is 0.411692
+entropy is 0.0499379
+the neighbEdgeSegCtx is 14 and the count rate is 0.0542228
+neighbEdgeSegCtx is 14 0 rate is 0.582046
+neighbEdgeSegCtx is 14 1 rate is 0.417954
+entropy is 0.0531648
+the neighbEdgeSegCtx is 8 and the count rate is 0.0567277
+neighbEdgeSegCtx is 8 0 rate is 0.996657
+neighbEdgeSegCtx is 8 1 rate is 0.00334308
+entropy is 0.0018329
+the neighbEdgeSegCtx is 10 and the count rate is 0.0938745
+neighbEdgeSegCtx is 10 0 rate is 0.953367
+neighbEdgeSegCtx is 10 1 rate is 0.046633
+entropy is 0.0255262
+the neighbEdgeSegCtx is 9 and the count rate is 0.000387193
+neighbEdgeSegCtx is 9 1 rate is 0.387755
+neighbEdgeSegCtx is 9 0 rate is 0.612245
+entropy is 0.000372996
+the neighbEdgeSegCtx is 6 and the count rate is 0.000316076
+neighbEdgeSegCtx is 6 0 rate is 0.45
+neighbEdgeSegCtx is 6 1 rate is 0.55
+entropy is 0.000313792
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1225957 points 
+Sub-sampling 2 gives 606185 points 
+positions bitstream size 12826 B (0.0992734 bpp)
+positions processing time (user): 1.265 s
+colors bitstream size 31889 B (0.246821 bpp)
+colors processing time (user): 0.375 s
+Number of points = 991113
+Number of nodes = 24857
+Estimation of sampling = 1.26693
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0527936
+neighbEdgeSegCtx is 1 0 rate is 0.995814
+neighbEdgeSegCtx is 1 1 rate is 0.00418598
+entropy is 0.00206405
+the neighbEdgeSegCtx is 13 and the count rate is 0.0647272
+neighbEdgeSegCtx is 13 0 rate is 0.635898
+neighbEdgeSegCtx is 13 1 rate is 0.364102
+entropy is 0.0612342
+the neighbEdgeSegCtx is 5 and the count rate is 0.0795258
+neighbEdgeSegCtx is 5 0 rate is 0.947797
+neighbEdgeSegCtx is 5 1 rate is 0.0522033
+entropy is 0.0235145
+the neighbEdgeSegCtx is 12 and the count rate is 0.0934878
+neighbEdgeSegCtx is 12 0 rate is 0.964289
+neighbEdgeSegCtx is 12 1 rate is 0.0357113
+entropy is 0.0207796
+the neighbEdgeSegCtx is 4 and the count rate is 0.0670713
+neighbEdgeSegCtx is 4 0 rate is 0.997411
+neighbEdgeSegCtx is 4 1 rate is 0.00258884
+entropy is 0.00174233
+the neighbEdgeSegCtx is 3 and the count rate is 0.0940245
+neighbEdgeSegCtx is 3 0 rate is 0.957106
+neighbEdgeSegCtx is 3 1 rate is 0.0428943
+entropy is 0.0240147
+the neighbEdgeSegCtx is 7 and the count rate is 0.0505047
+neighbEdgeSegCtx is 7 1 rate is 0.385216
+neighbEdgeSegCtx is 7 0 rate is 0.614784
+entropy is 0.0485675
+the neighbEdgeSegCtx is 15 and the count rate is 0.181751
+neighbEdgeSegCtx is 15 1 rate is 0.982413
+neighbEdgeSegCtx is 15 0 rate is 0.0175873
+entropy is 0.0232042
+the neighbEdgeSegCtx is 14 and the count rate is 0.051223
+neighbEdgeSegCtx is 14 0 rate is 0.624807
+neighbEdgeSegCtx is 14 1 rate is 0.375193
+entropy is 0.0488962
+the neighbEdgeSegCtx is 8 and the count rate is 0.0535118
+neighbEdgeSegCtx is 8 0 rate is 0.998378
+neighbEdgeSegCtx is 8 1 rate is 0.00162242
+entropy is 0.000929754
+the neighbEdgeSegCtx is 10 and the count rate is 0.0786261
+neighbEdgeSegCtx is 10 0 rate is 0.967476
+neighbEdgeSegCtx is 10 1 rate is 0.0325236
+entropy is 0.0162672
+the neighbEdgeSegCtx is 2 and the count rate is 0.0672528
+neighbEdgeSegCtx is 2 0 rate is 0.997418
+neighbEdgeSegCtx is 2 1 rate is 0.00258186
+entropy is 0.00174301
+the neighbEdgeSegCtx is 11 and the count rate is 0.0649087
+neighbEdgeSegCtx is 11 0 rate is 0.633512
+neighbEdgeSegCtx is 11 1 rate is 0.366488
+entropy is 0.0615294
+the neighbEdgeSegCtx is 9 and the count rate is 0.000323596
+neighbEdgeSegCtx is 9 1 rate is 0.560976
+neighbEdgeSegCtx is 9 0 rate is 0.439024
+entropy is 0.000320116
+the neighbEdgeSegCtx is 6 and the count rate is 0.000268348
+neighbEdgeSegCtx is 6 0 rate is 0.617647
+neighbEdgeSegCtx is 6 1 rate is 0.382353
+entropy is 0.00025753
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1174049 points 
+Sub-sampling 2 gives 593717 points 
+positions bitstream size 12717 B (0.102648 bpp)
+positions processing time (user): 1.25 s
+colors bitstream size 45476 B (0.36707 bpp)
+colors processing time (user): 0.39 s
+Total frame size 201250 B
+Total bitstream size 201250 B
+Processing time (wall): 29.071 s
+Processing time (user): 16.546 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 856 B
+positions processing time (user): 0.062 s
+
+colors bitstream size 3491 B
+colors processing time (user): 0.046 s
+
+positions bitstream size 3108 B
+positions processing time (user): 0.234 s
+
+colors bitstream size 14004 B
+colors processing time (user): 0.14 s
+
+positions bitstream size 9972 B
+positions processing time (user): 0.734 s
+
+colors bitstream size 37708 B
+colors processing time (user): 0.703 s
+
+positions bitstream size 5366 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 23731 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 12826 B
+positions processing time (user): 0.484 s
+
+colors bitstream size 31889 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 12717 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 45476 B
+colors processing time (user): 0.359 s
+
+Total bitstream size 201250 B
+Processing time (wall): 5.482 s
+Processing time (user): 4.359 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply
+infile2:        F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\soldier_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1490 2864 1072
+WARNING: 2873 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 4001754, 3032039, 0.757677
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 2.81014
+   mse1,PSNR (p2point): 72.529
+   mse1      (p2plane): 0.889885
+   mse1,PSNR (p2plane): 77.5229
+   c[0],    1         : 0.000147067
+   c[1],    1         : 9.00193e-06
+   c[2],    1         : 7.0287e-06
+   c[0],PSNR1         : 38.3249
+   c[1],PSNR1         : 50.4566
+   c[2],PSNR1         : 51.5312
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2.42333
+   mse2,PSNR (p2point): 73.1722
+   mse2      (p2plane): 1.43755
+   mse2,PSNR (p2plane): 75.4401
+   c[0],    2         : 0.000120426
+   c[1],    2         : 8.41733e-06
+   c[2],    2         : 6.57406e-06
+   c[0],PSNR2         : 39.1928
+   c[1],PSNR2         : 50.7483
+   c[2],PSNR2         : 51.8217
+3. Final (symmetric).
+   mseF      (p2point): 2.81014
+   mseF,PSNR (p2point): 72.529
+   mseF      (p2plane): 1.43755
+   mseF,PSNR (p2plane): 75.4401
+   c[0],    F         : 0.000147067
+   c[1],    F         : 9.00193e-06
+   c[2],    F         : 7.0287e-06
+   c[0],PSNRF         : 38.3249
+   c[1],PSNRF         : 50.4566
+   c[2],PSNRF         : 51.5312
+Job done! 15.375 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply"
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 38231
+Number of nodes = 4039
+Estimation of sampling = 1.30014
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0551621
+neighbEdgeSegCtx is 1 0 rate is 0.977041
+neighbEdgeSegCtx is 1 1 rate is 0.0229592
+entropy is 0.00870169
+the neighbEdgeSegCtx is 12 and the count rate is 0.0867771
+neighbEdgeSegCtx is 12 0 rate is 0.905405
+neighbEdgeSegCtx is 12 1 rate is 0.0945946
+entropy is 0.0391905
+the neighbEdgeSegCtx is 4 and the count rate is 0.0891693
+neighbEdgeSegCtx is 4 0 rate is 0.998422
+neighbEdgeSegCtx is 4 1 rate is 0.00157812
+entropy is 0.00151261
+the neighbEdgeSegCtx is 5 and the count rate is 0.0601811
+neighbEdgeSegCtx is 5 0 rate is 0.902572
+neighbEdgeSegCtx is 5 1 rate is 0.0974279
+entropy is 0.0277308
+the neighbEdgeSegCtx is 3 and the count rate is 0.0882781
+neighbEdgeSegCtx is 3 1 rate is 0.167906
+neighbEdgeSegCtx is 3 0 rate is 0.832094
+entropy is 0.0576361
+the neighbEdgeSegCtx is 2 and the count rate is 0.0879028
+neighbEdgeSegCtx is 2 0 rate is 0.994664
+neighbEdgeSegCtx is 2 1 rate is 0.00533618
+entropy is 0.00421634
+the neighbEdgeSegCtx is 8 and the count rate is 0.0553966
+neighbEdgeSegCtx is 8 0 rate is 0.998307
+neighbEdgeSegCtx is 8 1 rate is 0.00169348
+entropy is 0.000998852
+the neighbEdgeSegCtx is 7 and the count rate is 0.0495802
+neighbEdgeSegCtx is 7 1 rate is 0.645222
+neighbEdgeSegCtx is 7 0 rate is 0.354778
+entropy is 0.0465192
+the neighbEdgeSegCtx is 13 and the count rate is 0.0832591
+neighbEdgeSegCtx is 13 0 rate is 0.391549
+neighbEdgeSegCtx is 13 1 rate is 0.608451
+entropy is 0.0804109
+the neighbEdgeSegCtx is 15 and the count rate is 0.148225
+neighbEdgeSegCtx is 15 1 rate is 0.982278
+neighbEdgeSegCtx is 15 0 rate is 0.0177215
+entropy is 0.0190393
+the neighbEdgeSegCtx is 14 and the count rate is 0.0498147
+neighbEdgeSegCtx is 14 1 rate is 0.680791
+neighbEdgeSegCtx is 14 0 rate is 0.319209
+entropy is 0.0450086
+the neighbEdgeSegCtx is 11 and the count rate is 0.0819926
+neighbEdgeSegCtx is 11 1 rate is 0.628146
+neighbEdgeSegCtx is 11 0 rate is 0.371854
+entropy is 0.0780639
+the neighbEdgeSegCtx is 10 and the count rate is 0.061213
+neighbEdgeSegCtx is 10 0 rate is 0.908046
+neighbEdgeSegCtx is 10 1 rate is 0.091954
+entropy is 0.0271148
+the neighbEdgeSegCtx is 9 and the count rate is 0.00168863
+neighbEdgeSegCtx is 9 1 rate is 0.861111
+neighbEdgeSegCtx is 9 0 rate is 0.138889
+entropy is 0.00098164
+the neighbEdgeSegCtx is 6 and the count rate is 0.00136029
+neighbEdgeSegCtx is 6 1 rate is 0.517241
+neighbEdgeSegCtx is 6 0 rate is 0.482759
+entropy is 0.00135912
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 51294 points 
+positions bitstream size 2515 B (0.526274 bpp)
+positions processing time (user): 0.125 s
+colors bitstream size 6885 B (1.44072 bpp)
+colors processing time (user): 0.031 s
+Number of points = 218306
+Number of nodes = 20575
+Estimation of sampling = 1.228
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0547259
+neighbEdgeSegCtx is 1 0 rate is 0.993025
+neighbEdgeSegCtx is 1 1 rate is 0.00697516
+entropy is 0.00328327
+the neighbEdgeSegCtx is 13 and the count rate is 0.0630214
+neighbEdgeSegCtx is 13 1 rate is 0.698331
+neighbEdgeSegCtx is 13 0 rate is 0.301669
+entropy is 0.0556682
+the neighbEdgeSegCtx is 5 and the count rate is 0.0961474
+neighbEdgeSegCtx is 5 0 rate is 0.886221
+neighbEdgeSegCtx is 5 1 rate is 0.113779
+entropy is 0.0491517
+the neighbEdgeSegCtx is 12 and the count rate is 0.089863
+neighbEdgeSegCtx is 12 1 rate is 0.113241
+neighbEdgeSegCtx is 12 0 rate is 0.886759
+entropy is 0.0457955
+the neighbEdgeSegCtx is 4 and the count rate is 0.0655165
+neighbEdgeSegCtx is 4 0 rate is 0.998579
+neighbEdgeSegCtx is 4 1 rate is 0.00142106
+entropy is 0.00101487
+the neighbEdgeSegCtx is 15 and the count rate is 0.154057
+neighbEdgeSegCtx is 15 1 rate is 0.997522
+neighbEdgeSegCtx is 15 0 rate is 0.00247779
+entropy is 0.00385449
+the neighbEdgeSegCtx is 7 and the count rate is 0.0525194
+neighbEdgeSegCtx is 7 1 rate is 0.72239
+neighbEdgeSegCtx is 7 0 rate is 0.27761
+entropy is 0.0447557
+the neighbEdgeSegCtx is 3 and the count rate is 0.0899467
+neighbEdgeSegCtx is 3 0 rate is 0.876617
+neighbEdgeSegCtx is 3 1 rate is 0.123383
+entropy is 0.0484819
+the neighbEdgeSegCtx is 14 and the count rate is 0.0523052
+neighbEdgeSegCtx is 14 1 rate is 0.721787
+neighbEdgeSegCtx is 14 0 rate is 0.278213
+entropy is 0.0446166
+the neighbEdgeSegCtx is 10 and the count rate is 0.0966595
+neighbEdgeSegCtx is 10 0 rate is 0.883741
+neighbEdgeSegCtx is 10 1 rate is 0.116259
+entropy is 0.050119
+the neighbEdgeSegCtx is 8 and the count rate is 0.0545118
+neighbEdgeSegCtx is 8 0 rate is 0.999829
+neighbEdgeSegCtx is 8 1 rate is 0.000170794
+entropy is 0.000129953
+the neighbEdgeSegCtx is 2 and the count rate is 0.0652186
+neighbEdgeSegCtx is 2 0 rate is 0.99843
+neighbEdgeSegCtx is 2 1 rate is 0.00157031
+entropy is 0.00110159
+the neighbEdgeSegCtx is 11 and the count rate is 0.0627234
+neighbEdgeSegCtx is 11 1 rate is 0.704023
+neighbEdgeSegCtx is 11 0 rate is 0.295977
+entropy is 0.0549657
+the neighbEdgeSegCtx is 6 and the count rate is 0.00124758
+neighbEdgeSegCtx is 6 1 rate is 0.970149
+neighbEdgeSegCtx is 6 0 rate is 0.0298507
+entropy is 0.000241585
+the neighbEdgeSegCtx is 9 and the count rate is 0.0015362
+neighbEdgeSegCtx is 9 1 rate is 1
+entropy is 0
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 270840 points 
+positions bitstream size 9253 B (0.339084 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 27597 B (1.01131 bpp)
+colors processing time (user): 0.171 s
+Number of points = 874052
+Number of nodes = 79344
+Estimation of sampling = 1.20517
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0509313
+neighbEdgeSegCtx is 1 0 rate is 0.999905
+neighbEdgeSegCtx is 1 1 rate is 9.51158e-05
+entropy is 7.17092e-05
+the neighbEdgeSegCtx is 13 and the count rate is 0.0582245
+neighbEdgeSegCtx is 13 1 rate is 0.723313
+neighbEdgeSegCtx is 13 0 rate is 0.276687
+entropy is 0.0495431
+the neighbEdgeSegCtx is 5 and the count rate is 0.119433
+neighbEdgeSegCtx is 5 0 rate is 0.876349
+neighbEdgeSegCtx is 5 1 rate is 0.123651
+entropy is 0.064466
+the neighbEdgeSegCtx is 12 and the count rate is 0.0824658
+neighbEdgeSegCtx is 12 0 rate is 0.881631
+neighbEdgeSegCtx is 12 1 rate is 0.118369
+entropy is 0.0432661
+the neighbEdgeSegCtx is 4 and the count rate is 0.0600194
+neighbEdgeSegCtx is 4 0 rate is 0.998668
+neighbEdgeSegCtx is 4 1 rate is 0.00133177
+entropy is 0.000878788
+the neighbEdgeSegCtx is 3 and the count rate is 0.0828073
+neighbEdgeSegCtx is 3 0 rate is 0.885922
+neighbEdgeSegCtx is 3 1 rate is 0.114078
+entropy is 0.0424053
+the neighbEdgeSegCtx is 7 and the count rate is 0.0489694
+neighbEdgeSegCtx is 7 1 rate is 0.730227
+neighbEdgeSegCtx is 7 0 rate is 0.269773
+entropy is 0.04119
+the neighbEdgeSegCtx is 15 and the count rate is 0.156873
+neighbEdgeSegCtx is 15 1 rate is 0.999336
+neighbEdgeSegCtx is 15 0 rate is 0.000663939
+entropy is 0.00124973
+the neighbEdgeSegCtx is 14 and the count rate is 0.0491389
+neighbEdgeSegCtx is 14 0 rate is 0.267166
+neighbEdgeSegCtx is 14 1 rate is 0.732834
+entropy is 0.0411474
+the neighbEdgeSegCtx is 8 and the count rate is 0.0511009
+neighbEdgeSegCtx is 8 0 rate is 0.997867
+neighbEdgeSegCtx is 8 1 rate is 0.002133
+entropy is 0.00112422
+the neighbEdgeSegCtx is 10 and the count rate is 0.119436
+neighbEdgeSegCtx is 10 0 rate is 0.87339
+neighbEdgeSegCtx is 10 1 rate is 0.12661
+entropy is 0.0654587
+the neighbEdgeSegCtx is 2 and the count rate is 0.0598474
+neighbEdgeSegCtx is 2 0 rate is 0.998786
+neighbEdgeSegCtx is 2 1 rate is 0.00121418
+entropy is 0.000808595
+the neighbEdgeSegCtx is 11 and the count rate is 0.0580526
+neighbEdgeSegCtx is 11 1 rate is 0.729962
+neighbEdgeSegCtx is 11 0 rate is 0.270038
+entropy is 0.0488523
+the neighbEdgeSegCtx is 6 and the count rate is 0.00143393
+neighbEdgeSegCtx is 6 1 rate is 0.989865
+neighbEdgeSegCtx is 6 0 rate is 0.0101351
+entropy is 0.000117135
+the neighbEdgeSegCtx is 9 and the count rate is 0.0012668
+neighbEdgeSegCtx is 9 1 rate is 0.986616
+neighbEdgeSegCtx is 9 0 rate is 0.0133843
+entropy is 0.000129815
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1064414 points 
+positions bitstream size 29630 B (0.271197 bpp)
+positions processing time (user): 1.906 s
+colors bitstream size 75480 B (0.690851 bpp)
+colors processing time (user): 0.671 s
+Number of points = 430910
+Number of nodes = 40157
+Estimation of sampling = 1.22109
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0704056
+neighbEdgeSegCtx is 1 0 rate is 0.997097
+neighbEdgeSegCtx is 1 1 rate is 0.00290305
+entropy is 0.0020171
+the neighbEdgeSegCtx is 13 and the count rate is 0.046758
+neighbEdgeSegCtx is 13 0 rate is 0.263902
+neighbEdgeSegCtx is 13 1 rate is 0.736098
+entropy is 0.0389297
+the neighbEdgeSegCtx is 5 and the count rate is 0.112201
+neighbEdgeSegCtx is 5 0 rate is 0.878373
+neighbEdgeSegCtx is 5 1 rate is 0.121627
+entropy is 0.0599176
+the neighbEdgeSegCtx is 12 and the count rate is 0.0768273
+neighbEdgeSegCtx is 12 0 rate is 0.876941
+neighbEdgeSegCtx is 12 1 rate is 0.123059
+entropy is 0.04134
+the neighbEdgeSegCtx is 4 and the count rate is 0.0498809
+neighbEdgeSegCtx is 4 0 rate is 0.993139
+neighbEdgeSegCtx is 4 1 rate is 0.00686106
+entropy is 0.00295182
+the neighbEdgeSegCtx is 15 and the count rate is 0.152119
+neighbEdgeSegCtx is 15 1 rate is 0.998563
+neighbEdgeSegCtx is 15 0 rate is 0.00143737
+entropy is 0.0023798
+the neighbEdgeSegCtx is 7 and the count rate is 0.0666743
+neighbEdgeSegCtx is 7 1 rate is 0.694589
+neighbEdgeSegCtx is 7 0 rate is 0.305411
+entropy is 0.0591938
+the neighbEdgeSegCtx is 3 and the count rate is 0.076466
+neighbEdgeSegCtx is 3 0 rate is 0.883198
+neighbEdgeSegCtx is 3 1 rate is 0.116802
+entropy is 0.0397699
+the neighbEdgeSegCtx is 14 and the count rate is 0.0666743
+neighbEdgeSegCtx is 14 1 rate is 0.70015
+neighbEdgeSegCtx is 14 0 rate is 0.29985
+entropy is 0.0587472
+the neighbEdgeSegCtx is 8 and the count rate is 0.0704056
+neighbEdgeSegCtx is 8 0 rate is 0.995544
+neighbEdgeSegCtx is 8 1 rate is 0.00445585
+entropy is 0.00290174
+the neighbEdgeSegCtx is 2 and the count rate is 0.0502422
+neighbEdgeSegCtx is 2 0 rate is 0.991296
+neighbEdgeSegCtx is 2 1 rate is 0.00870388
+entropy is 0.00362109
+the neighbEdgeSegCtx is 11 and the count rate is 0.0471193
+neighbEdgeSegCtx is 11 1 rate is 0.74367
+neighbEdgeSegCtx is 11 0 rate is 0.25633
+entropy is 0.0386924
+the neighbEdgeSegCtx is 10 and the count rate is 0.11184
+neighbEdgeSegCtx is 10 0 rate is 0.8688
+neighbEdgeSegCtx is 10 1 rate is 0.1312
+entropy is 0.0627108
+the neighbEdgeSegCtx is 9 and the count rate is 0.000888864
+neighbEdgeSegCtx is 9 1 rate is 0.957219
+neighbEdgeSegCtx is 9 0 rate is 0.0427807
+entropy is 0.000226571
+the neighbEdgeSegCtx is 6 and the count rate is 0.00149728
+neighbEdgeSegCtx is 6 1 rate is 0.996825
+neighbEdgeSegCtx is 6 0 rate is 0.0031746
+entropy is 4.62951e-05
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 531965 points 
+positions bitstream size 15989 B (0.296842 bpp)
+positions processing time (user): 0.906 s
+colors bitstream size 47814 B (0.887684 bpp)
+colors processing time (user): 0.359 s
+Number of points = 1046269
+Number of nodes = 95747
+Estimation of sampling = 1.21004
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0582359
+neighbEdgeSegCtx is 1 0 rate is 0.997419
+neighbEdgeSegCtx is 1 1 rate is 0.00258069
+entropy is 0.00150873
+the neighbEdgeSegCtx is 12 and the count rate is 0.10117
+neighbEdgeSegCtx is 12 0 rate is 0.871514
+neighbEdgeSegCtx is 12 1 rate is 0.128486
+entropy is 0.0559747
+the neighbEdgeSegCtx is 4 and the count rate is 0.0550278
+neighbEdgeSegCtx is 4 0 rate is 0.995448
+neighbEdgeSegCtx is 4 1 rate is 0.00455191
+entropy is 0.00230912
+the neighbEdgeSegCtx is 13 and the count rate is 0.0524769
+neighbEdgeSegCtx is 13 1 rate is 0.732931
+neighbEdgeSegCtx is 13 0 rate is 0.267069
+entropy is 0.0439351
+the neighbEdgeSegCtx is 5 and the count rate is 0.0981386
+neighbEdgeSegCtx is 5 0 rate is 0.877611
+neighbEdgeSegCtx is 5 1 rate is 0.122389
+entropy is 0.0526209
+the neighbEdgeSegCtx is 15 and the count rate is 0.156605
+neighbEdgeSegCtx is 15 1 rate is 0.997556
+neighbEdgeSegCtx is 15 0 rate is 0.00244396
+entropy is 0.00387233
+the neighbEdgeSegCtx is 7 and the count rate is 0.0553584
+neighbEdgeSegCtx is 7 1 rate is 0.723268
+neighbEdgeSegCtx is 7 0 rate is 0.276732
+entropy is 0.0471078
+the neighbEdgeSegCtx is 3 and the count rate is 0.10114
+neighbEdgeSegCtx is 3 1 rate is 0.131674
+neighbEdgeSegCtx is 3 0 rate is 0.868326
+entropy is 0.0568421
+the neighbEdgeSegCtx is 2 and the count rate is 0.0550037
+neighbEdgeSegCtx is 2 0 rate is 0.996648
+neighbEdgeSegCtx is 2 1 rate is 0.00335167
+entropy is 0.00178108
+the neighbEdgeSegCtx is 11 and the count rate is 0.0524528
+neighbEdgeSegCtx is 11 0 rate is 0.267268
+neighbEdgeSegCtx is 11 1 rate is 0.732732
+entropy is 0.0439301
+the neighbEdgeSegCtx is 14 and the count rate is 0.0553043
+neighbEdgeSegCtx is 14 1 rate is 0.71604
+neighbEdgeSegCtx is 14 0 rate is 0.28396
+entropy is 0.0476054
+the neighbEdgeSegCtx is 8 and the count rate is 0.0581818
+neighbEdgeSegCtx is 8 0 rate is 0.995867
+neighbEdgeSegCtx is 8 1 rate is 0.00413294
+entropy is 0.00225032
+the neighbEdgeSegCtx is 10 and the count rate is 0.0982168
+neighbEdgeSegCtx is 10 0 rate is 0.881462
+neighbEdgeSegCtx is 10 1 rate is 0.118538
+entropy is 0.0515778
+the neighbEdgeSegCtx is 9 and the count rate is 0.00118027
+neighbEdgeSegCtx is 9 1 rate is 0.967742
+neighbEdgeSegCtx is 9 0 rate is 0.0322581
+entropy is 0.000242654
+the neighbEdgeSegCtx is 6 and the count rate is 0.0015069
+neighbEdgeSegCtx is 6 1 rate is 0.968085
+neighbEdgeSegCtx is 6 0 rate is 0.0319149
+entropy is 0.000307265
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1285172 points 
+Sub-sampling 2 gives 807515 points 
+positions bitstream size 38149 B (0.291696 bpp)
+positions processing time (user): 2.734 s
+colors bitstream size 85534 B (0.654012 bpp)
+colors processing time (user): 0.578 s
+Number of points = 978434
+Number of nodes = 93813
+Estimation of sampling = 1.23858
+distanceSearchEncoder = 1
+
+encode the position and the data for the neighbEdgeSegCtx
+the neighbEdgeSegCtx is 1 and the count rate is 0.0547597
+neighbEdgeSegCtx is 1 0 rate is 0.995267
+neighbEdgeSegCtx is 1 1 rate is 0.0047328
+entropy is 0.00237458
+the neighbEdgeSegCtx is 13 and the count rate is 0.0665018
+neighbEdgeSegCtx is 13 1 rate is 0.68783
+neighbEdgeSegCtx is 13 0 rate is 0.31217
+entropy is 0.0595632
+the neighbEdgeSegCtx is 5 and the count rate is 0.081762
+neighbEdgeSegCtx is 5 0 rate is 0.88172
+neighbEdgeSegCtx is 5 1 rate is 0.11828
+entropy is 0.0428757
+the neighbEdgeSegCtx is 12 and the count rate is 0.0970671
+neighbEdgeSegCtx is 12 0 rate is 0.889585
+neighbEdgeSegCtx is 12 1 rate is 0.110415
+entropy is 0.0486468
+the neighbEdgeSegCtx is 4 and the count rate is 0.0691302
+neighbEdgeSegCtx is 4 0 rate is 0.99755
+neighbEdgeSegCtx is 4 1 rate is 0.00245011
+entropy is 0.00171305
+the neighbEdgeSegCtx is 3 and the count rate is 0.097061
+neighbEdgeSegCtx is 3 0 rate is 0.884932
+neighbEdgeSegCtx is 3 1 rate is 0.115068
+entropy is 0.0499881
+the neighbEdgeSegCtx is 15 and the count rate is 0.153357
+neighbEdgeSegCtx is 15 1 rate is 0.997405
+neighbEdgeSegCtx is 15 0 rate is 0.00259481
+entropy is 0.00399166
+the neighbEdgeSegCtx is 14 and the count rate is 0.0528945
+neighbEdgeSegCtx is 14 1 rate is 0.70135
+neighbEdgeSegCtx is 14 0 rate is 0.29865
+entropy is 0.0465278
+the neighbEdgeSegCtx is 8 and the count rate is 0.0549678
+neighbEdgeSegCtx is 8 0 rate is 0.997884
+neighbEdgeSegCtx is 8 1 rate is 0.00211613
+entropy is 0.00120105
+the neighbEdgeSegCtx is 7 and the count rate is 0.0526864
+neighbEdgeSegCtx is 7 1 rate is 0.706832
+neighbEdgeSegCtx is 7 0 rate is 0.293168
+entropy is 0.0459835
+the neighbEdgeSegCtx is 2 and the count rate is 0.0693445
+neighbEdgeSegCtx is 2 0 rate is 0.997175
+neighbEdgeSegCtx is 2 1 rate is 0.00282511
+entropy is 0.00194106
+the neighbEdgeSegCtx is 11 and the count rate is 0.0667161
+neighbEdgeSegCtx is 11 1 rate is 0.682929
+neighbEdgeSegCtx is 11 0 rate is 0.317071
+entropy is 0.0601224
+the neighbEdgeSegCtx is 10 and the count rate is 0.0813396
+neighbEdgeSegCtx is 10 0 rate is 0.889611
+neighbEdgeSegCtx is 10 1 rate is 0.110389
+entropy is 0.0407583
+the neighbEdgeSegCtx is 9 and the count rate is 0.00148358
+neighbEdgeSegCtx is 9 1 rate is 0.955983
+neighbEdgeSegCtx is 9 0 rate is 0.0440165
+entropy is 0.000386344
+the neighbEdgeSegCtx is 6 and the count rate is 0.000928511
+neighbEdgeSegCtx is 6 1 rate is 0.975824
+neighbEdgeSegCtx is 6 0 rate is 0.0241758
+entropy is 0.00015254
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1223054 points 
+Sub-sampling 2 gives 777097 points 
+positions bitstream size 38049 B (0.311101 bpp)
+positions processing time (user): 2.671 s
+colors bitstream size 113098 B (0.924727 bpp)
+colors processing time (user): 0.593 s
+Total frame size 490099 B
+Total bitstream size 490099 B
+Processing time (wall): 35.855 s
+Processing time (user): 22.812 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\neighbEdge_test\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 2515 B
+positions processing time (user): 0.093 s
+
+colors bitstream size 6885 B
+colors processing time (user): 0.031 s
+
+positions bitstream size 9253 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 27597 B
+colors processing time (user): 0.187 s
+
+positions bitstream size 29630 B
+positions processing time (user): 1.656 s
+
+colors bitstream size 75480 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 15989 B
+positions processing time (user): 0.718 s
+
+colors bitstream size 47814 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 38149 B
+positions processing time (user): 1.328 s
+
+colors bitstream size 85534 B
+colors processing time (user): 0.578 s
+
+positions bitstream size 38049 B
+positions processing time (user): 1.375 s
+
+colors bitstream size 113098 B
+colors processing time (user): 0.515 s
+
+Total bitstream size 490099 B
+Processing time (wall): 9.533 s
+Processing time (user): 8.046 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\soldier_viewdep_vox12.ply
+infile2:        F:\YK\neighbEdge_test\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\soldier_viewdep_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1801 3360 2154
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 1488 2878 1220
+WARNING: 1263 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 4001754, 3501862, 0.875082
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 2.25066
+   mse1,PSNR (p2point): 73.4932
+   mse1      (p2plane): 0.618141
+   mse1,PSNR (p2plane): 79.1054
+   c[0],    1         : 7.32285e-05
+   c[1],    1         : 5.8458e-06
+   c[2],    1         : 4.65145e-06
+   c[0],PSNR1         : 41.3532
+   c[1],PSNR1         : 52.3316
+   c[2],PSNR1         : 53.3241
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2.01448
+   mse2,PSNR (p2point): 73.9747
+   mse2      (p2plane): 1.06521
+   mse2,PSNR (p2plane): 76.7419
+   c[0],    2         : 6.70659e-05
+   c[1],    2         : 5.70723e-06
+   c[2],    2         : 4.57905e-06
+   c[0],PSNR2         : 41.735
+   c[1],PSNR2         : 52.4358
+   c[2],PSNR2         : 53.3922
+3. Final (symmetric).
+   mseF      (p2point): 2.25066
+   mseF,PSNR (p2point): 73.4932
+   mseF      (p2plane): 1.06521
+   mseF,PSNR (p2plane): 76.7419
+   c[0],    F         : 7.32285e-05
+   c[1],    F         : 5.8458e-06
+   c[2],    F         : 4.65145e-06
+   c[0],PSNRF         : 41.3532
+   c[1],PSNRF         : 52.3316
+   c[2],PSNRF         : 53.3241
+Job done! 16.219 seconds elapsed (excluding the time to load the point clouds).

@@ -1,0 +1,875 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "./output/enc.ply"
+    uncompressedDataPath  : "D:\work\pointcloud\code\ply\basketball_player_vox11_00000200.ply"
+    compressedStreamPath  : "./output/str.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 1
+    sequenceScale             : 1
+    positionQuantizationScale : 1
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 0
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 0 (RAHT)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 0
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 6
+Number of points = 93359
+Number of nodes = 1701
+Estimation of sampling = 1.07985
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.110267
+entropy0 is 0.303978
+entropy0 is 0.0131879
+entropy0 is 0.154907
+entropy0 is 0
+entropy0 is 0.0572204
+entropy0 is 0.053766
+entropy0 is 0.129721
+entropy0 is 0.0362756
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.110456
+entropy1 is 0.310861
+entropy1 is 0.00875329
+entropy1 is 0.182438
+entropy1 is 0.0413159
+entropy1 is 0.0970936
+entropy1 is 0.0362756
+entropy1 is 0.0730041
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.0780915
+entropy2 is 0.0527726
+entropy2 is 0.0934909
+entropy2 is 0.108203
+entropy2 is 0.057678
+entropy2 is 0.0348847
+entropy2 is 0.117396
+entropy2 is 0.108979
+entropy2 is 0.0314768
+entropy2 is 0.0971008
+entropy2 is 0.0528971
+entropy2 is 0.0362756
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.170905
+entropy3 is 0.103614
+entropy3 is 0.00152439
+entropy3 is 0.0300197
+entropy3 is 0.0189668
+entropy3 is 0.0115914
+entropy3 is 0.0175419
+entropy3 is 0
+entropy3 is 0.00178733
+entropy3 is 0.00460506
+entropy3 is 0.0429946
+entropy3 is 0.0139982
+entropy3 is 0.0110488
+entropy3 is 0.0716401
+entropy3 is 0.00631358
+entropy3 is 0.00441173
+entropy3 is 0.0142867
+entropy3 is 0.00441173
+entropy3 is 0.0098756
+entropy3 is 0.000762195
+entropy3 is 0
+entropy3 is 0.00812872
+entropy3 is 0.0263486
+entropy3 is 0.0878934
+entropy3 is 0.0396284
+entropy3 is 0.00494682
+entropy3 is 0.00584729
+entropy3 is 0
+entropy3 is 0
+entropy3 is 0.00920576
+entropy3 is 0.00104988
+entropy3 is 0.00104988
+entropy3 is 0.0134343
+entropy3 is 0.00262828
+entropy3 is 0.00354377
+entropy3 is 0.0362756
+entropy3 is 0.00165721
+entropy3 is 0.00209976
+entropy3 is 0.00228659
+entropy3 is 0.0177158
+entropy3 is 0
+entropy3 is 0.0012367
+entropy3 is 0.00722638
+entropy3 is 0.00228659
+entropy3 is 0
+entropy3 is 0.00339927
+entropy3 is 0
+entropy3 is 0
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0400318
+entropy4 is 0.109885
+entropy4 is 0.0777056
+entropy4 is 0.193336
+entropy4 is 0.172941
+entropy4 is 0.042101
+entropy4 is 0.0487031
+entropy4 is 0.0908094
+entropy4 is 0.030457
+entropy4 is 0.00839905
+entropy4 is 0.0130002
+entropy4 is 0.010049
+entropy4 is 0.0296022
+entropy4 is 0.0115914
+entropy4 is 0.0562884
+entropy4 is 0.00137563
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 76782 points 
+positions bitstream size 1027 B (0.0880044 bpp)
+positions processing time (user): 0.062 s
+colors bitstream size 910 B (0.0779786 bpp)
+colors processing time (user): 0 s
+Number of points = 195140
+Number of nodes = 3474
+Estimation of sampling = 1.06741
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.0724993
+entropy0 is 0.0556666
+entropy0 is 0.259317
+entropy0 is 0.0648127
+entropy0 is 0.17662
+entropy0 is 0.011344
+entropy0 is 0.111114
+entropy0 is 0.143503
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.0724993
+entropy1 is 0.110141
+entropy1 is 0.267756
+entropy1 is 0.213336
+entropy1 is 0.0363651
+entropy1 is 0.111114
+entropy1 is 0.0770672
+entropy1 is 0.00574962
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.0928594
+entropy2 is 0.0724993
+entropy2 is 0.0959255
+entropy2 is 0.0678401
+entropy2 is 0.0823581
+entropy2 is 0.113773
+entropy2 is 0.0323061
+entropy2 is 0.094316
+entropy2 is 0.0680692
+entropy2 is 0.0430166
+entropy2 is 0.0933226
+entropy2 is 0.0334276
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.140557
+entropy3 is 0.0676795
+entropy3 is 0.0724993
+entropy3 is 0.00553273
+entropy3 is 0.00428608
+entropy3 is 0.0151022
+entropy3 is 0.0143216
+entropy3 is 0.0121559
+entropy3 is 0.00848953
+entropy3 is 0.0162212
+entropy3 is 0.0534743
+entropy3 is 0.0277634
+entropy3 is 0.0177832
+entropy3 is 0.0028567
+entropy3 is 0.0994562
+entropy3 is 0.0265876
+entropy3 is 0.0185801
+entropy3 is 0.00241292
+entropy3 is 0.0108985
+entropy3 is 0.0386668
+entropy3 is 0.00264481
+entropy3 is 0.0148913
+entropy3 is 0.000901741
+entropy3 is 0.00475672
+entropy3 is 0
+entropy3 is 0.00592006
+entropy3 is 0.0982776
+entropy3 is 0.0137826
+entropy3 is 0.00185905
+entropy3 is 0.0129249
+entropy3 is 0.0017879
+entropy3 is 0.00177346
+entropy3 is 0.00283634
+entropy3 is 0.00746873
+entropy3 is 0.0241865
+entropy3 is 0.000954778
+entropy3 is 0.00359188
+entropy3 is 0.00370779
+entropy3 is 0.00211874
+entropy3 is 0.000836092
+entropy3 is 0.000836092
+entropy3 is 0.00381763
+entropy3 is 0.00423747
+entropy3 is 0.00514498
+entropy3 is 0
+entropy3 is 0.000901741
+entropy3 is 0.000933427
+entropy3 is 0
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0921435
+entropy4 is 0.0622683
+entropy4 is 0.087892
+entropy4 is 0.148386
+entropy4 is 0.180972
+entropy4 is 0.0495714
+entropy4 is 0.117979
+entropy4 is 0.0379687
+entropy4 is 0.0115437
+entropy4 is 0.0282798
+entropy4 is 0.0421702
+entropy4 is 0.0396979
+entropy4 is 0.0130134
+entropy4 is 0.0216993
+entropy4 is 0.0134134
+entropy4 is 0.00346848
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 168068 points 
+positions bitstream size 2110 B (0.086502 bpp)
+positions processing time (user): 0.109 s
+colors bitstream size 4064 B (0.166609 bpp)
+colors processing time (user): 0.078 s
+Number of points = 830714
+Number of nodes = 14855
+Estimation of sampling = 1.0698
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.103266
+entropy0 is 0.0579113
+entropy0 is 0.273988
+entropy0 is 0.103949
+entropy0 is 0.140633
+entropy0 is 0.00799513
+entropy0 is 0.0655376
+entropy0 is 0.147962
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.103266
+entropy1 is 0.116638
+entropy1 is 0.279918
+entropy1 is 0.103949
+entropy1 is 0.170898
+entropy1 is 0.00457001
+entropy1 is 0.0400116
+entropy1 is 0.0728528
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.103266
+entropy2 is 0.130228
+entropy2 is 0.0308802
+entropy2 is 0.0804087
+entropy2 is 0.083861
+entropy2 is 0.0233307
+entropy2 is 0.0919034
+entropy2 is 0.0735205
+entropy2 is 0.0289354
+entropy2 is 0.0946839
+entropy2 is 0.0711559
+entropy2 is 0.0808302
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.090276
+entropy3 is 0.137346
+entropy3 is 0.103266
+entropy3 is 0.00682714
+entropy3 is 0.0177428
+entropy3 is 0.00253481
+entropy3 is 0.000713592
+entropy3 is 0.0179091
+entropy3 is 0.0165788
+entropy3 is 0.0101462
+entropy3 is 0.0113446
+entropy3 is 0.105976
+entropy3 is 0.0939615
+entropy3 is 0.0149887
+entropy3 is 0.0322569
+entropy3 is 0.00509348
+entropy3 is 0.00860467
+entropy3 is 0.00423064
+entropy3 is 0.00353905
+entropy3 is 0.0138351
+entropy3 is 0.039874
+entropy3 is 0.00322313
+entropy3 is 0.0266414
+entropy3 is 0.00278059
+entropy3 is 0.0287471
+entropy3 is 0.00195648
+entropy3 is 0.0107016
+entropy3 is 0.00288443
+entropy3 is 0.0148079
+entropy3 is 0.0142225
+entropy3 is 0.00101906
+entropy3 is 0.000781956
+entropy3 is 0.00345877
+entropy3 is 0
+entropy3 is 0.000542899
+entropy3 is 0.0017763
+entropy3 is 0.00592764
+entropy3 is 0.000839956
+entropy3 is 0.00643808
+entropy3 is 0.0141181
+entropy3 is 0.000232649
+entropy3 is 0.000536898
+entropy3 is 0.000708238
+entropy3 is 0.00203933
+entropy3 is 0
+entropy3 is 0.00107553
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0651656
+entropy4 is 0.14595
+entropy4 is 0.113329
+entropy4 is 0.13032
+entropy4 is 0.0333642
+entropy4 is 0.0123555
+entropy4 is 0.059236
+entropy4 is 0.0373147
+entropy4 is 0.0137986
+entropy4 is 0.0818535
+entropy4 is 0.151387
+entropy4 is 0.026588
+entropy4 is 0.0287569
+entropy4 is 0.0208548
+entropy4 is 0.0268389
+entropy4 is 0.00240871
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 715507 points 
+positions bitstream size 7230 B (0.0696269 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 14247 B (0.137202 bpp)
+colors processing time (user): 0.187 s
+Number of points = 301855
+Number of nodes = 5387
+Estimation of sampling = 1.06872
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.121793
+entropy0 is 0.272353
+entropy0 is 0.0797699
+entropy0 is 0.0572403
+entropy0 is 0.145098
+entropy0 is 0.00975599
+entropy0 is 0.0712542
+entropy0 is 0.138861
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.121793
+entropy1 is 0.279369
+entropy1 is 0.0797699
+entropy1 is 0.114691
+entropy1 is 0.179583
+entropy1 is 0.00612251
+entropy1 is 0.0425292
+entropy1 is 0.0673173
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.0410076
+entropy2 is 0.114929
+entropy2 is 0.0352788
+entropy2 is 0.0786788
+entropy2 is 0.0797699
+entropy2 is 0.0827873
+entropy2 is 0.0871802
+entropy2 is 0.102398
+entropy2 is 0.0777867
+entropy2 is 0.0369886
+entropy2 is 0.0922065
+entropy2 is 0.0630427
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.0797699
+entropy3 is 0.00479916
+entropy3 is 0.0772583
+entropy3 is 0.153401
+entropy3 is 0.112459
+entropy3 is 0.00380617
+entropy3 is 0.0136503
+entropy3 is 0.0244166
+entropy3 is 0.00304187
+entropy3 is 0.0138432
+entropy3 is 0.0111673
+entropy3 is 0.020356
+entropy3 is 0.0134145
+entropy3 is 0.0394087
+entropy3 is 0.0282242
+entropy3 is 0.00296058
+entropy3 is 0.00133362
+entropy3 is 0.00875714
+entropy3 is 0
+entropy3 is 0.0102898
+entropy3 is 0.0242354
+entropy3 is 0.00153063
+entropy3 is 0.00792644
+entropy3 is 0.00312043
+entropy3 is 0.00389191
+entropy3 is 0.00354772
+entropy3 is 0.00204721
+entropy3 is 0.0284638
+entropy3 is 0.100839
+entropy3 is 0.00172061
+entropy3 is 0.00171605
+entropy3 is 0.0142163
+entropy3 is 0.00260151
+entropy3 is 0.0113972
+entropy3 is 0.00110485
+entropy3 is 0.0117287
+entropy3 is 0.00826072
+entropy3 is 0.0051648
+entropy3 is 0.000572016
+entropy3 is 0.00389891
+entropy3 is 0.00326409
+entropy3 is 0.00123571
+entropy3 is 0.00234574
+entropy3 is 0.00119567
+entropy3 is 0.0014738
+entropy3 is 0.00127995
+entropy3 is 0.00350966
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0504004
+entropy4 is 0.113427
+entropy4 is 0.107655
+entropy4 is 0.157335
+entropy4 is 0.0924196
+entropy4 is 0.0580433
+entropy4 is 0.0347059
+entropy4 is 0.1589
+entropy4 is 0.0140559
+entropy4 is 0.0533071
+entropy4 is 0.0192922
+entropy4 is 0.0351602
+entropy4 is 0.0125853
+entropy4 is 0.0127023
+entropy4 is 0.0255645
+entropy4 is 0.0010103
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 264959 points 
+positions bitstream size 3292 B (0.0872472 bpp)
+positions processing time (user): 0.14 s
+colors bitstream size 4917 B (0.130314 bpp)
+colors processing time (user): 0.109 s
+Number of points = 922133
+Number of nodes = 16568
+Estimation of sampling = 1.07233
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.0712331
+entropy0 is 0.0578337
+entropy0 is 0.28503
+entropy0 is 0.0899693
+entropy0 is 0.0617737
+entropy0 is 0.162331
+entropy0 is 0.144808
+entropy0 is 0.0104287
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.0712331
+entropy1 is 0.109495
+entropy1 is 0.293282
+entropy1 is 0.0899693
+entropy1 is 0.191956
+entropy1 is 0.0749618
+entropy1 is 0.0384559
+entropy1 is 0.0067049
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.0317373
+entropy2 is 0.0712331
+entropy2 is 0.0937253
+entropy2 is 0.125738
+entropy2 is 0.0768592
+entropy2 is 0.102531
+entropy2 is 0.0701658
+entropy2 is 0.0882189
+entropy2 is 0.034013
+entropy2 is 0.0814137
+entropy2 is 0.0918636
+entropy2 is 0.0118178
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.0274803
+entropy3 is 0.054669
+entropy3 is 0.0752182
+entropy3 is 0.0859064
+entropy3 is 0.0712331
+entropy3 is 0.00648182
+entropy3 is 0.0172554
+entropy3 is 0.0113092
+entropy3 is 0.103744
+entropy3 is 0.0207379
+entropy3 is 0.015611
+entropy3 is 0.0225442
+entropy3 is 0.00515387
+entropy3 is 0.14348
+entropy3 is 0.00167432
+entropy3 is 0.0333118
+entropy3 is 0.00736621
+entropy3 is 0.0112325
+entropy3 is 0.0111105
+entropy3 is 0.00202152
+entropy3 is 0.00458304
+entropy3 is 0.00507442
+entropy3 is 0.00147316
+entropy3 is 0.0380892
+entropy3 is 0.0139801
+entropy3 is 0.0115487
+entropy3 is 0.00563035
+entropy3 is 0.000991422
+entropy3 is 0.0044011
+entropy3 is 0.00164844
+entropy3 is 0.000865315
+entropy3 is 0.0030605
+entropy3 is 0.00060588
+entropy3 is 0.00422914
+entropy3 is 0.00969781
+entropy3 is 0.00441531
+entropy3 is 0.0076092
+entropy3 is 0.00637492
+entropy3 is 0.00171149
+entropy3 is 0.000209246
+entropy3 is 0.00129482
+entropy3 is 0.00217194
+entropy3 is 0.000460142
+entropy3 is 0.00102819
+entropy3 is 0.00128703
+entropy3 is 0.000195457
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0656593
+entropy4 is 0.0937423
+entropy4 is 0.0383627
+entropy4 is 0.0209254
+entropy4 is 0.0397191
+entropy4 is 0.0457274
+entropy4 is 0.178288
+entropy4 is 0.016846
+entropy4 is 0.0172795
+entropy4 is 0.0891306
+entropy4 is 0.124142
+entropy4 is 0.0280895
+entropy4 is 0.169659
+entropy4 is 0.0107062
+entropy4 is 0.00696094
+entropy4 is 0.00199208
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 782260 points 
+positions bitstream size 8171 B (0.0708878 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 18063 B (0.156706 bpp)
+colors processing time (user): 0.25 s
+Number of points = 582313
+Number of nodes = 10512
+Estimation of sampling = 1.07487
+distanceSearchEncoder = 1
+
+encode the position and the data for the ctx1_2Ctx
+entropy0 is 0.0321618
+entropy0 is 0.0298282
+entropy0 is 0.0737014
+entropy0 is 0.353877
+entropy0 is 0.128908
+entropy0 is 0.0643716
+entropy0 is 0.173769
+entropy0 is 0.0138449
+
+
+encode the position and the data for the ctx1_3Ctx
+entropy1 is 0.0321618
+entropy1 is 0.0743297
+entropy1 is 0.0737014
+entropy1 is 0.363773
+entropy1 is 0.0699468
+entropy1 is 0.207309
+entropy1 is 0.036792
+entropy1 is 0.00899662
+
+
+encode the position and the data for the ctx1_4Ctx
+entropy2 is 0.0321618
+entropy2 is 0.0214103
+entropy2 is 0.0522492
+entropy2 is 0.160008
+entropy2 is 0.0387506
+entropy2 is 0.0516064
+entropy2 is 0.0551131
+entropy2 is 0.100331
+entropy2 is 0.0493181
+entropy2 is 0.102003
+entropy2 is 0.0966699
+entropy2 is 0.114655
+
+
+encode the position and the data for the ctx1_5Ctx
+entropy3 is 0.116424
+entropy3 is 0.062177
+entropy3 is 0.0321618
+entropy3 is 0.00304895
+entropy3 is 0.0252857
+entropy3 is 0.0947979
+entropy3 is 0.00490442
+entropy3 is 0.0110227
+entropy3 is 0.00768667
+entropy3 is 0.0569671
+entropy3 is 0.0338048
+entropy3 is 0.000478927
+entropy3 is 0.186226
+entropy3 is 0.000597028
+entropy3 is 0.00710243
+entropy3 is 0.00295857
+entropy3 is 0.0260236
+entropy3 is 0.0302683
+entropy3 is 0.014345
+entropy3 is 0.00790906
+entropy3 is 0.00141929
+entropy3 is 0.00581962
+entropy3 is 0.00572862
+entropy3 is 0.0064487
+entropy3 is 0.00157467
+entropy3 is 0.02258
+entropy3 is 0.000414279
+entropy3 is 0.00375455
+entropy3 is 0.017188
+entropy3 is 0.00585742
+entropy3 is 0.0201432
+entropy3 is 0.000733814
+entropy3 is 0.0034576
+entropy3 is 0.000591869
+entropy3 is 0.0072607
+entropy3 is 0.000957854
+entropy3 is 0.00369907
+entropy3 is 0.000701391
+entropy3 is 0.00100554
+entropy3 is 0.00272912
+entropy3 is 0.000396154
+entropy3 is 0.00152196
+entropy3 is 0.00147367
+entropy3 is 0.000298514
+entropy3 is 0.00519447
+entropy3 is 0.000701391
+
+
+encode the position and the data for the ctx1_6Ctx
+entropy4 is 0.0873911
+entropy4 is 0.0584095
+entropy4 is 0.0938348
+entropy4 is 0.0242132
+entropy4 is 0.0270371
+entropy4 is 0.0192473
+entropy4 is 0.117457
+entropy4 is 0.18587
+entropy4 is 0.0172144
+entropy4 is 0.24175
+entropy4 is 0.0073725
+entropy4 is 0.0110582
+entropy4 is 0.0481823
+entropy4 is 0.00382006
+entropy4 is 0.000795371
+entropy4 is 0.00185881
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 477920 points 
+positions bitstream size 5148 B (0.0707249 bpp)
+positions processing time (user): 0 s
+colors bitstream size 11442 B (0.157194 bpp)
+colors processing time (user): 0.062 s
+Total frame size 80727 B
+Total bitstream size 80727 B
+Processing time (wall): 12.158 s
+Processing time (user): 4.75 s

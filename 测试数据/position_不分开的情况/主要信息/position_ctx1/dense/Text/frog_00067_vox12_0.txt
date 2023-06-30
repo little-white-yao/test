@@ -1,0 +1,1822 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply"
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 13
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 269641
+Number of nodes = 624
+Estimation of sampling = 1.53939
+distanceSearchEncoder = 3
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 1 and the count rate is 0.250932
+ctx1SegCtx is 1 3 rate is 0.361386
+ctx1SegCtx is 1 2 rate is 0.237624
+ctx1SegCtx is 1 1 rate is 0.247525
+ctx1SegCtx is 1 0 rate is 0.153465
+entropy is 0.486025
+the ctx1SegCtx is 0 and the count rate is 0.28323
+ctx1SegCtx is 0 1 rate is 0.149123
+ctx1SegCtx is 0 0 rate is 0.149123
+ctx1SegCtx is 0 2 rate is 0.263158
+ctx1SegCtx is 0 3 rate is 0.438596
+entropy is 0.523171
+the ctx1SegCtx is 3 and the count rate is 0.178882
+ctx1SegCtx is 3 0 rate is 0.6875
+ctx1SegCtx is 3 1 rate is 0.159722
+ctx1SegCtx is 3 3 rate is 0.0763889
+ctx1SegCtx is 3 2 rate is 0.0763889
+entropy is 0.243495
+the ctx1SegCtx is 2 and the count rate is 0.286957
+ctx1SegCtx is 2 2 rate is 0.238095
+ctx1SegCtx is 2 1 rate is 0.316017
+ctx1SegCtx is 2 3 rate is 0.147186
+ctx1SegCtx is 2 0 rate is 0.298701
+entropy is 0.558336
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 393035 points 
+positions bitstream size 555 B (0.0164663 bpp)
+positions processing time (user): 0.156 s
+colors bitstream size 6993 B (0.207476 bpp)
+colors processing time (user): 0.203 s
+Number of points = 370822
+Number of nodes = 1231
+Estimation of sampling = 1.84373
+distanceSearchEncoder = 3
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.215947
+ctx1SegCtx is 0 2 rate is 0.264615
+ctx1SegCtx is 0 3 rate is 0.529231
+ctx1SegCtx is 0 1 rate is 0.123077
+ctx1SegCtx is 0 0 rate is 0.0830769
+entropy is 0.359243
+the ctx1SegCtx is 1 and the count rate is 0.247841
+ctx1SegCtx is 1 3 rate is 0.340483
+ctx1SegCtx is 1 0 rate is 0.120643
+ctx1SegCtx is 1 1 rate is 0.276139
+ctx1SegCtx is 1 2 rate is 0.262735
+entropy is 0.475019
+the ctx1SegCtx is 2 and the count rate is 0.355482
+ctx1SegCtx is 2 0 rate is 0.360748
+ctx1SegCtx is 2 1 rate is 0.276636
+ctx1SegCtx is 2 3 rate is 0.171963
+ctx1SegCtx is 2 2 rate is 0.190654
+entropy is 0.688251
+the ctx1SegCtx is 3 and the count rate is 0.180731
+ctx1SegCtx is 3 0 rate is 0.683824
+ctx1SegCtx is 3 1 rate is 0.165441
+ctx1SegCtx is 3 2 rate is 0.0882353
+ctx1SegCtx is 3 3 rate is 0.0625
+entropy is 0.24641
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 734563 points 
+positions bitstream size 869 B (0.0187475 bpp)
+positions processing time (user): 0.265 s
+colors bitstream size 5323 B (0.114837 bpp)
+colors processing time (user): 0.359 s
+Number of points = 932938
+Number of nodes = 2459
+Estimation of sampling = 1.64287
+distanceSearchEncoder = 3
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.247542
+ctx1SegCtx is 0 2 rate is 0.251064
+ctx1SegCtx is 0 3 rate is 0.550355
+ctx1SegCtx is 0 0 rate is 0.0439716
+ctx1SegCtx is 0 1 rate is 0.15461
+entropy is 0.393433
+the ctx1SegCtx is 1 and the count rate is 0.22823
+ctx1SegCtx is 1 3 rate is 0.401538
+ctx1SegCtx is 1 1 rate is 0.221538
+ctx1SegCtx is 1 2 rate is 0.236923
+ctx1SegCtx is 1 0 rate is 0.14
+entropy is 0.433548
+the ctx1SegCtx is 2 and the count rate is 0.261587
+ctx1SegCtx is 2 2 rate is 0.228188
+ctx1SegCtx is 2 1 rate is 0.299329
+ctx1SegCtx is 2 3 rate is 0.181208
+ctx1SegCtx is 2 0 rate is 0.291275
+entropy is 0.515903
+the ctx1SegCtx is 3 and the count rate is 0.26264
+ctx1SegCtx is 3 0 rate is 0.562834
+ctx1SegCtx is 3 2 rate is 0.131016
+ctx1SegCtx is 3 1 rate is 0.203209
+ctx1SegCtx is 3 3 rate is 0.102941
+entropy is 0.434855
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1391611 points 
+Sub-sampling 2 gives 595816 points 
+positions bitstream size 1957 B (0.0167814 bpp)
+positions processing time (user): 0.578 s
+colors bitstream size 7885 B (0.0676144 bpp)
+colors processing time (user): 0.312 s
+Number of points = 951830
+Number of nodes = 2258
+Estimation of sampling = 1.55859
+distanceSearchEncoder = 3
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 1 and the count rate is 0.253435
+ctx1SegCtx is 1 3 rate is 0.32097
+ctx1SegCtx is 1 1 rate is 0.258203
+ctx1SegCtx is 1 0 rate is 0.175464
+ctx1SegCtx is 1 2 rate is 0.245364
+entropy is 0.498888
+the ctx1SegCtx is 0 and the count rate is 0.266088
+ctx1SegCtx is 0 3 rate is 0.46875
+ctx1SegCtx is 0 2 rate is 0.317935
+ctx1SegCtx is 0 0 rate is 0.0747283
+ctx1SegCtx is 0 1 rate is 0.138587
+entropy is 0.455751
+the ctx1SegCtx is 2 and the count rate is 0.294649
+ctx1SegCtx is 2 1 rate is 0.317791
+ctx1SegCtx is 2 2 rate is 0.2
+ctx1SegCtx is 2 0 rate is 0.322699
+ctx1SegCtx is 2 3 rate is 0.159509
+entropy is 0.571311
+the ctx1SegCtx is 3 and the count rate is 0.185828
+ctx1SegCtx is 3 0 rate is 0.601167
+ctx1SegCtx is 3 1 rate is 0.14786
+ctx1SegCtx is 3 2 rate is 0.118677
+ctx1SegCtx is 3 3 rate is 0.132296
+entropy is 0.297341
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1422605 points 
+Sub-sampling 2 gives 609602 points 
+positions bitstream size 1797 B (0.0151035 bpp)
+positions processing time (user): 0.64 s
+colors bitstream size 9149 B (0.0768961 bpp)
+colors processing time (user): 0.328 s
+Number of points = 795938
+Number of nodes = 2143
+Estimation of sampling = 1.66043
+distanceSearchEncoder = 3
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.241117
+ctx1SegCtx is 0 2 rate is 0.24812
+ctx1SegCtx is 0 1 rate is 0.162406
+ctx1SegCtx is 0 3 rate is 0.491729
+ctx1SegCtx is 0 0 rate is 0.0977444
+entropy is 0.423474
+the ctx1SegCtx is 1 and the count rate is 0.241117
+ctx1SegCtx is 1 0 rate is 0.184962
+ctx1SegCtx is 1 1 rate is 0.228571
+ctx1SegCtx is 1 3 rate is 0.354887
+ctx1SegCtx is 1 2 rate is 0.231579
+entropy is 0.471661
+the ctx1SegCtx is 2 and the count rate is 0.310007
+ctx1SegCtx is 2 3 rate is 0.175439
+ctx1SegCtx is 2 2 rate is 0.212865
+ctx1SegCtx is 2 1 rate is 0.290058
+ctx1SegCtx is 2 0 rate is 0.321637
+entropy is 0.607587
+the ctx1SegCtx is 3 and the count rate is 0.207759
+ctx1SegCtx is 3 0 rate is 0.574171
+ctx1SegCtx is 3 1 rate is 0.191972
+ctx1SegCtx is 3 3 rate is 0.0907504
+ctx1SegCtx is 3 2 rate is 0.143106
+entropy is 0.339115
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1465521 points 
+Sub-sampling 2 gives 630571 points 
+positions bitstream size 1654 B (0.0166244 bpp)
+positions processing time (user): 0.609 s
+colors bitstream size 9629 B (0.0967814 bpp)
+colors processing time (user): 0.328 s
+Total frame size 45912 B
+Total bitstream size 45912 B
+Processing time (wall): 19.495 s
+Processing time (user): 14.953 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 555 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 6993 B
+colors processing time (user): 0.156 s
+
+positions bitstream size 869 B
+positions processing time (user): 0.234 s
+
+colors bitstream size 5323 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 1957 B
+positions processing time (user): 0.109 s
+
+colors bitstream size 7885 B
+colors processing time (user): 0.265 s
+
+positions bitstream size 1797 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 9149 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 1654 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 9629 B
+colors processing time (user): 0.296 s
+
+Total bitstream size 45912 B
+Processing time (wall): 3.098 s
+Processing time (user): 2.25 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply
+infile2:        F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\frog_00067_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 3146 1974 780
+WARNING: 2405 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3614251, 2961182, 0.819307
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 48.0263
+   mse1,PSNR (p2point): 60.2015
+   mse1      (p2plane): 12.7985
+   mse1,PSNR (p2plane): 65.9447
+   c[0],    1         : 0.00124654
+   c[1],    1         : 3.81072e-05
+   c[2],    1         : 1.70569e-05
+   c[0],PSNR1         : 29.0429
+   c[1],PSNR1         : 44.1899
+   c[2],PSNR1         : 47.681
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 27.4716
+   mse2,PSNR (p2point): 62.6275
+   mse2      (p2plane): 18.8865
+   mse2,PSNR (p2plane): 64.2548
+   c[0],    2         : 0.000865948
+   c[1],    2         : 3.25165e-05
+   c[2],    2         : 1.52659e-05
+   c[0],PSNR2         : 30.6251
+   c[1],PSNR2         : 44.879
+   c[2],PSNR2         : 48.1628
+3. Final (symmetric).
+   mseF      (p2point): 48.0263
+   mseF,PSNR (p2point): 60.2015
+   mseF      (p2plane): 18.8865
+   mseF,PSNR (p2plane): 64.2548
+   c[0],    F         : 0.00124654
+   c[1],    F         : 3.81072e-05
+   c[2],    F         : 1.70569e-05
+   c[0],PSNRF         : 29.0429
+   c[1],PSNRF         : 44.1899
+   c[2],PSNRF         : 47.681
+Job done! 15.594 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply"
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 13
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 305911
+Number of nodes = 2700
+Estimation of sampling = 1.50316
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.238898
+ctx1SegCtx is 0 2 rate is 0.251765
+ctx1SegCtx is 0 1 rate is 0.135294
+ctx1SegCtx is 0 3 rate is 0.522353
+ctx1SegCtx is 0 0 rate is 0.0905882
+entropy is 0.404849
+the ctx1SegCtx is 1 and the count rate is 0.277965
+ctx1SegCtx is 1 3 rate is 0.355915
+ctx1SegCtx is 1 0 rate is 0.14459
+ctx1SegCtx is 1 1 rate is 0.22548
+ctx1SegCtx is 1 2 rate is 0.274014
+entropy is 0.536519
+the ctx1SegCtx is 2 and the count rate is 0.329399
+ctx1SegCtx is 2 2 rate is 0.232935
+ctx1SegCtx is 2 1 rate is 0.290102
+ctx1SegCtx is 2 0 rate is 0.34727
+ctx1SegCtx is 2 3 rate is 0.129693
+entropy is 0.632327
+the ctx1SegCtx is 3 and the count rate is 0.153738
+ctx1SegCtx is 3 0 rate is 0.716636
+ctx1SegCtx is 3 2 rate is 0.0895795
+ctx1SegCtx is 3 1 rate is 0.149909
+ctx1SegCtx is 3 3 rate is 0.0438757
+entropy is 0.194417
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 431252 points 
+positions bitstream size 1875 B (0.0490339 bpp)
+positions processing time (user): 0.187 s
+colors bitstream size 20361 B (0.532469 bpp)
+colors processing time (user): 0.203 s
+Number of points = 394984
+Number of nodes = 5025
+Estimation of sampling = 1.80467
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.195457
+ctx1SegCtx is 0 2 rate is 0.276131
+ctx1SegCtx is 0 3 rate is 0.584243
+ctx1SegCtx is 0 0 rate is 0.0335413
+ctx1SegCtx is 0 1 rate is 0.106084
+entropy is 0.287967
+the ctx1SegCtx is 1 and the count rate is 0.266352
+ctx1SegCtx is 1 0 rate is 0.0870063
+ctx1SegCtx is 1 1 rate is 0.231254
+ctx1SegCtx is 1 2 rate is 0.301088
+ctx1SegCtx is 1 3 rate is 0.380653
+entropy is 0.491909
+the ctx1SegCtx is 2 and the count rate is 0.367891
+ctx1SegCtx is 2 1 rate is 0.299627
+ctx1SegCtx is 2 2 rate is 0.227103
+ctx1SegCtx is 2 0 rate is 0.335682
+ctx1SegCtx is 2 3 rate is 0.137588
+entropy is 0.70967
+the ctx1SegCtx is 3 and the count rate is 0.1703
+ctx1SegCtx is 3 0 rate is 0.722471
+ctx1SegCtx is 3 1 rate is 0.179051
+ctx1SegCtx is 3 2 rate is 0.0734109
+ctx1SegCtx is 3 3 rate is 0.0250671
+entropy is 0.20318
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 798501 points 
+positions bitstream size 2926 B (0.0592632 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 14869 B (0.301157 bpp)
+colors processing time (user): 0.484 s
+Number of points = 981966
+Number of nodes = 9514
+Estimation of sampling = 1.5749
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.223181
+ctx1SegCtx is 0 3 rate is 0.555724
+ctx1SegCtx is 0 1 rate is 0.131918
+ctx1SegCtx is 0 0 rate is 0.0371494
+ctx1SegCtx is 0 2 rate is 0.275208
+entropy is 0.344874
+the ctx1SegCtx is 3 and the count rate is 0.235871
+ctx1SegCtx is 3 0 rate is 0.553085
+ctx1SegCtx is 3 1 rate is 0.257891
+ctx1SegCtx is 3 2 rate is 0.132712
+ctx1SegCtx is 3 3 rate is 0.0563128
+entropy is 0.37673
+the ctx1SegCtx is 2 and the count rate is 0.298731
+ctx1SegCtx is 2 0 rate is 0.299632
+ctx1SegCtx is 2 2 rate is 0.243274
+ctx1SegCtx is 2 1 rate is 0.295384
+ctx1SegCtx is 2 3 rate is 0.161711
+entropy is 0.586062
+the ctx1SegCtx is 1 and the count rate is 0.242217
+ctx1SegCtx is 1 1 rate is 0.236815
+ctx1SegCtx is 1 2 rate is 0.304226
+ctx1SegCtx is 1 0 rate is 0.126441
+ctx1SegCtx is 1 3 rate is 0.332518
+entropy is 0.465024
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1466880 points 
+Sub-sampling 2 gives 668402 points 
+positions bitstream size 6789 B (0.0553095 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 20754 B (0.169081 bpp)
+colors processing time (user): 0.359 s
+Number of points = 986195
+Number of nodes = 9148
+Estimation of sampling = 1.541
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 1 and the count rate is 0.248013
+ctx1SegCtx is 1 3 rate is 0.349131
+ctx1SegCtx is 1 1 rate is 0.244801
+ctx1SegCtx is 1 2 rate is 0.279918
+ctx1SegCtx is 1 0 rate is 0.126151
+entropy is 0.475697
+the ctx1SegCtx is 0 and the count rate is 0.23905
+ctx1SegCtx is 0 3 rate is 0.524231
+ctx1SegCtx is 0 1 rate is 0.131942
+ctx1SegCtx is 0 2 rate is 0.297489
+ctx1SegCtx is 0 0 rate is 0.0463389
+entropy is 0.3824
+the ctx1SegCtx is 2 and the count rate is 0.323102
+ctx1SegCtx is 2 3 rate is 0.146297
+ctx1SegCtx is 2 0 rate is 0.323999
+ctx1SegCtx is 2 1 rate is 0.300183
+ctx1SegCtx is 2 2 rate is 0.229521
+entropy is 0.627132
+the ctx1SegCtx is 3 and the count rate is 0.189836
+ctx1SegCtx is 3 0 rate is 0.638307
+ctx1SegCtx is 3 1 rate is 0.212472
+ctx1SegCtx is 3 2 rate is 0.0997773
+ctx1SegCtx is 3 3 rate is 0.0494432
+entropy is 0.272316
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1492255 points 
+Sub-sampling 2 gives 677019 points 
+positions bitstream size 6134 B (0.0497589 bpp)
+positions processing time (user): 0.828 s
+colors bitstream size 24768 B (0.200918 bpp)
+colors processing time (user): 0.343 s
+Number of points = 652113
+Number of nodes = 6887
+Estimation of sampling = 1.64427
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.222452
+ctx1SegCtx is 0 3 rate is 0.522228
+ctx1SegCtx is 0 2 rate is 0.280899
+ctx1SegCtx is 0 0 rate is 0.048852
+ctx1SegCtx is 0 1 rate is 0.148021
+entropy is 0.361432
+the ctx1SegCtx is 1 and the count rate is 0.263747
+ctx1SegCtx is 1 3 rate is 0.374948
+ctx1SegCtx is 1 1 rate is 0.222909
+ctx1SegCtx is 1 0 rate is 0.145035
+ctx1SegCtx is 1 2 rate is 0.257108
+entropy is 0.5067
+the ctx1SegCtx is 2 and the count rate is 0.328407
+ctx1SegCtx is 2 1 rate is 0.297485
+ctx1SegCtx is 2 3 rate is 0.133355
+ctx1SegCtx is 2 2 rate is 0.251489
+ctx1SegCtx is 2 0 rate is 0.31767
+entropy is 0.635247
+the ctx1SegCtx is 3 and the count rate is 0.185394
+ctx1SegCtx is 3 0 rate is 0.627198
+ctx1SegCtx is 3 2 rate is 0.106682
+ctx1SegCtx is 3 1 rate is 0.21102
+ctx1SegCtx is 3 3 rate is 0.0550996
+entropy is 0.272642
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1164194 points 
+Sub-sampling 2 gives 530290 points 
+positions bitstream size 4441 B (0.0544814 bpp)
+positions processing time (user): 0.64 s
+colors bitstream size 18926 B (0.232181 bpp)
+colors processing time (user): 0.328 s
+Total frame size 121944 B
+Total bitstream size 121944 B
+Processing time (wall): 19.746 s
+Processing time (user): 15.062 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 1875 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 20361 B
+colors processing time (user): 0.234 s
+
+positions bitstream size 2926 B
+positions processing time (user): 0.312 s
+
+colors bitstream size 14869 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 6789 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 20754 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 6134 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 24768 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 4441 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 18926 B
+colors processing time (user): 0.234 s
+
+Total bitstream size 121944 B
+Processing time (wall): 4.104 s
+Processing time (user): 2.718 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply
+infile2:        F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\frog_00067_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 3108 2620 484
+WARNING: 2146 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3614251, 3103318, 0.858634
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 13.3205
+   mse1,PSNR (p2point): 65.7711
+   mse1      (p2plane): 3.73871
+   mse1,PSNR (p2plane): 71.2891
+   c[0],    1         : 0.000804302
+   c[1],    1         : 2.94129e-05
+   c[2],    1         : 1.47719e-05
+   c[0],PSNR1         : 30.9458
+   c[1],PSNR1         : 45.3146
+   c[2],PSNR1         : 48.3056
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 7.64368
+   mse2,PSNR (p2point): 68.1833
+   mse2      (p2plane): 4.37824
+   mse2,PSNR (p2plane): 70.6033
+   c[0],    2         : 0.000621145
+   c[1],    2         : 2.51927e-05
+   c[2],    2         : 1.3185e-05
+   c[0],PSNR2         : 32.0681
+   c[1],PSNR2         : 45.9873
+   c[2],PSNR2         : 48.7992
+3. Final (symmetric).
+   mseF      (p2point): 13.3205
+   mseF,PSNR (p2point): 65.7711
+   mseF      (p2plane): 4.37824
+   mseF,PSNR (p2plane): 70.6033
+   c[0],    F         : 0.000804302
+   c[1],    F         : 2.94129e-05
+   c[2],    F         : 1.47719e-05
+   c[0],PSNRF         : 30.9458
+   c[1],PSNRF         : 45.3146
+   c[2],PSNRF         : 48.3056
+Job done! 14.063 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply"
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 13
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 323844
+Number of nodes = 10762
+Estimation of sampling = 1.45837
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.225944
+ctx1SegCtx is 0 0 rate is 0.0385244
+ctx1SegCtx is 0 3 rate is 0.562923
+ctx1SegCtx is 0 2 rate is 0.280878
+ctx1SegCtx is 0 1 rate is 0.117675
+entropy is 0.344675
+the ctx1SegCtx is 1 and the count rate is 0.268675
+ctx1SegCtx is 1 2 rate is 0.341449
+ctx1SegCtx is 1 0 rate is 0.0967995
+ctx1SegCtx is 1 1 rate is 0.245435
+ctx1SegCtx is 1 3 rate is 0.316317
+entropy is 0.504597
+the ctx1SegCtx is 3 and the count rate is 0.175512
+ctx1SegCtx is 3 2 rate is 0.0736399
+ctx1SegCtx is 3 0 rate is 0.62639
+ctx1SegCtx is 3 1 rate is 0.292456
+ctx1SegCtx is 3 3 rate is 0.00751428
+entropy is 0.223184
+the ctx1SegCtx is 2 and the count rate is 0.329869
+ctx1SegCtx is 2 1 rate is 0.37566
+ctx1SegCtx is 2 2 rate is 0.285623
+ctx1SegCtx is 2 0 rate is 0.275548
+ctx1SegCtx is 2 3 rate is 0.0631697
+entropy is 0.597425
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 575210 points 
+positions bitstream size 7358 B (0.181767 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 54474 B (1.34568 bpp)
+colors processing time (user): 0.312 s
+Number of points = 408272
+Number of nodes = 19851
+Estimation of sampling = 1.76403
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.191417
+ctx1SegCtx is 0 3 rate is 0.623191
+ctx1SegCtx is 0 0 rate is 0.0241762
+ctx1SegCtx is 0 1 rate is 0.0802279
+ctx1SegCtx is 0 2 rate is 0.272405
+entropy is 0.259962
+the ctx1SegCtx is 1 and the count rate is 0.262925
+ctx1SegCtx is 1 3 rate is 0.320067
+ctx1SegCtx is 1 0 rate is 0.0676009
+ctx1SegCtx is 1 1 rate is 0.238004
+ctx1SegCtx is 1 2 rate is 0.374327
+entropy is 0.476512
+the ctx1SegCtx is 2 and the count rate is 0.348376
+ctx1SegCtx is 2 1 rate is 0.385566
+ctx1SegCtx is 2 0 rate is 0.255605
+ctx1SegCtx is 2 2 rate is 0.293341
+ctx1SegCtx is 2 3 rate is 0.0654878
+entropy is 0.630466
+the ctx1SegCtx is 3 and the count rate is 0.197282
+ctx1SegCtx is 3 0 rate is 0.555207
+ctx1SegCtx is 3 1 rate is 0.339011
+ctx1SegCtx is 3 2 rate is 0.0983117
+ctx1SegCtx is 3 3 rate is 0.00747049
+entropy is 0.272674
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1070855 points 
+positions bitstream size 13112 B (0.256927 bpp)
+positions processing time (user): 0.734 s
+colors bitstream size 42145 B (0.825822 bpp)
+colors processing time (user): 0.609 s
+Number of points = 967156
+Number of nodes = 35472
+Estimation of sampling = 1.53209
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.212087
+ctx1SegCtx is 0 2 rate is 0.280413
+ctx1SegCtx is 0 1 rate is 0.114999
+ctx1SegCtx is 0 3 rate is 0.581337
+ctx1SegCtx is 0 0 rate is 0.0232504
+entropy is 0.308441
+the ctx1SegCtx is 1 and the count rate is 0.237158
+ctx1SegCtx is 1 2 rate is 0.373495
+ctx1SegCtx is 1 1 rate is 0.237959
+ctx1SegCtx is 1 3 rate is 0.302226
+ctx1SegCtx is 1 0 rate is 0.0863204
+entropy is 0.438823
+the ctx1SegCtx is 2 and the count rate is 0.29912
+ctx1SegCtx is 2 1 rate is 0.36462
+ctx1SegCtx is 2 2 rate is 0.320437
+ctx1SegCtx is 2 3 rate is 0.0856461
+ctx1SegCtx is 2 0 rate is 0.229296
+entropy is 0.552679
+the ctx1SegCtx is 3 and the count rate is 0.251635
+ctx1SegCtx is 3 0 rate is 0.476973
+ctx1SegCtx is 3 1 rate is 0.355437
+ctx1SegCtx is 3 2 rate is 0.145685
+ctx1SegCtx is 3 3 rate is 0.0219055
+entropy is 0.393928
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1922574 points 
+Sub-sampling 2 gives 975536 points 
+positions bitstream size 27094 B (0.224113 bpp)
+positions processing time (user): 1.656 s
+colors bitstream size 74155 B (0.613386 bpp)
+colors processing time (user): 0.671 s
+Number of points = 963475
+Number of nodes = 34055
+Estimation of sampling = 1.50404
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.223191
+ctx1SegCtx is 0 3 rate is 0.562728
+ctx1SegCtx is 0 2 rate is 0.294252
+ctx1SegCtx is 0 0 rate is 0.0274483
+ctx1SegCtx is 0 1 rate is 0.115572
+entropy is 0.332168
+the ctx1SegCtx is 1 and the count rate is 0.255316
+ctx1SegCtx is 1 2 rate is 0.350415
+ctx1SegCtx is 1 0 rate is 0.0936524
+ctx1SegCtx is 1 3 rate is 0.319641
+ctx1SegCtx is 1 1 rate is 0.236291
+entropy is 0.476896
+the ctx1SegCtx is 2 and the count rate is 0.317562
+ctx1SegCtx is 2 0 rate is 0.255491
+ctx1SegCtx is 2 2 rate is 0.298776
+ctx1SegCtx is 2 1 rate is 0.376904
+ctx1SegCtx is 2 3 rate is 0.0688292
+entropy is 0.577969
+the ctx1SegCtx is 3 and the count rate is 0.20393
+ctx1SegCtx is 3 1 rate is 0.320879
+ctx1SegCtx is 3 0 rate is 0.555962
+ctx1SegCtx is 3 2 rate is 0.106266
+ctx1SegCtx is 3 3 rate is 0.0168927
+entropy is 0.293705
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1828698 points 
+Sub-sampling 2 gives 933290 points 
+positions bitstream size 23773 B (0.197394 bpp)
+positions processing time (user): 1.593 s
+colors bitstream size 83868 B (0.696379 bpp)
+colors processing time (user): 0.609 s
+Number of points = 658422
+Number of nodes = 26885
+Estimation of sampling = 1.61656
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.215492
+ctx1SegCtx is 0 3 rate is 0.574034
+ctx1SegCtx is 0 2 rate is 0.280872
+ctx1SegCtx is 0 1 rate is 0.116155
+ctx1SegCtx is 0 0 rate is 0.0289395
+entropy is 0.319556
+the ctx1SegCtx is 1 and the count rate is 0.256626
+ctx1SegCtx is 1 1 rate is 0.231691
+ctx1SegCtx is 1 0 rate is 0.0956225
+ctx1SegCtx is 1 3 rate is 0.309587
+ctx1SegCtx is 1 2 rate is 0.363099
+entropy is 0.479125
+the ctx1SegCtx is 2 and the count rate is 0.326207
+ctx1SegCtx is 2 2 rate is 0.305028
+ctx1SegCtx is 2 1 rate is 0.374754
+ctx1SegCtx is 2 0 rate is 0.251277
+ctx1SegCtx is 2 3 rate is 0.0689407
+entropy is 0.593654
+the ctx1SegCtx is 3 and the count rate is 0.201674
+ctx1SegCtx is 3 1 rate is 0.328497
+ctx1SegCtx is 3 0 rate is 0.548025
+ctx1SegCtx is 3 2 rate is 0.107487
+ctx1SegCtx is 3 3 rate is 0.0159907
+entropy is 0.291293
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1472847 points 
+Sub-sampling 2 gives 749804 points 
+positions bitstream size 18179 B (0.22088 bpp)
+positions processing time (user): 1.312 s
+colors bitstream size 61876 B (0.75181 bpp)
+colors processing time (user): 2.078 s
+Total frame size 406135 B
+Total bitstream size 406135 B
+Processing time (wall): 26.966 s
+Processing time (user): 22.359 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 7358 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 54474 B
+colors processing time (user): 0.281 s
+
+positions bitstream size 13112 B
+positions processing time (user): 0.593 s
+
+colors bitstream size 42145 B
+colors processing time (user): 0.546 s
+
+positions bitstream size 27094 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 74155 B
+colors processing time (user): 0.562 s
+
+positions bitstream size 23773 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 83868 B
+colors processing time (user): 0.531 s
+
+positions bitstream size 18179 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 61876 B
+colors processing time (user): 1.89 s
+
+Total bitstream size 406135 B
+Processing time (wall): 7.528 s
+Processing time (user): 6.312 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply
+infile2:        F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\frog_00067_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 3090 2618 448
+WARNING: 1994 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3614251, 4302701, 1.19048
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 4.50444
+   mse1,PSNR (p2point): 70.4799
+   mse1      (p2plane): 1.52853
+   mse1,PSNR (p2plane): 75.1736
+   c[0],    1         : 0.00047948
+   c[1],    1         : 2.17314e-05
+   c[2],    1         : 1.2649e-05
+   c[0],PSNR1         : 33.1923
+   c[1],PSNR1         : 46.6291
+   c[2],PSNR1         : 48.9794
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 5.19961
+   mse2,PSNR (p2point): 69.8566
+   mse2      (p2plane): 2.62896
+   mse2,PSNR (p2plane): 72.8185
+   c[0],    2         : 0.00043039
+   c[1],    2         : 1.88147e-05
+   c[2],    2         : 1.14043e-05
+   c[0],PSNR2         : 33.6614
+   c[1],PSNR2         : 47.255
+   c[2],PSNR2         : 49.4293
+3. Final (symmetric).
+   mseF      (p2point): 5.19961
+   mseF,PSNR (p2point): 69.8566
+   mseF      (p2plane): 2.62896
+   mseF,PSNR (p2plane): 72.8185
+   c[0],    F         : 0.00047948
+   c[1],    F         : 2.17314e-05
+   c[2],    F         : 1.2649e-05
+   c[0],PSNRF         : 33.1923
+   c[1],PSNRF         : 46.6291
+   c[2],PSNRF         : 48.9794
+Job done! 15.907 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply"
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.5
+    sequenceScale             : 0.5
+    positionQuantizationScale : 0.5
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 13
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 5
+Number of points = 323844
+Number of nodes = 40244
+Estimation of sampling = 1.41008
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.243019
+ctx1SegCtx is 0 1 rate is 0.112632
+ctx1SegCtx is 0 3 rate is 0.505074
+ctx1SegCtx is 0 2 rate is 0.361728
+ctx1SegCtx is 0 0 rate is 0.0205658
+entropy is 0.364152
+the ctx1SegCtx is 1 and the count rate is 0.283881
+ctx1SegCtx is 1 2 rate is 0.540444
+ctx1SegCtx is 1 1 rate is 0.298638
+ctx1SegCtx is 1 3 rate is 0.101389
+ctx1SegCtx is 1 0 rate is 0.0595301
+entropy is 0.447842
+the ctx1SegCtx is 2 and the count rate is 0.306376
+ctx1SegCtx is 2 1 rate is 0.522899
+ctx1SegCtx is 2 2 rate is 0.315587
+ctx1SegCtx is 2 0 rate is 0.151604
+ctx1SegCtx is 2 3 rate is 0.00990975
+entropy is 0.457357
+the ctx1SegCtx is 3 and the count rate is 0.166724
+ctx1SegCtx is 3 1 rate is 0.488149
+ctx1SegCtx is 3 0 rate is 0.396425
+ctx1SegCtx is 3 2 rate is 0.112512
+ctx1SegCtx is 3 3 rate is 0.00291365
+entropy is 0.235645
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 809715 points 
+positions bitstream size 29430 B (0.727017 bpp)
+positions processing time (user): 0.984 s
+colors bitstream size 133982 B (3.30979 bpp)
+colors processing time (user): 0.5 s
+Number of points = 408272
+Number of nodes = 74712
+Estimation of sampling = 1.71112
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.231114
+ctx1SegCtx is 0 3 rate is 0.469793
+ctx1SegCtx is 0 2 rate is 0.40709
+ctx1SegCtx is 0 1 rate is 0.107658
+ctx1SegCtx is 0 0 rate is 0.0154583
+entropy is 0.341821
+the ctx1SegCtx is 1 and the count rate is 0.265861
+ctx1SegCtx is 1 1 rate is 0.31389
+ctx1SegCtx is 1 2 rate is 0.519122
+ctx1SegCtx is 1 3 rate is 0.115845
+ctx1SegCtx is 1 0 rate is 0.0511437
+entropy is 0.424142
+the ctx1SegCtx is 2 and the count rate is 0.324902
+ctx1SegCtx is 2 1 rate is 0.512185
+ctx1SegCtx is 2 2 rate is 0.333154
+ctx1SegCtx is 2 0 rate is 0.134363
+ctx1SegCtx is 2 3 rate is 0.0202978
+entropy is 0.495768
+the ctx1SegCtx is 3 and the count rate is 0.178123
+ctx1SegCtx is 3 1 rate is 0.506656
+ctx1SegCtx is 3 0 rate is 0.310483
+ctx1SegCtx is 3 2 rate is 0.174065
+ctx1SegCtx is 3 3 rate is 0.00879539
+entropy is 0.270749
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1468686 points 
+Sub-sampling 2 gives 884757 points 
+positions bitstream size 56977 B (1.11645 bpp)
+positions processing time (user): 2.171 s
+colors bitstream size 85377 B (1.67294 bpp)
+colors processing time (user): 0.546 s
+Number of points = 976063
+Number of nodes = 133974
+Estimation of sampling = 1.48194
+distanceSearchEncoder = 2
+
+encode the position and the data for the ctx1SegCtx
+the ctx1SegCtx is 0 and the count rate is 0.239922
+ctx1SegCtx is 0 3 rate is 0.464829
+ctx1SegCtx is 0 2 rate is 0.38986
+ctx1SegCtx is 0 1 rate is 0.12328
+ctx1SegCtx is 0 0 rate is 0.0220303
+entropy is 0.368789
+the ctx1SegCtx is 1 and the count rate is 0.25618
+ctx1SegCtx is 1 1 rate is 0.304765
+ctx1SegCtx is 1 2 rate is 0.508127
+ctx1SegCtx is 1 3 rate is 0.12309
+ctx1SegCtx is 1 0 rate is 0.0640178
+entropy is 0.421315
+the ctx1SegCtx is 3 and the count rate is 0.220788
+ctx1SegCtx is 3 1 rate is 0.49415
+ctx1SegCtx is 3 0 rate is 0.291789
+ctx1SegCtx is 3 2 rate is 0.202453
+ctx1SegCtx is 3 3 rate is 0.0116079
+entropy is 0.344914
+the ctx1SegCtx is 2 and the count rate is 0.28311
+ctx1SegCtx is 2 1 rate is 0.485759
+ctx1SegCtx is 2 2 rate is 0.353286
+ctx1SegCtx is 2 0 rate is 0.133797
+ctx1SegCtx is 2 3 rate is 0.0271577
+entropy is 0.443315
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 2678570 points 
+Sub-sampling 2 gives 1610565 points 
+Sub-sampling 3 gives 1574716 points 
+Sub-sampling 4 gives 1592423 points 
+positions bitstream size 111356 B (0.912695 bpp)
+positions processing time (user): 5.406 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position_ctx1\mpeg\dense\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 29430 B
+positions processing time (user): 0.812 s
+
+colors bitstream size 133982 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 56977 B
+positions processing time (user): 0.89 s
+
+colors bitstream size 85377 B
+colors processing time (user): 0.421 s
+
+Total bitstream size 413696 B
+Processing time (wall): 3.156 s
+Processing time (user): 2.578 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\dense\frog_00067_vox12.ply
+infile2:        F:\YK\position_ctx1\mpeg\dense\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\frog_00067_vox12_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     4095
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 2801 2507 157
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 4096 1418 48
+Reading file 2 done.
+Imported intrinsic resoluiton: 4095
+Peak distance for PSNR: 4095
+Point cloud sizes for org version, dec version, and the scaling ratio: 3614251, 1694472, 0.468831
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 556749
+   mse1,PSNR (p2point): 19.5597
+   mse1      (p2plane): 25017.9
+   mse1,PSNR (p2plane): 33.0338
+   c[0],    1         : 0.0283481
+   c[1],    1         : 0.000116492
+   c[2],    1         : 3.66949e-05
+   c[0],PSNR1         : 15.4748
+   c[1],PSNR1         : 39.337
+   c[2],PSNR1         : 44.3539
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 4.6419
+   mse2,PSNR (p2point): 70.3493
+   mse2      (p2plane): 2.45676
+   mse2,PSNR (p2plane): 73.1127
+   c[0],    2         : 0.000444796
+   c[1],    2         : 1.38394e-05
+   c[2],    2         : 9.11326e-06
+   c[0],PSNR2         : 33.5184
+   c[1],PSNR2         : 48.5888
+   c[2],PSNR2         : 50.4033
+3. Final (symmetric).
+   mseF      (p2point): 556749
+   mseF,PSNR (p2point): 19.5597
+   mseF      (p2plane): 25017.9
+   mseF,PSNR (p2plane): 33.0338
+   c[0],    F         : 0.0283481
+   c[1],    F         : 0.000116492
+   c[2],    F         : 3.66949e-05
+   c[0],PSNRF         : 15.4748
+   c[1],PSNRF         : 39.337
+   c[2],PSNRF         : 44.3539
+Job done! 23.109 seconds elapsed (excluding the time to load the point clouds).

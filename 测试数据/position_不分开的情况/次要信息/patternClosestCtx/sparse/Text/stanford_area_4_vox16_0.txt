@@ -1,0 +1,4841 @@
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 5
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 36
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 30
+Number of points = 115939
+Number of nodes = 180
+Estimation of sampling = 1.26087
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.97
+patternClosest is 0 0 rate is 0.283505
+patternClosest is 0 3 rate is 0.21134
+patternClosest is 0 2 rate is 0.391753
+patternClosest is 0 1 rate is 0.113402
+entropy is 1.81899
+the patternClosest is 1 and the count rate is 0.03
+patternClosest is 1 3 rate is 0.166667
+patternClosest is 1 1 rate is 0.333333
+patternClosest is 1 0 rate is 0.333333
+patternClosest is 1 2 rate is 0.166667
+entropy is 0.0575489
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 163093 points 
+positions bitstream size 174 B (0.0120063 bpp)
+positions processing time (user): 0.109 s
+colors bitstream size 4290 B (0.296018 bpp)
+colors processing time (user): 0.156 s
+Number of points = 599746
+Number of nodes = 699
+Estimation of sampling = 1.09246
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.944633
+patternClosest is 0 3 rate is 0.251196
+patternClosest is 0 2 rate is 0.238038
+patternClosest is 0 0 rate is 0.340909
+patternClosest is 0 1 rate is 0.169856
+entropy is 1.84891
+the patternClosest is 1 and the count rate is 0.0553672
+patternClosest is 1 1 rate is 0.204082
+patternClosest is 1 0 rate is 0.571429
+patternClosest is 1 2 rate is 0.102041
+patternClosest is 1 3 rate is 0.122449
+entropy is 0.0905945
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 798143 points 
+positions bitstream size 605 B (0.00807008 bpp)
+positions processing time (user): 0.375 s
+colors bitstream size 36529 B (0.48726 bpp)
+colors processing time (user): 0.828 s
+Number of points = 623654
+Number of nodes = 781
+Estimation of sampling = 1.13241
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.959888
+patternClosest is 0 0 rate is 0.206025
+patternClosest is 0 1 rate is 0.263362
+patternClosest is 0 2 rate is 0.36346
+patternClosest is 0 3 rate is 0.167153
+entropy is 1.86081
+the patternClosest is 1 and the count rate is 0.0401119
+patternClosest is 1 2 rate is 0.302326
+patternClosest is 1 1 rate is 0.418605
+patternClosest is 1 3 rate is 0.0232558
+patternClosest is 1 0 rate is 0.255814
+entropy is 0.067268
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 897066 points 
+positions bitstream size 706 B (0.0090563 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 29068 B (0.372873 bpp)
+colors processing time (user): 0.906 s
+Number of points = 770137
+Number of nodes = 971
+Estimation of sampling = 1.13625
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.922109
+patternClosest is 0 3 rate is 0.301195
+patternClosest is 0 1 rate is 0.21587
+patternClosest is 0 2 rate is 0.266212
+patternClosest is 0 0 rate is 0.216724
+entropy is 1.83065
+the patternClosest is 1 and the count rate is 0.0778914
+patternClosest is 1 1 rate is 0.252525
+patternClosest is 1 0 rate is 0.525253
+patternClosest is 1 2 rate is 0.151515
+patternClosest is 1 3 rate is 0.0707071
+entropy is 0.130238
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1152885 points 
+Sub-sampling 2 gives 432611 points 
+positions bitstream size 824 B (0.00855952 bpp)
+positions processing time (user): 0.546 s
+colors bitstream size 23498 B (0.244092 bpp)
+colors processing time (user): 0.375 s
+Number of points = 787928
+Number of nodes = 1017
+Estimation of sampling = 1.14965
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.957008
+patternClosest is 0 0 rate is 0.241689
+patternClosest is 0 1 rate is 0.20575
+patternClosest is 0 2 rate is 0.309075
+patternClosest is 0 3 rate is 0.243486
+entropy is 1.89899
+the patternClosest is 1 and the count rate is 0.0429923
+patternClosest is 1 0 rate is 0.32
+patternClosest is 1 1 rate is 0.28
+patternClosest is 1 2 rate is 0.22
+patternClosest is 1 3 rate is 0.18
+entropy is 0.0845286
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1078227 points 
+positions bitstream size 811 B (0.00823425 bpp)
+positions processing time (user): 0.484 s
+colors bitstream size 40492 B (0.411124 bpp)
+colors processing time (user): 1.062 s
+Number of points = 1040270
+Number of nodes = 1212
+Estimation of sampling = 1.09227
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.94904
+patternClosest is 0 3 rate is 0.221757
+patternClosest is 0 2 rate is 0.276151
+patternClosest is 0 0 rate is 0.317294
+patternClosest is 0 1 rate is 0.184798
+entropy is 1.86977
+the patternClosest is 1 and the count rate is 0.0509596
+patternClosest is 1 2 rate is 0.25974
+patternClosest is 1 0 rate is 0.181818
+patternClosest is 1 1 rate is 0.194805
+patternClosest is 1 3 rate is 0.363636
+entropy is 0.0990018
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1424163 points 
+Sub-sampling 2 gives 507536 points 
+positions bitstream size 974 B (0.00749036 bpp)
+positions processing time (user): 0.734 s
+colors bitstream size 24854 B (0.191135 bpp)
+colors processing time (user): 0.515 s
+Number of points = 835320
+Number of nodes = 1049
+Estimation of sampling = 1.134
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.966497
+patternClosest is 0 0 rate is 0.353429
+patternClosest is 0 3 rate is 0.217784
+patternClosest is 0 2 rate is 0.226074
+patternClosest is 0 1 rate is 0.202713
+entropy is 1.89524
+the patternClosest is 1 and the count rate is 0.0335033
+patternClosest is 1 0 rate is 0.478261
+patternClosest is 1 2 rate is 0.173913
+patternClosest is 1 1 rate is 0.23913
+patternClosest is 1 3 rate is 0.108696
+entropy is 0.0599512
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1158111 points 
+Sub-sampling 2 gives 411826 points 
+positions bitstream size 899 B (0.00860987 bpp)
+positions processing time (user): 0.64 s
+colors bitstream size 19440 B (0.18618 bpp)
+colors processing time (user): 0.406 s
+Number of points = 372145
+Number of nodes = 481
+Estimation of sampling = 1.15045
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.956636
+patternClosest is 0 3 rate is 0.142857
+patternClosest is 0 2 rate is 0.300824
+patternClosest is 0 1 rate is 0.259615
+patternClosest is 0 0 rate is 0.296703
+entropy is 1.86312
+the patternClosest is 1 and the count rate is 0.043364
+patternClosest is 1 3 rate is 0.030303
+patternClosest is 1 0 rate is 0.424242
+patternClosest is 1 1 rate is 0.333333
+patternClosest is 1 2 rate is 0.212121
+entropy is 0.0728736
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 555103 points 
+positions bitstream size 509 B (0.010942 bpp)
+positions processing time (user): 0.234 s
+colors bitstream size 15850 B (0.340727 bpp)
+colors processing time (user): 0.484 s
+Number of points = 804147
+Number of nodes = 863
+Estimation of sampling = 1.04831
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.940969
+patternClosest is 0 1 rate is 0.17603
+patternClosest is 0 2 rate is 0.331461
+patternClosest is 0 0 rate is 0.298689
+patternClosest is 0 3 rate is 0.19382
+entropy is 1.83368
+the patternClosest is 1 and the count rate is 0.0590308
+patternClosest is 1 1 rate is 0.328358
+patternClosest is 1 0 rate is 0.492537
+patternClosest is 1 2 rate is 0.119403
+patternClosest is 1 3 rate is 0.0597015
+entropy is 0.096789
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1063514 points 
+positions bitstream size 775 B (0.00771003 bpp)
+positions processing time (user): 0.5 s
+colors bitstream size 54646 B (0.543642 bpp)
+colors processing time (user): 0.984 s
+Number of points = 577451
+Number of nodes = 773
+Estimation of sampling = 1.1708
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.972881
+patternClosest is 0 2 rate is 0.308943
+patternClosest is 0 1 rate is 0.173055
+patternClosest is 0 0 rate is 0.269454
+patternClosest is 0 3 rate is 0.248548
+entropy is 1.91701
+the patternClosest is 1 and the count rate is 0.0271186
+patternClosest is 1 3 rate is 0.0833333
+patternClosest is 1 2 rate is 0.208333
+patternClosest is 1 0 rate is 0.333333
+patternClosest is 1 1 rate is 0.375
+entropy is 0.0496047
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 845081 points 
+positions bitstream size 590 B (0.00817385 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 22928 B (0.317644 bpp)
+colors processing time (user): 0.796 s
+Number of points = 899676
+Number of nodes = 1088
+Estimation of sampling = 1.11281
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.919298
+patternClosest is 0 0 rate is 0.264885
+patternClosest is 0 2 rate is 0.229008
+patternClosest is 0 1 rate is 0.266412
+patternClosest is 0 3 rate is 0.239695
+entropy is 1.83583
+the patternClosest is 1 and the count rate is 0.0807018
+patternClosest is 1 3 rate is 0.26087
+patternClosest is 1 2 rate is 0.2
+patternClosest is 1 1 rate is 0.321739
+patternClosest is 1 0 rate is 0.217391
+entropy is 0.159394
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1227200 points 
+Sub-sampling 2 gives 441983 points 
+positions bitstream size 930 B (0.00826964 bpp)
+positions processing time (user): 0.64 s
+colors bitstream size 23471 B (0.208706 bpp)
+colors processing time (user): 0.421 s
+Number of points = 538180
+Number of nodes = 673
+Estimation of sampling = 1.1316
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.964497
+patternClosest is 0 1 rate is 0.238241
+patternClosest is 0 0 rate is 0.333333
+patternClosest is 0 3 rate is 0.132924
+patternClosest is 0 2 rate is 0.295501
+entropy is 1.85961
+the patternClosest is 1 and the count rate is 0.035503
+patternClosest is 1 2 rate is 0.472222
+patternClosest is 1 1 rate is 0.333333
+patternClosest is 1 0 rate is 0.194444
+entropy is 0.0532144
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 816872 points 
+positions bitstream size 633 B (0.00940949 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 26664 B (0.396358 bpp)
+colors processing time (user): 0.75 s
+Number of points = 911490
+Number of nodes = 1139
+Estimation of sampling = 1.13119
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.955746
+patternClosest is 0 1 rate is 0.236351
+patternClosest is 0 3 rate is 0.192813
+patternClosest is 0 0 rate is 0.349689
+patternClosest is 0 2 rate is 0.221147
+entropy is 1.87443
+the patternClosest is 1 and the count rate is 0.0442536
+patternClosest is 1 2 rate is 0.223881
+patternClosest is 1 0 rate is 0.38806
+patternClosest is 1 3 rate is 0.179104
+patternClosest is 1 1 rate is 0.208955
+entropy is 0.0853967
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1248239 points 
+Sub-sampling 2 gives 453155 points 
+positions bitstream size 964 B (0.00846087 bpp)
+positions processing time (user): 0.64 s
+colors bitstream size 28190 B (0.247419 bpp)
+colors processing time (user): 0.39 s
+Number of points = 560275
+Number of nodes = 756
+Estimation of sampling = 1.17547
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.959385
+patternClosest is 0 3 rate is 0.188787
+patternClosest is 0 0 rate is 0.422197
+patternClosest is 0 2 rate is 0.184211
+patternClosest is 0 1 rate is 0.204805
+entropy is 1.82033
+the patternClosest is 1 and the count rate is 0.0406147
+patternClosest is 1 0 rate is 0.648649
+patternClosest is 1 2 rate is 0.27027
+patternClosest is 1 3 rate is 0.0810811
+entropy is 0.049107
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 793068 points 
+positions bitstream size 622 B (0.00888135 bpp)
+positions processing time (user): 0.343 s
+colors bitstream size 25651 B (0.366263 bpp)
+colors processing time (user): 0.812 s
+Number of points = 947453
+Number of nodes = 1049
+Estimation of sampling = 1.06478
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.922962
+patternClosest is 0 1 rate is 0.180713
+patternClosest is 0 2 rate is 0.227715
+patternClosest is 0 0 rate is 0.281199
+patternClosest is 0 3 rate is 0.310373
+entropy is 1.8189
+the patternClosest is 1 and the count rate is 0.0770381
+patternClosest is 1 1 rate is 0.291262
+patternClosest is 1 0 rate is 0.339806
+patternClosest is 1 2 rate is 0.145631
+patternClosest is 1 3 rate is 0.223301
+entropy is 0.149089
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1238025 points 
+Sub-sampling 2 gives 470696 points 
+positions bitstream size 905 B (0.00764154 bpp)
+positions processing time (user): 0.718 s
+colors bitstream size 33497 B (0.282838 bpp)
+colors processing time (user): 0.421 s
+Number of points = 653214
+Number of nodes = 877
+Estimation of sampling = 1.17252
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.916861
+patternClosest is 0 3 rate is 0.309322
+patternClosest is 0 0 rate is 0.185593
+patternClosest is 0 2 rate is 0.292373
+patternClosest is 0 1 rate is 0.212712
+entropy is 1.80463
+the patternClosest is 1 and the count rate is 0.0831391
+patternClosest is 1 3 rate is 0.17757
+patternClosest is 1 0 rate is 0.373832
+patternClosest is 1 2 rate is 0.280374
+patternClosest is 1 1 rate is 0.168224
+entropy is 0.159661
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 996714 points 
+positions bitstream size 750 B (0.00918535 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 37688 B (0.46157 bpp)
+colors processing time (user): 1.015 s
+Number of points = 948933
+Number of nodes = 1162
+Estimation of sampling = 1.11979
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.932253
+patternClosest is 0 2 rate is 0.222749
+patternClosest is 0 1 rate is 0.190363
+patternClosest is 0 0 rate is 0.319115
+patternClosest is 0 3 rate is 0.267773
+entropy is 1.83936
+the patternClosest is 1 and the count rate is 0.0677467
+patternClosest is 1 2 rate is 0.336957
+patternClosest is 1 1 rate is 0.163043
+patternClosest is 1 0 rate is 0.271739
+patternClosest is 1 3 rate is 0.228261
+entropy is 0.13229
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1341474 points 
+Sub-sampling 2 gives 480716 points 
+positions bitstream size 900 B (0.00758747 bpp)
+positions processing time (user): 0.656 s
+colors bitstream size 25177 B (0.212255 bpp)
+colors processing time (user): 0.421 s
+Number of points = 655102
+Number of nodes = 867
+Estimation of sampling = 1.16414
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.957407
+patternClosest is 0 1 rate is 0.237911
+patternClosest is 0 0 rate is 0.301741
+patternClosest is 0 2 rate is 0.172147
+patternClosest is 0 3 rate is 0.288201
+entropy is 1.88482
+the patternClosest is 1 and the count rate is 0.0425926
+patternClosest is 1 0 rate is 0.195652
+patternClosest is 1 1 rate is 0.543478
+patternClosest is 1 2 rate is 0.23913
+patternClosest is 1 3 rate is 0.0217391
+entropy is 0.0661152
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 957601 points 
+positions bitstream size 695 B (0.00848723 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 42136 B (0.514558 bpp)
+colors processing time (user): 0.796 s
+Number of points = 954656
+Number of nodes = 1209
+Estimation of sampling = 1.13878
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.887287
+patternClosest is 0 2 rate is 0.246677
+patternClosest is 0 3 rate is 0.329394
+patternClosest is 0 1 rate is 0.187592
+patternClosest is 0 0 rate is 0.236337
+entropy is 1.74848
+the patternClosest is 1 and the count rate is 0.112713
+patternClosest is 1 0 rate is 0.273256
+patternClosest is 1 2 rate is 0.215116
+patternClosest is 1 1 rate is 0.232558
+patternClosest is 1 3 rate is 0.27907
+entropy is 0.224474
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1327406 points 
+Sub-sampling 2 gives 478657 points 
+positions bitstream size 964 B (0.0080783 bpp)
+positions processing time (user): 0.734 s
+colors bitstream size 30909 B (0.259017 bpp)
+colors processing time (user): 0.437 s
+Number of points = 679459
+Number of nodes = 875
+Estimation of sampling = 1.14834
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.932082
+patternClosest is 0 3 rate is 0.321189
+patternClosest is 0 1 rate is 0.169703
+patternClosest is 0 2 rate is 0.207095
+patternClosest is 0 0 rate is 0.302013
+entropy is 1.82002
+the patternClosest is 1 and the count rate is 0.0679178
+patternClosest is 1 2 rate is 0.276316
+patternClosest is 1 0 rate is 0.315789
+patternClosest is 1 3 rate is 0.144737
+patternClosest is 1 1 rate is 0.263158
+entropy is 0.132326
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 960557 points 
+positions bitstream size 764 B (0.00899539 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 35762 B (0.421064 bpp)
+colors processing time (user): 1.046 s
+Number of points = 969161
+Number of nodes = 1191
+Estimation of sampling = 1.12178
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.954612
+patternClosest is 0 1 rate is 0.161043
+patternClosest is 0 2 rate is 0.309816
+patternClosest is 0 0 rate is 0.338957
+patternClosest is 0 3 rate is 0.190184
+entropy is 1.84476
+the patternClosest is 1 and the count rate is 0.045388
+patternClosest is 1 2 rate is 0.241935
+patternClosest is 1 3 rate is 0.0645161
+patternClosest is 1 0 rate is 0.419355
+patternClosest is 1 1 rate is 0.274194
+entropy is 0.0811556
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1197282 points 
+Sub-sampling 2 gives 400195 points 
+positions bitstream size 814 B (0.00671921 bpp)
+positions processing time (user): 0.593 s
+colors bitstream size 20839 B (0.172017 bpp)
+colors processing time (user): 0.343 s
+Number of points = 820612
+Number of nodes = 1040
+Estimation of sampling = 1.13919
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.943528
+patternClosest is 0 2 rate is 0.309348
+patternClosest is 0 1 rate is 0.253531
+patternClosest is 0 3 rate is 0.167451
+patternClosest is 0 0 rate is 0.26967
+entropy is 1.85607
+the patternClosest is 1 and the count rate is 0.0564721
+patternClosest is 1 0 rate is 0.404494
+patternClosest is 1 1 rate is 0.348315
+patternClosest is 1 2 rate is 0.202247
+patternClosest is 1 3 rate is 0.0449438
+entropy is 0.0974519
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1244165 points 
+Sub-sampling 2 gives 479879 points 
+positions bitstream size 1010 B (0.00984631 bpp)
+positions processing time (user): 0.609 s
+colors bitstream size 23728 B (0.23132 bpp)
+colors processing time (user): 0.375 s
+Number of points = 1010330
+Number of nodes = 1128
+Estimation of sampling = 1.06923
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.938554
+patternClosest is 0 0 rate is 0.223363
+patternClosest is 0 3 rate is 0.334403
+patternClosest is 0 2 rate is 0.213736
+patternClosest is 0 1 rate is 0.228498
+entropy is 1.85265
+the patternClosest is 1 and the count rate is 0.0614458
+patternClosest is 1 1 rate is 0.245098
+patternClosest is 1 0 rate is 0.45098
+patternClosest is 1 2 rate is 0.245098
+patternClosest is 1 3 rate is 0.0588235
+entropy is 0.107711
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1424790 points 
+Sub-sampling 2 gives 524313 points 
+positions bitstream size 1027 B (0.008132 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 30493 B (0.24145 bpp)
+colors processing time (user): 0.453 s
+Number of points = 909811
+Number of nodes = 1158
+Estimation of sampling = 1.14164
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.931878
+patternClosest is 0 1 rate is 0.168204
+patternClosest is 0 2 rate is 0.177431
+patternClosest is 0 3 rate is 0.349894
+patternClosest is 0 0 rate is 0.304471
+entropy is 1.79634
+the patternClosest is 1 and the count rate is 0.0681217
+patternClosest is 1 1 rate is 0.213592
+patternClosest is 1 2 rate is 0.213592
+patternClosest is 1 0 rate is 0.504854
+patternClosest is 1 3 rate is 0.0679612
+entropy is 0.11668
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1303617 points 
+Sub-sampling 2 gives 479215 points 
+positions bitstream size 996 B (0.00875786 bpp)
+positions processing time (user): 0.671 s
+colors bitstream size 29835 B (0.26234 bpp)
+colors processing time (user): 0.453 s
+Number of points = 1019282
+Number of nodes = 1282
+Estimation of sampling = 1.13487
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.932559
+patternClosest is 0 3 rate is 0.19265
+patternClosest is 0 1 rate is 0.219917
+patternClosest is 0 2 rate is 0.319502
+patternClosest is 0 0 rate is 0.267931
+entropy is 1.84018
+the patternClosest is 1 and the count rate is 0.0674406
+patternClosest is 1 2 rate is 0.336066
+patternClosest is 1 0 rate is 0.303279
+patternClosest is 1 1 rate is 0.155738
+patternClosest is 1 3 rate is 0.204918
+entropy is 0.130643
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1543937 points 
+Sub-sampling 2 gives 572376 points 
+positions bitstream size 1113 B (0.00873556 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 34812 B (0.273228 bpp)
+colors processing time (user): 0.5 s
+Number of points = 1029134
+Number of nodes = 1399
+Estimation of sampling = 1.17984
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.939197
+patternClosest is 0 2 rate is 0.361272
+patternClosest is 0 3 rate is 0.234104
+patternClosest is 0 1 rate is 0.210983
+patternClosest is 0 0 rate is 0.193642
+entropy is 1.83454
+the patternClosest is 1 and the count rate is 0.0608035
+patternClosest is 1 2 rate is 0.267857
+patternClosest is 1 1 rate is 0.285714
+patternClosest is 1 0 rate is 0.348214
+patternClosest is 1 3 rate is 0.0982143
+entropy is 0.114567
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1536407 points 
+Sub-sampling 2 gives 564345 points 
+positions bitstream size 1146 B (0.00890846 bpp)
+positions processing time (user): 0.812 s
+colors bitstream size 32315 B (0.251201 bpp)
+colors processing time (user): 0.515 s
+Number of points = 1022687
+Number of nodes = 1078
+Estimation of sampling = 1.03893
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.967495
+patternClosest is 0 0 rate is 0.275362
+patternClosest is 0 3 rate is 0.281291
+patternClosest is 0 2 rate is 0.232543
+patternClosest is 0 1 rate is 0.210804
+entropy is 1.92522
+the patternClosest is 1 and the count rate is 0.0325048
+patternClosest is 1 2 rate is 0.333333
+patternClosest is 1 1 rate is 0.27451
+patternClosest is 1 3 rate is 0.0784314
+patternClosest is 1 0 rate is 0.313725
+entropy is 0.0602319
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1348173 points 
+Sub-sampling 2 gives 488402 points 
+positions bitstream size 960 B (0.00750963 bpp)
+positions processing time (user): 0.75 s
+colors bitstream size 21043 B (0.16461 bpp)
+colors processing time (user): 0.437 s
+Number of points = 1051497
+Number of nodes = 1227
+Estimation of sampling = 1.09312
+distanceSearchEncoder = 2
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.94942
+patternClosest is 0 0 rate is 0.293008
+patternClosest is 0 1 rate is 0.281909
+patternClosest is 0 2 rate is 0.211432
+patternClosest is 0 3 rate is 0.213651
+entropy is 1.88325
+the patternClosest is 1 and the count rate is 0.0505796
+patternClosest is 1 0 rate is 0.239583
+patternClosest is 1 1 rate is 0.25
+patternClosest is 1 2 rate is 0.4375
+patternClosest is 1 3 rate is 0.0729167
+entropy is 0.0905936
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1464402 points 
+Sub-sampling 2 gives 535045 points 
+positions bitstream size 1150 B (0.00874943 bpp)
+positions processing time (user): 0.781 s
+colors bitstream size 33943 B (0.258245 bpp)
+colors processing time (user): 0.515 s
+Number of points = 1080192
+Number of nodes = 1324
+Estimation of sampling = 1.12032
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.935698
+patternClosest is 0 1 rate is 0.229858
+patternClosest is 0 0 rate is 0.319905
+patternClosest is 0 3 rate is 0.255332
+patternClosest is 0 2 rate is 0.194905
+entropy is 1.84921
+the patternClosest is 1 and the count rate is 0.0643016
+patternClosest is 1 1 rate is 0.267241
+patternClosest is 1 0 rate is 0.482759
+patternClosest is 1 2 rate is 0.215517
+patternClosest is 1 3 rate is 0.0344828
+entropy is 0.106783
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1532134 points 
+Sub-sampling 2 gives 557595 points 
+positions bitstream size 1143 B (0.00846516 bpp)
+positions processing time (user): 0.734 s
+colors bitstream size 32549 B (0.241061 bpp)
+colors processing time (user): 0.531 s
+Number of points = 1050704
+Number of nodes = 1186
+Estimation of sampling = 1.07511
+distanceSearchEncoder = 2
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.895131
+patternClosest is 0 0 rate is 0.272664
+patternClosest is 0 3 rate is 0.304742
+patternClosest is 0 1 rate is 0.208508
+patternClosest is 0 2 rate is 0.214086
+entropy is 1.77353
+the patternClosest is 1 and the count rate is 0.104869
+patternClosest is 1 3 rate is 0.0238095
+patternClosest is 1 1 rate is 0.10119
+patternClosest is 1 0 rate is 0.744048
+patternClosest is 1 2 rate is 0.130952
+entropy is 0.122092
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1493789 points 
+Sub-sampling 2 gives 546161 points 
+positions bitstream size 991 B (0.00754542 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 32934 B (0.250758 bpp)
+colors processing time (user): 0.484 s
+Total frame size 898927 B
+Total bitstream size 898927 B
+Processing time (wall): 273.44 s
+Processing time (user): 197.875 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 174 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.093 s
+
+colors bitstream size 4290 B
+colors processing time (user): 0.125 s
+
+positions bitstream size 605 B
+positions processing time (user): 0.328 s
+
+colors bitstream size 36529 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 706 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.296 s
+
+colors bitstream size 29068 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 824 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 23498 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 811 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.421 s
+
+colors bitstream size 40492 B
+colors processing time (user): 0.968 s
+
+positions bitstream size 974 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 24854 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 899 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 19440 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 509 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 15850 B
+colors processing time (user): 0.515 s
+
+positions bitstream size 775 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.39 s
+
+colors bitstream size 54646 B
+colors processing time (user): 1 s
+
+positions bitstream size 590 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.312 s
+
+colors bitstream size 22928 B
+colors processing time (user): 0.687 s
+
+positions bitstream size 930 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 23471 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 633 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 26664 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 964 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 28190 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 622 B
+positions processing time (user): 0.281 s
+
+colors bitstream size 25651 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 905 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 33497 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 750 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 37688 B
+colors processing time (user): 0.906 s
+
+positions bitstream size 900 B
+positions processing time (user): 0.125 s
+
+colors bitstream size 25177 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 695 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.312 s
+
+colors bitstream size 42136 B
+colors processing time (user): 0.89 s
+
+positions bitstream size 964 B
+positions processing time (user): 0.125 s
+
+colors bitstream size 30909 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 764 B
+positions processing time (user): 0.343 s
+
+colors bitstream size 35762 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 814 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.14 s
+
+colors bitstream size 20839 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 1010 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 23728 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 1027 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 30493 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 996 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 29835 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 1113 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 34812 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 1146 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 32315 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 960 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.156 s
+
+colors bitstream size 21043 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 1150 B
+positions processing time (user): 0.14 s
+
+colors bitstream size 33943 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 1143 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.156 s
+
+colors bitstream size 32549 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 991 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.171 s
+
+colors bitstream size 32934 B
+colors processing time (user): 0.515 s
+
+Total bitstream size 898927 B
+Processing time (wall): 32.525 s
+Processing time (user): 23.359 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply
+infile2:        F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_4_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 61520 22112 4800
+WARNING: 27334 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 43399204, 18722411, 0.4314
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 3771.03
+   mse1,PSNR (p2point): 65.3361
+   mse1      (p2plane): 1193.47
+   mse1,PSNR (p2plane): 70.3326
+   c[0],    1         : 0.0051534
+   c[1],    1         : 0.000277179
+   c[2],    1         : 0.000196442
+   c[0],PSNR1         : 22.8791
+   c[1],PSNR1         : 35.5724
+   c[2],PSNR1         : 37.0676
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 2829.81
+   mse2,PSNR (p2point): 66.5831
+   mse2      (p2plane): 2591.79
+   mse2,PSNR (p2plane): 66.9647
+   c[0],    2         : 0.00297148
+   c[1],    2         : 0.000168362
+   c[2],    2         : 0.00012172
+   c[0],PSNR2         : 25.2703
+   c[1],PSNR2         : 37.7376
+   c[2],PSNR2         : 39.1464
+3. Final (symmetric).
+   mseF      (p2point): 3771.03
+   mseF,PSNR (p2point): 65.3361
+   mseF      (p2plane): 2591.79
+   mseF,PSNR (p2plane): 66.9647
+   c[0],    F         : 0.0051534
+   c[1],    F         : 0.000277179
+   c[2],    F         : 0.000196442
+   c[0],PSNRF         : 22.8791
+   c[1],PSNRF         : 35.5724
+   c[2],PSNRF         : 37.0676
+Job done! 318.047 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 4
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 30
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 30
+Number of points = 115939
+Number of nodes = 685
+Estimation of sampling = 1.22985
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.979144
+patternClosest is 0 0 rate is 0.341928
+patternClosest is 0 2 rate is 0.304933
+patternClosest is 0 3 rate is 0.0919283
+patternClosest is 0 1 rate is 0.261211
+entropy is 1.83521
+the patternClosest is 1 and the count rate is 0.0208562
+patternClosest is 1 1 rate is 0.315789
+patternClosest is 1 0 rate is 0.526316
+patternClosest is 1 2 rate is 0.157895
+entropy is 0.0298866
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 179557 points 
+positions bitstream size 487 B (0.0336039 bpp)
+positions processing time (user): 0.109 s
+colors bitstream size 8771 B (0.605215 bpp)
+colors processing time (user): 0.14 s
+Number of points = 599746
+Number of nodes = 3104
+Estimation of sampling = 1.15106
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.946495
+patternClosest is 0 2 rate is 0.264274
+patternClosest is 0 1 rate is 0.401074
+patternClosest is 0 3 rate is 0.170718
+patternClosest is 0 0 rate is 0.163934
+entropy is 1.79747
+the patternClosest is 1 and the count rate is 0.0535045
+patternClosest is 1 1 rate is 0.375
+patternClosest is 1 0 rate is 0.36
+patternClosest is 1 2 rate is 0.17
+patternClosest is 1 3 rate is 0.095
+entropy is 0.0972956
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 838702 points 
+positions bitstream size 2002 B (0.0267046 bpp)
+positions processing time (user): 0.468 s
+colors bitstream size 73720 B (0.98335 bpp)
+colors processing time (user): 0.796 s
+Number of points = 623654
+Number of nodes = 3566
+Estimation of sampling = 1.20987
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.944263
+patternClosest is 0 1 rate is 0.378595
+patternClosest is 0 0 rate is 0.158486
+patternClosest is 0 2 rate is 0.234595
+patternClosest is 0 3 rate is 0.228324
+entropy is 1.82143
+the patternClosest is 1 and the count rate is 0.055737
+patternClosest is 1 1 rate is 0.249084
+patternClosest is 1 0 rate is 0.509158
+patternClosest is 1 2 rate is 0.190476
+patternClosest is 1 3 rate is 0.0512821
+entropy is 0.093123
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 951896 points 
+positions bitstream size 2359 B (0.0302604 bpp)
+positions processing time (user): 0.5 s
+colors bitstream size 63408 B (0.813374 bpp)
+colors processing time (user): 0.859 s
+Number of points = 770137
+Number of nodes = 4204
+Estimation of sampling = 1.18214
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.937798
+patternClosest is 0 3 rate is 0.225683
+patternClosest is 0 2 rate is 0.299004
+patternClosest is 0 1 rate is 0.371265
+patternClosest is 0 0 rate is 0.104047
+entropy is 1.75919
+the patternClosest is 1 and the count rate is 0.0622019
+patternClosest is 1 1 rate is 0.220447
+patternClosest is 1 0 rate is 0.514377
+patternClosest is 1 2 rate is 0.226837
+patternClosest is 1 3 rate is 0.0383387
+entropy is 0.102019
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1125446 points 
+Sub-sampling 2 gives 439885 points 
+positions bitstream size 2532 B (0.0263018 bpp)
+positions processing time (user): 0.75 s
+colors bitstream size 46125 B (0.479136 bpp)
+colors processing time (user): 0.406 s
+Number of points = 787928
+Number of nodes = 4415
+Estimation of sampling = 1.19768
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.957242
+patternClosest is 0 1 rate is 0.433853
+patternClosest is 0 2 rate is 0.300705
+patternClosest is 0 3 rate is 0.181449
+patternClosest is 0 0 rate is 0.0839923
+entropy is 1.71434
+the patternClosest is 1 and the count rate is 0.0427578
+patternClosest is 1 2 rate is 0.181818
+patternClosest is 1 1 rate is 0.30622
+patternClosest is 1 0 rate is 0.483254
+patternClosest is 1 3 rate is 0.0287081
+entropy is 0.069441
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1130193 points 
+Sub-sampling 2 gives 441484 points 
+positions bitstream size 2530 B (0.0256876 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 41709 B (0.42348 bpp)
+colors processing time (user): 0.359 s
+Number of points = 1040270
+Number of nodes = 5359
+Estimation of sampling = 1.14839
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.970611
+patternClosest is 0 0 rate is 0.245418
+patternClosest is 0 2 rate is 0.259602
+patternClosest is 0 3 rate is 0.128765
+patternClosest is 0 1 rate is 0.366215
+entropy is 1.85774
+the patternClosest is 1 and the count rate is 0.029389
+patternClosest is 1 2 rate is 0.173684
+patternClosest is 1 1 rate is 0.226316
+patternClosest is 1 0 rate is 0.573684
+patternClosest is 1 3 rate is 0.0263158
+entropy is 0.0447233
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1491913 points 
+Sub-sampling 2 gives 567673 points 
+positions bitstream size 2946 B (0.0226557 bpp)
+positions processing time (user): 0.906 s
+colors bitstream size 51343 B (0.394844 bpp)
+colors processing time (user): 0.484 s
+Number of points = 840193
+Number of nodes = 4659
+Estimation of sampling = 1.19145
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.965587
+patternClosest is 0 1 rate is 0.264532
+patternClosest is 0 2 rate is 0.200496
+patternClosest is 0 3 rate is 0.22813
+patternClosest is 0 0 rate is 0.306842
+entropy is 1.91351
+the patternClosest is 1 and the count rate is 0.034413
+patternClosest is 1 0 rate is 0.513369
+patternClosest is 1 2 rate is 0.235294
+patternClosest is 1 1 rate is 0.197861
+patternClosest is 1 3 rate is 0.0534759
+entropy is 0.0575872
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1207797 points 
+Sub-sampling 2 gives 455051 points 
+positions bitstream size 2547 B (0.0242516 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 41273 B (0.392986 bpp)
+colors processing time (user): 0.359 s
+Number of points = 367272
+Number of nodes = 2000
+Estimation of sampling = 1.1807
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.95591
+patternClosest is 0 3 rate is 0.181008
+patternClosest is 0 2 rate is 0.196512
+patternClosest is 0 1 rate is 0.35155
+patternClosest is 0 0 rate is 0.27093
+entropy is 1.86236
+the patternClosest is 1 and the count rate is 0.0440904
+patternClosest is 1 2 rate is 0.260504
+patternClosest is 1 1 rate is 0.327731
+patternClosest is 1 0 rate is 0.386555
+patternClosest is 1 3 rate is 0.0252101
+entropy is 0.074818
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 521343 points 
+positions bitstream size 1417 B (0.0308654 bpp)
+positions processing time (user): 0.25 s
+colors bitstream size 31118 B (0.677819 bpp)
+colors processing time (user): 0.468 s
+Number of points = 847871
+Number of nodes = 4114
+Estimation of sampling = 1.11452
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.950647
+patternClosest is 0 3 rate is 0.151274
+patternClosest is 0 2 rate is 0.236049
+patternClosest is 0 0 rate is 0.145635
+patternClosest is 0 1 rate is 0.467043
+entropy is 1.73173
+the patternClosest is 1 and the count rate is 0.049353
+patternClosest is 1 0 rate is 0.322097
+patternClosest is 1 2 rate is 0.325843
+patternClosest is 1 1 rate is 0.307116
+patternClosest is 1 3 rate is 0.0449438
+entropy is 0.0877398
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1186708 points 
+Sub-sampling 2 gives 472133 points 
+positions bitstream size 2792 B (0.0263436 bpp)
+positions processing time (user): 0.671 s
+colors bitstream size 56698 B (0.534968 bpp)
+colors processing time (user): 0.406 s
+Number of points = 533727
+Number of nodes = 3099
+Estimation of sampling = 1.21919
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.964161
+patternClosest is 0 1 rate is 0.377904
+patternClosest is 0 0 rate is 0.168043
+patternClosest is 0 2 rate is 0.279556
+patternClosest is 0 3 rate is 0.174497
+entropy is 1.8478
+the patternClosest is 1 and the count rate is 0.0358387
+patternClosest is 1 1 rate is 0.263889
+patternClosest is 1 0 rate is 0.416667
+patternClosest is 1 2 rate is 0.215278
+patternClosest is 1 3 rate is 0.104167
+entropy is 0.0663144
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 832198 points 
+positions bitstream size 1791 B (0.0268452 bpp)
+positions processing time (user): 0.39 s
+colors bitstream size 40361 B (0.604968 bpp)
+colors processing time (user): 0.75 s
+Number of points = 899676
+Number of nodes = 4862
+Estimation of sampling = 1.17621
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.929568
+patternClosest is 0 0 rate is 0.0969969
+patternClosest is 0 1 rate is 0.375216
+patternClosest is 0 2 rate is 0.231619
+patternClosest is 0 3 rate is 0.296168
+entropy is 1.73439
+the patternClosest is 1 and the count rate is 0.0704316
+patternClosest is 1 1 rate is 0.305239
+patternClosest is 1 2 rate is 0.177677
+patternClosest is 1 3 rate is 0.323462
+patternClosest is 1 0 rate is 0.193622
+entropy is 0.137397
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1357169 points 
+Sub-sampling 2 gives 525461 points 
+positions bitstream size 2976 B (0.0264629 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 48020 B (0.426998 bpp)
+colors processing time (user): 0.421 s
+Number of points = 538180
+Number of nodes = 2984
+Estimation of sampling = 1.19139
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.966732
+patternClosest is 0 2 rate is 0.271255
+patternClosest is 0 1 rate is 0.32771
+patternClosest is 0 3 rate is 0.108187
+patternClosest is 0 0 rate is 0.292848
+entropy is 1.84066
+the patternClosest is 1 and the count rate is 0.0332681
+patternClosest is 1 2 rate is 0.281046
+patternClosest is 1 1 rate is 0.254902
+patternClosest is 1 0 rate is 0.431373
+patternClosest is 1 3 rate is 0.0326797
+entropy is 0.0566168
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 848532 points 
+positions bitstream size 1990 B (0.0295812 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 52567 B (0.781404 bpp)
+colors processing time (user): 0.765 s
+Number of points = 911490
+Number of nodes = 4992
+Estimation of sampling = 1.18408
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.948536
+patternClosest is 0 3 rate is 0.222916
+patternClosest is 0 1 rate is 0.394075
+patternClosest is 0 2 rate is 0.222202
+patternClosest is 0 0 rate is 0.160807
+entropy is 1.81958
+the patternClosest is 1 and the count rate is 0.0514644
+patternClosest is 1 2 rate is 0.190789
+patternClosest is 1 1 rate is 0.299342
+patternClosest is 1 0 rate is 0.453947
+patternClosest is 1 3 rate is 0.0559211
+entropy is 0.0888665
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1277468 points 
+Sub-sampling 2 gives 475770 points 
+positions bitstream size 3022 B (0.0265236 bpp)
+positions processing time (user): 0.718 s
+colors bitstream size 56056 B (0.491994 bpp)
+colors processing time (user): 0.359 s
+Number of points = 560275
+Number of nodes = 3235
+Estimation of sampling = 1.21578
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.962455
+patternClosest is 0 1 rate is 0.39664
+patternClosest is 0 2 rate is 0.26139
+patternClosest is 0 0 rate is 0.212415
+patternClosest is 0 3 rate is 0.129556
+entropy is 1.82084
+the patternClosest is 1 and the count rate is 0.0375445
+patternClosest is 1 1 rate is 0.29927
+patternClosest is 1 2 rate is 0.124088
+patternClosest is 1 3 rate is 0.0145985
+patternClosest is 1 0 rate is 0.562044
+entropy is 0.0544646
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 813604 points 
+positions bitstream size 1867 B (0.0266583 bpp)
+positions processing time (user): 0.375 s
+colors bitstream size 48093 B (0.686706 bpp)
+colors processing time (user): 0.687 s
+Number of points = 947453
+Number of nodes = 4702
+Estimation of sampling = 1.12715
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.936953
+patternClosest is 0 1 rate is 0.329055
+patternClosest is 0 0 rate is 0.135939
+patternClosest is 0 3 rate is 0.183392
+patternClosest is 0 2 rate is 0.351614
+entropy is 1.77834
+the patternClosest is 1 and the count rate is 0.0630466
+patternClosest is 1 0 rate is 0.50289
+patternClosest is 1 2 rate is 0.138728
+patternClosest is 1 1 rate is 0.280347
+patternClosest is 1 3 rate is 0.0780347
+entropy is 0.106898
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1198865 points 
+Sub-sampling 2 gives 461475 points 
+positions bitstream size 2934 B (0.0247738 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 65962 B (0.556963 bpp)
+colors processing time (user): 0.343 s
+Number of points = 653214
+Number of nodes = 3640
+Estimation of sampling = 1.19438
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.958611
+patternClosest is 0 1 rate is 0.363004
+patternClosest is 0 2 rate is 0.333743
+patternClosest is 0 3 rate is 0.206875
+patternClosest is 0 0 rate is 0.0963781
+entropy is 1.77786
+the patternClosest is 1 and the count rate is 0.0413888
+patternClosest is 1 1 rate is 0.270142
+patternClosest is 1 2 rate is 0.222749
+patternClosest is 1 0 rate is 0.440758
+patternClosest is 1 3 rate is 0.0663507
+entropy is 0.0733948
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 948287 points 
+positions bitstream size 2154 B (0.0263803 bpp)
+positions processing time (user): 0.421 s
+colors bitstream size 73000 B (0.894041 bpp)
+colors processing time (user): 0.781 s
+Number of points = 948933
+Number of nodes = 5149
+Estimation of sampling = 1.17859
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.966973
+patternClosest is 0 3 rate is 0.0985442
+patternClosest is 0 2 rate is 0.337066
+patternClosest is 0 0 rate is 0.149869
+patternClosest is 0 1 rate is 0.41452
+entropy is 1.73599
+the patternClosest is 1 and the count rate is 0.0330265
+patternClosest is 1 1 rate is 0.387978
+patternClosest is 1 2 rate is 0.142077
+patternClosest is 1 3 rate is 0.0491803
+patternClosest is 1 0 rate is 0.420765
+entropy is 0.0551268
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1365090 points 
+Sub-sampling 2 gives 507027 points 
+positions bitstream size 2676 B (0.0225601 bpp)
+positions processing time (user): 0.781 s
+colors bitstream size 51390 B (0.433244 bpp)
+colors processing time (user): 0.406 s
+Number of points = 655102
+Number of nodes = 3892
+Estimation of sampling = 1.23325
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.963699
+patternClosest is 0 2 rate is 0.363658
+patternClosest is 0 3 rate is 0.12343
+patternClosest is 0 1 rate is 0.335466
+patternClosest is 0 0 rate is 0.177446
+entropy is 1.80646
+the patternClosest is 1 and the count rate is 0.0363014
+patternClosest is 1 0 rate is 0.465409
+patternClosest is 1 1 rate is 0.333333
+patternClosest is 1 3 rate is 0.0503145
+patternClosest is 1 2 rate is 0.150943
+entropy is 0.0606461
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 932540 points 
+positions bitstream size 2190 B (0.0267439 bpp)
+positions processing time (user): 0.406 s
+colors bitstream size 77817 B (0.950289 bpp)
+colors processing time (user): 0.703 s
+Number of points = 954656
+Number of nodes = 5018
+Estimation of sampling = 1.16001
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951134
+patternClosest is 0 2 rate is 0.34789
+patternClosest is 0 1 rate is 0.351193
+patternClosest is 0 3 rate is 0.188991
+patternClosest is 0 0 rate is 0.111927
+entropy is 1.77672
+the patternClosest is 1 and the count rate is 0.0488656
+patternClosest is 1 1 rate is 0.246429
+patternClosest is 1 0 rate is 0.442857
+patternClosest is 1 2 rate is 0.260714
+patternClosest is 1 3 rate is 0.05
+entropy is 0.0850315
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1325644 points 
+Sub-sampling 2 gives 496653 points 
+positions bitstream size 2844 B (0.0238327 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 65408 B (0.548118 bpp)
+colors processing time (user): 0.39 s
+Number of points = 679459
+Number of nodes = 3775
+Estimation of sampling = 1.19261
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.954886
+patternClosest is 0 3 rate is 0.183105
+patternClosest is 0 1 rate is 0.339212
+patternClosest is 0 2 rate is 0.323318
+patternClosest is 0 0 rate is 0.154365
+entropy is 1.8337
+the patternClosest is 1 and the count rate is 0.0451143
+patternClosest is 1 2 rate is 0.198157
+patternClosest is 1 3 rate is 0.078341
+patternClosest is 1 0 rate is 0.414747
+patternClosest is 1 1 rate is 0.308756
+entropy is 0.0812361
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 957951 points 
+positions bitstream size 2336 B (0.0275042 bpp)
+positions processing time (user): 0.437 s
+colors bitstream size 72817 B (0.857353 bpp)
+colors processing time (user): 0.89 s
+Number of points = 969161
+Number of nodes = 5376
+Estimation of sampling = 1.19166
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947368
+patternClosest is 0 2 rate is 0.222934
+patternClosest is 0 1 rate is 0.538818
+patternClosest is 0 3 rate is 0.10666
+patternClosest is 0 0 rate is 0.131588
+entropy is 1.60373
+the patternClosest is 1 and the count rate is 0.0526316
+patternClosest is 1 2 rate is 0.153846
+patternClosest is 1 0 rate is 0.532051
+patternClosest is 1 1 rate is 0.275641
+patternClosest is 1 3 rate is 0.0384615
+entropy is 0.0838449
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1333416 points 
+Sub-sampling 2 gives 474529 points 
+positions bitstream size 2688 B (0.0221883 bpp)
+positions processing time (user): 0.796 s
+colors bitstream size 49079 B (0.405126 bpp)
+colors processing time (user): 0.343 s
+Number of points = 820612
+Number of nodes = 4534
+Estimation of sampling = 1.1893
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.949346
+patternClosest is 0 2 rate is 0.267681
+patternClosest is 0 3 rate is 0.138944
+patternClosest is 0 1 rate is 0.391943
+patternClosest is 0 0 rate is 0.201432
+entropy is 1.80363
+the patternClosest is 1 and the count rate is 0.0506544
+patternClosest is 1 3 rate is 0.0604027
+patternClosest is 1 2 rate is 0.248322
+patternClosest is 1 1 rate is 0.288591
+patternClosest is 1 0 rate is 0.402685
+entropy is 0.0906457
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1160754 points 
+Sub-sampling 2 gives 457766 points 
+positions bitstream size 3024 B (0.0294804 bpp)
+positions processing time (user): 0.687 s
+colors bitstream size 43333 B (0.422446 bpp)
+colors processing time (user): 0.406 s
+Number of points = 1010330
+Number of nodes = 5228
+Estimation of sampling = 1.15095
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.946134
+patternClosest is 0 0 rate is 0.142588
+patternClosest is 0 1 rate is 0.292016
+patternClosest is 0 3 rate is 0.264148
+patternClosest is 0 2 rate is 0.301248
+entropy is 1.84311
+the patternClosest is 1 and the count rate is 0.0538661
+patternClosest is 1 0 rate is 0.468468
+patternClosest is 1 1 rate is 0.216216
+patternClosest is 1 3 rate is 0.123123
+patternClosest is 1 2 rate is 0.192192
+entropy is 0.0980129
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1364870 points 
+Sub-sampling 2 gives 512036 points 
+positions bitstream size 3236 B (0.0256233 bpp)
+positions processing time (user): 0.843 s
+colors bitstream size 56445 B (0.446943 bpp)
+colors processing time (user): 0.421 s
+Number of points = 909811
+Number of nodes = 5023
+Estimation of sampling = 1.18885
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.939759
+patternClosest is 0 3 rate is 0.189927
+patternClosest is 0 2 rate is 0.348168
+patternClosest is 0 1 rate is 0.354579
+patternClosest is 0 0 rate is 0.107326
+entropy is 1.74897
+the patternClosest is 1 and the count rate is 0.060241
+patternClosest is 1 3 rate is 0.0571429
+patternClosest is 1 1 rate is 0.394286
+patternClosest is 1 0 rate is 0.362857
+patternClosest is 1 2 rate is 0.185714
+entropy is 0.105248
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1266048 points 
+Sub-sampling 2 gives 487777 points 
+positions bitstream size 3192 B (0.0280674 bpp)
+positions processing time (user): 0.765 s
+colors bitstream size 56462 B (0.496472 bpp)
+colors processing time (user): 0.421 s
+Number of points = 1046937
+Number of nodes = 5656
+Estimation of sampling = 1.17602
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951585
+patternClosest is 0 2 rate is 0.271045
+patternClosest is 0 3 rate is 0.158495
+patternClosest is 0 1 rate is 0.412118
+patternClosest is 0 0 rate is 0.158341
+entropy is 1.78873
+the patternClosest is 1 and the count rate is 0.0484155
+patternClosest is 1 1 rate is 0.287879
+patternClosest is 1 2 rate is 0.242424
+patternClosest is 1 0 rate is 0.412121
+patternClosest is 1 3 rate is 0.0575758
+entropy is 0.0860314
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1518106 points 
+Sub-sampling 2 gives 578902 points 
+positions bitstream size 3428 B (0.0261945 bpp)
+positions processing time (user): 0.968 s
+colors bitstream size 68711 B (0.525044 bpp)
+colors processing time (user): 0.515 s
+Number of points = 1001479
+Number of nodes = 5606
+Estimation of sampling = 1.19709
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.946117
+patternClosest is 0 3 rate is 0.149539
+patternClosest is 0 2 rate is 0.317849
+patternClosest is 0 1 rate is 0.411709
+patternClosest is 0 0 rate is 0.120904
+entropy is 1.7325
+the patternClosest is 1 and the count rate is 0.0538832
+patternClosest is 1 0 rate is 0.472067
+patternClosest is 1 2 rate is 0.164804
+patternClosest is 1 1 rate is 0.326816
+patternClosest is 1 3 rate is 0.0363128
+entropy is 0.0884171
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1458292 points 
+Sub-sampling 2 gives 567207 points 
+positions bitstream size 3422 B (0.0273356 bpp)
+positions processing time (user): 0.953 s
+colors bitstream size 67695 B (0.54076 bpp)
+colors processing time (user): 0.468 s
+Number of points = 1067408
+Number of nodes = 5043
+Estimation of sampling = 1.09976
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951865
+patternClosest is 0 1 rate is 0.367794
+patternClosest is 0 3 rate is 0.242492
+patternClosest is 0 2 rate is 0.248878
+patternClosest is 0 0 rate is 0.140835
+entropy is 1.83142
+the patternClosest is 1 and the count rate is 0.0481354
+patternClosest is 1 1 rate is 0.331058
+patternClosest is 1 0 rate is 0.382253
+patternClosest is 1 3 rate is 0.0750853
+patternClosest is 1 2 rate is 0.211604
+entropy is 0.0872648
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1399056 points 
+Sub-sampling 2 gives 522050 points 
+positions bitstream size 3050 B (0.0228591 bpp)
+positions processing time (user): 0.89 s
+colors bitstream size 46877 B (0.351333 bpp)
+colors processing time (user): 0.421 s
+Number of points = 1006776
+Number of nodes = 5287
+Estimation of sampling = 1.15947
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951344
+patternClosest is 0 2 rate is 0.292663
+patternClosest is 0 3 rate is 0.220959
+patternClosest is 0 1 rate is 0.33428
+patternClosest is 0 0 rate is 0.152098
+entropy is 1.84729
+the patternClosest is 1 and the count rate is 0.0486564
+patternClosest is 1 0 rate is 0.457516
+patternClosest is 1 2 rate is 0.166667
+patternClosest is 1 1 rate is 0.303922
+patternClosest is 1 3 rate is 0.0718954
+entropy is 0.0847699
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1398365 points 
+Sub-sampling 2 gives 519934 points 
+positions bitstream size 3329 B (0.0264528 bpp)
+positions processing time (user): 0.828 s
+colors bitstream size 62024 B (0.492852 bpp)
+colors processing time (user): 0.468 s
+Number of points = 1080192
+Number of nodes = 5756
+Estimation of sampling = 1.16797
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.943937
+patternClosest is 0 3 rate is 0.204823
+patternClosest is 0 0 rate is 0.197231
+patternClosest is 0 1 rate is 0.342066
+patternClosest is 0 2 rate is 0.25588
+entropy is 1.85299
+the patternClosest is 1 and the count rate is 0.0560629
+patternClosest is 1 1 rate is 0.313283
+patternClosest is 1 0 rate is 0.41604
+patternClosest is 1 3 rate is 0.0701754
+patternClosest is 1 2 rate is 0.200501
+entropy is 0.100059
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1549773 points 
+Sub-sampling 2 gives 595103 points 
+positions bitstream size 3795 B (0.0281061 bpp)
+positions processing time (user): 0.906 s
+colors bitstream size 66702 B (0.494001 bpp)
+colors processing time (user): 0.5 s
+Number of points = 1050704
+Number of nodes = 5426
+Estimation of sampling = 1.14979
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.915856
+patternClosest is 0 1 rate is 0.367501
+patternClosest is 0 3 rate is 0.21409
+patternClosest is 0 2 rate is 0.290367
+patternClosest is 0 0 rate is 0.128043
+entropy is 1.74427
+the patternClosest is 1 and the count rate is 0.0841444
+patternClosest is 1 0 rate is 0.404851
+patternClosest is 1 1 rate is 0.438433
+patternClosest is 1 2 rate is 0.136194
+patternClosest is 1 3 rate is 0.0205224
+entropy is 0.130969
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1521543 points 
+Sub-sampling 2 gives 589986 points 
+positions bitstream size 3248 B (0.0247301 bpp)
+positions processing time (user): 0.968 s
+colors bitstream size 65758 B (0.500678 bpp)
+colors processing time (user): 0.5 s
+Total frame size 1727898 B
+Total bitstream size 1727898 B
+Processing time (wall): 268.773 s
+Processing time (user): 172 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 487 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.093 s
+
+colors bitstream size 8771 B
+colors processing time (user): 0.156 s
+
+positions bitstream size 2002 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 73720 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 2359 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.406 s
+
+colors bitstream size 63408 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 2532 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 46125 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 2530 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 41709 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 2946 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.187 s
+
+colors bitstream size 51343 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 2547 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 41273 B
+colors processing time (user): 0.312 s
+
+positions bitstream size 1417 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 31118 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 2792 B
+positions processing time (user): 0.156 s
+
+colors bitstream size 56698 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 1791 B
+positions processing time (user): 0.328 s
+
+colors bitstream size 40361 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 2976 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.203 s
+
+colors bitstream size 48020 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 1990 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 52567 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 3022 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.203 s
+
+colors bitstream size 56056 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 1867 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 48093 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 2934 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 65962 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 2154 B
+positions processing time (user): 0.406 s
+
+colors bitstream size 73000 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 2676 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 51390 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 2190 B
+positions processing time (user): 0.406 s
+
+colors bitstream size 77817 B
+colors processing time (user): 0.781 s
+
+positions bitstream size 2844 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 65408 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 2336 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 72817 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 2688 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.203 s
+
+colors bitstream size 49079 B
+colors processing time (user): 0.343 s
+
+positions bitstream size 3024 B
+positions processing time (user): 0.171 s
+
+colors bitstream size 43333 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 3236 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 56445 B
+colors processing time (user): 0.328 s
+
+positions bitstream size 3192 B
+positions processing time (user): 0.187 s
+
+colors bitstream size 56462 B
+colors processing time (user): 0.359 s
+
+positions bitstream size 3428 B
+positions processing time (user): 0.218 s
+
+colors bitstream size 68711 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 3422 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 67695 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 3050 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.203 s
+
+colors bitstream size 46877 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 3329 B
+positions processing time (user): 0.203 s
+
+colors bitstream size 62024 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 3795 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.25 s
+
+colors bitstream size 66702 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 3248 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.25 s
+
+colors bitstream size 65758 B
+colors processing time (user): 0.515 s
+
+Total bitstream size 1727898 B
+Processing time (wall): 31.246 s
+Processing time (user): 22.703 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply
+infile2:        F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_4_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 61488 17152 5120
+WARNING: 26089 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 43399204, 17946423, 0.41352
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 910.555
+   mse1,PSNR (p2point): 71.5076
+   mse1      (p2plane): 272.495
+   mse1,PSNR (p2plane): 76.7471
+   c[0],    1         : 0.00318344
+   c[1],    1         : 0.000167196
+   c[2],    1         : 0.000117929
+   c[0],PSNR1         : 24.971
+   c[1],PSNR1         : 37.7678
+   c[2],PSNR1         : 39.2838
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 590.025
+   mse2,PSNR (p2point): 73.392
+   mse2      (p2plane): 508.377
+   mse2,PSNR (p2plane): 74.0388
+   c[0],    2         : 0.00213799
+   c[1],    2         : 0.000114535
+   c[2],    2         : 8.35498e-05
+   c[0],PSNR2         : 26.6999
+   c[1],PSNR2         : 39.4106
+   c[2],PSNR2         : 40.7805
+3. Final (symmetric).
+   mseF      (p2point): 910.555
+   mseF,PSNR (p2point): 71.5076
+   mseF      (p2plane): 508.377
+   mseF,PSNR (p2plane): 74.0388
+   c[0],    F         : 0.00318344
+   c[1],    F         : 0.000167196
+   c[2],    F         : 0.000117929
+   c[0],PSNRF         : 24.971
+   c[1],PSNRF         : 37.7678
+   c[2],PSNRF         : 39.2838
+Job done! 245.281 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 3
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 1
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 24
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 30
+Number of points = 115939
+Number of nodes = 2652
+Estimation of sampling = 1.20993
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.977982
+patternClosest is 0 1 rate is 0.353538
+patternClosest is 0 2 rate is 0.348342
+patternClosest is 0 3 rate is 0.068283
+patternClosest is 0 0 rate is 0.229837
+entropy is 1.77237
+the patternClosest is 1 and the count rate is 0.0220179
+patternClosest is 1 2 rate is 0.197802
+patternClosest is 1 1 rate is 0.351648
+patternClosest is 1 0 rate is 0.43956
+patternClosest is 1 3 rate is 0.010989
+entropy is 0.0349077
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 162041 points 
+positions bitstream size 1154 B (0.0796281 bpp)
+positions processing time (user): 0.156 s
+colors bitstream size 15730 B (1.0854 bpp)
+colors processing time (user): 0.14 s
+Number of points = 599746
+Number of nodes = 13523
+Estimation of sampling = 1.20128
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.92553
+patternClosest is 0 2 rate is 0.38026
+patternClosest is 0 1 rate is 0.303609
+patternClosest is 0 3 rate is 0.189177
+patternClosest is 0 0 rate is 0.126953
+entropy is 1.74464
+the patternClosest is 1 and the count rate is 0.0744697
+patternClosest is 1 0 rate is 0.326116
+patternClosest is 1 1 rate is 0.477673
+patternClosest is 1 2 rate is 0.17253
+patternClosest is 1 3 rate is 0.0236806
+entropy is 0.11927
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 854741 points 
+positions bitstream size 6929 B (0.0924258 bpp)
+positions processing time (user): 0.75 s
+colors bitstream size 133179 B (1.77647 bpp)
+colors processing time (user): 0.765 s
+Number of points = 623654
+Number of nodes = 14303
+Estimation of sampling = 1.21152
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.946676
+patternClosest is 0 2 rate is 0.354541
+patternClosest is 0 0 rate is 0.133755
+patternClosest is 0 3 rate is 0.25389
+patternClosest is 0 1 rate is 0.257814
+entropy is 1.82225
+the patternClosest is 1 and the count rate is 0.053324
+patternClosest is 1 0 rate is 0.512295
+patternClosest is 1 1 rate is 0.251639
+patternClosest is 1 2 rate is 0.213115
+patternClosest is 1 3 rate is 0.0229508
+entropy is 0.0850801
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 912050 points 
+positions bitstream size 7222 B (0.0926411 bpp)
+positions processing time (user): 0.828 s
+colors bitstream size 117159 B (1.50287 bpp)
+colors processing time (user): 0.843 s
+Number of points = 770137
+Number of nodes = 17802
+Estimation of sampling = 1.2163
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947844
+patternClosest is 0 3 rate is 0.238469
+patternClosest is 0 2 rate is 0.363492
+patternClosest is 0 1 rate is 0.231454
+patternClosest is 0 0 rate is 0.166585
+entropy is 1.84191
+the patternClosest is 1 and the count rate is 0.0521556
+patternClosest is 1 3 rate is 0.0452365
+patternClosest is 1 1 rate is 0.344071
+patternClosest is 1 2 rate is 0.224812
+patternClosest is 1 0 rate is 0.385881
+entropy is 0.0910544
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1126306 points 
+Sub-sampling 2 gives 468416 points 
+positions bitstream size 8765 B (0.0910487 bpp)
+positions processing time (user): 1.14 s
+colors bitstream size 86549 B (0.89905 bpp)
+colors processing time (user): 0.406 s
+Number of points = 787928
+Number of nodes = 18218
+Estimation of sampling = 1.21646
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.95138
+patternClosest is 0 2 rate is 0.367524
+patternClosest is 0 3 rate is 0.227102
+patternClosest is 0 1 rate is 0.267372
+patternClosest is 0 0 rate is 0.138002
+entropy is 1.82622
+the patternClosest is 1 and the count rate is 0.0486204
+patternClosest is 1 1 rate is 0.313781
+patternClosest is 1 2 rate is 0.240283
+patternClosest is 1 0 rate is 0.430389
+patternClosest is 1 3 rate is 0.0155477
+entropy is 0.0795371
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1115550 points 
+Sub-sampling 2 gives 465230 points 
+positions bitstream size 9528 B (0.0967398 bpp)
+positions processing time (user): 1.187 s
+colors bitstream size 86114 B (0.874334 bpp)
+colors processing time (user): 0.406 s
+Number of points = 1040270
+Number of nodes = 22129
+Estimation of sampling = 1.1668
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.95966
+patternClosest is 0 0 rate is 0.160986
+patternClosest is 0 1 rate is 0.334909
+patternClosest is 0 3 rate is 0.172901
+patternClosest is 0 2 rate is 0.331204
+entropy is 1.84113
+the patternClosest is 1 and the count rate is 0.0403396
+patternClosest is 1 1 rate is 0.234043
+patternClosest is 1 2 rate is 0.212766
+patternClosest is 1 3 rate is 0.0630699
+patternClosest is 1 0 rate is 0.490122
+entropy is 0.0694276
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1459836 points 
+Sub-sampling 2 gives 563539 points 
+positions bitstream size 9245 B (0.0710969 bpp)
+positions processing time (user): 1.406 s
+colors bitstream size 91632 B (0.704679 bpp)
+colors processing time (user): 0.468 s
+Number of points = 845659
+Number of nodes = 19164
+Estimation of sampling = 1.2043
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.945865
+patternClosest is 0 3 rate is 0.187874
+patternClosest is 0 1 rate is 0.315289
+patternClosest is 0 0 rate is 0.159467
+patternClosest is 0 2 rate is 0.33737
+entropy is 1.825
+the patternClosest is 1 and the count rate is 0.0541355
+patternClosest is 1 0 rate is 0.699854
+patternClosest is 1 1 rate is 0.177892
+patternClosest is 1 2 rate is 0.112738
+patternClosest is 1 3 rate is 0.00951684
+entropy is 0.0661734
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1195721 points 
+Sub-sampling 2 gives 456913 points 
+positions bitstream size 7495 B (0.0709033 bpp)
+positions processing time (user): 1.25 s
+colors bitstream size 76300 B (0.721804 bpp)
+colors processing time (user): 0.359 s
+Number of points = 361806
+Number of nodes = 7941
+Estimation of sampling = 1.18519
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.960872
+patternClosest is 0 2 rate is 0.327936
+patternClosest is 0 3 rate is 0.200641
+patternClosest is 0 0 rate is 0.191263
+patternClosest is 0 1 rate is 0.28016
+entropy is 1.88633
+the patternClosest is 1 and the count rate is 0.0391281
+patternClosest is 1 2 rate is 0.251969
+patternClosest is 1 1 rate is 0.362205
+patternClosest is 1 0 rate is 0.374016
+patternClosest is 1 3 rate is 0.011811
+entropy is 0.0640941
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 514701 points 
+positions bitstream size 4241 B (0.093774 bpp)
+positions processing time (user): 0.453 s
+colors bitstream size 60640 B (1.34083 bpp)
+colors processing time (user): 0.484 s
+Number of points = 847871
+Number of nodes = 18553
+Estimation of sampling = 1.1834
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.914682
+patternClosest is 0 3 rate is 0.24123
+patternClosest is 0 1 rate is 0.267302
+patternClosest is 0 2 rate is 0.375638
+patternClosest is 0 0 rate is 0.11583
+entropy is 1.73289
+the patternClosest is 1 and the count rate is 0.085318
+patternClosest is 1 0 rate is 0.559412
+patternClosest is 1 2 rate is 0.143719
+patternClosest is 1 1 rate is 0.196152
+patternClosest is 1 3 rate is 0.100717
+entropy is 0.142098
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1260499 points 
+Sub-sampling 2 gives 538547 points 
+positions bitstream size 10229 B (0.0965147 bpp)
+positions processing time (user): 1.296 s
+colors bitstream size 118710 B (1.12008 bpp)
+colors processing time (user): 0.359 s
+Number of points = 533727
+Number of nodes = 12255
+Estimation of sampling = 1.21224
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.960325
+patternClosest is 0 3 rate is 0.155632
+patternClosest is 0 2 rate is 0.403096
+patternClosest is 0 1 rate is 0.289091
+patternClosest is 0 0 rate is 0.152181
+entropy is 1.80253
+the patternClosest is 1 and the count rate is 0.0396746
+patternClosest is 1 2 rate is 0.175949
+patternClosest is 1 3 rate is 0.0227848
+patternClosest is 1 1 rate is 0.246835
+patternClosest is 1 0 rate is 0.55443
+entropy is 0.0609146
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 774785 points 
+positions bitstream size 5130 B (0.0768932 bpp)
+positions processing time (user): 0.531 s
+colors bitstream size 74048 B (1.1099 bpp)
+colors processing time (user): 0.546 s
+Number of points = 906955
+Number of nodes = 20257
+Estimation of sampling = 1.1956
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951723
+patternClosest is 0 1 rate is 0.253497
+patternClosest is 0 3 rate is 0.252873
+patternClosest is 0 2 rate is 0.402423
+patternClosest is 0 0 rate is 0.0912076
+entropy is 1.75788
+the patternClosest is 1 and the count rate is 0.0482767
+patternClosest is 1 1 rate is 0.289968
+patternClosest is 1 0 rate is 0.41165
+patternClosest is 1 2 rate is 0.254369
+patternClosest is 1 3 rate is 0.0440129
+entropy is 0.0842773
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1321110 points 
+Sub-sampling 2 gives 531495 points 
+positions bitstream size 9636 B (0.0849965 bpp)
+positions processing time (user): 1.046 s
+colors bitstream size 91810 B (0.809831 bpp)
+colors processing time (user): 0.343 s
+Number of points = 530901
+Number of nodes = 11743
+Estimation of sampling = 1.1898
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.965698
+patternClosest is 0 0 rate is 0.195364
+patternClosest is 0 2 rate is 0.333333
+patternClosest is 0 3 rate is 0.135017
+patternClosest is 0 1 rate is 0.336285
+entropy is 1.84189
+the patternClosest is 1 and the count rate is 0.0343023
+patternClosest is 1 1 rate is 0.310627
+patternClosest is 1 0 rate is 0.433243
+patternClosest is 1 2 rate is 0.239782
+patternClosest is 1 3 rate is 0.0163488
+entropy is 0.0561799
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 778353 points 
+positions bitstream size 5640 B (0.0849876 bpp)
+positions processing time (user): 0.578 s
+colors bitstream size 94238 B (1.42005 bpp)
+colors processing time (user): 0.609 s
+Number of points = 911490
+Number of nodes = 20837
+Estimation of sampling = 1.20957
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.935178
+patternClosest is 0 1 rate is 0.264464
+patternClosest is 0 2 rate is 0.289423
+patternClosest is 0 3 rate is 0.317029
+patternClosest is 0 0 rate is 0.129083
+entropy is 1.80663
+the patternClosest is 1 and the count rate is 0.0648224
+patternClosest is 1 0 rate is 0.433543
+patternClosest is 1 2 rate is 0.221846
+patternClosest is 1 1 rate is 0.301595
+patternClosest is 1 3 rate is 0.0430159
+entropy is 0.11159
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1319543 points 
+Sub-sampling 2 gives 541035 points 
+positions bitstream size 11084 B (0.0972825 bpp)
+positions processing time (user): 1.218 s
+colors bitstream size 115318 B (1.01213 bpp)
+colors processing time (user): 0.39 s
+Number of points = 560275
+Number of nodes = 13269
+Estimation of sampling = 1.23114
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.935845
+patternClosest is 0 0 rate is 0.188122
+patternClosest is 0 2 rate is 0.392008
+patternClosest is 0 1 rate is 0.257042
+patternClosest is 0 3 rate is 0.162828
+entropy is 1.79046
+the patternClosest is 1 and the count rate is 0.0641546
+patternClosest is 1 0 rate is 0.561497
+patternClosest is 1 1 rate is 0.254902
+patternClosest is 1 2 rate is 0.154189
+patternClosest is 1 3 rate is 0.0294118
+entropy is 0.0985227
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 798216 points 
+positions bitstream size 6050 B (0.0863861 bpp)
+positions processing time (user): 0.625 s
+colors bitstream size 91611 B (1.30809 bpp)
+colors processing time (user): 0.609 s
+Number of points = 947453
+Number of nodes = 20602
+Estimation of sampling = 1.17968
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.91655
+patternClosest is 0 2 rate is 0.295958
+patternClosest is 0 1 rate is 0.337072
+patternClosest is 0 3 rate is 0.231683
+patternClosest is 0 0 rate is 0.135287
+entropy is 1.76702
+the patternClosest is 1 and the count rate is 0.08345
+patternClosest is 1 0 rate is 0.595347
+patternClosest is 1 2 rate is 0.154081
+patternClosest is 1 1 rate is 0.226545
+patternClosest is 1 3 rate is 0.0240275
+entropy is 0.123149
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1318728 points 
+Sub-sampling 2 gives 564189 points 
+positions bitstream size 11701 B (0.0987996 bpp)
+positions processing time (user): 1.187 s
+colors bitstream size 144305 B (1.21847 bpp)
+colors processing time (user): 0.453 s
+Number of points = 653214
+Number of nodes = 14605
+Estimation of sampling = 1.19623
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.966219
+patternClosest is 0 2 rate is 0.32517
+patternClosest is 0 3 rate is 0.249639
+patternClosest is 0 1 rate is 0.280025
+patternClosest is 0 0 rate is 0.145166
+entropy is 1.87951
+the patternClosest is 1 and the count rate is 0.0337808
+patternClosest is 1 0 rate is 0.398585
+patternClosest is 1 2 rate is 0.252358
+patternClosest is 1 1 rate is 0.291274
+patternClosest is 1 3 rate is 0.057783
+entropy is 0.0603409
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 935352 points 
+positions bitstream size 6899 B (0.084493 bpp)
+positions processing time (user): 0.703 s
+colors bitstream size 136286 B (1.66911 bpp)
+colors processing time (user): 0.765 s
+Number of points = 948933
+Number of nodes = 21749
+Estimation of sampling = 1.21113
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.953655
+patternClosest is 0 0 rate is 0.202561
+patternClosest is 0 2 rate is 0.285801
+patternClosest is 0 1 rate is 0.273157
+patternClosest is 0 3 rate is 0.238481
+entropy is 1.89551
+the patternClosest is 1 and the count rate is 0.0463445
+patternClosest is 1 1 rate is 0.325887
+patternClosest is 1 2 rate is 0.238502
+patternClosest is 1 3 rate is 0.0400788
+patternClosest is 1 0 rate is 0.395532
+entropy is 0.0804368
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1383068 points 
+Sub-sampling 2 gives 552195 points 
+positions bitstream size 10077 B (0.0849544 bpp)
+positions processing time (user): 1.25 s
+colors bitstream size 111182 B (0.937322 bpp)
+colors processing time (user): 0.437 s
+Number of points = 655102
+Number of nodes = 15347
+Estimation of sampling = 1.22447
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.952047
+patternClosest is 0 2 rate is 0.27417
+patternClosest is 0 1 rate is 0.338707
+patternClosest is 0 3 rate is 0.201122
+patternClosest is 0 0 rate is 0.186001
+entropy is 1.86371
+the patternClosest is 1 and the count rate is 0.0479527
+patternClosest is 1 0 rate is 0.436382
+patternClosest is 1 1 rate is 0.308151
+patternClosest is 1 2 rate is 0.227634
+patternClosest is 1 3 rate is 0.027833
+entropy is 0.0803329
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 949112 points 
+positions bitstream size 7272 B (0.0888045 bpp)
+positions processing time (user): 0.656 s
+colors bitstream size 152406 B (1.86116 bpp)
+colors processing time (user): 0.718 s
+Number of points = 954656
+Number of nodes = 21555
+Estimation of sampling = 1.2021
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.949755
+patternClosest is 0 3 rate is 0.200726
+patternClosest is 0 0 rate is 0.192905
+patternClosest is 0 2 rate is 0.357903
+patternClosest is 0 1 rate is 0.248467
+entropy is 1.85455
+the patternClosest is 1 and the count rate is 0.0502451
+patternClosest is 1 0 rate is 0.468362
+patternClosest is 1 1 rate is 0.266706
+patternClosest is 1 2 rate is 0.224128
+patternClosest is 1 3 rate is 0.0408043
+entropy is 0.0850625
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1379674 points 
+Sub-sampling 2 gives 568502 points 
+positions bitstream size 10788 B (0.0904032 bpp)
+positions processing time (user): 1.296 s
+colors bitstream size 128801 B (1.07935 bpp)
+colors processing time (user): 0.468 s
+Number of points = 679459
+Number of nodes = 15249
+Estimation of sampling = 1.19848
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.953297
+patternClosest is 0 3 rate is 0.221324
+patternClosest is 0 2 rate is 0.316832
+patternClosest is 0 0 rate is 0.221698
+patternClosest is 0 1 rate is 0.240146
+entropy is 1.89036
+the patternClosest is 1 and the count rate is 0.0467032
+patternClosest is 1 2 rate is 0.253575
+patternClosest is 1 1 rate is 0.279314
+patternClosest is 1 0 rate is 0.439466
+patternClosest is 1 3 rate is 0.0276454
+entropy is 0.0784755
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 969571 points 
+positions bitstream size 7793 B (0.0917554 bpp)
+positions processing time (user): 0.625 s
+colors bitstream size 136730 B (1.60987 bpp)
+colors processing time (user): 0.843 s
+Number of points = 969161
+Number of nodes = 22226
+Estimation of sampling = 1.2115
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.936199
+patternClosest is 0 3 rate is 0.237775
+patternClosest is 0 1 rate is 0.220346
+patternClosest is 0 0 rate is 0.142155
+patternClosest is 0 2 rate is 0.399723
+entropy is 1.78109
+the patternClosest is 1 and the count rate is 0.0638008
+patternClosest is 1 0 rate is 0.500801
+patternClosest is 1 2 rate is 0.186866
+patternClosest is 1 1 rate is 0.262146
+patternClosest is 1 3 rate is 0.0501869
+entropy is 0.106856
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1395571 points 
+Sub-sampling 2 gives 539766 points 
+positions bitstream size 10468 B (0.0864088 bpp)
+positions processing time (user): 1.265 s
+colors bitstream size 105584 B (0.87155 bpp)
+colors processing time (user): 0.421 s
+Number of points = 820612
+Number of nodes = 18633
+Estimation of sampling = 1.20549
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.952021
+patternClosest is 0 1 rate is 0.259765
+patternClosest is 0 0 rate is 0.16665
+patternClosest is 0 3 rate is 0.209833
+patternClosest is 0 2 rate is 0.363751
+entropy is 1.84632
+the patternClosest is 1 and the count rate is 0.0479792
+patternClosest is 1 2 rate is 0.235488
+patternClosest is 1 0 rate is 0.367414
+patternClosest is 1 1 rate is 0.317282
+patternClosest is 1 3 rate is 0.0798153
+entropy is 0.0882147
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1171587 points 
+Sub-sampling 2 gives 497304 points 
+positions bitstream size 9940 B (0.0969033 bpp)
+positions processing time (user): 1.062 s
+colors bitstream size 84987 B (0.828523 bpp)
+colors processing time (user): 0.328 s
+Number of points = 1025038
+Number of nodes = 21741
+Estimation of sampling = 1.16509
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.952702
+patternClosest is 0 1 rate is 0.300082
+patternClosest is 0 0 rate is 0.153524
+patternClosest is 0 3 rate is 0.207257
+patternClosest is 0 2 rate is 0.339138
+entropy is 1.84425
+the patternClosest is 1 and the count rate is 0.0472982
+patternClosest is 1 1 rate is 0.291339
+patternClosest is 1 3 rate is 0.0221904
+patternClosest is 1 2 rate is 0.206872
+patternClosest is 1 0 rate is 0.479599
+entropy is 0.0765736
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1387988 points 
+Sub-sampling 2 gives 537956 points 
+positions bitstream size 10365 B (0.0808946 bpp)
+positions processing time (user): 1.296 s
+colors bitstream size 110148 B (0.85966 bpp)
+colors processing time (user): 0.39 s
+Number of points = 895103
+Number of nodes = 20154
+Estimation of sampling = 1.20042
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.933954
+patternClosest is 0 1 rate is 0.304628
+patternClosest is 0 2 rate is 0.357451
+patternClosest is 0 3 rate is 0.203854
+patternClosest is 0 0 rate is 0.134067
+entropy is 1.7832
+the patternClosest is 1 and the count rate is 0.0660459
+patternClosest is 1 1 rate is 0.376644
+patternClosest is 1 2 rate is 0.210416
+patternClosest is 1 0 rate is 0.375066
+patternClosest is 1 3 rate is 0.0378748
+entropy is 0.113153
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1280754 points 
+Sub-sampling 2 gives 516070 points 
+positions bitstream size 10789 B (0.0964269 bpp)
+positions processing time (user): 1.234 s
+colors bitstream size 108995 B (0.974145 bpp)
+colors processing time (user): 0.421 s
+Number of points = 1046937
+Number of nodes = 23949
+Estimation of sampling = 1.20997
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947334
+patternClosest is 0 3 rate is 0.213031
+patternClosest is 0 2 rate is 0.352029
+patternClosest is 0 1 rate is 0.248454
+patternClosest is 0 0 rate is 0.186485
+entropy is 1.8534
+the patternClosest is 1 and the count rate is 0.0526658
+patternClosest is 1 2 rate is 0.224419
+patternClosest is 1 1 rate is 0.293623
+patternClosest is 1 0 rate is 0.457736
+patternClosest is 1 3 rate is 0.0242215
+entropy is 0.0868444
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1535423 points 
+Sub-sampling 2 gives 641588 points 
+positions bitstream size 12859 B (0.09826 bpp)
+positions processing time (user): 1.468 s
+colors bitstream size 144787 B (1.10637 bpp)
+colors processing time (user): 0.562 s
+Number of points = 1001479
+Number of nodes = 23919
+Estimation of sampling = 1.23635
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.934192
+patternClosest is 0 2 rate is 0.332291
+patternClosest is 0 3 rate is 0.221483
+patternClosest is 0 1 rate is 0.26492
+patternClosest is 0 0 rate is 0.181306
+entropy is 1.83491
+the patternClosest is 1 and the count rate is 0.0658082
+patternClosest is 1 0 rate is 0.488813
+patternClosest is 1 2 rate is 0.201744
+patternClosest is 1 1 rate is 0.287448
+patternClosest is 1 3 rate is 0.0219947
+entropy is 0.105873
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1488185 points 
+Sub-sampling 2 gives 649975 points 
+positions bitstream size 13859 B (0.110708 bpp)
+positions processing time (user): 1.484 s
+colors bitstream size 150170 B (1.19959 bpp)
+colors processing time (user): 0.562 s
+Number of points = 1067408
+Number of nodes = 21634
+Estimation of sampling = 1.13892
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.949076
+patternClosest is 0 3 rate is 0.233171
+patternClosest is 0 2 rate is 0.365245
+patternClosest is 0 1 rate is 0.254716
+patternClosest is 0 0 rate is 0.146868
+entropy is 1.83126
+the patternClosest is 1 and the count rate is 0.0509236
+patternClosest is 1 1 rate is 0.287478
+patternClosest is 1 0 rate is 0.437978
+patternClosest is 1 2 rate is 0.23398
+patternClosest is 1 3 rate is 0.0405644
+entropy is 0.0874131
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1451722 points 
+Sub-sampling 2 gives 586691 points 
+positions bitstream size 10879 B (0.0815358 bpp)
+positions processing time (user): 1.39 s
+colors bitstream size 105458 B (0.790386 bpp)
+colors processing time (user): 0.562 s
+Number of points = 1006776
+Number of nodes = 22243
+Estimation of sampling = 1.18911
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.939232
+patternClosest is 0 3 rate is 0.26773
+patternClosest is 0 2 rate is 0.295283
+patternClosest is 0 0 rate is 0.124901
+patternClosest is 0 1 rate is 0.312087
+entropy is 1.81064
+the patternClosest is 1 and the count rate is 0.060768
+patternClosest is 1 2 rate is 0.241309
+patternClosest is 1 1 rate is 0.3318
+patternClosest is 1 0 rate is 0.366564
+patternClosest is 1 3 rate is 0.0603272
+entropy is 0.10927
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1436693 points 
+Sub-sampling 2 gives 570180 points 
+positions bitstream size 11526 B (0.0915874 bpp)
+positions processing time (user): 1.437 s
+colors bitstream size 126488 B (1.00509 bpp)
+colors processing time (user): 0.5 s
+Number of points = 1080192
+Number of nodes = 24452
+Estimation of sampling = 1.20364
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.931124
+patternClosest is 0 2 rate is 0.386039
+patternClosest is 0 1 rate is 0.280681
+patternClosest is 0 3 rate is 0.178566
+patternClosest is 0 0 rate is 0.154715
+entropy is 1.77375
+the patternClosest is 1 and the count rate is 0.0688757
+patternClosest is 1 1 rate is 0.38951
+patternClosest is 1 0 rate is 0.407567
+patternClosest is 1 2 rate is 0.179278
+patternClosest is 1 3 rate is 0.0236457
+entropy is 0.11226
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1556379 points 
+Sub-sampling 2 gives 610790 points 
+positions bitstream size 11677 B (0.0864809 bpp)
+positions processing time (user): 1.578 s
+colors bitstream size 125345 B (0.928316 bpp)
+colors processing time (user): 0.484 s
+Number of points = 1050704
+Number of nodes = 23083
+Estimation of sampling = 1.18576
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.941368
+patternClosest is 0 2 rate is 0.410054
+patternClosest is 0 3 rate is 0.180415
+patternClosest is 0 0 rate is 0.148903
+patternClosest is 0 1 rate is 0.260627
+entropy is 1.77714
+the patternClosest is 1 and the count rate is 0.0586325
+patternClosest is 1 1 rate is 0.363996
+patternClosest is 1 2 rate is 0.206231
+patternClosest is 1 0 rate is 0.397132
+patternClosest is 1 3 rate is 0.0326409
+entropy is 0.0991294
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1509461 points 
+Sub-sampling 2 gives 608715 points 
+positions bitstream size 11287 B (0.0859386 bpp)
+positions processing time (user): 1.546 s
+colors bitstream size 124583 B (0.948568 bpp)
+colors processing time (user): 0.5 s
+Total frame size 3520172 B
+Total bitstream size 3520172 B
+Processing time (wall): 276.54 s
+Processing time (user): 181.546 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 1154 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.125 s
+
+colors bitstream size 15730 B
+colors processing time (user): 0.14 s
+
+positions bitstream size 6929 B
+positions processing time (user): 0.609 s
+
+colors bitstream size 133179 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 7222 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.578 s
+
+colors bitstream size 117159 B
+colors processing time (user): 0.89 s
+
+positions bitstream size 8765 B
+positions processing time (user): 0.406 s
+
+colors bitstream size 86549 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 9528 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.375 s
+
+colors bitstream size 86114 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 9245 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.5 s
+
+colors bitstream size 91632 B
+colors processing time (user): 0.484 s
+
+positions bitstream size 7495 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 76300 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 4241 B
+positions processing time (user): 0.359 s
+
+colors bitstream size 60640 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 10229 B
+positions processing time (user): 0.375 s
+
+colors bitstream size 118710 B
+colors processing time (user): 0.468 s
+
+positions bitstream size 5130 B
+positions processing time (user): 0.484 s
+
+colors bitstream size 74048 B
+colors processing time (user): 0.843 s
+
+positions bitstream size 9636 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.453 s
+
+colors bitstream size 91810 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 5640 B
+positions processing time (user): 0.531 s
+
+colors bitstream size 94238 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 11084 B
+positions processing time (user): 0.421 s
+
+colors bitstream size 115318 B
+colors processing time (user): 0.421 s
+
+positions bitstream size 6050 B
+positions processing time (user): 0.5 s
+
+colors bitstream size 91611 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 11701 B
+positions processing time (user): 0.453 s
+
+colors bitstream size 144305 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 6899 B
+positions processing time (user): 0.609 s
+
+colors bitstream size 136286 B
+colors processing time (user): 0.828 s
+
+positions bitstream size 10077 B
+positions processing time (user): 0.468 s
+
+colors bitstream size 111182 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 7272 B
+positions processing time (user): 0.625 s
+
+colors bitstream size 152406 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 10788 B
+positions processing time (user): 0.484 s
+
+colors bitstream size 128801 B
+colors processing time (user): 0.453 s
+
+positions bitstream size 7793 B
+positions processing time (user): 0.625 s
+
+colors bitstream size 136730 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 10468 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 105584 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 9940 B
+positions processing time (user): 0.39 s
+
+colors bitstream size 84987 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 10365 B
+positions processing time (user): 0.484 s
+
+colors bitstream size 110148 B
+colors processing time (user): 0.375 s
+
+positions bitstream size 10789 B
+positions processing time (user): 0.437 s
+
+colors bitstream size 108995 B
+colors processing time (user): 0.437 s
+
+positions bitstream size 12859 B
+positions processing time (user): 0.453 s
+
+colors bitstream size 144787 B
+colors processing time (user): 0.515 s
+
+positions bitstream size 13859 B
+positions processing time (user): 0.546 s
+
+colors bitstream size 150170 B
+colors processing time (user): 0.546 s
+
+positions bitstream size 10879 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.5 s
+
+colors bitstream size 105458 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 11526 B
+positions processing time (user): 0.484 s
+
+colors bitstream size 126488 B
+colors processing time (user): 0.406 s
+
+positions bitstream size 11677 B
+positions processing time (user): 0.515 s
+
+colors bitstream size 125345 B
+colors processing time (user): 0.5 s
+
+positions bitstream size 11287 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.437 s
+
+colors bitstream size 124583 B
+colors processing time (user): 0.437 s
+
+Total bitstream size 3520172 B
+Processing time (wall): 40.212 s
+Processing time (user): 30.156 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply
+infile2:        F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_4_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 61456 23952 4288
+WARNING: 31859 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 43399204, 18626159, 0.429182
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 274.709
+   mse1,PSNR (p2point): 76.7119
+   mse1      (p2plane): 94.5096
+   mse1,PSNR (p2plane): 81.3459
+   c[0],    1         : 0.00193667
+   c[1],    1         : 9.5118e-05
+   c[2],    1         : 6.78087e-05
+   c[0],PSNR1         : 27.1294
+   c[1],PSNR1         : 40.2174
+   c[2],PSNR1         : 41.6871
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 209.573
+   mse2,PSNR (p2point): 77.8873
+   mse2      (p2plane): 144.515
+   mse2,PSNR (p2plane): 79.5016
+   c[0],    2         : 0.00162592
+   c[1],    2         : 8.12984e-05
+   c[2],    2         : 5.91274e-05
+   c[0],PSNR2         : 27.889
+   c[1],PSNR2         : 40.8992
+   c[2],PSNR2         : 42.2821
+3. Final (symmetric).
+   mseF      (p2point): 274.709
+   mseF,PSNR (p2point): 76.7119
+   mseF      (p2plane): 144.515
+   mseF,PSNR (p2plane): 79.5016
+   c[0],    F         : 0.00193667
+   c[1],    F         : 9.5118e-05
+   c[2],    F         : 6.78087e-05
+   c[0],PSNRF         : 27.1294
+   c[1],PSNRF         : 40.2174
+   c[2],PSNRF         : 41.6871
+Job done! 263.234 seconds elapsed (excluding the time to load the point clouds).
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 0
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : ""
+    uncompressedDataPath  : "C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply"
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    srcUnitLength             : 1
+    srcUnit                   : 0 (Dimensionless)
+    inputScale                : 1
+    codingScale               : 0.0625
+    sequenceScale             : 0.0625
+    positionQuantizationScale : 0.0625
+    externalScale             : 1
+    sortInputByAzimuth                    : 0
+    geometry_axis_order                   : 1 (xyz)
+    autoSeqBbox                           : 1
+    seqOrigin                             : 0, 0, 0
+    seqSizeWhd                            : 0, 0, 0
+    mergeDuplicatedPoints                 : 1
+    partitionMethod                       : 4 (UniformSquare)
+    safeTrisoupPartionning                : 1
+    partitionOctreeDepth                  : 1
+    sliceMaxPoints                        : 1100000
+    sliceMinPoints                        : 550000
+    tileSize                              : 0
+    cabac_bypass_stream_enabled_flag      : 0
+    entropyContinuationEnabled            : 0
+    GoFGeometryEntropyContinuationEnabled : 0
+    disableAttributeCoding                : 0
+    enforceLevelLimits                    : 1
+    geomTreeType                          : 0
+    qtbtEnabled                           : 1
+    maxNumQtBtBeforeOt                    : 4
+    minQtbtSizeLog2                       : 0
+    numOctreeEntropyStreams               : 0
+    bitwiseOccupancyCoding                : 1
+    neighbourAvailBoundaryLog2            : 7
+    inferredDirectCodingMode              : 0
+    jointTwoPointIdcm                     : 1
+    adjacentChildContextualization        : 1
+    intra_pred_max_node_size_log2         : 6
+    planarEnabled                         : 1
+    octreeDepthPlanarEligibilityEnabled   : 1
+    multiplePlanarEnabled                 : 1
+    planarModeThreshold0                  : 77
+    planarModeThreshold1                  : 99
+    planarModeThreshold2                  : 113
+    planarModeIdcmUse                     : -1
+    trisoupNodeSizeLog2                   : 2
+    trisoup_sampling_value                : 0
+    trisoupQuantizationBits               : 2
+    trisoupCentroidResidualEnabled        : 0
+    trisoupHaloEnabled                    : 1
+    trisoupAdaptiveHaloEnabled            : 1
+    trisoupFineRayTracingEnabled          : 1
+    trisoupImprovedEncoderEnabled         : 1
+    positionQuantisationEnabled           : 0
+    positionQuantisationMethod            : 0 (Uniform)
+    positionQpMultiplierLog2              : 0
+    positionBaseQp                        : 0
+    positionIdcmQp                        : 0
+    positionSliceQpOffset                 : 0
+    positionQuantisationOctreeSizeLog2    : -1
+    positionQuantisationOctreeDepth       : -1
+    positionBaseQpFreqLog2                : 8
+    positionSliceQpFreqLog2               : -8
+    angularEnabled                        : 0
+    secondaryResidualDisabled             : 0
+    lidarHeadPosition                     : 0, 0, 0
+    numLasers                             : 0
+    lasersTheta                           : 
+    lasersZ                               : 
+    lasersNumPhiPerTurn                   : 
+    planarBufferDisabled                  : 0
+    octreeAngularExtension                : 1
+    predGeomAzimuthQuantization           : 0
+    positionAzimuthScaleLog2              : 5
+    positionAzimuthSpeed                  : 362
+    positionRadiusInvScaleLog2            : 0
+    disable_planar_IDCM_angluar           : 0
+    interAzimScaleLog2                    : 1
+    randomAccessPeriod                    : 1
+    interPredictionEnabled                : 0
+    globalMotionEnabled                   : 0
+    motionVectorPath                      : ""
+    lpuType                               : 0 (RoadObjClassfication)
+    globalMotionSrcType                   : 1 (InternalLMSGMSrc)
+    globalMotionBlockSize                 : 0, 0, 4096
+    globalMotionWindowSize                : 512
+    deriveGMThreshold                     : 0
+    gmThresholdHistScale                  : 100
+    gmThresholdMinZ                       : -4000
+    gmThresholdMaxZ                       : -500
+    gmThresholdLeftScale                  : 1.5
+    gmThresholdRightScale                 : 1.5
+    use_cuboidal_regions_in_GM_estimation : 0
+    predGeomSort                          : 1 (Morton)
+    predGeomAzimuthSortPrecision          : 0
+    predGeomTreePtsMax                    : 1100000
+    pointCountMetadata                    : 0
+    predGeomMaxPredIdx                    : 3
+    predGeomMaxPredIdxTested              : -1
+    predGeomRadiusPredThreshold           : 2048
+    recolourSearchRange                             : 1
+    recolourNumNeighboursFwd                        : 8
+    recolourNumNeighboursBwd                        : 1
+    recolourUseDistWeightedAvgFwd                   : 1
+    recolourUseDistWeightedAvgBwd                   : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentFwd : 1
+    recolourSkipAvgIfIdenticalSourcePointPresentBwd : 0
+    recolourDistOffsetFwd                           : 4
+    recolourDistOffsetBwd                           : 4
+    recolourMaxGeometryDist2Fwd                     : 1000
+    recolourMaxGeometryDist2Bwd                     : 1000
+    recolourMaxAttributeDist2Fwd                    : 1000
+    recolourMaxAttributeDist2Bwd                    : 1000
+    color
+        attribute                             : ...
+        attrScale                             : 0
+        attrOffset                            : 0
+        bitdepth                              : 8
+        defaultValue                          : 
+        colourMatrix                          : 1 (Bt709)
+        transformType                         : 2 (Lift)
+        rahtPredictionEnabled                 : 1
+        rahtPredictionThreshold0              : 2
+        rahtPredictionThreshold1              : 6
+        rahtPredictionSkip1                   : 1
+        rahtSubnodePredictionEnabled          : 1
+        rahtPredictionWeights                 : 9, 3, 1, 5, 2
+        numberOfNearestNeighborsInPrediction  : 2
+        adaptivePredictionThreshold           : 0
+        intraLodSearchRange                   : -1
+        interLodSearchRange                   : -1
+        predictionWithDistributionEnabled     : 1
+        lod_neigh_bias                        : 1, 1, 1
+        lodDecimator                          : 0 (None)
+        max_num_direct_predictors             : 3
+        direct_avg_predictor_disabled_flag    : 0
+        predWeightBlending                    : 0
+        levelOfDetailCount                    : 12
+        dist2                                 : 0
+        dist2PercentileEstimate               : 0.85
+        positionQuantizationScaleAdjustsDist2 : 0
+        lodSamplingPeriod                     : 
+        intraLodPredictionSkipLayers          : -1
+        interComponentPredictionEnabled       : 0
+        lastComponentPredictionEnabled        : 1
+        canonical_point_order_flag            : 0
+        max_points_per_sort_log2_plus1        : 0
+        spherical_coord_flag                  : 0
+        attrSphericalMaxLog2                  : 0
+        aps_scalable_enable_flag              : 0
+        max_neigh_range                       : 4
+        qp                                    : 18
+        qpChromaOffset                        : 0
+        aps_slice_qp_deltas_present_flag      : 0
+        qpLayerOffsetsLuma                    : 
+        qpLayerOffsetsChroma                  : 
+        quantNeighWeight                      : 16, 8, 4
+        attributeInterPredictionEnabled       : 0
+        attrInterPredSearchRange              : 128
+        attrInterPredTranslationThresh        : 1000
+        QPShiftStep                           : 0
+
+Slice number: 30
+Number of points = 128802
+Number of nodes = 11712
+Estimation of sampling = 1.20619
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.972442
+patternClosest is 0 2 rate is 0.387069
+patternClosest is 0 1 rate is 0.296079
+patternClosest is 0 3 rate is 0.124226
+patternClosest is 0 0 rate is 0.192626
+entropy is 1.82957
+the patternClosest is 1 and the count rate is 0.0275583
+patternClosest is 1 3 rate is 0.0078534
+patternClosest is 1 2 rate is 0.269634
+patternClosest is 1 0 rate is 0.405759
+patternClosest is 1 1 rate is 0.316754
+entropy is 0.0445934
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 177435 points 
+positions bitstream size 4591 B (0.285151 bpp)
+positions processing time (user): 0.359 s
+colors bitstream size 32095 B (1.99345 bpp)
+colors processing time (user): 0.14 s
+Number of points = 636802
+Number of nodes = 57869
+Estimation of sampling = 1.20582
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.951015
+patternClosest is 0 1 rate is 0.303189
+patternClosest is 0 3 rate is 0.166863
+patternClosest is 0 0 rate is 0.133484
+patternClosest is 0 2 rate is 0.396464
+entropy is 1.77843
+the patternClosest is 1 and the count rate is 0.0489852
+patternClosest is 1 0 rate is 0.433795
+patternClosest is 1 1 rate is 0.311977
+patternClosest is 1 2 rate is 0.245173
+patternClosest is 1 3 rate is 0.00905519
+entropy is 0.0786536
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 880866 points 
+positions bitstream size 22519 B (0.282901 bpp)
+positions processing time (user): 1.64 s
+colors bitstream size 199135 B (2.50169 bpp)
+colors processing time (user): 1.421 s
+Number of points = 657585
+Number of nodes = 58369
+Estimation of sampling = 1.19172
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.938849
+patternClosest is 0 3 rate is 0.155195
+patternClosest is 0 2 rate is 0.394395
+patternClosest is 0 1 rate is 0.310239
+patternClosest is 0 0 rate is 0.14017
+entropy is 1.75352
+the patternClosest is 1 and the count rate is 0.0611515
+patternClosest is 1 2 rate is 0.349557
+patternClosest is 1 1 rate is 0.268303
+patternClosest is 1 0 rate is 0.321745
+patternClosest is 1 3 rate is 0.0603954
+entropy is 0.110701
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 908998 points 
+positions bitstream size 25913 B (0.31525 bpp)
+positions processing time (user): 1.812 s
+colors bitstream size 250606 B (3.0488 bpp)
+colors processing time (user): 0.859 s
+Number of points = 779298
+Number of nodes = 70374
+Estimation of sampling = 1.20203
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947056
+patternClosest is 0 3 rate is 0.134569
+patternClosest is 0 1 rate is 0.306314
+patternClosest is 0 2 rate is 0.406889
+patternClosest is 0 0 rate is 0.152228
+entropy is 1.75537
+the patternClosest is 1 and the count rate is 0.0529442
+patternClosest is 1 1 rate is 0.317546
+patternClosest is 1 0 rate is 0.410054
+patternClosest is 1 2 rate is 0.260767
+patternClosest is 1 3 rate is 0.0116327
+entropy is 0.0864748
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1071011 points 
+positions bitstream size 27500 B (0.282305 bpp)
+positions processing time (user): 2.078 s
+colors bitstream size 276320 B (2.8366 bpp)
+colors processing time (user): 1 s
+Number of points = 851072
+Number of nodes = 77439
+Estimation of sampling = 1.20658
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.942099
+patternClosest is 0 0 rate is 0.135602
+patternClosest is 0 2 rate is 0.387684
+patternClosest is 0 3 rate is 0.174748
+patternClosest is 0 1 rate is 0.301966
+entropy is 1.77331
+the patternClosest is 1 and the count rate is 0.0579014
+patternClosest is 1 2 rate is 0.230318
+patternClosest is 1 0 rate is 0.427764
+patternClosest is 1 1 rate is 0.328727
+patternClosest is 1 3 rate is 0.013191
+entropy is 0.0939121
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1178806 points 
+Sub-sampling 2 gives 713557 points 
+positions bitstream size 33167 B (0.311767 bpp)
+positions processing time (user): 2.89 s
+colors bitstream size 225548 B (2.12013 bpp)
+colors processing time (user): 0.765 s
+Number of points = 997626
+Number of nodes = 87237
+Estimation of sampling = 1.18284
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.950141
+patternClosest is 0 1 rate is 0.317211
+patternClosest is 0 0 rate is 0.115048
+patternClosest is 0 2 rate is 0.398892
+patternClosest is 0 3 rate is 0.168849
+entropy is 1.7545
+the patternClosest is 1 and the count rate is 0.0498588
+patternClosest is 1 2 rate is 0.214067
+patternClosest is 1 0 rate is 0.409786
+patternClosest is 1 1 rate is 0.360177
+patternClosest is 1 3 rate is 0.0159701
+entropy is 0.0812406
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1358622 points 
+Sub-sampling 2 gives 797041 points 
+positions bitstream size 29949 B (0.240162 bpp)
+positions processing time (user): 3.14 s
+colors bitstream size 223980 B (1.7961 bpp)
+colors processing time (user): 0.843 s
+Number of points = 836658
+Number of nodes = 75774
+Estimation of sampling = 1.20378
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.939289
+patternClosest is 0 2 rate is 0.396084
+patternClosest is 0 1 rate is 0.330848
+patternClosest is 0 3 rate is 0.16298
+patternClosest is 0 0 rate is 0.110087
+entropy is 1.72281
+the patternClosest is 1 and the count rate is 0.0607105
+patternClosest is 1 1 rate is 0.294887
+patternClosest is 1 0 rate is 0.483388
+patternClosest is 1 2 rate is 0.207116
+patternClosest is 1 3 rate is 0.0146089
+entropy is 0.0962872
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1144674 points 
+Sub-sampling 2 gives 655527 points 
+positions bitstream size 25982 B (0.248436 bpp)
+positions processing time (user): 2.796 s
+colors bitstream size 177224 B (1.69459 bpp)
+colors processing time (user): 0.703 s
+Number of points = 341765
+Number of nodes = 30457
+Estimation of sampling = 1.1941
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.953121
+patternClosest is 0 3 rate is 0.150324
+patternClosest is 0 2 rate is 0.396425
+patternClosest is 0 0 rate is 0.132521
+patternClosest is 0 1 rate is 0.320729
+entropy is 1.76586
+the patternClosest is 1 and the count rate is 0.0468794
+patternClosest is 1 2 rate is 0.299964
+patternClosest is 1 1 rate is 0.356965
+patternClosest is 1 3 rate is 0.0156751
+patternClosest is 1 0 rate is 0.327396
+entropy is 0.0784274
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 466141 points 
+positions bitstream size 12097 B (0.283165 bpp)
+positions processing time (user): 0.906 s
+colors bitstream size 94396 B (2.20961 bpp)
+colors processing time (user): 0.468 s
+Number of points = 875995
+Number of nodes = 76790
+Estimation of sampling = 1.1843
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.941585
+patternClosest is 0 2 rate is 0.395355
+patternClosest is 0 3 rate is 0.175066
+patternClosest is 0 1 rate is 0.303413
+patternClosest is 0 0 rate is 0.126167
+entropy is 1.75915
+the patternClosest is 1 and the count rate is 0.0584148
+patternClosest is 1 1 rate is 0.351621
+patternClosest is 1 2 rate is 0.226057
+patternClosest is 1 0 rate is 0.39358
+patternClosest is 1 3 rate is 0.0287423
+entropy is 0.0988267
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1202147 points 
+Sub-sampling 2 gives 724160 points 
+positions bitstream size 33326 B (0.304349 bpp)
+positions processing time (user): 2.984 s
+colors bitstream size 246887 B (2.25469 bpp)
+colors processing time (user): 0.781 s
+Number of points = 527082
+Number of nodes = 47582
+Estimation of sampling = 1.20183
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.962899
+patternClosest is 0 3 rate is 0.141571
+patternClosest is 0 2 rate is 0.381783
+patternClosest is 0 1 rate is 0.304051
+patternClosest is 0 0 rate is 0.172595
+entropy is 1.81925
+the patternClosest is 1 and the count rate is 0.0371006
+patternClosest is 1 2 rate is 0.252302
+patternClosest is 1 0 rate is 0.461558
+patternClosest is 1 1 rate is 0.274944
+patternClosest is 1 3 rate is 0.0111968
+entropy is 0.0593916
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 726022 points 
+positions bitstream size 17729 B (0.269089 bpp)
+positions processing time (user): 1.421 s
+colors bitstream size 126174 B (1.91506 bpp)
+colors processing time (user): 0.656 s
+Number of points = 916120
+Number of nodes = 82142
+Estimation of sampling = 1.19775
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.940093
+patternClosest is 0 2 rate is 0.427517
+patternClosest is 0 3 rate is 0.188781
+patternClosest is 0 1 rate is 0.296137
+patternClosest is 0 0 rate is 0.0875656
+entropy is 1.69757
+the patternClosest is 1 and the count rate is 0.059907
+patternClosest is 1 3 rate is 0.0163916
+patternClosest is 1 0 rate is 0.391295
+patternClosest is 1 1 rate is 0.326836
+patternClosest is 1 2 rate is 0.265478
+entropy is 0.0995747
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1248933 points 
+Sub-sampling 2 gives 708206 points 
+positions bitstream size 32625 B (0.284897 bpp)
+positions processing time (user): 3.14 s
+colors bitstream size 246573 B (2.15319 bpp)
+colors processing time (user): 0.781 s
+Number of points = 549259
+Number of nodes = 50687
+Estimation of sampling = 1.21512
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.936362
+patternClosest is 0 2 rate is 0.361598
+patternClosest is 0 1 rate is 0.346565
+patternClosest is 0 3 rate is 0.144937
+patternClosest is 0 0 rate is 0.1469
+entropy is 1.75179
+the patternClosest is 1 and the count rate is 0.063638
+patternClosest is 1 2 rate is 0.204317
+patternClosest is 1 1 rate is 0.296819
+patternClosest is 1 0 rate is 0.48864
+patternClosest is 1 3 rate is 0.010224
+entropy is 0.0993188
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 754328 points 
+positions bitstream size 19239 B (0.280218 bpp)
+positions processing time (user): 1.546 s
+colors bitstream size 155561 B (2.26576 bpp)
+colors processing time (user): 0.703 s
+Number of points = 903207
+Number of nodes = 81017
+Estimation of sampling = 1.19799
+distanceSearchEncoder = 1
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.950789
+patternClosest is 0 2 rate is 0.382469
+patternClosest is 0 3 rate is 0.180031
+patternClosest is 0 1 rate is 0.320159
+patternClosest is 0 0 rate is 0.117341
+entropy is 1.77271
+the patternClosest is 1 and the count rate is 0.0492109
+patternClosest is 1 1 rate is 0.305154
+patternClosest is 1 0 rate is 0.398362
+patternClosest is 1 3 rate is 0.026132
+patternClosest is 1 2 rate is 0.270352
+entropy is 0.0836137
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1256114 points 
+Sub-sampling 2 gives 743705 points 
+positions bitstream size 31644 B (0.280281 bpp)
+positions processing time (user): 3.062 s
+colors bitstream size 210680 B (1.86606 bpp)
+colors processing time (user): 0.796 s
+Number of points = 586777
+Number of nodes = 51035
+Estimation of sampling = 1.17966
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.965416
+patternClosest is 0 3 rate is 0.142248
+patternClosest is 0 2 rate is 0.416645
+patternClosest is 0 1 rate is 0.281015
+patternClosest is 0 0 rate is 0.160093
+entropy is 1.79976
+the patternClosest is 1 and the count rate is 0.0345836
+patternClosest is 1 2 rate is 0.310481
+patternClosest is 1 3 rate is 0.017016
+patternClosest is 1 0 rate is 0.358323
+patternClosest is 1 1 rate is 0.31418
+entropy is 0.0580749
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 798920 points 
+positions bitstream size 19446 B (0.265123 bpp)
+positions processing time (user): 1.515 s
+colors bitstream size 178911 B (2.43924 bpp)
+colors processing time (user): 0.765 s
+Number of points = 924478
+Number of nodes = 79509
+Estimation of sampling = 1.17306
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.92696
+patternClosest is 0 3 rate is 0.177505
+patternClosest is 0 2 rate is 0.430324
+patternClosest is 0 0 rate is 0.0997349
+patternClosest is 0 1 rate is 0.292437
+entropy is 1.68393
+the patternClosest is 1 and the count rate is 0.0730403
+patternClosest is 1 1 rate is 0.286277
+patternClosest is 1 2 rate is 0.22046
+patternClosest is 1 0 rate is 0.477129
+patternClosest is 1 3 rate is 0.0161335
+entropy is 0.117078
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1224684 points 
+Sub-sampling 2 gives 712774 points 
+positions bitstream size 35201 B (0.304613 bpp)
+positions processing time (user): 3.031 s
+colors bitstream size 290921 B (2.51749 bpp)
+colors processing time (user): 0.765 s
+Number of points = 617304
+Number of nodes = 55094
+Estimation of sampling = 1.19499
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.954797
+patternClosest is 0 3 rate is 0.185177
+patternClosest is 0 2 rate is 0.388218
+patternClosest is 0 1 rate is 0.320753
+patternClosest is 0 0 rate is 0.105853
+entropy is 1.76601
+the patternClosest is 1 and the count rate is 0.0452033
+patternClosest is 1 2 rate is 0.281163
+patternClosest is 1 1 rate is 0.288287
+patternClosest is 1 0 rate is 0.412347
+patternClosest is 1 3 rate is 0.0182034
+entropy is 0.0752274
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 839533 points 
+positions bitstream size 20922 B (0.27114 bpp)
+positions processing time (user): 1.64 s
+colors bitstream size 232704 B (3.01575 bpp)
+colors processing time (user): 0.703 s
+Number of points = 943522
+Number of nodes = 84985
+Estimation of sampling = 1.20048
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.956776
+patternClosest is 0 1 rate is 0.295702
+patternClosest is 0 2 rate is 0.426981
+patternClosest is 0 0 rate is 0.139433
+patternClosest is 0 3 rate is 0.137883
+entropy is 1.75517
+the patternClosest is 1 and the count rate is 0.0432239
+patternClosest is 1 2 rate is 0.296797
+patternClosest is 1 1 rate is 0.319146
+patternClosest is 1 3 rate is 0.0156584
+patternClosest is 1 0 rate is 0.368399
+entropy is 0.0722107
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1302578 points 
+Sub-sampling 2 gives 745263 points 
+positions bitstream size 30329 B (0.257156 bpp)
+positions processing time (user): 3.14 s
+colors bitstream size 264924 B (2.24626 bpp)
+colors processing time (user): 0.812 s
+Number of points = 643283
+Number of nodes = 58733
+Estimation of sampling = 1.20865
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.948764
+patternClosest is 0 3 rate is 0.142498
+patternClosest is 0 2 rate is 0.435227
+patternClosest is 0 1 rate is 0.302258
+patternClosest is 0 0 rate is 0.120017
+entropy is 1.71891
+the patternClosest is 1 and the count rate is 0.0512356
+patternClosest is 1 2 rate is 0.262152
+patternClosest is 1 0 rate is 0.408549
+patternClosest is 1 1 rate is 0.313599
+patternClosest is 1 3 rate is 0.0156989
+entropy is 0.0846771
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 887651 points 
+positions bitstream size 21131 B (0.262789 bpp)
+positions processing time (user): 1.718 s
+colors bitstream size 251517 B (3.12792 bpp)
+colors processing time (user): 0.812 s
+Number of points = 953103
+Number of nodes = 84653
+Estimation of sampling = 1.1921
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.944313
+patternClosest is 0 3 rate is 0.1595
+patternClosest is 0 0 rate is 0.120987
+patternClosest is 0 1 rate is 0.368354
+patternClosest is 0 2 rate is 0.351159
+entropy is 1.74886
+the patternClosest is 1 and the count rate is 0.0556867
+patternClosest is 1 1 rate is 0.322699
+patternClosest is 1 0 rate is 0.399331
+patternClosest is 1 2 rate is 0.263692
+patternClosest is 1 3 rate is 0.0142777
+entropy is 0.091885
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1289611 points 
+Sub-sampling 2 gives 744423 points 
+positions bitstream size 33360 B (0.280012 bpp)
+positions processing time (user): 3.218 s
+colors bitstream size 278448 B (2.33719 bpp)
+colors processing time (user): 0.796 s
+Number of points = 664210
+Number of nodes = 59200
+Estimation of sampling = 1.19418
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947752
+patternClosest is 0 3 rate is 0.124662
+patternClosest is 0 1 rate is 0.345676
+patternClosest is 0 0 rate is 0.133201
+patternClosest is 0 2 rate is 0.39646
+entropy is 1.72566
+the patternClosest is 1 and the count rate is 0.0522481
+patternClosest is 1 2 rate is 0.248593
+patternClosest is 1 1 rate is 0.319048
+patternClosest is 1 0 rate is 0.415653
+patternClosest is 1 3 rate is 0.016706
+entropy is 0.0862155
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 902512 points 
+positions bitstream size 21853 B (0.263206 bpp)
+positions processing time (user): 1.703 s
+colors bitstream size 225528 B (2.71635 bpp)
+colors processing time (user): 0.921 s
+Number of points = 992433
+Number of nodes = 89680
+Estimation of sampling = 1.20242
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.932843
+patternClosest is 0 3 rate is 0.160154
+patternClosest is 0 2 rate is 0.35151
+patternClosest is 0 1 rate is 0.398434
+patternClosest is 0 0 rate is 0.0899015
+entropy is 1.67428
+the patternClosest is 1 and the count rate is 0.0671571
+patternClosest is 1 0 rate is 0.416057
+patternClosest is 1 1 rate is 0.345996
+patternClosest is 1 2 rate is 0.224216
+patternClosest is 1 3 rate is 0.0137316
+entropy is 0.109113
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1359726 points 
+Sub-sampling 2 gives 745703 points 
+positions bitstream size 33176 B (0.267432 bpp)
+positions processing time (user): 3.218 s
+colors bitstream size 250903 B (2.02253 bpp)
+colors processing time (user): 0.828 s
+Number of points = 790101
+Number of nodes = 70539
+Estimation of sampling = 1.19518
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.95194
+patternClosest is 0 3 rate is 0.16215
+patternClosest is 0 0 rate is 0.135257
+patternClosest is 0 1 rate is 0.327478
+patternClosest is 0 2 rate is 0.375115
+entropy is 1.78394
+the patternClosest is 1 and the count rate is 0.0480603
+patternClosest is 1 1 rate is 0.353607
+patternClosest is 1 2 rate is 0.25884
+patternClosest is 1 0 rate is 0.374257
+patternClosest is 1 3 rate is 0.0132956
+entropy is 0.0792305
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1075571 points 
+positions bitstream size 29329 B (0.296965 bpp)
+positions processing time (user): 1.984 s
+colors bitstream size 263598 B (2.66901 bpp)
+colors processing time (user): 0.968 s
+Number of points = 1019005
+Number of nodes = 86430
+Estimation of sampling = 1.16494
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.94713
+patternClosest is 0 3 rate is 0.131688
+patternClosest is 0 2 rate is 0.427217
+patternClosest is 0 1 rate is 0.310336
+patternClosest is 0 0 rate is 0.130758
+entropy is 1.72093
+the patternClosest is 1 and the count rate is 0.0528704
+patternClosest is 1 3 rate is 0.0166745
+patternClosest is 1 0 rate is 0.422029
+patternClosest is 1 2 rate is 0.240958
+patternClosest is 1 1 rate is 0.320338
+entropy is 0.0869485
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1328416 points 
+Sub-sampling 2 gives 761729 points 
+positions bitstream size 33142 B (0.260191 bpp)
+positions processing time (user): 3.265 s
+colors bitstream size 255200 B (2.00352 bpp)
+colors processing time (user): 0.843 s
+Number of points = 870259
+Number of nodes = 78867
+Estimation of sampling = 1.20416
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.942197
+patternClosest is 0 3 rate is 0.148162
+patternClosest is 0 1 rate is 0.311404
+patternClosest is 0 0 rate is 0.133453
+patternClosest is 0 2 rate is 0.406981
+entropy is 1.74107
+the patternClosest is 1 and the count rate is 0.0578034
+patternClosest is 1 2 rate is 0.290654
+patternClosest is 1 1 rate is 0.314618
+patternClosest is 1 0 rate is 0.380577
+patternClosest is 1 3 rate is 0.0141504
+entropy is 0.0959747
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1211393 points 
+Sub-sampling 2 gives 701649 points 
+positions bitstream size 33293 B (0.306051 bpp)
+positions processing time (user): 3.031 s
+colors bitstream size 227498 B (2.09131 bpp)
+colors processing time (user): 0.687 s
+Number of points = 1061591
+Number of nodes = 88991
+Estimation of sampling = 1.15812
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.944314
+patternClosest is 0 1 rate is 0.318912
+patternClosest is 0 2 rate is 0.423825
+patternClosest is 0 3 rate is 0.138273
+patternClosest is 0 0 rate is 0.118989
+entropy is 1.70998
+the patternClosest is 1 and the count rate is 0.0556863
+patternClosest is 1 1 rate is 0.35529
+patternClosest is 1 2 rate is 0.253839
+patternClosest is 1 3 rate is 0.0384412
+patternClosest is 1 0 rate is 0.35243
+entropy is 0.0970892
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1415550 points 
+Sub-sampling 2 gives 808321 points 
+positions bitstream size 33852 B (0.255104 bpp)
+positions processing time (user): 3.359 s
+colors bitstream size 242714 B (1.82906 bpp)
+colors processing time (user): 0.875 s
+Number of points = 996309
+Number of nodes = 87381
+Estimation of sampling = 1.1846
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.945915
+patternClosest is 0 2 rate is 0.439914
+patternClosest is 0 3 rate is 0.167141
+patternClosest is 0 1 rate is 0.290974
+patternClosest is 0 0 rate is 0.101971
+entropy is 1.70893
+the patternClosest is 1 and the count rate is 0.0540849
+patternClosest is 1 0 rate is 0.373248
+patternClosest is 1 1 rate is 0.3148
+patternClosest is 1 2 rate is 0.284721
+patternClosest is 1 3 rate is 0.0272303
+entropy is 0.0926577
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1347352 points 
+Sub-sampling 2 gives 764914 points 
+positions bitstream size 35411 B (0.284337 bpp)
+positions processing time (user): 3.359 s
+colors bitstream size 267832 B (2.15059 bpp)
+colors processing time (user): 0.796 s
+Number of points = 1058887
+Number of nodes = 95447
+Estimation of sampling = 1.20093
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.947628
+patternClosest is 0 3 rate is 0.155021
+patternClosest is 0 2 rate is 0.379326
+patternClosest is 0 1 rate is 0.329279
+patternClosest is 0 0 rate is 0.136374
+entropy is 1.76932
+the patternClosest is 1 and the count rate is 0.0523716
+patternClosest is 1 1 rate is 0.308173
+patternClosest is 1 2 rate is 0.254862
+patternClosest is 1 3 rate is 0.0189459
+patternClosest is 1 0 rate is 0.418019
+entropy is 0.086958
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1463564 points 
+Sub-sampling 2 gives 855435 points 
+positions bitstream size 38166 B (0.288348 bpp)
+positions processing time (user): 3.593 s
+colors bitstream size 314308 B (2.37463 bpp)
+colors processing time (user): 0.984 s
+Number of points = 1005358
+Number of nodes = 93588
+Estimation of sampling = 1.22042
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.932964
+patternClosest is 0 3 rate is 0.181748
+patternClosest is 0 2 rate is 0.364242
+patternClosest is 0 1 rate is 0.324511
+patternClosest is 0 0 rate is 0.129498
+entropy is 1.76013
+the patternClosest is 1 and the count rate is 0.0670363
+patternClosest is 1 2 rate is 0.239484
+patternClosest is 1 1 rate is 0.320387
+patternClosest is 1 0 rate is 0.422989
+patternClosest is 1 3 rate is 0.0171397
+entropy is 0.110311
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1411051 points 
+Sub-sampling 2 gives 841306 points 
+positions bitstream size 40953 B (0.325878 bpp)
+positions processing time (user): 3.687 s
+colors bitstream size 326006 B (2.59415 bpp)
+colors processing time (user): 0.953 s
+Number of points = 1069371
+Number of nodes = 95914
+Estimation of sampling = 1.19794
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.939062
+patternClosest is 0 3 rate is 0.14571
+patternClosest is 0 2 rate is 0.385232
+patternClosest is 0 0 rate is 0.136577
+patternClosest is 0 1 rate is 0.332481
+entropy is 1.74246
+the patternClosest is 1 and the count rate is 0.0609384
+patternClosest is 1 2 rate is 0.24718
+patternClosest is 1 0 rate is 0.412623
+patternClosest is 1 1 rate is 0.280931
+patternClosest is 1 3 rate is 0.0592659
+entropy is 0.108565
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1475866 points 
+Sub-sampling 2 gives 849323 points 
+positions bitstream size 37455 B (0.280202 bpp)
+positions processing time (user): 3.64 s
+colors bitstream size 279795 B (2.09316 bpp)
+colors processing time (user): 0.984 s
+Number of points = 1041323
+Number of nodes = 91776
+Estimation of sampling = 1.1875
+distanceSearchEncoder = 1
+
+encode the position and the data for the patternClosest
+the patternClosest is 0 and the count rate is 0.945671
+patternClosest is 0 1 rate is 0.34793
+patternClosest is 0 0 rate is 0.144033
+patternClosest is 0 2 rate is 0.3711
+patternClosest is 0 3 rate is 0.136937
+entropy is 1.75526
+the patternClosest is 1 and the count rate is 0.0543287
+patternClosest is 1 2 rate is 0.267742
+patternClosest is 1 1 rate is 0.303971
+patternClosest is 1 0 rate is 0.379715
+patternClosest is 1 3 rate is 0.0485717
+entropy is 0.0963595
+
+Loop on sampling for max 1100000 points 
+Sub-sampling 1 gives 1451261 points 
+Sub-sampling 2 gives 843444 points 
+positions bitstream size 36633 B (0.281434 bpp)
+positions processing time (user): 3.421 s
+colors bitstream size 276099 B (2.12114 bpp)
+colors processing time (user): 1 s
+Total frame size 7742370 B
+Total bitstream size 7742370 B
+Processing time (wall): 375.857 s
+Processing time (user): 264.265 s
+MPEG PCC tmc3 version 
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    frameCount            : 1
+    reconstructedDataPath : "F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "F:\YK\position\patternClosest\mpeg\sparse\C2\compressed.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 1
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+positions bitstream size 4591 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 0.312 s
+
+colors bitstream size 32095 B
+colors processing time (user): 0.14 s
+
+positions bitstream size 22519 B
+positions processing time (user): 1.359 s
+
+colors bitstream size 199135 B
+colors processing time (user): 1.453 s
+
+positions bitstream size 25913 B
+positions processing time (user): 1.468 s
+
+colors bitstream size 250606 B
+colors processing time (user): 0.843 s
+
+positions bitstream size 27500 B
+positions processing time (user): 1.64 s
+
+colors bitstream size 276320 B
+colors processing time (user): 0.968 s
+
+positions bitstream size 33167 B
+positions processing time (user): 1.328 s
+
+colors bitstream size 225548 B
+colors processing time (user): 0.734 s
+
+positions bitstream size 29949 B
+positions processing time (user): 1.453 s
+
+colors bitstream size 223980 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 25982 B
+positions processing time (user): 1.265 s
+
+colors bitstream size 177224 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 12097 B
+positions processing time (user): 0.687 s
+
+colors bitstream size 94396 B
+colors processing time (user): 0.39 s
+
+positions bitstream size 33326 B
+positions processing time (user): 1.296 s
+
+colors bitstream size 246887 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 17729 B
+positions processing time (user): 1.078 s
+
+colors bitstream size 126174 B
+colors processing time (user): 0.578 s
+
+positions bitstream size 32625 B
+positions processing time (user): 1.375 s
+
+colors bitstream size 246573 B
+colors processing time (user): 0.671 s
+
+positions bitstream size 19239 B
+positions processing time (user): 1.171 s
+
+colors bitstream size 155561 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 31644 B
+#1/0 #0/0 #9/0 #8/0 #5/3 #2/2 #7/5 #3/2 #6/9 positions processing time (user): 1.39 s
+
+colors bitstream size 210680 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 19446 B
+positions processing time (user): 1.203 s
+
+colors bitstream size 178911 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 35201 B
+positions processing time (user): 1.468 s
+
+colors bitstream size 290921 B
+colors processing time (user): 0.703 s
+
+positions bitstream size 20922 B
+positions processing time (user): 1.281 s
+
+colors bitstream size 232704 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 30329 B
+positions processing time (user): 1.484 s
+
+colors bitstream size 264924 B
+colors processing time (user): 0.812 s
+
+positions bitstream size 21131 B
+positions processing time (user): 1.343 s
+
+colors bitstream size 251517 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 33360 B
+positions processing time (user): 1.39 s
+
+colors bitstream size 278448 B
+colors processing time (user): 0.796 s
+
+positions bitstream size 21853 B
+positions processing time (user): 1.328 s
+
+colors bitstream size 225528 B
+colors processing time (user): 0.765 s
+
+positions bitstream size 33176 B
+positions processing time (user): 1.421 s
+
+colors bitstream size 250903 B
+colors processing time (user): 0.718 s
+
+positions bitstream size 29329 B
+positions processing time (user): 1.515 s
+
+colors bitstream size 263598 B
+colors processing time (user): 0.875 s
+
+positions bitstream size 33142 B
+positions processing time (user): 1.296 s
+
+colors bitstream size 255200 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 33293 B
+positions processing time (user): 1.093 s
+
+colors bitstream size 227498 B
+colors processing time (user): 0.593 s
+
+positions bitstream size 33852 B
+positions processing time (user): 1.328 s
+
+colors bitstream size 242714 B
+colors processing time (user): 0.64 s
+
+positions bitstream size 35411 B
+positions processing time (user): 1.234 s
+
+colors bitstream size 267832 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 38166 B
+positions processing time (user): 1.406 s
+
+colors bitstream size 314308 B
+colors processing time (user): 0.75 s
+
+positions bitstream size 40953 B
+positions processing time (user): 1.343 s
+
+colors bitstream size 326006 B
+colors processing time (user): 0.656 s
+
+positions bitstream size 37455 B
+positions processing time (user): 1.281 s
+
+colors bitstream size 279795 B
+colors processing time (user): 0.625 s
+
+positions bitstream size 36633 B
+positions processing time (user): 1.265 s
+
+colors bitstream size 276099 B
+colors processing time (user): 0.64 s
+
+Total bitstream size 7742370 B
+Processing time (wall): 81.095 s
+Processing time (user): 60.687 s
+PCC quality measurement software, version 0.13.5
+
+infile1:        C:\pointCloudData\MPEG\sparse\stanford_area_4_vox16.ply
+infile2:        F:\YK\position\patternClosest\mpeg\sparse\C2\reconstructed.ply
+normal1:        C:\pointCloudData\MPEG\cat1_Normal\stanford_area_4_vox16_n.ply
+singlePass:     0
+hausdorff:      0
+color:          1
+lidar:          0
+resolution:     65535
+dropDuplicates: 2
+neighborsProc:  1
+averageNormals: 1
+mseSpace:       1
+nbThreads:      1
+
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading file 1 done.
+Verifying if the data is loaded correctly.. The last point is: 60450 18655 6506
+Reading normal 1 done.
+Verifying if the data is loaded correctly.. The last point is: 61120 24384 7536
+WARNING: 18147 points with same coordinates found and averaged
+Reading file 2 done.
+Imported intrinsic resoluiton: 65535
+Peak distance for PSNR: 65535
+Point cloud sizes for org version, dec version, and the scaling ratio: 43399204, 23187321, 0.53428
+Normals prepared.
+
+1. Use infile1 (A) as reference, loop over A, use normals on B. (A->B).
+   mse1      (p2point): 124.879
+   mse1,PSNR (p2point): 80.1358
+   mse1      (p2plane): 29.1323
+   mse1,PSNR (p2plane): 86.4569
+   c[0],    1         : 0.00128713
+   c[1],    1         : 5.19195e-05
+   c[2],    1         : 3.83671e-05
+   c[0],PSNR1         : 28.9038
+   c[1],PSNR1         : 42.8467
+   c[2],PSNR1         : 44.1604
+2. Use infile2 (B) as reference, loop over B, use normals on A. (B->A).
+   mse2      (p2point): 105.774
+   mse2,PSNR (p2point): 80.8569
+   mse2      (p2plane): 45.5616
+   mse2,PSNR (p2plane): 84.5147
+   c[0],    2         : 0.00128402
+   c[1],    2         : 4.92666e-05
+   c[2],    2         : 3.70047e-05
+   c[0],PSNR2         : 28.9143
+   c[1],PSNR2         : 43.0745
+   c[2],PSNR2         : 44.3174
+3. Final (symmetric).
+   mseF      (p2point): 124.879
+   mseF,PSNR (p2point): 80.1358
+   mseF      (p2plane): 45.5616
+   mseF,PSNR (p2plane): 84.5147
+   c[0],    F         : 0.00128713
+   c[1],    F         : 5.19195e-05
+   c[2],    F         : 3.83671e-05
+   c[0],PSNRF         : 28.9038
+   c[1],PSNRF         : 42.8467
+   c[2],PSNRF         : 44.1604
+Job done! 295.391 seconds elapsed (excluding the time to load the point clouds).
